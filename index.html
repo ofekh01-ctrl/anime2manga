@@ -251,22 +251,6 @@
     <p class="lede">Enter where you are in any one of the three, and the others update to match — plus whether you're headed into anime filler.</p>
   </header>
 
-  <details class="card" id="bulkImportPanel" style="margin-bottom:24px;">
-    <summary style="cursor:pointer;font-weight:650;font-size:14px;">Bulk-add cover images</summary>
-
-    <p class="card-detail" style="margin:10px 0 6px;"><strong>Option A — upload multiple files at once:</strong> name each file with its volume number somewhere in the name (e.g. "bleach 1.jpg", "vol_27.png") and select them all together.</p>
-    <input type="file" id="bulkFileInput" accept="image/*" multiple style="width:100%;font-size:12px;color:var(--text-dim);margin-bottom:6px;" />
-    <p class="card-detail" id="bulkFileStatus"></p>
-
-    <p class="card-detail" style="margin:16px 0 6px;"><strong>Option B — paste a JSON list of URLs:</strong></p>
-    <pre style="background:var(--surface-2);border-radius:6px;padding:10px;font-size:11.5px;overflow-x:auto;margin:0 0 10px;">{"1": "https://.../vol1.jpg", "2": "https://.../vol2.jpg"}</pre>
-    <textarea id="bulkImportArea" rows="4" style="width:100%;background:var(--surface-2);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:12.5px;padding:8px;font-family:monospace;"></textarea>
-    <div style="display:flex;gap:8px;align-items:center;margin-top:8px;">
-      <button id="bulkImportBtn" type="button" style="background:var(--accent);border:none;border-radius:6px;color:#fff;font-size:12.5px;font-weight:650;padding:7px 14px;cursor:pointer;">Import all</button>
-      <span id="bulkImportStatus" class="card-detail"></span>
-    </div>
-  </details>
-
   <div class="sync-row">
     <div class="field">
       <label for="volumeInput">Manga volume</label>
@@ -289,14 +273,6 @@
   <div class="card" id="episodeCard">
     <p class="empty">Episode details will appear here.</p>
   </div>
-
-  <div class="save-row">
-    <span class="status" id="statusLine"><span class="dot"></span> Not saved yet</span>
-    <span id="lastSaved"></span>
-  </div>
-
-  <button id="exportBtn" type="button" style="background:var(--surface);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:12.5px;padding:8px 14px;cursor:pointer;margin-bottom:24px;">Export my saved data (for hosting elsewhere)</button>
-  <textarea id="exportOutput" readonly style="display:none;width:100%;background:var(--surface-2);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:11px;padding:8px;font-family:monospace;margin-bottom:24px;" rows="8"></textarea>
 
   <footer>
     <p>Episode data covers episodes 1–387 (original series through the start of Thousand-Year Blood War) against chapters 1–586. Volumes 1–54 (chapters 1–479) are what the original anime adapted; volumes 55+ are Thousand-Year Blood War manga, only partly covered by episode data here.</p>
@@ -350,63 +326,13 @@ function arcForChapter(num) {
   return ARC_RANGES.find(a => num >= a.start && num <= a.end) || null;
 }
 
-function resizeImageFile(file, targetWidth = 240) {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = (evt) => {
-      const img = new Image();
-      img.onload = () => {
-        const scale = targetWidth / img.width;
-        const canvas = document.createElement('canvas');
-        canvas.width = targetWidth;
-        canvas.height = Math.round(img.height * scale);
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-        resolve(canvas.toDataURL('image/jpeg', 0.82));
-      };
-      img.onerror = reject;
-      img.src = evt.target.result;
-    };
-    reader.onerror = reject;
-    reader.readAsDataURL(file);
-  });
-}
-
-function extractVolumeNumber(filename) {
-  const nameOnly = filename.replace(/\.[^.]+$/, ''); // strip extension
-  const matches = nameOnly.match(/\d+/g);
-  if (!matches || !matches.length) return null;
-  // Use the last number found — handles "bleach 1", "vol_27", "bleach-volume-05" etc.
-  const num = parseInt(matches[matches.length - 1], 10);
-  return (num >= 1 && num <= 74) ? num : null;
-}
-
-// Works both inside Claude (using window.storage, which syncs across your
-// devices) and as a fully standalone hosted page (falling back to the
-// browser's own localStorage, which stays on that one device/browser).
-const storageBackend = (typeof window.storage !== 'undefined' && typeof window.storage.get === 'function')
-  ? window.storage
-  : {
-      async get(key) {
-        const v = localStorage.getItem(key);
-        return v === null ? null : { key, value: v };
-      },
-      async set(key, value) {
-        localStorage.setItem(key, value);
-        return { key, value };
-      },
-    };
-
 const volumeInput = document.getElementById('volumeInput');
 const chapterInput = document.getElementById('chapterInput');
 const episodeInput = document.getElementById('episodeInput');
 const volumeCard = document.getElementById('volumeCard');
 const episodeCard = document.getElementById('episodeCard');
-const statusLine = document.getElementById('statusLine');
-const lastSaved = document.getElementById('lastSaved');
-
+const volumeCovers = { ...DEFAULT_COVERS };
 let programmatic = false;
-let volumeCovers = {};
 
 function escapeHtml(str) {
   const div = document.createElement('div');
@@ -441,7 +367,7 @@ function renderVolumeCard(vol, chapterNum) {
   }
   const cover = volumeCovers[vol.volume];
   const coverHtml = cover
-    ? `<img src="${escapeHtml(cover)}" alt="Volume ${vol.volume} cover" onerror="this.parentElement.innerHTML='Image failed to load'" />`
+    ? `<img src="${escapeHtml(cover)}" alt="Volume ${vol.volume} cover" onerror="this.parentElement.innerHTML='Vol. ${vol.volume}'" />`
     : `Vol. ${vol.volume}`;
 
   const rangeLabel = vol.start < 0
@@ -470,44 +396,9 @@ function renderVolumeCard(vol, chapterNum) {
         <p class="card-detail">${rangeLabel}</p>
         ${arcLine}
         ${extrasLine}
-        <div class="cover-input-row">
-          <input type="text" id="coverUrlInput" placeholder="Paste an image URL..." value="${cover ? escapeHtml(cover) : ''}" />
-          <button id="saveCoverBtn" type="button">Save</button>
-        </div>
-        <div class="cover-input-row">
-          <input type="file" id="coverFileInput" accept="image/*" style="flex:1;font-size:11.5px;color:var(--text-dim);" />
-        </div>
-        <p class="card-detail" id="coverHint" style="margin-top:4px;">If a pasted URL fails to load (hotlink blocking), upload a file instead — it's stored directly, no external site involved.</p>
       </div>
     </div>
   `;
-
-  document.getElementById('saveCoverBtn').addEventListener('click', () => {
-    const url = document.getElementById('coverUrlInput').value.trim();
-    if (url) {
-      volumeCovers[vol.volume] = url;
-    } else {
-      delete volumeCovers[vol.volume];
-    }
-    saveCovers();
-    renderVolumeCard(vol, chapterNum);
-  });
-
-  document.getElementById('coverFileInput').addEventListener('change', async (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    const hint = document.getElementById('coverHint');
-    hint.textContent = 'Processing image...';
-    try {
-      const dataUrl = await resizeImageFile(file);
-      volumeCovers[vol.volume] = dataUrl;
-      await saveCovers();
-      renderVolumeCard(vol, chapterNum);
-    } catch (err) {
-      hint.textContent = 'Could not process that image.';
-      console.error(err);
-    }
-  });
 }
 
 function renderEpisodeResult(ep) {
@@ -595,7 +486,6 @@ function handleVolumeChange() {
   chapterInput.value = vol.end;
   programmatic = false;
   syncFromChapter(vol.end);
-  saveProgress();
 }
 
 function handleChapterChange() {
@@ -603,7 +493,6 @@ function handleChapterChange() {
   const val = parseInt(chapterInput.value, 10);
   if (isNaN(val)) return;
   syncFromChapter(val);
-  saveProgress();
 }
 
 function handleEpisodeChange() {
@@ -613,16 +502,14 @@ function handleEpisodeChange() {
   const ep = EPISODES.find(e => e.episode === val);
   renderEpisodeResult(ep);
 
-  if (!ep) {
-    saveProgress();
-    return;
-  }
+  if (!ep) return;
 
   if (ep.filler) {
     volumeCard.innerHTML = '<p class="empty">This is a filler episode — no manga chapter or volume applies.</p>';
+    programmatic = true;
     chapterInput.value = 'Filler';
     volumeInput.value = 'Filler';
-    saveProgress();
+    programmatic = false;
     return;
   }
 
@@ -640,157 +527,11 @@ function handleEpisodeChange() {
       programmatic = false;
     }
   }
-  saveProgress();
-}
-
-let saveTimeout = null;
-function saveProgress() {
-  clearTimeout(saveTimeout);
-  saveTimeout = setTimeout(async () => {
-    try {
-      await storageBackend.set('bleach-progress', JSON.stringify({
-        volume: volumeInput.value,
-        chapter: chapterInput.value,
-        episode: episodeInput.value,
-        savedAt: new Date().toISOString(),
-      }), false);
-      statusLine.innerHTML = '<span class="dot"></span> Saved';
-      lastSaved.textContent = 'just now';
-    } catch (e) {
-      statusLine.innerHTML = '<span class="dot" style="background:#b3121f"></span> Save failed';
-      console.error('Storage error:', e);
-    }
-  }, 500);
-}
-
-async function saveCovers() {
-  try {
-    await storageBackend.set('bleach-volume-covers', JSON.stringify(volumeCovers), false);
-  } catch (e) {
-    console.error('Cover storage error:', e);
-  }
-}
-
-async function loadAll() {
-  try {
-    const coversResult = await storageBackend.get('bleach-volume-covers', false);
-    if (coversResult && coversResult.value) {
-      volumeCovers = JSON.parse(coversResult.value);
-    } else {
-      volumeCovers = { ...DEFAULT_COVERS };
-    }
-  } catch (e) {
-    volumeCovers = { ...DEFAULT_COVERS };
-  }
-
-  try {
-    const result = await storageBackend.get('bleach-progress', false);
-    if (result && result.value) {
-      const data = JSON.parse(result.value);
-      programmatic = true;
-      if (data.volume) volumeInput.value = data.volume;
-      if (data.chapter) chapterInput.value = data.chapter;
-      if (data.episode) episodeInput.value = data.episode;
-      programmatic = false;
-
-      if (data.chapter) {
-        syncFromChapter(parseInt(data.chapter, 10));
-      }
-      statusLine.innerHTML = '<span class="dot"></span> Saved';
-      if (data.savedAt) {
-        const d = new Date(data.savedAt);
-        lastSaved.textContent = 'last saved ' + d.toLocaleDateString() + ' ' + d.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
-      }
-    }
-  } catch (e) {
-    console.log('No saved progress found yet.');
-  }
 }
 
 volumeInput.addEventListener('input', handleVolumeChange);
 chapterInput.addEventListener('input', handleChapterChange);
 episodeInput.addEventListener('input', handleEpisodeChange);
-
-document.getElementById('bulkFileInput').addEventListener('change', async (e) => {
-  const files = Array.from(e.target.files);
-  const statusEl = document.getElementById('bulkFileStatus');
-  if (!files.length) return;
-
-  statusEl.textContent = `Processing ${files.length} file(s)...`;
-  const matched = [];
-  const unmatched = [];
-
-  for (const file of files) {
-    const volNum = extractVolumeNumber(file.name);
-    if (volNum === null) {
-      unmatched.push(file.name);
-      continue;
-    }
-    try {
-      const dataUrl = await resizeImageFile(file);
-      volumeCovers[volNum] = dataUrl;
-      matched.push(volNum);
-    } catch (err) {
-      unmatched.push(file.name);
-    }
-  }
-
-  await saveCovers();
-
-  let msg = `Added ${matched.length} cover(s)${matched.length ? ' — volumes ' + matched.sort((a,b)=>a-b).join(', ') : ''}.`;
-  if (unmatched.length) {
-    msg += ` Couldn't read a volume number from: ${unmatched.join(', ')}.`;
-  }
-  statusEl.textContent = msg;
-
-  // Refresh the currently-shown volume card if it was just updated.
-  const currentVol = parseInt(volumeInput.value, 10);
-  const vol = VOLUMES.find(v => v.volume === currentVol);
-  if (vol) renderVolumeCard(vol, parseInt(chapterInput.value, 10));
-});
-
-document.getElementById('bulkImportBtn').addEventListener('click', async () => {
-  const statusEl = document.getElementById('bulkImportStatus');
-  const raw = document.getElementById('bulkImportArea').value.trim();
-  if (!raw) { statusEl.textContent = 'Paste some JSON first.'; return; }
-  let parsed;
-  try {
-    parsed = JSON.parse(raw);
-  } catch (e) {
-    statusEl.textContent = 'Invalid JSON — check the format.';
-    return;
-  }
-  let count = 0;
-  for (const [key, url] of Object.entries(parsed)) {
-    const volNum = parseInt(key, 10);
-    if (!isNaN(volNum) && typeof url === 'string' && url.trim()) {
-      volumeCovers[volNum] = url.trim();
-      count++;
-    }
-  }
-  await saveCovers();
-  statusEl.textContent = `Imported ${count} cover${count === 1 ? '' : 's'}.`;
-  // Refresh the currently-shown volume card in case it was just updated.
-  const currentVol = parseInt(volumeInput.value, 10);
-  const vol = VOLUMES.find(v => v.volume === currentVol);
-  if (vol) renderVolumeCard(vol, parseInt(chapterInput.value, 10));
-});
-
-document.getElementById('exportBtn').addEventListener('click', async () => {
-  const output = document.getElementById('exportOutput');
-  let progress = {};
-  try {
-    const p = await storageBackend.get('bleach-progress', false);
-    if (p && p.value) progress = JSON.parse(p.value);
-  } catch (e) {}
-
-  const exportData = { progress, covers: volumeCovers };
-  output.value = JSON.stringify(exportData);
-  output.style.display = 'block';
-  output.select();
-});
-
-loadAll();
 </script>
 </body>
 </html>
