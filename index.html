@@ -256,6 +256,18 @@
     color: #111;
   }
 
+  .cover-col-links {
+    width: 84px;
+  }
+
+  .aff-note {
+    margin: 3px 0 0;
+    font-size: 8.5px;
+    line-height: 1.3;
+    color: var(--text-dim);
+    text-align: center;
+  }
+
   .volume-info { flex: 1; min-width: 0; }
 
   .cover-input-row {
@@ -365,7 +377,7 @@
     <p>Some chapter references (negative numbers, decimals like "0.8") are bonus/prequel chapters — mainly the Turn Back the Pendulum arc — not part of the main chapter count.</p>
     <p>Arc boundaries are derived from chapter ranges (Comic Book Treasury's arc summary), cross-checked against the volume data above. One correction was needed: that source's arc summary says the Arrancar arc ends at volume 46, but the chapter math (183–423) actually lands at volume 48 — used here.</p>
     <p>Sources: episode–chapter correspondence and volume/arc chapter ranges compiled by ListFist.com and Comic Book Treasury.</p>
-    <p>Some links may be affiliate links that help cover server and maintenance costs at no extra cost to you.</p>
+    <p>As an Amazon Associate I earn from qualifying purchases. Some links may be affiliate links that help cover server and maintenance costs at no extra cost to you.</p>
   </footer>
 
 </div>
@@ -481,9 +493,12 @@ function renderVolumeCard(vol, chapterNum) {
   const vizUrl = VIZ_LINKS[vol.volume];
   const amazonUrl = AMAZON_LINKS[vol.volume];
   const getRow = (vizUrl || amazonUrl)
-    ? `<div class="get-row">
-        ${vizUrl ? `<a href="${escapeHtml(vizUrl)}" target="_blank" rel="noopener" class="get-badge viz" title="VIZ Media — read or order the official release">VIZ</a>` : ''}
-        ${amazonUrl ? `<a href="${escapeHtml(amazonUrl)}" target="_blank" rel="noopener" class="get-badge amazon" title="Amazon (affiliate link)">Amazon</a>` : ''}
+    ? `<div class="cover-col-links">
+        <div class="get-row">
+          ${vizUrl ? `<a href="${escapeHtml(vizUrl)}" target="_blank" rel="noopener" class="get-badge viz" title="VIZ">VIZ</a>` : ''}
+          ${amazonUrl ? `<a href="${escapeHtml(amazonUrl)}" target="_blank" rel="noopener" class="get-badge amazon" title="Amazon">Amazon</a>` : ''}
+        </div>
+        ${amazonUrl ? `<p class="aff-note">Amazon link is an affiliate link</p>` : ''}
       </div>`
     : '';
 
