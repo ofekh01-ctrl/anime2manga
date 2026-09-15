@@ -47,6 +47,46 @@
   }
 
   * { box-sizing: border-box; }
+  body {
+    background:
+      radial-gradient(ellipse 900px 420px at 50% -10%, rgba(195, 31, 43, 0.10), transparent 65%),
+      radial-gradient(ellipse 600px 300px at 100% 0%, rgba(201, 154, 60, 0.05), transparent 60%),
+      var(--bg);
+    background-attachment: fixed;
+  }
+
+  .card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.025), transparent 45%), var(--surface);
+  }
+
+  .card:has(.empty) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 110px;
+    text-align: center;
+    border-style: dashed;
+    border-left-style: solid;
+  }
+
+  .card .empty {
+    max-width: 30ch;
+    line-height: 1.6;
+    font-size: 13.5px;
+  }
+
+  .wordmark {
+    position: relative;
+  }
+
+  .wordmark::before {
+    content: "";
+    position: absolute;
+    inset: -36px -50px;
+    background: radial-gradient(circle at 30% 45%, var(--accent-soft), transparent 70%);
+    filter: blur(10px);
+    z-index: -1;
+  }
 
   body {
     margin: 0;
