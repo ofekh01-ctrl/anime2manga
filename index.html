@@ -503,7 +503,6 @@
     <p>Episode data covers episodes 1–387 (through chapter 586). That's all of volumes 1–54; volumes 55+ (Thousand-Year Blood War) are only partly covered here.</p>
     <p>Negative or decimal chapter numbers (e.g. "0.8") are bonus/prequel chapters, mainly Turn Back the Pendulum.</p>
     <p>Sources: episode–chapter correspondence and volume/arc chapter ranges compiled by ListFist.com and Comic Book Treasury.</p>
-    <p>As an Amazon Associate I earn from qualifying purchases. Some links may be affiliate links that help cover server and maintenance costs at no extra cost to you.</p>
   </footer>
 
 </div>
@@ -617,7 +616,7 @@ function renderVolumeCard(vol, chapterNum) {
     : '<span class="tag special">Thousand-Year Blood War manga</span>';
 
   const vizUrl = VIZ_LINKS[vol.volume];
-  const amazonUrl = AMAZON_LINKS[vol.volume];
+  const amazonUrl = null; // affiliate link temporarily disabled for initial launch — AMAZON_LINKS data kept below for re-enabling later
   const getRow = (vizUrl || amazonUrl)
     ? `<div class="cover-col-links">
         <div class="get-row">
