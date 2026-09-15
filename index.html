@@ -33,42 +33,6 @@
     position: relative;
   }
 
-  .field:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    top: 42px;
-    right: -7px;
-    width: 12px;
-    height: 1px;
-    background: linear-gradient(90deg, var(--border), var(--gold));
-  }
-
-  .field:not(:last-child)::before {
-    content: "";
-    position: absolute;
-    top: 40px;
-    right: -3px;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: var(--gold);
-    box-shadow: 0 0 6px var(--gold);
-    animation: pulse-dot 2s ease-in-out infinite;
-    z-index: 1;
-  }
-
-  @keyframes pulse-dot {
-    0%, 100% { opacity: 0.4; transform: scale(0.8); }
-    50% { opacity: 1; transform: scale(1.2); }
-  }
-
-  @media (max-width: 520px) {
-    .field:not(:last-child)::after,
-    .field:not(:last-child)::before {
-      display: none;
-    }
-  }
-
   .tag.filler::before { content: "◐ "; }
   .tag.canon::before { content: "◆ "; }
   .tag.special::before { content: "✦ "; }
@@ -110,6 +74,32 @@
     --jade: #3f7a5c;
     --jade-soft: rgba(63, 122, 92, 0.14);
     --radius: 8px;
+  }
+
+  body::before {
+    content: "魂";
+    position: fixed;
+    top: -8%;
+    right: -10%;
+    font-family: 'Yuji Syuku', serif;
+    font-size: 55vw;
+    line-height: 1;
+    color: rgba(195, 31, 43, 0.035);
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 180px 180px;
+    opacity: 0.035;
+    mix-blend-mode: overlay;
+    z-index: -1;
+    pointer-events: none;
   }
 
   * { box-sizing: border-box; }
@@ -262,6 +252,16 @@
     outline: none;
     border-color: var(--accent);
     box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+
+  #episodeInput::-webkit-outer-spin-button,
+  #episodeInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  #episodeInput {
+    -moz-appearance: textfield;
   }
 
   .card {
