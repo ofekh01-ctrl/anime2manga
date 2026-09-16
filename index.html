@@ -13,19 +13,74 @@
 </script>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="https://anime2manga.net/" rel="canonical"/>
-<meta name="description" content="Match manga volumes and chapters with anime episodes. Find exactly where to continue between manga and anime with Anime2Manga."/>
-<meta content="Anime2Manga — Manga & Anime Sync Tracker" property="og:title"/>
-<meta content="Match manga volumes and chapters with anime episodes and find exactly where to continue." property="og:description"/>
+<meta name="description" content="Convert between anime episodes and manga chapters or volumes. Find where to continue reading after the anime, check filler, and track adaptations."/>
+<meta content="Anime to Manga & Manga to Anime Converter | Anime2Manga" property="og:title"/>
+<meta content="Convert between anime episodes and manga chapters or volumes. Find where to continue reading after the anime, check filler, and track adaptations." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://anime2manga.net/" property="og:url"/>
 <meta content="https://anime2manga.net/assets/logo.png" property="og:image"/>
+<meta content="Anime2Manga logo" property="og:image:alt"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Anime2Manga — Manga & Anime Sync Tracker" name="twitter:title"/>
-<meta content="Match manga volumes and chapters with anime episodes and find exactly where to continue." name="twitter:description"/>
+<meta content="Anime to Manga & Manga to Anime Converter | Anime2Manga" name="twitter:title"/>
+<meta content="Convert between anime episodes and manga chapters or volumes. Find where to continue reading after the anime, check filler, and track adaptations." name="twitter:description"/>
 <meta content="https://anime2manga.net/assets/logo.png" name="twitter:image"/>
-<title>Anime2Manga — Manga & Anime Sync Tracker</title>
-<link href="/assets/favicon.png?v=2" rel="icon" type="image/png" sizes="32x32"/>
-<link href="/assets/favicon.png?v=2" rel="shortcut icon"/>
+<!-- SEO Step 5 structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://anime2manga.net/#website",
+      "url": "https://anime2manga.net/",
+      "name": "Anime2Manga",
+      "alternateName": "Anime 2 Manga",
+      "description": "A free anime-to-manga and manga-to-anime reference tool for matching anime episodes with manga chapters and volumes.",
+      "image": "https://anime2manga.net/assets/logo.png"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://anime2manga.net/#webpage",
+      "url": "https://anime2manga.net/",
+      "name": "Anime to Manga & Manga to Anime Converter | Anime2Manga",
+      "description": "Convert between anime episodes and manga chapters or volumes. Find where to continue reading after the anime, check filler, and track adaptations.",
+      "isPartOf": {
+        "@id": "https://anime2manga.net/#website"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://anime2manga.net/assets/logo.png"
+      }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://anime2manga.net/#app",
+      "name": "Anime2Manga",
+      "url": "https://anime2manga.net/",
+      "description": "A free web tool that converts between anime episodes and manga chapters or volumes, helps users find where to continue reading after the anime, and shows filler or adaptation information where available.",
+      "applicationCategory": "ReferenceApplication",
+      "operatingSystem": "Any",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Anime episode to manga chapter matching",
+        "Manga chapter to anime episode matching",
+        "Manga volume to anime episode matching",
+        "Where to continue reading after the anime",
+        "Filler and adaptation information"
+      ]
+    }
+  ]
+}
+</script>
+<!-- /SEO Step 5 structured data -->
+<title>Anime to Manga & Manga to Anime Converter | Anime2Manga</title>
+<link href="/assets/favicon.png" rel="icon" type="image/png"/>
+<link href="/assets/favicon.png" rel="shortcut icon" type="image/png"/>
 <link rel="manifest" href="/manifest.webmanifest?v=1"/>
 <meta name="theme-color" content="#0c0c0e"/>
 <link rel="apple-touch-icon" href="/assets/icon-192.png"/>
@@ -1022,7 +1077,7 @@
 <p class="home-kicker">ANIME ↔ MANGA SYNC</p>
 <h1 class="home-title">ANIME<span class="two">2</span>MANGA</h1>
 <p class="home-tagline">Pick up exactly where you left off.</p>
-<p class="home-copy">Match manga volumes and chapters with anime episodes — or go the other way around. Choose a series and jump straight into the tracker.</p>
+<p class="home-copy">Anime2Manga is a free anime-to-manga and manga-to-anime reference tool. Enter an anime episode to find the manga chapters and volume it adapts, or enter a manga chapter or volume to find the matching anime episode.</p>
 <div class="home-rule"></div>
 <p class="home-section-title">CHOOSE A SERIES</p>
 <div class="series-grid">
@@ -1054,7 +1109,7 @@
 <section class="home-about" id="about">
 <p class="home-section-title">ABOUT</p>
 <h2>Switch between anime and manga without losing your place.</h2>
-<p>Anime2Manga is a simple reference tool for finding the manga volume or chapter that lines up with an anime episode, including adaptation and filler information where relevant. No account required.</p>
+<p>Use Anime2Manga to find where to continue reading after an anime episode, match manga chapters and volumes to their anime adaptation, and check filler or adaptation information where available. The tracker currently includes Bleach, Chainsaw Man, and Jujutsu Kaisen, with more series being added. No account required.</p>
 <div class="feedback-actions" aria-label="Feedback and requests">
 <a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'error',page_path:window.location.pathname})">Found an error?</a>
 <a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'series_request',page_path:window.location.pathname})">Request a series</a>
@@ -1178,7 +1233,7 @@ function showHome(options = {}) {
   setView('home');
   if (!options.skipHistory) {
     history.pushState({ view: 'home' }, '', '/');
-    document.title = 'Anime2Manga — Manga & Anime Sync';
+    document.title = 'Anime to Manga & Manga to Anime Converter | Anime2Manga';
   }
   toggleNav(false);
   window.scrollTo({top:0, behavior:'smooth'});
@@ -1198,7 +1253,7 @@ function restoreViewFromUrl() {
     navSeries(id, { skipHistory: true });
   } else {
     showHome({ skipHistory: true });
-    document.title = 'Anime2Manga — Manga & Anime Sync';
+    document.title = 'Anime to Manga & Manga to Anime Converter | Anime2Manga';
   }
 }
 window.addEventListener('popstate', restoreViewFromUrl);
