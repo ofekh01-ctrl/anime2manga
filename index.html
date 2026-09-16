@@ -960,6 +960,46 @@
   vertical-align:top !important;
 }
 </style>
+
+<style>
+/* Step 4: feedback + series request links */
+.feedback-actions {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+.feedback-link {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:36px;
+  padding:8px 12px;
+  border:1px solid var(--border);
+  border-radius:8px;
+  background:var(--surface-2);
+  color:var(--text-dim);
+  font-size:12px;
+  font-weight:650;
+  text-decoration:none;
+  transition:border-color .15s ease,color .15s ease,background .15s ease;
+}
+.feedback-link:hover {
+  color:var(--text);
+  border-color:var(--accent);
+  background:var(--accent-soft);
+}
+.series-feedback {
+  margin-top:18px;
+  padding-top:18px;
+  border-top:1px solid var(--border);
+}
+.series-feedback .feedback-actions { margin-top:0; }
+@media (max-width:480px) {
+  .feedback-actions { flex-direction:column; }
+  .feedback-link { width:100%; }
+}
+</style>
 </head>
 <body>
 <button aria-label="Open navigation" class="mobile-nav-toggle" onclick="toggleNav()" type="button">☰</button>
@@ -1015,6 +1055,10 @@
 <p class="home-section-title">ABOUT</p>
 <h2>Switch between anime and manga without losing your place.</h2>
 <p>Anime2Manga is a simple reference tool for finding the manga volume or chapter that lines up with an anime episode, including adaptation and filler information where relevant. No account required.</p>
+<div class="feedback-actions" aria-label="Feedback and requests">
+<a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'error',page_path:window.location.pathname})">Found an error?</a>
+<a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'series_request',page_path:window.location.pathname})">Request a series</a>
+</div>
 </section>
 </div>
 </main>
@@ -1059,6 +1103,12 @@
 <p>Negative or decimal chapter numbers (e.g. "0.8") are bonus/prequel chapters, mainly Turn Back the Pendulum.</p>
 <p>Sources: episode–chapter correspondence and volume/arc chapter ranges compiled by ListFist.com and Comic Book Treasury.</p>
 </footer>
+<div class="series-feedback" aria-label="Feedback and requests">
+<div class="feedback-actions">
+<a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'error',series:currentSeries?.id || null,page_path:window.location.pathname})">Found an error?</a>
+<a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'series_request',series:currentSeries?.id || null,page_path:window.location.pathname})">Request a series</a>
+</div>
+</div>
 </div>
 <script>
 function toggleNav(force) {
