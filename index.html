@@ -1081,11 +1081,43 @@ const PATH_TO_SERIES = Object.fromEntries(
   Object.entries(SERIES_PATHS).map(([id, path]) => [path, id])
 );
 
+// Analytics helpers: track meaningful use without firing an event on every keystroke.
+function trackAnalyticsEvent(name, params = {}) {
+  if (typeof gtag !== 'function') return;
+  gtag('event', name, params);
+}
+
+function trackSeriesSelected(id) {
+  const s = SERIES[id];
+  if (!s) return;
+  trackAnalyticsEvent('series_selected', {
+    series: id,
+    series_name: s.name,
+    page_path: SERIES_PATHS[id] || window.location.pathname
+  });
+}
+
+function trackTrackerUsed(inputType) {
+  if (!currentSeries) return;
+  const key = `anime2manga_tracker_used_${currentSeries.id}`;
+  try {
+    if (sessionStorage.getItem(key)) return;
+    sessionStorage.setItem(key, '1');
+  } catch (_) {}
+  trackAnalyticsEvent('tracker_used', {
+    series: currentSeries.id,
+    series_name: currentSeries.name,
+    input_type: inputType,
+    page_path: SERIES_PATHS[currentSeries.id] || window.location.pathname
+  });
+}
+
 function navSeries(id, options = {}) {
   applySeries(id);
   if (!options.skipHistory) {
     const path = SERIES_PATHS[id] || '/';
     history.pushState({ view: 'series', series: id }, '', path);
+    trackSeriesSelected(id);
   }
   setView('series');
   document.querySelectorAll('.series-nav').forEach(el => el.classList.toggle('active', el.dataset.series === id));
@@ -1476,6 +1508,7 @@ function handleVolumeChange() {
   chapterInput.value = vol.end;
   programmatic = false;
   syncFromChapter(vol.end);
+  trackTrackerUsed('volume');
 }
 
 function handleChapterChange() {
@@ -1484,6 +1517,7 @@ function handleChapterChange() {
   const val = parseInt(chapterInput.value, 10);
   if (isNaN(val)) { clearAll(); return; }
   syncFromChapter(val);
+  trackTrackerUsed('chapter');
 }
 
 function handleEpisodeChange() {
@@ -1502,6 +1536,8 @@ function handleEpisodeChange() {
     volumeCard.innerHTML = '<p class="empty">Volume details will appear here.</p>';
     return;
   }
+
+  trackTrackerUsed('episode');
 
   if (ep.filler) {
     volumeCard.innerHTML = '<p class="empty">This is a filler episode — no manga chapter or volume applies.</p>';
