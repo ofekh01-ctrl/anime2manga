@@ -1242,10 +1242,10 @@
 <button class="side-link series-nav" data-series="chainsawman" onclick="navSeries('chainsawman')" type="button"><span>Chainsaw Man</span></button>
 <button class="side-link series-nav" data-series="jjk" onclick="navSeries('jjk')" type="button"><span>Jujutsu Kaisen</span></button>
 <button class="side-link series-nav" data-series="hxh" onclick="navSeries('hxh')" type="button"><span>Hunter × Hunter</span></button>
+<button class="side-link series-nav" data-series="dandadan" onclick="navSeries('dandadan')" type="button"><span>Dandadan</span></button>
 <button class="side-link series-nav" data-series="deathnote" onclick="navSeries('deathnote')" type="button"><span>Death Note</span></button>
 <button class="side-link series-nav" data-series="aot" onclick="navSeries('aot')" type="button"><span>Attack on Titan</span></button>
 <div class="side-section">COMING SOON</div>
-<button class="side-link coming-nav" disabled type="button"><span>Dandadan</span><span class="side-soon">SOON</span></button>
 <button class="side-link coming-nav" disabled type="button"><span>Dragon Ball</span><span class="side-soon">SOON</span></button>
 <button class="side-link coming-nav" disabled type="button"><span>Blue Lock</span><span class="side-soon">SOON</span></button>
 <div class="side-bottom"><button class="side-link" onclick="showAbout()" type="button"><span class="side-icon">?</span><span>About</span></button></div>
@@ -1263,7 +1263,7 @@
     <input id="seriesSearchInput" class="series-search-input" type="search" placeholder="Search a series..." autocomplete="off" aria-label="Search series"/>
     <button class="series-search-btn" id="seriesSearchBtn" type="button" onclick="runSeriesSearch()">Search</button>
   </div>
-  <div class="series-search-meta" id="seriesSearchMeta">15 series · 6 available · 9 coming soon</div>
+  <div class="series-search-meta" id="seriesSearchMeta">15 series · 7 available · 8 coming soon</div>
 </div>
 <p class="home-section-title">CHOOSE A SERIES</p>
 <div class="series-grid" id="homeSeriesGrid">
@@ -1297,11 +1297,11 @@
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Attack on Titan</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
-<div class="series-card home-poster-card coming-card" data-series-name="Dandadan" aria-label="Dandadan coming soon">
+<button class="series-card home-poster-card" data-series-name="Dandadan" onclick="navSeries('dandadan')" type="button">
   <img class="home-poster-img" src="/assets/home-cards/dandadan.jpg" alt="Dandadan"/>
   <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Dandadan</span><span class="coming-badge">COMING SOON</span></span>
-</div>
+  <span class="home-poster-copy"><span class="series-card-name">Dandadan</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
 <div class="series-card home-poster-card coming-card" data-series-name="Dragon Ball" aria-label="Dragon Ball coming soon">
   <img class="home-poster-img" src="/assets/home-cards/dragon-ball.jpg" alt="Dragon Ball"/>
   <span class="home-poster-overlay"></span>
@@ -1372,6 +1372,7 @@
 <button class="series-tab" data-series="chainsawman" onclick="navSeries('chainsawman')" type="button">Chainsaw Man</button>
 <button class="series-tab" data-series="jjk" onclick="navSeries('jjk')" type="button">Jujutsu Kaisen</button>
 <button class="series-tab" data-series="hxh" onclick="navSeries('hxh')" type="button">Hunter × Hunter</button>
+<button class="series-tab" data-series="dandadan" onclick="navSeries('dandadan')" type="button">Dandadan</button>
 <button class="series-tab" data-series="aot" onclick="navSeries('aot')" type="button">Attack on Titan</button>
 <button class="series-tab" data-series="deathnote" onclick="navSeries('deathnote')" type="button">Death Note</button>
 </div>
@@ -1431,6 +1432,7 @@ const SERIES_PATHS = {
   jjk: '/jujutsu-kaisen/',
   deathnote: '/death-note/',
   hxh: '/hunter-x-hunter/',
+  dandadan: '/dandadan/',
   aot: '/attack-on-titan/'
 };
 const PATH_TO_SERIES = Object.fromEntries(
@@ -1566,7 +1568,8 @@ function renderHomeSeriesBrowser() {
   pageLabel.textContent = `Page ${homeSeriesPage} of ${totalPages}`;
   prev.disabled = homeSeriesPage <= 1;
   next.disabled = homeSeriesPage >= totalPages;
-  meta.textContent = `${cards.length} series · 6 available · 9 coming soon`;
+  const availableCount = cards.filter(card => !card.classList.contains('coming-card')).length;
+  meta.textContent = `${cards.length} series · ${availableCount} available · ${cards.length - availableCount} coming soon`;
 }
 
 function changeSeriesPage(delta) {
@@ -1724,6 +1727,9 @@ const SERIES = {
     episodePlaceholder: '1–148',
     volumePlaceholder: '1–38',
     chapterPlaceholder: '1–420',
+    uncollectedStart: 401,
+    uncollectedEnd: 420,
+    uncollectedMessage: 'This chapter is newer than Volume 38 and is not assigned to a collected English volume in this dataset yet.',
     EPISODES: [{"episode": 1, "title": "Departure × And × Friends", "chapters": ["1", "2"], "filler": false}, {"episode": 2, "title": "Test × Of × Tests", "chapters": ["3", "4"], "filler": false}, {"episode": 3, "title": "Rivals × For × Survival", "chapters": ["5", "6"], "filler": false}, {"episode": 4, "title": "Hope × And × Ambition", "chapters": ["6", "7", "8"], "filler": false}, {"episode": 5, "title": "Hisoka × Is So × Sneaky", "chapters": ["8", "9", "10"], "filler": false}, {"episode": 6, "title": "An × Unexpected × Task", "chapters": ["10", "11", "12"], "filler": false}, {"episode": 7, "title": "Showdown × On The × Airship", "chapters": ["13", "14"], "filler": false}, {"episode": 8, "title": "Decision × By × Majority?", "chapters": ["14", "15", "16", "17"], "filler": false}, {"episode": 9, "title": "Beware × Of × Prisoners", "chapters": ["17", "18"], "filler": false}, {"episode": 10, "title": "Trick × To The × Trick", "chapters": ["19", "20"], "filler": false}, {"episode": 11, "title": "Trouble × With The × Gamble", "chapters": ["20", "21"], "filler": false}, {"episode": 12, "title": "Last × Test Of × Resolve!", "chapters": ["21"], "filler": false}, {"episode": 13, "title": "Letter × From × Gon", "chapters": [], "filler": true}, {"episode": 14, "title": "Hit × The × Target", "chapters": ["22", "23", "24"], "filler": false}, {"episode": 15, "title": "Explosion × Of × Deception", "chapters": ["25", "26"], "filler": false}, {"episode": 16, "title": "Defeat × And × Disgrace", "chapters": ["27", "28"], "filler": false}, {"episode": 17, "title": "Trap × In The × Hole", "chapters": ["29", "30"], "filler": false}, {"episode": 18, "title": "Big × Time × Interview", "chapters": ["31", "32"], "filler": false}, {"episode": 19, "title": "Can't Win × And × Can't Lose", "chapters": ["33", "34"], "filler": false}, {"episode": 20, "title": "Baffling × Turn Of × Events", "chapters": ["35", "36"], "filler": false}, {"episode": 21, "title": "Some × Brother × Trouble", "chapters": ["37", "38"], "filler": false}, {"episode": 22, "title": "A × Dangerous × Watchdog", "chapters": ["39", "40"], "filler": false}, {"episode": 23, "title": "The × Guard's × Duty", "chapters": ["40", "41"], "filler": false}, {"episode": 24, "title": "The × Zoldyck × Family", "chapters": ["42"], "filler": false}, {"episode": 25, "title": "Can't See × If × You're Blind", "chapters": ["43", "44"], "filler": false}, {"episode": 26, "title": "Then × And × After", "chapters": [], "filler": true}, {"episode": 27, "title": "Arrival × At × The Arena", "chapters": ["44", "45", "46"], "filler": false}, {"episode": 28, "title": "Nen × And × Nen", "chapters": ["46", "47"], "filler": false}, {"episode": 29, "title": "Awakening × And × Potential", "chapters": ["48", "49"], "filler": false}, {"episode": 30, "title": "Fierce × And × Ferocious", "chapters": ["50", "51"], "filler": false}, {"episode": 31, "title": "Destiny × And × Tenacity", "chapters": ["52", "53"], "filler": false}, {"episode": 32, "title": "A × Surprising × Win", "chapters": ["54", "55"], "filler": false}, {"episode": 33, "title": "An × Empty × Threat", "chapters": ["56", "57"], "filler": false}, {"episode": 34, "title": "Power × To × Avenge", "chapters": ["58", "59"], "filler": false}, {"episode": 35, "title": "The × True × Pass", "chapters": ["60", "61"], "filler": false}, {"episode": 36, "title": "A Big Debt × And × A Small Kick", "chapters": ["62", "63"], "filler": false}, {"episode": 37, "title": "Ging × And × Gon", "chapters": ["64", "65"], "filler": false}, {"episode": 38, "title": "Reply × From × Dad", "chapters": ["66", "69"], "filler": false}, {"episode": 39, "title": "Wish × And × Promise", "chapters": ["67", "83"], "filler": false}, {"episode": 40, "title": "Nen × Users × Unite?", "chapters": ["68", "69", "70"], "filler": false}, {"episode": 41, "title": "Gathering × Of × Heroes", "chapters": ["70", "71", "72"], "filler": false}, {"episode": 42, "title": "Defend × And × Attack", "chapters": ["71", "72", "73"], "filler": false}, {"episode": 43, "title": "A × Shocking × Tragedy", "chapters": ["73", "74", "75"], "filler": false}, {"episode": 44, "title": "Buildup × To A × Fierce Battle", "chapters": ["75", "76", "77"], "filler": false}, {"episode": 45, "title": "Restraint × And × Vow", "chapters": ["76", "77", "78", "79"], "filler": false}, {"episode": 46, "title": "Chasing × And × Waiting", "chapters": ["79", "80"], "filler": false}, {"episode": 47, "title": "Condition × And × Condition", "chapters": ["81", "82", "83", "84"], "filler": false}, {"episode": 48, "title": "Very × Sharp × Eye", "chapters": ["84", "85", "86", "87", "88"], "filler": false}, {"episode": 49, "title": "Pursuit × And × Analysis", "chapters": ["80", "89", "90", "91"], "filler": false}, {"episode": 50, "title": "Ally × And × Sword", "chapters": ["91", "92", "93", "94"], "filler": false}, {"episode": 51, "title": "A × Brutal × Battlefield", "chapters": ["94", "95", "96", "97"], "filler": false}, {"episode": 52, "title": "Assault × And × Impact", "chapters": ["97", "98", "99"], "filler": false}, {"episode": 53, "title": "Fake × And × Psyche", "chapters": ["100", "101"], "filler": false}, {"episode": 54, "title": "Fortunes × Aren't × Right?", "chapters": ["102", "103", "104", "105", "106"], "filler": false}, {"episode": 55, "title": "Allies × And × Lies", "chapters": ["106", "107", "108"], "filler": false}, {"episode": 56, "title": "Beloved × And × Beleaguered", "chapters": ["109", "110", "111", "112"], "filler": false}, {"episode": 57, "title": "Initiative × And × Law", "chapters": ["112", "113", "114", "115", "116"], "filler": false}, {"episode": 58, "title": "Time × To × Retreat", "chapters": ["117", "118", "119", "120"], "filler": false}, {"episode": 59, "title": "Bid × And × Haste", "chapters": ["121", "122", "123", "124"], "filler": false}, {"episode": 60, "title": "End × And × Beginning", "chapters": ["124", "125", "126", "127"], "filler": false}, {"episode": 61, "title": "Invitation × And × Friend", "chapters": ["127", "128", "129", "130", "131"], "filler": false}, {"episode": 62, "title": "Reality? × And × Raw", "chapters": ["132", "133", "134", "135", "136"], "filler": false}, {"episode": 63, "title": "A × Hard × Master?", "chapters": ["137", "138", "139", "140"], "filler": false}, {"episode": 64, "title": "Strengthen × And × Threaten", "chapters": ["141", "142", "143", "144", "145"], "filler": false}, {"episode": 65, "title": "Evil Fist × And × Rock-Paper-Scissors", "chapters": ["144", "145", "146", "147", "148"], "filler": false}, {"episode": 66, "title": "Strategy × And × Scheme", "chapters": ["148", "149", "150", "151", "152"], "filler": false}, {"episode": 67, "title": "15 × 15", "chapters": ["151", "152", "153", "154", "155"], "filler": false}, {"episode": 68, "title": "Pirates × And × Guesses", "chapters": ["155", "156", "157", "158", "159", "160"], "filler": false}, {"episode": 69, "title": "A × Heated × Showdown", "chapters": ["160", "161", "162", "163"], "filler": false}, {"episode": 70, "title": "Guts × And × Courage", "chapters": ["163", "164", "165", "166"], "filler": false}, {"episode": 71, "title": "Bargain × And × Deal", "chapters": ["166", "167", "168", "169", "170"], "filler": false}, {"episode": 72, "title": "Chase × And × Chance", "chapters": ["170", "171", "172", "173"], "filler": false}, {"episode": 73, "title": "Insanity × And × Sanity", "chapters": ["174", "175", "176", "177", "178", "179"], "filler": false}, {"episode": 74, "title": "Victor × And × Loser", "chapters": ["179", "180", "181", "182"], "filler": false}, {"episode": 75, "title": "Ging's Friends × And × True Friends", "chapters": ["183", "184", "185"], "filler": false}, {"episode": 76, "title": "Reunion × And × Understanding", "chapters": ["1", "185", "186"], "filler": false}, {"episode": 77, "title": "Unease × And × Sighting", "chapters": ["186", "187"], "filler": false}, {"episode": 78, "title": "Very × Rapid × Reproduction", "chapters": ["188"], "filler": false}, {"episode": 79, "title": "No × Good × NGL", "chapters": ["188", "189"], "filler": false}, {"episode": 80, "title": "Evil × And × Terrible", "chapters": ["189", "190", "204"], "filler": false}, {"episode": 81, "title": "The × Fight × Begins", "chapters": ["191", "192"], "filler": false}, {"episode": 82, "title": "Kite × And × Slots", "chapters": ["192", "193", "194"], "filler": false}, {"episode": 83, "title": "Inspiration × To × Evolve", "chapters": ["194", "195", "196", "288"], "filler": false}, {"episode": 84, "title": "A × Fated × Awakening", "chapters": ["197", "198"], "filler": false}, {"episode": 85, "title": "Light × And × Darkness", "chapters": ["198", "199"], "filler": false}, {"episode": 86, "title": "Promise × And × Reunion", "chapters": ["200", "201", "202"], "filler": false}, {"episode": 87, "title": "Duel × And × Escape", "chapters": ["197", "202", "203", "204"], "filler": false}, {"episode": 88, "title": "Rock-Paper-Scissors × And × Weakness", "chapters": ["205", "206", "207"], "filler": false}, {"episode": 89, "title": "Compassion × And × Strength", "chapters": ["207", "208", "209", "210"], "filler": false}, {"episode": 90, "title": "Slow × And × Cursed", "chapters": ["210", "211", "212"], "filler": false}, {"episode": 91, "title": "The Strong × And × The Weak", "chapters": ["213", "214"], "filler": false}, {"episode": 92, "title": "One Wish × And × Two Promises", "chapters": ["215", "216"], "filler": false}, {"episode": 93, "title": "Date × With × Palm", "chapters": ["216", "217", "218", "219"], "filler": false}, {"episode": 94, "title": "Friend × And × Journey", "chapters": ["218", "219", "220"], "filler": false}, {"episode": 95, "title": "Grudge × And × Dread", "chapters": ["221", "222", "223"], "filler": false}, {"episode": 96, "title": "A × Lawless × Home", "chapters": ["224", "225", "226", "227"], "filler": false}, {"episode": 97, "title": "Carnage × And × Devastation", "chapters": ["225", "226", "227", "228", "229"], "filler": false}, {"episode": 98, "title": "Infiltration × And × Selection", "chapters": ["230", "231"], "filler": false}, {"episode": 99, "title": "Combination × And × Evolution", "chapters": ["232", "233", "234"], "filler": false}, {"episode": 100, "title": "Tracking × And × Pursuit", "chapters": ["235", "236", "237", "238", "241"], "filler": false}, {"episode": 101, "title": "Ikalgo × And × Lightning", "chapters": ["238", "239", "240", "241", "242"], "filler": false}, {"episode": 102, "title": "Power × And × Games", "chapters": ["242", "243", "244"], "filler": false}, {"episode": 103, "title": "Check × And × Mate", "chapters": ["244", "245"], "filler": false}, {"episode": 104, "title": "Doubt × And × Hesitation", "chapters": ["246", "247", "248"], "filler": false}, {"episode": 105, "title": "Resolve × And × Awakening", "chapters": ["248", "249", "250"], "filler": false}, {"episode": 106, "title": "Knov × And × Morel", "chapters": ["251", "252", "253"], "filler": false}, {"episode": 107, "title": "Return × And × Retire", "chapters": ["253", "254", "255"], "filler": false}, {"episode": 108, "title": "Gungi × Of × Komugi", "chapters": ["255", "256", "257", "258"], "filler": false}, {"episode": 109, "title": "Taking Stock × And × Taking Action", "chapters": ["258", "259", "260"], "filler": false}, {"episode": 110, "title": "Confusion × And × Expectation", "chapters": ["261", "262"], "filler": false}, {"episode": 111, "title": "Charge × And × Invade", "chapters": ["262", "263", "264", "265"], "filler": false}, {"episode": 112, "title": "Monster × And × Monster", "chapters": ["264", "265", "266", "267", "268"], "filler": false}, {"episode": 113, "title": "An × Indebted × Insect", "chapters": ["268", "269", "270", "271"], "filler": false}, {"episode": 114, "title": "Divide × And × Conquer", "chapters": ["271", "272", "273"], "filler": false}, {"episode": 115, "title": "Duty × And × Question", "chapters": ["273", "276", "279"], "filler": false}, {"episode": 116, "title": "Revenge × And × Recovery", "chapters": ["273", "274", "275"], "filler": false}, {"episode": 117, "title": "Insult × And × Payback", "chapters": ["276", "277", "278"], "filler": false}, {"episode": 118, "title": "A × False × Rage", "chapters": ["279", "280", "281"], "filler": false}, {"episode": 119, "title": "Strong × Or × Weak", "chapters": ["281", "282", "283"], "filler": false}, {"episode": 120, "title": "Fake × And × Real", "chapters": ["281", "283", "284", "285", "286"], "filler": false}, {"episode": 121, "title": "Defeat × And × Dignity", "chapters": ["286", "287", "288", "289", "290"], "filler": false}, {"episode": 122, "title": "Pose × And × Name", "chapters": ["287", "288", "290"], "filler": false}, {"episode": 123, "title": "Centipede × And × Memory", "chapters": ["295", "296"], "filler": false}, {"episode": 124, "title": "Breakdown × And × Awakening", "chapters": ["293", "294"], "filler": false}, {"episode": 125, "title": "Great Power × And × Ultimate Power", "chapters": ["290", "291", "293", "294", "295"], "filler": false}, {"episode": 126, "title": "Zero × And × Rose", "chapters": ["292", "296", "297", "298"], "filler": false}, {"episode": 127, "title": "Hostility × And × Determination", "chapters": ["298", "299", "300"], "filler": false}, {"episode": 128, "title": "Unparalleled Joy × And × Unconditional Love", "chapters": ["299", "301"], "filler": false}, {"episode": 129, "title": "Formidable Enemy × And × Clear Objective", "chapters": ["302", "303"], "filler": false}, {"episode": 130, "title": "Magic × To × Destroy", "chapters": ["304", "305"], "filler": false}, {"episode": 131, "title": "Anger × And × Light", "chapters": ["305", "306", "307"], "filler": false}, {"episode": 132, "title": "Flash × And × Start", "chapters": ["308", "309"], "filler": false}, {"episode": 133, "title": "Deadline × To × Live", "chapters": ["309", "310", "311"], "filler": false}, {"episode": 134, "title": "The Word × Is × You", "chapters": ["311", "312", "313"], "filler": false}, {"episode": 135, "title": "This Day × And × This Moment", "chapters": ["314", "315", "316", "317", "318"], "filler": false}, {"episode": 136, "title": "Homecoming × And × Real Name", "chapters": ["315", "316", "318"], "filler": false}, {"episode": 137, "title": "Debate × Among × Zodiacs", "chapters": ["319", "320"], "filler": false}, {"episode": 138, "title": "Request × And × Wish", "chapters": ["321", "322"], "filler": false}, {"episode": 139, "title": "Alluka × And × Something", "chapters": ["323", "324"], "filler": false}, {"episode": 140, "title": "Join Battle × And × Open Battle", "chapters": ["324", "325", "339"], "filler": false}, {"episode": 141, "title": "Magician × And × Butler", "chapters": ["325", "326", "327"], "filler": false}, {"episode": 142, "title": "Needle × And × Debt", "chapters": ["327", "328", "329"], "filler": false}, {"episode": 143, "title": "Sin × And × Claw", "chapters": ["329", "330"], "filler": false}, {"episode": 144, "title": "Approval × And × Coalition", "chapters": ["331", "332", "333"], "filler": false}, {"episode": 145, "title": "Defeat × And × Reunion", "chapters": ["332", "333", "334"], "filler": false}, {"episode": 146, "title": "Chairman × And × Release", "chapters": ["335", "336"], "filler": false}, {"episode": 147, "title": "Salvation × And × Future", "chapters": ["337", "338"], "filler": false}, {"episode": 148, "title": "Past × And × Future", "chapters": ["338", "339"], "filler": false}],
     VOLUMES: [{"volume": 1, "title": "", "start": 1, "end": 8, "extras": null}, {"volume": 2, "title": "", "start": 9, "end": 17, "extras": null}, {"volume": 3, "title": "", "start": 18, "end": 26, "extras": null}, {"volume": 4, "title": "", "start": 27, "end": 35, "extras": null}, {"volume": 5, "title": "", "start": 36, "end": 44, "extras": null}, {"volume": 6, "title": "", "start": 45, "end": 54, "extras": null}, {"volume": 7, "title": "", "start": 55, "end": 63, "extras": null}, {"volume": 8, "title": "", "start": 64, "end": 73, "extras": null}, {"volume": 9, "title": "", "start": 74, "end": 83, "extras": null}, {"volume": 10, "title": "", "start": 84, "end": 93, "extras": null}, {"volume": 11, "title": "", "start": 94, "end": 103, "extras": null}, {"volume": 12, "title": "", "start": 104, "end": 115, "extras": null}, {"volume": 13, "title": "", "start": 116, "end": 127, "extras": null}, {"volume": 14, "title": "", "start": 128, "end": 139, "extras": null}, {"volume": 15, "title": "", "start": 140, "end": 151, "extras": null}, {"volume": 16, "title": "", "start": 152, "end": 163, "extras": null}, {"volume": 17, "title": "", "start": 164, "end": 175, "extras": null}, {"volume": 18, "title": "", "start": 176, "end": 187, "extras": null}, {"volume": 19, "title": "", "start": 188, "end": 199, "extras": null}, {"volume": 20, "title": "", "start": 200, "end": 211, "extras": null}, {"volume": 21, "title": "", "start": 212, "end": 223, "extras": null}, {"volume": 22, "title": "", "start": 224, "end": 235, "extras": null}, {"volume": 23, "title": "", "start": 236, "end": 247, "extras": null}, {"volume": 24, "title": "", "start": 248, "end": 260, "extras": null}, {"volume": 25, "title": "", "start": 261, "end": 270, "extras": null}, {"volume": 26, "title": "", "start": 271, "end": 280, "extras": null}, {"volume": 27, "title": "", "start": 281, "end": 290, "extras": null}, {"volume": 28, "title": "", "start": 291, "end": 300, "extras": null}, {"volume": 29, "title": "", "start": 301, "end": 310, "extras": null}, {"volume": 30, "title": "", "start": 311, "end": 320, "extras": null}, {"volume": 31, "title": "", "start": 321, "end": 330, "extras": null}, {"volume": 32, "title": "", "start": 331, "end": 340, "extras": null}, {"volume": 33, "title": "", "start": 341, "end": 350, "extras": null}, {"volume": 34, "title": "", "start": 351, "end": 360, "extras": null}, {"volume": 35, "title": "", "start": 361, "end": 370, "extras": null}, {"volume": 36, "title": "", "start": 371, "end": 380, "extras": null}, {"volume": 37, "title": "", "start": 381, "end": 390, "extras": null}, {"volume": 38, "title": "", "start": 391, "end": 400, "extras": null}],
     DEFAULT_COVERS: {"1": "https://dw9to29mmj727.cloudfront.net/products/1591167531.jpg", "2": "https://dw9to29mmj727.cloudfront.net/products/159116785X.jpg", "3": "https://dw9to29mmj727.cloudfront.net/products/159116849X.jpg", "4": "https://dw9to29mmj727.cloudfront.net/products/1591169925.jpg", "5": "https://dw9to29mmj727.cloudfront.net/products/1421501848.jpg", "6": "https://dw9to29mmj727.cloudfront.net/products/1421501856.jpg", "7": "https://dw9to29mmj727.cloudfront.net/products/1421503328.jpg", "8": "https://dw9to29mmj727.cloudfront.net/products/1421506432.jpg", "9": "https://dw9to29mmj727.cloudfront.net/products/1421506440.jpg", "10": "https://dw9to29mmj727.cloudfront.net/products/1421506459.jpg", "11": "https://dw9to29mmj727.cloudfront.net/products/1421506467.jpg", "12": "https://dw9to29mmj727.cloudfront.net/products/1421506475.jpg", "13": "https://dw9to29mmj727.cloudfront.net/products/1421510693.jpg", "14": "https://dw9to29mmj727.cloudfront.net/products/1421510707.jpg", "15": "https://dw9to29mmj727.cloudfront.net/products/1421510715.jpg", "16": "https://dw9to29mmj727.cloudfront.net/products/1421510723.jpg", "17": "https://dw9to29mmj727.cloudfront.net/products/1421510731.jpg", "18": "https://dw9to29mmj727.cloudfront.net/products/1421514710.jpg", "19": "https://dw9to29mmj727.cloudfront.net/products/1421517868.jpg", "20": "https://dw9to29mmj727.cloudfront.net/products/1421517876.jpg", "21": "https://dw9to29mmj727.cloudfront.net/products/1421517884.jpg", "22": "https://dw9to29mmj727.cloudfront.net/products/1421517892.jpg", "23": "https://dw9to29mmj727.cloudfront.net/products/1421517906.jpg", "24": "https://dw9to29mmj727.cloudfront.net/products/1421522160.jpg", "25": "https://dw9to29mmj727.cloudfront.net/products/1421525887.jpg", "26": "https://dw9to29mmj727.cloudfront.net/products/1421530686.jpg", "27": "https://dw9to29mmj727.cloudfront.net/products/1421538628.jpg", "28": "https://dw9to29mmj727.cloudfront.net/products/1421542609.jpg", "29": "https://dw9to29mmj727.cloudfront.net/products/1421542617.jpg", "30": "https://dw9to29mmj727.cloudfront.net/products/1421552671.jpg", "31": "https://dw9to29mmj727.cloudfront.net/products/1421558874.jpg", "32": "https://dw9to29mmj727.cloudfront.net/products/1421559129.jpg", "33": "https://dw9to29mmj727.cloudfront.net/products/1421592649.jpg", "34": "https://dw9to29mmj727.cloudfront.net/products/1421599481.jpg", "35": "https://dw9to29mmj727.cloudfront.net/products/1974703061.jpg", "36": "https://dw9to29mmj727.cloudfront.net/products/1974708411.jpg", "37": "https://dw9to29mmj727.cloudfront.net/products/197471540X.jpg", "38": "https://dw9to29mmj727.cloudfront.net/products/1974758591.jpg"},
@@ -1739,6 +1745,112 @@ const SERIES = {
       { arc:'13th Hunter Chairman Election', subArc:null, start:319, end:339 },
       { arc:'Post-anime manga', subArc:null, start:340, end:420 }
     ]
+  },
+  dandadan: {
+    id: 'dandadan',
+    name: 'Dandadan',
+    pageTitle: 'Dandadan Manga to Anime Converter | Anime2Manga',
+    lede: "Match Dandadan anime episodes with manga chapters and volumes across Seasons 1 and 2.",
+    seoCopy: "Match all 24 Dandadan anime episodes with manga chapters and volumes. Season 2 ends at chapter 71; continue reading from chapter 72.",
+    footer: [
+      "Dandadan Seasons 1 and 2 contain 24 episodes and adapt manga chapters 1–71. Continue from chapter 72 after episode 24.",
+      "All 24 episodes are manga canon. Some chapters overlap between adjacent episodes because an episode may adapt only part of a chapter.",
+      "Episode–chapter mapping was cross-checked against Anime Filler Guide and the r/Dandadan episode discussion records. Manga chapter tracking is current through chapter 245."
+    ],
+    beyondDataHint: 'The anime currently ends at chapter 71. Continue reading from chapter 72.',
+    animeVolumeThreshold: 8,
+    adaptedTagText: 'Adapted in the anime',
+    notAdaptedTagText: 'Not yet animated',
+    publisherLabel: 'VIZ',
+    episodePlaceholder: '1–24',
+    volumePlaceholder: '1–25',
+    chapterPlaceholder: '1–245',
+    uncollectedStart: 220,
+    uncollectedEnd: 245,
+    uncollectedMessage: 'This chapter has not yet been assigned to one of the 25 collected Japanese volumes in this dataset.',
+    EPISODES: [
+      {episode:1,title:"That's How Love Starts, Ya Know!",chapters:["1"],filler:false},
+      {episode:2,title:"That's a Space Alien, Ain't It?!",chapters:["2"],filler:false},
+      {episode:3,title:"It's a Granny vs. Granny Clash!",chapters:["3","4"],filler:false},
+      {episode:4,title:"Kicking Turbo Granny's Ass",chapters:["5","6","7","8"],filler:false},
+      {episode:5,title:"Like, Where Are Your Balls?!",chapters:["8","9","10","11"],filler:false},
+      {episode:6,title:"A Dangerous Woman Arrives",chapters:["12","13","14","15"],filler:false},
+      {episode:7,title:"To a Kinder World",chapters:["15","16","17"],filler:false},
+      {episode:8,title:"I've Got This Funny Feeling",chapters:["18","19","20"],filler:false},
+      {episode:9,title:"Merge! Serpo Dover Demon Nessie!",chapters:["21","22","23","24","25"],filler:false},
+      {episode:10,title:"Have You Ever Seen a Cattle Mutilation?",chapters:["25","26","27"],filler:false},
+      {episode:11,title:"First Love",chapters:["28","29","30"],filler:false},
+      {episode:12,title:"Let's Go to the Cursed House",chapters:["31","32","33","34"],filler:false},
+      {episode:13,title:"Like, This Is the Legend of the Giant Snake",chapters:["34","35","36","37"],filler:false},
+      {episode:14,title:"The Evil Eye",chapters:["38","39","40","41"],filler:false},
+      {episode:15,title:"You Won't Get Away with This!",chapters:["42","43","44","45"],filler:false},
+      {episode:16,title:"That's, Like, Way Deadly",chapters:["45","46","47","48"],filler:false},
+      {episode:17,title:"We Can All Stay There Together!",chapters:["49","50","51"],filler:false},
+      {episode:18,title:"We Became a Family",chapters:["52","53","54"],filler:false},
+      {episode:19,title:"Feeling Kinda Gloomy",chapters:["54","55","56","57"],filler:false},
+      {episode:20,title:"You Can Do It, Okarun!",chapters:["57","58","59","60"],filler:false},
+      {episode:21,title:"I Want to Rebuild the House",chapters:["61","62","63"],filler:false},
+      {episode:22,title:"The Secret Art of Being Attractive",chapters:["64","65","66"],filler:false},
+      {episode:23,title:"Hey, It's a Kaiju",chapters:["66","67","68"],filler:false},
+      {episode:24,title:"Clash! Space Kaiju vs. Giant Robot!",chapters:["69","70","71"],filler:false}
+    ],
+    VOLUMES: [
+      {volume:1,title:"",start:1,end:5,extras:null},
+      {volume:2,title:"",start:6,end:14,extras:null},
+      {volume:3,title:"",start:15,end:23,extras:null},
+      {volume:4,title:"",start:24,end:32,extras:null},
+      {volume:5,title:"",start:33,end:41,extras:null},
+      {volume:6,title:"",start:42,end:50,extras:null},
+      {volume:7,title:"",start:51,end:58,extras:null},
+      {volume:8,title:"",start:59,end:67,extras:null},
+      {volume:9,title:"",start:68,end:76,extras:null},
+      {volume:10,title:"",start:77,end:85,extras:null},
+      {volume:11,title:"",start:86,end:93,extras:null},
+      {volume:12,title:"",start:94,end:102,extras:null},
+      {volume:13,title:"",start:103,end:111,extras:null},
+      {volume:14,title:"",start:112,end:120,extras:null},
+      {volume:15,title:"",start:121,end:129,extras:null},
+      {volume:16,title:"",start:130,end:138,extras:null},
+      {volume:17,title:"",start:139,end:147,extras:null},
+      {volume:18,title:"",start:148,end:156,extras:null},
+      {volume:19,title:"",start:157,end:165,extras:null},
+      {volume:20,title:"",start:166,end:174,extras:null},
+      {volume:21,title:"",start:175,end:183,extras:null},
+      {volume:22,title:"",start:184,end:192,extras:null},
+      {volume:23,title:"",start:193,end:201,extras:null},
+      {volume:24,title:"",start:202,end:210,extras:null},
+      {volume:25,title:"",start:211,end:219,extras:null}
+    ],
+    DEFAULT_COVERS: {
+      "1":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088825991/500/9784088825991.jpg",
+      "2":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088828046/500/9784088828046.jpg",
+      "3":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088828541/500/9784088828541.jpg",
+      "4":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088830469/500/9784088830469.jpg",
+      "5":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088831039/500/9784088831039.jpg",
+      "6":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088832081/500/9784088832081.jpg",
+      "7":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088832708/500/9784088832708.jpg",
+      "8":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088833705/500/9784088833705.jpg",
+      "9":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088834146/500/9784088834146.jpg",
+      "10":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088835037/500/9784088835037.jpg",
+      "11":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088835990/500/9784088835990.jpg",
+      "12":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088837260/500/9784088837260.jpg",
+      "13":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088838410/500/9784088838410.jpg",
+      "14":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088838977/500/9784088838977.jpg",
+      "15":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088840543/500/9784088840543.jpg",
+      "16":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088842271/500/9784088842271.jpg",
+      "17":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088842592/500/9784088842592.jpg",
+      "18":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088843407/500/9784088843407.jpg",
+      "19":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088844701/500/9784088844701.jpg",
+      "20":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088845920/500/9784088845920.jpg",
+      "21":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088847207/500/9784088847207.jpg",
+      "22":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088848242/500/9784088848242.jpg",
+      "23":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088850122/500/9784088850122.jpg",
+      "24":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088851259/500/9784088851259.jpg",
+      "25":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088851884/500/9784088851884.jpg"
+    },
+    VIZ_LINKS: Object.fromEntries(Array.from({length:25},(_,i)=>[String(i+1),'https://www.viz.com/dandadan'])),
+    AMAZON_LINKS: {},
+    ARC_RANGES: []
   },
   aot: {
     id: 'aot',
@@ -1901,8 +2013,8 @@ function findClosestEpisodeForChapter(targetNum) {
 function renderVolumeCard(vol, chapterNum) {
   if (!vol) {
     const v0 = VOLUMES[0], vN = VOLUMES[VOLUMES.length - 1];
-    if (currentSeries.id === 'hxh' && chapterNum >= 401 && chapterNum <= 420) {
-      volumeCard.innerHTML = `<span class="tag special">Not collected yet</span><p class="card-title">Chapter ${chapterNum}</p><p class="card-detail">This chapter is newer than Volume 38 and is not assigned to a collected English volume in this dataset yet.</p>`;
+    if (currentSeries.uncollectedStart && chapterNum >= currentSeries.uncollectedStart && chapterNum <= currentSeries.uncollectedEnd) {
+      volumeCard.innerHTML = `<span class="tag special">Not collected yet</span><p class="card-title">Chapter ${chapterNum}</p><p class="card-detail">${escapeHtml(currentSeries.uncollectedMessage)}</p>`;
       return;
     }
     volumeCard.innerHTML = `<p class="empty">No volume covers that chapter (valid range: chapters ${v0.start}–${vN.end}, volume ${v0.volume}–${vN.volume}).</p>`;
@@ -1926,8 +2038,8 @@ function renderVolumeCard(vol, chapterNum) {
     ? `<p class="card-detail">Arc: <strong>${escapeHtml(arcInfo.arc)}</strong>${arcInfo.subArc ? ' — ' + escapeHtml(arcInfo.subArc) : ''}</p>`
     : '';
 
-  const originalSeriesTag = vol.volume <= currentSeries.animeVolumeThreshold
-    ? '<span class="tag jade" style="background:var(--jade-soft);color:var(--jade)">Adapted by original anime</span>'
+  const originalSeriesTag = chapterNum <= MAX_ADAPTED_CHAPTER
+    ? `<span class="tag jade" style="background:var(--jade-soft);color:var(--jade)">${escapeHtml(currentSeries.adaptedTagText || 'Adapted in the anime')}</span>`
     : `<span class="tag special">${escapeHtml(currentSeries.notAdaptedTagText)}</span>`;
 
   const vizUrl = VIZ_LINKS[vol.volume];
