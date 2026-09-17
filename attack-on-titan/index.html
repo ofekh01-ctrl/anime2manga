@@ -1062,6 +1062,148 @@
     line-height: 1.65;
   }
   .seo-copy p { margin: 0; }
+
+  /* Home series browser */
+  .series-search-wrap{margin:20px 0 18px;max-width:760px}
+  .series-search-row{display:flex;gap:10px}
+  .series-search-input{
+    flex:1;min-width:0;height:46px;padding:0 15px;border:1px solid var(--border);
+    border-radius:10px;background:#101114;color:var(--text);font:inherit;outline:none;
+    transition:border-color .18s ease,box-shadow .18s ease
+  }
+  .series-search-input:focus{border-color:rgba(195,31,43,.78);box-shadow:0 0 0 3px rgba(195,31,43,.10)}
+  .series-search-btn{
+    height:46px;padding:0 20px;border:1px solid rgba(195,31,43,.58);border-radius:10px;
+    background:rgba(195,31,43,.13);color:var(--text);font:700 13px/1 inherit;cursor:pointer
+  }
+  .series-search-btn:hover{background:rgba(195,31,43,.22)}
+  .series-search-meta{margin-top:8px;color:var(--text-dim);font-size:12px}
+  .series-pagination{display:flex;align-items:center;justify-content:center;gap:12px;margin:22px 0 4px}
+  .page-btn{
+    width:38px;height:38px;border:1px solid var(--border);border-radius:9px;background:var(--surface);
+    color:var(--text);font-size:22px;cursor:pointer
+  }
+  .page-btn:hover:not(:disabled){border-color:rgba(195,31,43,.65);background:rgba(195,31,43,.08)}
+  .page-btn:disabled{opacity:.3;cursor:default}
+  .page-label{min-width:86px;text-align:center;color:var(--text-dim);font-size:12px}
+  .series-card[data-series-hidden="true"]{display:none!important}
+  .side-browse-label{margin-top:14px}
+  @media(max-width:620px){
+    .series-search-row{flex-direction:column}
+    .series-search-btn{width:100%}
+  }
+
+
+/* === FINAL HOME CARD REDESIGN === */
+.home-view{
+  position:relative;
+  overflow:hidden;
+}
+.home-view::before{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  width:min(61vw,980px);
+  height:430px;
+  background:
+    linear-gradient(90deg,rgba(11,12,14,1) 0%,rgba(11,12,14,.48) 34%,rgba(11,12,14,.05) 70%),
+    linear-gradient(180deg,rgba(11,12,14,.04) 65%,rgba(11,12,14,1) 100%),
+    url("/assets/luffy-hero.jpg") center right/cover no-repeat;
+  opacity:.86;
+  pointer-events:none;
+  z-index:0;
+}
+.home-inner{position:relative;z-index:1}
+.home-copy,.home-tagline,.home-title{position:relative;z-index:2}
+.series-search-wrap{position:relative;z-index:2;max-width:900px}
+.home-view .series-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:14px !important;
+}
+.home-view .series-card.home-poster-card{
+  position:relative;
+  padding:0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:1.72/1;
+  border-radius:12px !important;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.14);
+  background:#0a0b0d !important;
+  box-shadow:0 10px 30px rgba(0,0,0,.24);
+  text-align:left !important;
+}
+.home-view .series-card.home-poster-card:hover{
+  transform:translateY(-3px) !important;
+  border-color:rgba(214,35,49,.72) !important;
+  box-shadow:0 16px 34px rgba(0,0,0,.34);
+}
+.home-poster-img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .24s ease,filter .24s ease;
+}
+.home-poster-card:hover .home-poster-img{
+  transform:scale(1.045);
+  filter:saturate(1.08) brightness(1.03);
+}
+.home-poster-overlay{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,rgba(0,0,0,.02) 34%,rgba(0,0,0,.28) 61%,rgba(0,0,0,.90) 100%),
+    linear-gradient(90deg,rgba(0,0,0,.16),transparent 55%);
+  pointer-events:none;
+}
+.home-poster-copy{
+  position:absolute;
+  left:16px;
+  right:16px;
+  bottom:13px;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:5px;
+}
+.home-view .home-poster-copy .series-card-name{
+  font-size:17px !important;
+  line-height:1.15;
+  color:#fff;
+  text-shadow:0 2px 10px rgba(0,0,0,.75);
+}
+.home-view .home-poster-copy .series-card-meta{
+  font-size:11.5px !important;
+  margin:0 !important;
+  color:#d8d4cf;
+}
+.home-view .home-poster-copy .coming-badge{
+  margin:1px 0 0 !important;
+  padding:5px 9px !important;
+  border:1px solid rgba(255,255,255,.16) !important;
+  border-radius:999px !important;
+  background:rgba(25,26,30,.82) !important;
+  color:#eee !important;
+  letter-spacing:.10em;
+  font-size:10px !important;
+}
+.home-view .coming-card{
+  opacity:1 !important;
+  border-style:solid !important;
+}
+@media(max-width:850px){
+  .home-view::before{width:88vw;height:360px;opacity:.52}
+  .home-view .series-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+}
+@media(max-width:560px){
+  .home-view::before{width:100vw;height:280px;opacity:.35}
+  .home-view .series-grid{grid-template-columns:1fr !important}
+}
+
 </style>
 </head>
 <body>
@@ -1070,14 +1212,19 @@
 <aside aria-label="Main navigation" class="side-nav">
 <a class="side-brand" href="#top" onclick="showHome(); return false;">ANIME<span style="color:var(--accent)">2</span>MANGA</a>
 <button class="side-link" id="homeNav" onclick="showHome()" type="button"><span class="side-icon">⌂</span><span>Home</span></button>
+
 <div class="side-section">SERIES</div>
 <button class="side-link series-nav" data-series="bleach" onclick="navSeries('bleach')" type="button"><span>Bleach</span></button>
 <button class="side-link series-nav" data-series="chainsawman" onclick="navSeries('chainsawman')" type="button"><span>Chainsaw Man</span></button>
 <button class="side-link series-nav" data-series="jjk" onclick="navSeries('jjk')" type="button"><span>Jujutsu Kaisen</span></button>
 <button class="side-link series-nav" data-series="hxh" onclick="navSeries('hxh')" type="button"><span>Hunter × Hunter</span></button>
-<button class="side-link series-nav coming-nav" disabled="" type="button"><span>One Piece</span><span class="side-soon">SOON</span></button>
-<button class="side-link series-nav coming-nav" disabled="" type="button"><span>Naruto</span><span class="side-soon">SOON</span></button><button class="side-link series-nav coming-nav" disabled="" type="button"><span>Demon Slayer</span><span class="side-soon">SOON</span></button><button class="side-link series-nav" data-series="deathnote" onclick="navSeries('deathnote')" type="button"><span>Death Note</span></button><button class="side-link series-nav" data-series="aot" onclick="navSeries('aot')" type="button"><span>Attack on Titan</span></button>
-<button class="side-link series-nav coming-nav" disabled="" type="button"><span>My Hero Academia</span><span class="side-soon">SOON</span></button><button class="side-link series-nav coming-nav" disabled="" type="button"><span>Vinland Saga</span><span class="side-soon">SOON</span></button><button class="side-link series-nav coming-nav" disabled="" type="button"><span>Black Clover</span><span class="side-soon">SOON</span></button><div class="side-bottom"><button class="side-link" onclick="showAbout()" type="button"><span class="side-icon">?</span><span>About</span></button></div>
+<button class="side-link series-nav" data-series="deathnote" onclick="navSeries('deathnote')" type="button"><span>Death Note</span></button>
+<button class="side-link series-nav" data-series="aot" onclick="navSeries('aot')" type="button"><span>Attack on Titan</span></button>
+<div class="side-section">COMING SOON</div>
+<button class="side-link coming-nav" disabled type="button"><span>Dandadan</span><span class="side-soon">SOON</span></button>
+<button class="side-link coming-nav" disabled type="button"><span>Dragon Ball</span><span class="side-soon">SOON</span></button>
+<button class="side-link coming-nav" disabled type="button"><span>Blue Lock</span><span class="side-soon">SOON</span></button>
+<div class="side-bottom"><button class="side-link" onclick="showAbout()" type="button"><span class="side-icon">?</span><span>About</span></button></div>
 </aside>
 <main class="home-view" id="homeView">
 <div class="home-inner">
@@ -1087,37 +1234,103 @@
 <p class="home-tagline">Pick up exactly where you left off.</p>
 <p class="home-copy">Anime2Manga is a free anime-to-manga and manga-to-anime reference tool. Enter an anime episode to find the manga chapters and volume it adapts, or enter a manga chapter or volume to find the matching anime episode.</p>
 <div class="home-rule"></div>
+
+<div class="series-search-wrap" id="seriesSearchWrap">
+  <div class="series-search-row">
+    <input id="seriesSearchInput" class="series-search-input" type="search" placeholder="Search a series..." autocomplete="off" aria-label="Search series"/>
+    <button class="series-search-btn" id="seriesSearchBtn" type="button" onclick="runSeriesSearch()">Search</button>
+  </div>
+  <div class="series-search-meta" id="seriesSearchMeta">15 series · 6 available · 9 coming soon</div>
+</div>
 <p class="home-section-title">CHOOSE A SERIES</p>
-<div class="series-grid">
-<button class="series-card" onclick="navSeries('bleach')" type="button">
-<span class="series-card-icon series-art"><img alt="Bleach icon" src="/assets/icons/bleach.webp"/></span><span class="series-card-name">Bleach</span><span class="series-card-meta">Volume · Chapter · Episode</span>
+<div class="series-grid" id="homeSeriesGrid">
+<button class="series-card home-poster-card" data-series-name="Bleach" onclick="navSeries('bleach')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/bleach.jpg" alt="Bleach"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Bleach</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
-<button class="series-card" onclick="navSeries('chainsawman')" type="button">
-<span class="series-card-icon series-art"><img alt="Chainsaw Man icon" src="/assets/icons/chainsaw-man.webp"/></span><span class="series-card-name">Chainsaw Man</span><span class="series-card-meta">Volume · Chapter · Episode</span>
+<button class="series-card home-poster-card" data-series-name="Chainsaw Man" onclick="navSeries('chainsawman')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/chainsaw-man.jpg" alt="Chainsaw Man"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Chainsaw Man</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
-<button class="series-card" onclick="navSeries('jjk')" type="button">
-<span class="series-card-icon series-art"><img alt="Jujutsu Kaisen icon" src="/assets/icons/jujutsu-kaisen.webp"/></span><span class="series-card-name">Jujutsu Kaisen</span><span class="series-card-meta">Volume · Chapter · Episode</span>
+<button class="series-card home-poster-card" data-series-name="Jujutsu Kaisen" onclick="navSeries('jjk')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/jujutsu-kaisen.jpg" alt="Jujutsu Kaisen"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Jujutsu Kaisen</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
-<button class="series-card hxh-card" onclick="navSeries('hxh')" type="button">
-<span class="series-card-icon series-art"><img alt="Hunter × Hunter icon" src="/assets/icons/hunter-x-hunter.png"/></span>
-<span class="series-card-name">Hunter × Hunter</span>
-<span class="series-card-meta">Volume · Chapter · Episode</span>
+<button class="series-card home-poster-card" data-series-name="Hunter × Hunter" onclick="navSeries('hxh')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/hunter-x-hunter.jpg" alt="Hunter × Hunter"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Hunter × Hunter</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
-<div aria-label="One Piece coming soon" class="series-card coming-card onepiece-card">
-<span class="coming-emblem coming-art"><img alt="One Piece icon" src="/assets/icons/one-piece.png"/></span>
-<span class="series-card-name">One Piece</span>
-<span class="coming-badge">COMING SOON</span>
+<button class="series-card home-poster-card" data-series-name="Death Note" onclick="navSeries('deathnote')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/death-note.jpg" alt="Death Note"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Death Note</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
+<button class="series-card home-poster-card" data-series-name="Attack on Titan" onclick="navSeries('aot')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/attack-on-titan.jpg" alt="Attack on Titan"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Attack on Titan</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
+<div class="series-card home-poster-card coming-card" data-series-name="Dandadan" aria-label="Dandadan coming soon">
+  <img class="home-poster-img" src="/assets/home-cards/dandadan.jpg" alt="Dandadan"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Dandadan</span><span class="coming-badge">COMING SOON</span></span>
 </div>
-<div aria-label="Naruto coming soon" class="series-card coming-card naruto-card">
-<span class="coming-emblem coming-art"><img alt="Naruto icon" src="/assets/icons/naruto.png"/></span>
-<span class="series-card-name">Naruto</span>
-<span class="coming-badge">COMING SOON</span>
+<div class="series-card home-poster-card coming-card" data-series-name="Dragon Ball" aria-label="Dragon Ball coming soon">
+  <img class="home-poster-img" src="/assets/home-cards/dragon-ball.jpg" alt="Dragon Ball"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Dragon Ball</span><span class="coming-badge">COMING SOON</span></span>
 </div>
-<div aria-label="Demon Slayer coming soon" class="series-card coming-card demon-card"><span class="coming-emblem coming-art"><img alt="Demon Slayer icon" src="/assets/icons/demon-slayer.png"/></span><span class="series-card-name">Demon Slayer</span><span class="coming-badge">COMING SOON</span></div><button class="series-card death-card" onclick="navSeries('deathnote')" type="button"><span class="series-card-icon series-art"><img alt="Death Note icon" src="/assets/icons/death-note.png"/></span><span class="series-card-name">Death Note</span><span class="series-card-meta">Volume · Chapter · Episode</span></button><button class="series-card aot-card" onclick="navSeries('aot')" type="button"><span class="series-card-icon series-art"><img alt="Attack on Titan icon" src="/assets/icons/attack-on-titan.png"/></span><span class="series-card-name">Attack on Titan</span><span class="series-card-meta">Volume · Chapter · Episode</span></button><div aria-label="My Hero Academia coming soon" class="series-card coming-card mha-card"><span class="coming-emblem coming-art"><img alt="My Hero Academia icon" src="/assets/icons/my-hero-academia.png"/></span><span class="series-card-name">My Hero Academia</span><span class="coming-badge">COMING SOON</span></div><div aria-label="Vinland Saga coming soon" class="series-card coming-card vinland-card"><span class="coming-emblem coming-art"><img alt="Vinland Saga icon" src="/assets/icons/vinland-saga.png"/></span><span class="series-card-name">Vinland Saga</span><span class="coming-badge">COMING SOON</span></div><div aria-label="Black Clover coming soon" class="series-card coming-card blackclover-card"><span class="coming-emblem coming-art"><img alt="Black Clover icon" src="/assets/icons/black-clover.png"/></span><span class="series-card-name">Black Clover</span><span class="coming-badge">COMING SOON</span></div></div>
+<div class="series-card home-poster-card coming-card" data-series-name="Blue Lock" aria-label="Blue Lock coming soon">
+  <img class="home-poster-img" src="/assets/home-cards/blue-lock.jpg" alt="Blue Lock"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Blue Lock</span><span class="coming-badge">COMING SOON</span></span>
+</div>
+<div class="series-card home-poster-card coming-card" data-series-name="One Piece" aria-label="One Piece coming soon">
+  <img class="home-poster-img" src="/assets/home-cards/one-piece.jpg" alt="One Piece"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">One Piece</span><span class="coming-badge">COMING SOON</span></span>
+</div>
+<div class="series-card home-poster-card coming-card" data-series-name="Naruto" aria-label="Naruto coming soon">
+  <img class="home-poster-img" src="/assets/home-cards/naruto.jpg" alt="Naruto"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Naruto</span><span class="coming-badge">COMING SOON</span></span>
+</div>
+<div class="series-card home-poster-card coming-card" data-series-name="Demon Slayer" aria-label="Demon Slayer coming soon">
+  <img class="home-poster-img" src="/assets/home-cards/demon-slayer.jpg" alt="Demon Slayer"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Demon Slayer</span><span class="coming-badge">COMING SOON</span></span>
+</div>
+<div class="series-card home-poster-card coming-card" data-series-name="My Hero Academia" aria-label="My Hero Academia coming soon">
+  <img class="home-poster-img" src="/assets/home-cards/my-hero-academia.jpg" alt="My Hero Academia"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">My Hero Academia</span><span class="coming-badge">COMING SOON</span></span>
+</div>
+<div class="series-card home-poster-card coming-card" data-series-name="Vinland Saga" aria-label="Vinland Saga coming soon">
+  <img class="home-poster-img" src="/assets/home-cards/vinland-saga.jpg" alt="Vinland Saga"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Vinland Saga</span><span class="coming-badge">COMING SOON</span></span>
+</div>
+<div class="series-card home-poster-card coming-card" data-series-name="Black Clover" aria-label="Black Clover coming soon">
+  <img class="home-poster-img" src="/assets/home-cards/black-clover.jpg" alt="Black Clover"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Black Clover</span><span class="coming-badge">COMING SOON</span></span>
+</div>
+</div>
+
+<div class="series-pagination" id="seriesPagination" aria-label="Series pages">
+  <button class="page-btn" id="prevSeriesPage" type="button" onclick="changeSeriesPage(-1)" aria-label="Previous series page">‹</button>
+  <span class="page-label" id="seriesPageLabel">Page 1 of 2</span>
+  <button class="page-btn" id="nextSeriesPage" type="button" onclick="changeSeriesPage(1)" aria-label="Next series page">›</button>
+</div>
+
 <section class="home-about" id="about">
 <p class="home-section-title">ABOUT</p>
 <h2>Switch between anime and manga without losing your place.</h2>
-<p>Use Anime2Manga to find where to continue reading after an anime episode, match manga chapters and volumes to their anime adaptation, and check filler or adaptation information where available. The tracker currently includes Bleach, Chainsaw Man, and Jujutsu Kaisen, with more series being added. No account required.</p>
+<p>Use Anime2Manga to find where to continue reading after an anime episode, match manga chapters and volumes to their anime adaptation, and check filler or adaptation information where available. The tracker currently includes Bleach, Chainsaw Man, Jujutsu Kaisen, Hunter × Hunter, Death Note, and Attack on Titan, with more series being added. No account required.</p>
 <div class="feedback-actions" aria-label="Feedback and requests">
 <a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'error',page_path:window.location.pathname})">Found an error?</a>
 <a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'series_request',page_path:window.location.pathname})">Request a series</a>
@@ -1273,6 +1486,106 @@ function restoreViewFromUrl() {
 }
 window.addEventListener('popstate', restoreViewFromUrl);
 document.addEventListener('DOMContentLoaded', restoreViewFromUrl);
+
+
+const HOME_SERIES_PER_PAGE = 9;
+let homeSeriesPage = 1;
+let homeSeriesSearch = '';
+
+function getHomeSeriesCards() {
+  return Array.from(document.querySelectorAll('#homeSeriesGrid .series-card'));
+}
+
+function ensureHomeSeriesNames() {
+  getHomeSeriesCards().forEach(card => {
+    if (!card.dataset.seriesName) {
+      const name = card.querySelector('.series-card-name')?.textContent?.trim() || '';
+      card.dataset.seriesName = name;
+    }
+  });
+}
+
+function renderHomeSeriesBrowser() {
+  ensureHomeSeriesNames();
+  const cards = getHomeSeriesCards();
+  const query = homeSeriesSearch.trim().toLowerCase();
+  const filtered = query
+    ? cards.filter(card => card.dataset.seriesName.toLowerCase().includes(query))
+    : cards;
+
+  const pagination = document.getElementById('seriesPagination');
+  const pageLabel = document.getElementById('seriesPageLabel');
+  const prev = document.getElementById('prevSeriesPage');
+  const next = document.getElementById('nextSeriesPage');
+  const meta = document.getElementById('seriesSearchMeta');
+
+  if (query) {
+    cards.forEach(card => {
+      card.dataset.seriesHidden = filtered.includes(card) ? 'false' : 'true';
+    });
+    pagination.style.display = 'none';
+    meta.textContent = filtered.length
+      ? `${filtered.length} result${filtered.length === 1 ? '' : 's'} for “${homeSeriesSearch.trim()}”`
+      : `No series found for “${homeSeriesSearch.trim()}”`;
+    return;
+  }
+
+  const totalPages = Math.max(1, Math.ceil(cards.length / HOME_SERIES_PER_PAGE));
+  homeSeriesPage = Math.min(Math.max(homeSeriesPage, 1), totalPages);
+  const start = (homeSeriesPage - 1) * HOME_SERIES_PER_PAGE;
+  const end = start + HOME_SERIES_PER_PAGE;
+
+  cards.forEach((card, index) => {
+    card.dataset.seriesHidden = index >= start && index < end ? 'false' : 'true';
+  });
+
+  pagination.style.display = 'flex';
+  pageLabel.textContent = `Page ${homeSeriesPage} of ${totalPages}`;
+  prev.disabled = homeSeriesPage <= 1;
+  next.disabled = homeSeriesPage >= totalPages;
+  meta.textContent = `${cards.length} series · 6 available · 9 coming soon`;
+}
+
+function changeSeriesPage(delta) {
+  homeSeriesSearch = '';
+  const input = document.getElementById('seriesSearchInput');
+  if (input) input.value = '';
+  homeSeriesPage += delta;
+  renderHomeSeriesBrowser();
+  document.querySelector('.home-section-title')?.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function runSeriesSearch() {
+  const input = document.getElementById('seriesSearchInput');
+  homeSeriesSearch = input ? input.value : '';
+  homeSeriesPage = 1;
+  renderHomeSeriesBrowser();
+}
+
+function focusSeriesSearch() {
+  showHome();
+  setTimeout(() => {
+    const input = document.getElementById('seriesSearchInput');
+    input?.scrollIntoView({behavior:'smooth', block:'center'});
+    input?.focus();
+  }, 80);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('seriesSearchInput');
+  input?.addEventListener('keydown', e => {
+    if (e.key === 'Enter') runSeriesSearch();
+  });
+  input?.addEventListener('input', () => {
+    if (!input.value.trim() && homeSeriesSearch) {
+      homeSeriesSearch = '';
+      homeSeriesPage = 1;
+      renderHomeSeriesBrowser();
+    }
+  });
+  renderHomeSeriesBrowser();
+});
+
 </script>
 <script>
 const SERIES = {
