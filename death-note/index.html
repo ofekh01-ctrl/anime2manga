@@ -1103,14 +1103,17 @@
   content:"";
   position:absolute;
   top:0;
+  left:0;
   right:0;
-  width:min(61vw,980px);
-  height:430px;
+  width:100%;
+  height:560px;
   background:
-    linear-gradient(90deg,rgba(11,12,14,1) 0%,rgba(11,12,14,.48) 34%,rgba(11,12,14,.05) 70%),
-    linear-gradient(180deg,rgba(11,12,14,.04) 65%,rgba(11,12,14,1) 100%),
-    url("/assets/home-hero.jpg") center right/cover no-repeat;
-  opacity:.86;
+    linear-gradient(90deg,rgba(11,12,14,.96) 0%,rgba(11,12,14,.78) 23%,rgba(11,12,14,.25) 56%,rgba(11,12,14,.12) 78%,rgba(11,12,14,.72) 100%),
+    linear-gradient(180deg,rgba(11,12,14,.08) 0%,rgba(11,12,14,.10) 52%,rgba(11,12,14,.78) 82%,rgba(11,12,14,1) 100%),
+    url("/assets/home-hero.jpg") center top/cover no-repeat;
+  opacity:.68;
+  -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 70%,transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 0%,#000 70%,transparent 100%);
   pointer-events:none;
   z-index:0;
 }
@@ -1197,11 +1200,11 @@
   border-style:solid !important;
 }
 @media(max-width:850px){
-  .home-view::before{width:88vw;height:360px;opacity:.52}
+  .home-view::before{width:100%;height:430px;opacity:.48}
   .home-view .series-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
 }
 @media(max-width:560px){
-  .home-view::before{width:100vw;height:280px;opacity:.35}
+  .home-view::before{width:100%;height:330px;opacity:.32}
   .home-view .series-grid{grid-template-columns:1fr !important}
 }
 
@@ -1230,7 +1233,6 @@
 <main class="home-view" id="homeView">
 <div class="home-inner">
 <img alt="Anime2Manga logo" class="home-logo" onclick="showHome()" src="/assets/logo.png" style="cursor:pointer"/>
-<p class="home-kicker">ANIME ↔ MANGA SYNC</p>
 <h1 class="home-title">ANIME<span class="two">2</span>MANGA</h1>
 <p class="home-tagline">Pick up exactly where you left off.</p>
 <p class="home-copy">Anime2Manga is a free anime-to-manga and manga-to-anime reference tool. Enter an anime episode to find the manga chapters and volume it adapts, or enter a manga chapter or volume to find the matching anime episode.</p>
@@ -1331,7 +1333,7 @@
 <section class="home-about" id="about">
 <p class="home-section-title">ABOUT</p>
 <h2>Switch between anime and manga without losing your place.</h2>
-<p>Use Anime2Manga to find where to continue reading after an anime episode, match manga chapters and volumes to their anime adaptation, and check filler or adaptation information where available. The tracker currently includes Bleach, Chainsaw Man, Jujutsu Kaisen, Hunter × Hunter, Death Note, and Attack on Titan, with more series being added. No account required.</p>
+<p>Use Anime2Manga to find where to continue reading after an anime episode, match manga chapters and volumes to their anime adaptation, and check filler or adaptation information where available. No account required.</p>
 <div class="feedback-actions" aria-label="Feedback and requests">
 <a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'error',page_path:window.location.pathname})">Found an error?</a>
 <a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'series_request',page_path:window.location.pathname})">Request a series</a>
