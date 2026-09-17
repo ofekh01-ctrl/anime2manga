@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://anime2manga.net/</loc>
-  </url>
-
-  <url>
-    <loc>https://anime2manga.net/bleach/</loc>
-  </url>
-
-  <url>
-    <loc>https://anime2manga.net/chainsaw-man/</loc>
-  </url>
-
-  <url>
-    <loc>https://anime2manga.net/jujutsu-kaisen/</loc>
-  </url>
+  <url><loc>https://anime2manga.net/</loc></url>
+  <url><loc>https://anime2manga.net/bleach/</loc></url>
+  <url><loc>https://anime2manga.net/chainsaw-man/</loc></url>
+  <url><loc>https://anime2manga.net/jujutsu-kaisen/</loc></url>
+  <url><loc>https://anime2manga.net/death-note/</loc></url>
 </urlset>
