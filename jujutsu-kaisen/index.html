@@ -1266,17 +1266,21 @@
 
 <div class="side-section">SERIES</div>
 <button class="side-link series-nav" data-series="bleach" onclick="navSeries('bleach')" type="button"><span>Bleach</span></button>
-<button class="side-link series-nav" data-series="chainsawman" onclick="navSeries('chainsawman')" type="button"><span>Chainsaw Man</span></button>
-<button class="side-link series-nav" data-series="jjk" onclick="navSeries('jjk')" type="button"><span>Jujutsu Kaisen</span></button>
-<button class="side-link series-nav" data-series="hxh" onclick="navSeries('hxh')" type="button"><span>Hunter × Hunter</span></button>
-<button class="side-link series-nav" data-series="dandadan" onclick="navSeries('dandadan')" type="button"><span>Dandadan</span></button>
-<button class="side-link series-nav" data-series="deathnote" onclick="navSeries('deathnote')" type="button"><span>Death Note</span></button>
-<button class="side-link series-nav" data-series="aot" onclick="navSeries('aot')" type="button"><span>Attack on Titan</span></button>
-<button class="side-link series-nav" data-series="bluelock" onclick="navSeries('bluelock')" type="button"><span>Blue Lock</span></button>
 <button class="side-link series-nav" data-series="onepiece" onclick="navSeries('onepiece')" type="button"><span>One Piece</span></button>
 <button class="side-link series-nav" data-series="naruto" onclick="navSeries('naruto')" type="button"><span>Naruto</span></button>
+<button class="side-link series-nav" onclick="window.location.href='/dragon-ball/'" type="button"><span>Dragon Ball</span></button>
+<button class="side-link series-nav" data-series="aot" onclick="navSeries('aot')" type="button"><span>Attack on Titan</span></button>
+<button class="side-link series-nav" data-series="jjk" onclick="navSeries('jjk')" type="button"><span>Jujutsu Kaisen</span></button>
+<button class="side-link series-nav" data-series="deathnote" onclick="navSeries('deathnote')" type="button"><span>Death Note</span></button>
+<button class="side-link series-nav" data-series="chainsawman" onclick="navSeries('chainsawman')" type="button"><span>Chainsaw Man</span></button>
+<button class="side-link series-nav" data-series="hxh" onclick="navSeries('hxh')" type="button"><span>Hunter × Hunter</span></button>
+<button class="side-link series-nav" data-series="bluelock" onclick="navSeries('bluelock')" type="button"><span>Blue Lock</span></button>
+<button class="side-link series-nav" data-series="dandadan" onclick="navSeries('dandadan')" type="button"><span>Dandadan</span></button>
 <div class="side-section">COMING SOON</div>
-<button class="side-link coming-nav" disabled type="button"><span>Dragon Ball</span><span class="side-soon">SOON</span></button>
+<button class="side-link coming-nav" disabled type="button"><span>Demon Slayer</span><span class="side-soon">SOON</span></button>
+<button class="side-link coming-nav" disabled type="button"><span>My Hero Academia</span><span class="side-soon">SOON</span></button>
+<button class="side-link coming-nav" disabled type="button"><span>Black Clover</span><span class="side-soon">SOON</span></button>
+<button class="side-link coming-nav" disabled type="button"><span>Vinland Saga</span><span class="side-soon">SOON</span></button>
 <div class="side-bottom"><button class="side-link" onclick="showAbout()" type="button"><span class="side-icon">?</span><span>About</span></button></div>
 </aside>
 <main class="home-view" id="homeView">
@@ -1292,7 +1296,7 @@
     <input id="seriesSearchInput" class="series-search-input" type="search" placeholder="Search a series..." autocomplete="off" aria-label="Search series"/>
     <button class="series-search-btn" id="seriesSearchBtn" type="button" onclick="runSeriesSearch()">Search</button>
   </div>
-  <div class="series-search-meta" id="seriesSearchMeta">15 series · 10 available · 5 coming soon</div>
+  <div class="series-search-meta" id="seriesSearchMeta">15 series · 11 available · 4 coming soon</div>
 </div>
 <p class="home-section-title">CHOOSE A SERIES</p>
 <div class="series-grid" id="homeSeriesGrid">
@@ -1300,46 +1304,6 @@
   <img class="home-poster-img" src="/assets/home-cards/bleach.jpg" alt="Bleach"/>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Bleach</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
-</button>
-<button class="series-card home-poster-card" data-series-name="Chainsaw Man" onclick="navSeries('chainsawman')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/chainsaw-man.jpg" alt="Chainsaw Man"/>
-  <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Chainsaw Man</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
-</button>
-<button class="series-card home-poster-card" data-series-name="Jujutsu Kaisen" onclick="navSeries('jjk')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/jujutsu-kaisen.jpg" alt="Jujutsu Kaisen"/>
-  <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Jujutsu Kaisen</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
-</button>
-<button class="series-card home-poster-card" data-series-name="Hunter × Hunter" onclick="navSeries('hxh')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/hunter-x-hunter.jpg" alt="Hunter × Hunter"/>
-  <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Hunter × Hunter</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
-</button>
-<button class="series-card home-poster-card" data-series-name="Death Note" onclick="navSeries('deathnote')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/death-note.jpg" alt="Death Note"/>
-  <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Death Note</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
-</button>
-<button class="series-card home-poster-card" data-series-name="Attack on Titan" onclick="navSeries('aot')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/attack-on-titan.jpg" alt="Attack on Titan"/>
-  <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Attack on Titan</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
-</button>
-<button class="series-card home-poster-card" data-series-name="Dandadan" onclick="navSeries('dandadan')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/dandadan.jpg" alt="Dandadan"/>
-  <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Dandadan</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
-</button>
-<div class="series-card home-poster-card coming-card" data-series-name="Dragon Ball" aria-label="Dragon Ball coming soon">
-  <img class="home-poster-img" src="/assets/home-cards/dragon-ball.jpg" alt="Dragon Ball"/>
-  <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Dragon Ball</span><span class="coming-badge">COMING SOON</span></span>
-</div>
-<button class="series-card home-poster-card" data-series-name="Blue Lock" onclick="navSeries('bluelock')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/blue-lock.jpg" alt="Blue Lock"/>
-  <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Blue Lock</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <button class="series-card home-poster-card" data-series-name="One Piece" onclick="navSeries('onepiece')" type="button">
   <img class="home-poster-img" src="/assets/home-cards/one-piece.jpg" alt="One Piece"/>
@@ -1349,28 +1313,68 @@
 <button class="series-card home-poster-card" data-series-name="Naruto" onclick="navSeries('naruto')" type="button">
   <img class="home-poster-img" src="/assets/home-cards/naruto.jpg" alt="Naruto"/>
   <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Naruto</span><span class="series-card-meta">Naruto · Shippuden</span></span>
+  <span class="home-poster-copy"><span class="series-card-name">Naruto</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
+<button class="series-card home-poster-card" data-series-name="Dragon Ball" onclick="window.location.href='/dragon-ball/'" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/dragon-ball.jpg" alt="Dragon Ball"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Dragon Ball</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
+<button class="series-card home-poster-card" data-series-name="Attack on Titan" onclick="navSeries('aot')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/attack-on-titan.jpg" alt="Attack on Titan"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Attack on Titan</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
+<button class="series-card home-poster-card" data-series-name="Jujutsu Kaisen" onclick="navSeries('jjk')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/jujutsu-kaisen.jpg" alt="Jujutsu Kaisen"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Jujutsu Kaisen</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <div class="series-card home-poster-card coming-card" data-series-name="Demon Slayer" aria-label="Demon Slayer coming soon">
   <img class="home-poster-img" src="/assets/home-cards/demon-slayer.jpg" alt="Demon Slayer"/>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Demon Slayer</span><span class="coming-badge">COMING SOON</span></span>
 </div>
+<button class="series-card home-poster-card" data-series-name="Death Note" onclick="navSeries('deathnote')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/death-note.jpg" alt="Death Note"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Death Note</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
 <div class="series-card home-poster-card coming-card" data-series-name="My Hero Academia" aria-label="My Hero Academia coming soon">
   <img class="home-poster-img" src="/assets/home-cards/my-hero-academia.jpg" alt="My Hero Academia"/>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">My Hero Academia</span><span class="coming-badge">COMING SOON</span></span>
+</div>
+<button class="series-card home-poster-card" data-series-name="Chainsaw Man" onclick="navSeries('chainsawman')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/chainsaw-man.jpg" alt="Chainsaw Man"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Chainsaw Man</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
+<button class="series-card home-poster-card" data-series-name="Hunter × Hunter" onclick="navSeries('hxh')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/hunter-x-hunter.jpg" alt="Hunter × Hunter"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Hunter × Hunter</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
+<button class="series-card home-poster-card" data-series-name="Blue Lock" onclick="navSeries('bluelock')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/blue-lock.jpg" alt="Blue Lock"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Blue Lock</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
+<div class="series-card home-poster-card coming-card" data-series-name="Black Clover" aria-label="Black Clover coming soon">
+  <img class="home-poster-img" src="/assets/home-cards/black-clover.jpg" alt="Black Clover"/>
+  <span class="home-poster-overlay"></span>
+  <span class="home-poster-copy"><span class="series-card-name">Black Clover</span><span class="coming-badge">COMING SOON</span></span>
 </div>
 <div class="series-card home-poster-card coming-card" data-series-name="Vinland Saga" aria-label="Vinland Saga coming soon">
   <img class="home-poster-img" src="/assets/home-cards/vinland-saga.jpg" alt="Vinland Saga"/>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Vinland Saga</span><span class="coming-badge">COMING SOON</span></span>
 </div>
-<div class="series-card home-poster-card coming-card" data-series-name="Black Clover" aria-label="Black Clover coming soon">
-  <img class="home-poster-img" src="/assets/home-cards/black-clover.jpg" alt="Black Clover"/>
+<button class="series-card home-poster-card" data-series-name="Dandadan" onclick="navSeries('dandadan')" type="button">
+  <img class="home-poster-img" src="/assets/home-cards/dandadan.jpg" alt="Dandadan"/>
   <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Black Clover</span><span class="coming-badge">COMING SOON</span></span>
-</div>
+  <span class="home-poster-copy"><span class="series-card-name">Dandadan</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
 </div>
 
 <div class="series-pagination" id="seriesPagination" aria-label="Series pages">
@@ -1398,15 +1402,16 @@
 <p class="lede" id="lede">Enter where you are in any one of the three, and the others update to match — plus whether you're headed into anime filler.</p>
 <div class="series-tabs">
 <button class="series-tab" data-series="bleach" onclick="navSeries('bleach')" type="button">Bleach</button>
-<button class="series-tab" data-series="chainsawman" onclick="navSeries('chainsawman')" type="button">Chainsaw Man</button>
-<button class="series-tab" data-series="jjk" onclick="navSeries('jjk')" type="button">Jujutsu Kaisen</button>
-<button class="series-tab" data-series="hxh" onclick="navSeries('hxh')" type="button">Hunter × Hunter</button>
-<button class="series-tab" data-series="dandadan" onclick="navSeries('dandadan')" type="button">Dandadan</button>
-<button class="series-tab" data-series="aot" onclick="navSeries('aot')" type="button">Attack on Titan</button>
-<button class="series-tab" data-series="deathnote" onclick="navSeries('deathnote')" type="button">Death Note</button>
-<button class="series-tab" data-series="bluelock" onclick="navSeries('bluelock')" type="button">Blue Lock</button>
 <button class="series-tab" data-series="onepiece" onclick="navSeries('onepiece')" type="button">One Piece</button>
 <button class="series-tab" data-series="naruto" onclick="navSeries('naruto')" type="button">Naruto</button>
+<button class="series-tab" onclick="window.location.href='/dragon-ball/'" type="button">Dragon Ball</button>
+<button class="series-tab" data-series="aot" onclick="navSeries('aot')" type="button">Attack on Titan</button>
+<button class="series-tab" data-series="jjk" onclick="navSeries('jjk')" type="button">Jujutsu Kaisen</button>
+<button class="series-tab" data-series="deathnote" onclick="navSeries('deathnote')" type="button">Death Note</button>
+<button class="series-tab" data-series="chainsawman" onclick="navSeries('chainsawman')" type="button">Chainsaw Man</button>
+<button class="series-tab" data-series="hxh" onclick="navSeries('hxh')" type="button">Hunter × Hunter</button>
+<button class="series-tab" data-series="bluelock" onclick="navSeries('bluelock')" type="button">Blue Lock</button>
+<button class="series-tab" data-series="dandadan" onclick="navSeries('dandadan')" type="button">Dandadan</button>
 </div>
 </div>
 <a aria-label="Back to home" class="logo-link" href="#top" onclick="showHome(); return false;">
