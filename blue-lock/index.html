@@ -1271,16 +1271,16 @@
 <button class="side-link series-nav" onclick="window.location.href='/dragon-ball/'" type="button"><span>Dragon Ball</span></button>
 <button class="side-link series-nav" data-series="aot" onclick="navSeries('aot')" type="button"><span>Attack on Titan</span></button>
 <button class="side-link series-nav" data-series="jjk" onclick="navSeries('jjk')" type="button"><span>Jujutsu Kaisen</span></button>
+<button class="side-link series-nav" data-series="demonslayer" onclick="navSeries('demonslayer')" type="button"><span>Demon Slayer</span></button>
 <button class="side-link series-nav" data-series="deathnote" onclick="navSeries('deathnote')" type="button"><span>Death Note</span></button>
 <button class="side-link series-nav" data-series="chainsawman" onclick="navSeries('chainsawman')" type="button"><span>Chainsaw Man</span></button>
 <button class="side-link series-nav" data-series="hxh" onclick="navSeries('hxh')" type="button"><span>Hunter × Hunter</span></button>
 <button class="side-link series-nav" data-series="bluelock" onclick="navSeries('bluelock')" type="button"><span>Blue Lock</span></button>
+<button class="side-link series-nav" data-series="vinland" onclick="navSeries('vinland')" type="button"><span>Vinland Saga</span></button>
 <button class="side-link series-nav" data-series="dandadan" onclick="navSeries('dandadan')" type="button"><span>Dandadan</span></button>
 <div class="side-section">COMING SOON</div>
-<button class="side-link coming-nav" disabled type="button"><span>Demon Slayer</span><span class="side-soon">SOON</span></button>
 <button class="side-link coming-nav" disabled type="button"><span>My Hero Academia</span><span class="side-soon">SOON</span></button>
 <button class="side-link coming-nav" disabled type="button"><span>Black Clover</span><span class="side-soon">SOON</span></button>
-<button class="side-link coming-nav" disabled type="button"><span>Vinland Saga</span><span class="side-soon">SOON</span></button>
 <div class="side-bottom"><button class="side-link" onclick="showAbout()" type="button"><span class="side-icon">?</span><span>About</span></button></div>
 </aside>
 <main class="home-view" id="homeView">
@@ -1296,7 +1296,7 @@
     <input id="seriesSearchInput" class="series-search-input" type="search" placeholder="Search a series..." autocomplete="off" aria-label="Search series"/>
     <button class="series-search-btn" id="seriesSearchBtn" type="button" onclick="runSeriesSearch()">Search</button>
   </div>
-  <div class="series-search-meta" id="seriesSearchMeta">15 series · 11 available · 4 coming soon</div>
+  <div class="series-search-meta" id="seriesSearchMeta">15 series · 13 available · 2 coming soon</div>
 </div>
 <p class="home-section-title">CHOOSE A SERIES</p>
 <div class="series-grid" id="homeSeriesGrid">
@@ -1330,11 +1330,11 @@
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Jujutsu Kaisen</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
-<div class="series-card home-poster-card coming-card" data-series-name="Demon Slayer" aria-label="Demon Slayer coming soon">
+<button class="series-card home-poster-card" data-series-name="Demon Slayer" onclick="navSeries('demonslayer')" type="button">
   <img class="home-poster-img" src="/assets/home-cards/demon-slayer.jpg" alt="Demon Slayer"/>
   <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Demon Slayer</span><span class="coming-badge">COMING SOON</span></span>
-</div>
+  <span class="home-poster-copy"><span class="series-card-name">Demon Slayer</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
 <button class="series-card home-poster-card" data-series-name="Death Note" onclick="navSeries('deathnote')" type="button">
   <img class="home-poster-img" src="/assets/home-cards/death-note.jpg" alt="Death Note"/>
   <span class="home-poster-overlay"></span>
@@ -1365,11 +1365,11 @@
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Black Clover</span><span class="coming-badge">COMING SOON</span></span>
 </div>
-<div class="series-card home-poster-card coming-card" data-series-name="Vinland Saga" aria-label="Vinland Saga coming soon">
+<button class="series-card home-poster-card" data-series-name="Vinland Saga" onclick="navSeries('vinland')" type="button">
   <img class="home-poster-img" src="/assets/home-cards/vinland-saga.jpg" alt="Vinland Saga"/>
   <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Vinland Saga</span><span class="coming-badge">COMING SOON</span></span>
-</div>
+  <span class="home-poster-copy"><span class="series-card-name">Vinland Saga</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
 <button class="series-card home-poster-card" data-series-name="Dandadan" onclick="navSeries('dandadan')" type="button">
   <img class="home-poster-img" src="/assets/home-cards/dandadan.jpg" alt="Dandadan"/>
   <span class="home-poster-overlay"></span>
@@ -1407,10 +1407,12 @@
 <button class="series-tab" onclick="window.location.href='/dragon-ball/'" type="button">Dragon Ball</button>
 <button class="series-tab" data-series="aot" onclick="navSeries('aot')" type="button">Attack on Titan</button>
 <button class="series-tab" data-series="jjk" onclick="navSeries('jjk')" type="button">Jujutsu Kaisen</button>
+<button class="series-tab" data-series="demonslayer" onclick="navSeries('demonslayer')" type="button">Demon Slayer</button>
 <button class="series-tab" data-series="deathnote" onclick="navSeries('deathnote')" type="button">Death Note</button>
 <button class="series-tab" data-series="chainsawman" onclick="navSeries('chainsawman')" type="button">Chainsaw Man</button>
 <button class="series-tab" data-series="hxh" onclick="navSeries('hxh')" type="button">Hunter × Hunter</button>
 <button class="series-tab" data-series="bluelock" onclick="navSeries('bluelock')" type="button">Blue Lock</button>
+<button class="series-tab" data-series="vinland" onclick="navSeries('vinland')" type="button">Vinland Saga</button>
 <button class="series-tab" data-series="dandadan" onclick="navSeries('dandadan')" type="button">Dandadan</button>
 </div>
 </div>
@@ -1468,11 +1470,13 @@ const SERIES_PATHS = {
   bleach: '/bleach/',
   chainsawman: '/chainsaw-man/',
   jjk: '/jujutsu-kaisen/',
+  demonslayer: '/demon-slayer/',
   deathnote: '/death-note/',
   hxh: '/hunter-x-hunter/',
   dandadan: '/dandadan/',
   aot: '/attack-on-titan/',
   bluelock: '/blue-lock/',
+  vinland: '/vinland-saga/',
   onepiece: '/one-piece/',
   naruto: '/naruto/'
 };
@@ -2057,6 +2061,252 @@ const SERIES = {
   }
 
 };
+
+SERIES.vinland = {
+  id: 'vinland',
+  name: 'Vinland Saga',
+  pageTitle: 'Vinland Saga Anime to Manga Converter | Anime2Manga',
+  lede: 'Enter a Vinland Saga anime episode, manga chapter, or original tankōbon volume to see the matching adaptation point.',
+  seoCopy: 'Match Vinland Saga anime episodes with manga chapters and original Japanese tankōbon volumes, see the current story arc, and find where to continue reading after Season 2.',
+  footer: [
+    'Episode data covers both released seasons: episodes 1–48, adapting the Prologue and Slave arcs through chapter 100.',
+    'The volume lookup uses the 29 original Japanese tankōbon volumes (chapters 1–220). Kodansha’s English hardcovers combine two Japanese volumes, so the same English cover may appear for a pair of original volumes.',
+    'There are no full filler episodes. Some episodes expand or rearrange manga material, especially at the beginning of Season 1 and in Einar’s introduction.',
+    'Sources: episode titles and season counts from the official anime listings and Wikipedia; volume/chapter ranges from Kodansha listings and the Vinland Saga chapter index.'
+  ],
+  beyondDataHint: 'This chapter has not been adapted in the released anime. Continue with the manga after Season 2 from chapter 101 (original volume 15).',
+  animeVolumeThreshold: 14,
+  notAdaptedTagText: 'Not yet adapted',
+  episodePlaceholder: '1–48',
+  volumePlaceholder: '1–29',
+  chapterPlaceholder: '1–220',
+  EPISODES: [
+    {episode:1,title:'Somewhere Not Here',chapters:['2','3','4'],filler:false},
+    {episode:2,title:'Sword',chapters:['5','6','7'],filler:false},
+    {episode:3,title:'Troll',chapters:['8','9','10','11'],filler:false},
+    {episode:4,title:'A True Warrior',chapters:['12','13','14','15','16'],filler:false},
+    {episode:5,title:"The Troll's Son",chapters:['17'],filler:false},
+    {episode:6,title:'The Journey Begins',chapters:['17','18'],filler:false},
+    {episode:7,title:'Normanni',chapters:['1','18'],filler:false},
+    {episode:8,title:'Beyond the Edge of the Sea',chapters:['18','19'],filler:false},
+    {episode:9,title:'The Battle of London Bridge',chapters:['19','20','21'],filler:false},
+    {episode:10,title:'Ragnarok',chapters:['20','21','22'],filler:false},
+    {episode:11,title:'A Gamble',chapters:['22','23','24'],filler:false},
+    {episode:12,title:'The Land on the Far Bank',chapters:['24','25','26'],filler:false},
+    {episode:13,title:'Child of a Hero',chapters:['26','27','28'],filler:false},
+    {episode:14,title:'The Light of Dawn',chapters:['28','29','30'],filler:false},
+    {episode:15,title:'After Yule',chapters:['30','31'],filler:false},
+    {episode:16,title:'History of Beasts',chapters:['31','32','33'],filler:false},
+    {episode:17,title:'Servant',chapters:['33','34','35'],filler:false},
+    {episode:18,title:'Out of the Cradle',chapters:['36','37','38','39'],filler:false},
+    {episode:19,title:'United Front',chapters:['40','41','42'],filler:false},
+    {episode:20,title:'Crown',chapters:['43','44'],filler:false},
+    {episode:21,title:'Reunion',chapters:['45','46','47','48'],filler:false},
+    {episode:22,title:'Lone Wolf',chapters:['45','46','47','48','49'],filler:false},
+    {episode:23,title:'Miscalculation',chapters:['50','51','52'],filler:false},
+    {episode:24,title:'End of the Prologue',chapters:['53','54'],filler:false},
+    {episode:25,title:'Slave',chapters:['55','56'],filler:false},
+    {episode:26,title:"Ketil's Farm",chapters:['56','57'],filler:false},
+    {episode:27,title:'Snake',chapters:['57','58','59'],filler:false},
+    {episode:28,title:'Awakening',chapters:['59','60'],filler:false},
+    {episode:29,title:'The Path of Blood',chapters:['61','62'],filler:false},
+    {episode:30,title:'We Need a Horse',chapters:['63','64'],filler:false},
+    {episode:31,title:'Iron Fist Ketil',chapters:['65','66','67'],filler:false},
+    {episode:32,title:'An Empty Man',chapters:['68','69','70'],filler:false},
+    {episode:33,title:'Oath',chapters:['70','71'],filler:false},
+    {episode:34,title:'The Cursed Head',chapters:['72','73'],filler:false},
+    {episode:35,title:'The King and the Sword',chapters:['74','75','76'],filler:false},
+    {episode:36,title:'For Lost Love',chapters:['76','77','78'],filler:false},
+    {episode:37,title:'Dark Clouds',chapters:['79','80'],filler:false},
+    {episode:38,title:'Freedom',chapters:['80','81','82'],filler:false},
+    {episode:39,title:'Storm',chapters:['81','82','83','84'],filler:false},
+    {episode:40,title:'Great Purpose',chapters:['84','85','86'],filler:false},
+    {episode:41,title:'The Road Home',chapters:['86','87','88'],filler:false},
+    {episode:42,title:'The First Method',chapters:['87','88','89','90'],filler:false},
+    {episode:43,title:"The Battle of Ketil's Farm",chapters:['90','91'],filler:false},
+    {episode:44,title:'Pain',chapters:['91','92','93'],filler:false},
+    {episode:45,title:'Courage',chapters:['92','93','94'],filler:false},
+    {episode:46,title:'The Emperor of Rebellion',chapters:['94','95','96','97'],filler:false},
+    {episode:47,title:'Two Paths',chapters:['97','98','99'],filler:false},
+    {episode:48,title:'Home',chapters:['100'],filler:false}
+  ],
+  VOLUMES: [
+    {volume:1,title:'',start:1,end:5,extras:null},{volume:2,title:'',start:6,end:16,extras:null},
+    {volume:3,title:'',start:17,end:21,extras:null},{volume:4,title:'',start:22,end:28,extras:null},
+    {volume:5,title:'',start:29,end:35,extras:null},{volume:6,title:'',start:36,end:42,extras:null},
+    {volume:7,title:'',start:43,end:49,extras:null},{volume:8,title:'',start:50,end:56,extras:null},
+    {volume:9,title:'',start:57,end:64,extras:null},{volume:10,title:'',start:65,end:71,extras:null},
+    {volume:11,title:'',start:72,end:78,extras:null},{volume:12,title:'',start:79,end:86,extras:null},
+    {volume:13,title:'',start:87,end:93,extras:null},{volume:14,title:'',start:94,end:100,extras:null},
+    {volume:15,title:'',start:101,end:107,extras:null},{volume:16,title:'',start:108,end:115,extras:null},
+    {volume:17,title:'',start:116,end:122,extras:null},{volume:18,title:'',start:123,end:129,extras:null},
+    {volume:19,title:'',start:130,end:136,extras:null},{volume:20,title:'',start:137,end:144,extras:null},
+    {volume:21,title:'',start:145,end:152,extras:null},{volume:22,title:'',start:153,end:160,extras:null},
+    {volume:23,title:'',start:161,end:166,extras:null},{volume:24,title:'',start:167,end:175,extras:null},
+    {volume:25,title:'',start:176,end:183,extras:null},{volume:26,title:'',start:184,end:191,extras:null},
+    {volume:27,title:'',start:192,end:201,extras:null},{volume:28,title:'',start:202,end:209,extras:null},
+    {volume:29,title:'',start:210,end:220,extras:null}
+  ],
+  DEFAULT_COVERS: {
+    '1':'https://covers.openlibrary.org/b/isbn/9781612624204-L.jpg','2':'https://covers.openlibrary.org/b/isbn/9781612624204-L.jpg',
+    '3':'https://covers.openlibrary.org/b/isbn/9781612624211-L.jpg','4':'https://covers.openlibrary.org/b/isbn/9781612624211-L.jpg',
+    '5':'https://covers.openlibrary.org/b/isbn/9781612624228-L.jpg','6':'https://covers.openlibrary.org/b/isbn/9781612624228-L.jpg',
+    '7':'https://covers.openlibrary.org/b/isbn/9781612624235-L.jpg','8':'https://covers.openlibrary.org/b/isbn/9781612624235-L.jpg',
+    '9':'https://covers.openlibrary.org/b/isbn/9781612624242-L.jpg','10':'https://covers.openlibrary.org/b/isbn/9781612624242-L.jpg',
+    '11':'https://covers.openlibrary.org/b/isbn/9781612628035-L.jpg','12':'https://covers.openlibrary.org/b/isbn/9781612628035-L.jpg',
+    '13':'https://covers.openlibrary.org/b/isbn/9781632360090-L.jpg','14':'https://covers.openlibrary.org/b/isbn/9781632360090-L.jpg',
+    '15':'https://covers.openlibrary.org/b/isbn/9781632363725-L.jpg','16':'https://covers.openlibrary.org/b/isbn/9781632363725-L.jpg',
+    '17':'https://covers.openlibrary.org/b/isbn/9781632364456-L.jpg','18':'https://covers.openlibrary.org/b/isbn/9781632364456-L.jpg',
+    '19':'https://covers.openlibrary.org/b/isbn/9781632366306-L.jpg','20':'https://covers.openlibrary.org/b/isbn/9781632366306-L.jpg',
+    '21':'https://covers.openlibrary.org/b/isbn/9781632368034-L.jpg','22':'https://covers.openlibrary.org/b/isbn/9781632368034-L.jpg',
+    '23':'https://covers.openlibrary.org/b/isbn/9781646510771-L.jpg','24':'https://covers.openlibrary.org/b/isbn/9781646510771-L.jpg',
+    '25':'https://covers.openlibrary.org/b/isbn/9781646513017-L.jpg','26':'https://covers.openlibrary.org/b/isbn/9781646513017-L.jpg',
+    '27':'https://covers.openlibrary.org/b/isbn/9781646519552-L.jpg','28':'https://covers.openlibrary.org/b/isbn/9781646519552-L.jpg',
+    '29':'https://covers.openlibrary.org/b/isbn/9798888779347-L.jpg'
+  },
+  VIZ_LINKS: Object.fromEntries(Array.from({length:29},(_,i)=>[String(i+1),'https://kodansha.us/series/vinland-saga/'])),
+  AMAZON_LINKS: {},
+  ARC_RANGES: [
+    {arc:'War / Prologue',subArc:null,start:1,end:54},
+    {arc:'Slave',subArc:null,start:55,end:100},
+    {arc:'Eastern Expedition',subArc:null,start:101,end:166},
+    {arc:'Vinland',subArc:null,start:167,end:220}
+  ]
+};
+
+SERIES.demonslayer = {
+  id: 'demonslayer',
+  name: 'Demon Slayer',
+  pageTitle: 'Demon Slayer Anime to Manga Converter | Anime2Manga',
+  lede: 'Enter a Demon Slayer TV episode, movie, manga chapter, or volume to see the matching adaptation point.',
+  seoCopy: 'Match Demon Slayer: Kimetsu no Yaiba TV episodes and released movies with manga chapters and volumes, and find where to continue reading.',
+  footer: [
+    'TV episode data covers all 63 released episodes through the Hashira Training Arc (chapters 1–139).',
+    'Use the Movies tab for Mugen Train and Infinity Castle Part 1. Infinity Castle Part 1 continues after Season 4 and covers chapters 140–157.',
+    'The complete manga contains 205 chapters in 23 volumes. Chapters 158–205 have not yet been adapted in released anime as of September 2026.',
+    'There are no full filler episodes, although several episodes add or expand anime-original scenes.'
+  ],
+  beyondDataHint: 'This chapter has not yet been adapted in released anime. After Infinity Castle Part 1, continue from chapter 158 (volume 18).',
+  animeVolumeThreshold: 18,
+  notAdaptedTagText: 'Not yet adapted',
+  episodePlaceholder: '1–63',
+  volumePlaceholder: '1–23',
+  chapterPlaceholder: '1–205',
+  EPISODES: [
+    {episode:1,title:'Cruelty',chapters:['1'],filler:false},
+    {episode:2,title:'Trainer Sakonji Urokodaki',chapters:['2','3'],filler:false},
+    {episode:3,title:'Sabito and Makomo',chapters:['3','4','5'],filler:false},
+    {episode:4,title:'Final Selection',chapters:['6','7'],filler:false},
+    {episode:5,title:'My Own Steel',chapters:['8','9'],filler:false},
+    {episode:6,title:'Swordsman Accompanying a Demon',chapters:['10','11'],filler:false},
+    {episode:7,title:'Muzan Kibutsuji',chapters:['12','13'],filler:false},
+    {episode:8,title:'The Smell of Enchanting Blood',chapters:['14','15'],filler:false},
+    {episode:9,title:'Temari Demon & Arrow Demon',chapters:['16','17'],filler:false},
+    {episode:10,title:'Together Forever',chapters:['18','19'],filler:false},
+    {episode:11,title:'Tsuzumi Mansion',chapters:['20','21'],filler:false},
+    {episode:12,title:'The Boar Bares Its Fangs, Zenitsu Sleeps',chapters:['22','23','24'],filler:false},
+    {episode:13,title:'Something More Important Than Life',chapters:['24','25','26'],filler:false},
+    {episode:14,title:'House with Wisteria Family Crest',chapters:['26','27'],filler:false},
+    {episode:15,title:'Mount Natagumo',chapters:['28','29'],filler:false},
+    {episode:16,title:'Letting Someone Else Go First',chapters:['30','31','32'],filler:false},
+    {episode:17,title:'You Must Master a Single Thing',chapters:['32','33','34'],filler:false},
+    {episode:18,title:'A Forged Bond',chapters:['35','36','37'],filler:false},
+    {episode:19,title:'Hinokami',chapters:['38','39','40'],filler:false},
+    {episode:20,title:'Pretend Family',chapters:['41','42','43'],filler:false},
+    {episode:21,title:'Against Corps Rules',chapters:['43','44'],filler:false},
+    {episode:22,title:'Master of the Mansion',chapters:['45','46','47'],filler:false},
+    {episode:23,title:'Hashira Meeting',chapters:['47','48'],filler:false},
+    {episode:24,title:'Rehabilitation Training',chapters:['48','49','50'],filler:false},
+    {episode:25,title:'Tsuguko, Kanao Tsuyuri',chapters:['50','51'],filler:false},
+    {episode:26,title:'New Mission',chapters:['52','53'],filler:false},
+    {episode:27,title:'Flame Hashira Kyojuro Rengoku',chapters:[],sourceLabel:'Anime-original Mugen Train prologue',filler:false},
+    {episode:28,title:'Deep Sleep',chapters:['54','55','56'],filler:false},
+    {episode:29,title:'Should Have Been',chapters:['57','58','59'],filler:false},
+    {episode:30,title:'Insult',chapters:['60','61'],filler:false},
+    {episode:31,title:'Move Forward!',chapters:['62','63','64'],filler:false},
+    {episode:32,title:'Akaza',chapters:['64','65','66'],filler:false},
+    {episode:33,title:'Set Your Heart Ablaze',chapters:['67','68','69'],filler:false},
+    {episode:34,title:'Sound Hashira Tengen Uzui',chapters:['70','71','72'],filler:false},
+    {episode:35,title:'Infiltrating the Entertainment District',chapters:['72','73','74'],filler:false},
+    {episode:36,title:'What Are You?',chapters:['74','75','76'],filler:false},
+    {episode:37,title:'Tonight',chapters:['77','78','79'],filler:false},
+    {episode:38,title:'Things Are Gonna Get Real Flashy!!',chapters:['79','80','81'],filler:false},
+    {episode:39,title:'Layered Memories',chapters:['81','82','83'],filler:false},
+    {episode:40,title:'Transformation',chapters:['83','84','85','86'],filler:false},
+    {episode:41,title:'Gathering',chapters:['87','88','89'],filler:false},
+    {episode:42,title:'Defeating an Upper Rank Demon',chapters:['90','91','92'],filler:false},
+    {episode:43,title:'Never Give Up',chapters:['92','93','94'],filler:false},
+    {episode:44,title:'No Matter How Many Lives',chapters:['95','96','97'],filler:false},
+    {episode:45,title:"Someone's Dream",chapters:['98','99','100','101'],filler:false},
+    {episode:46,title:'Yoriichi Type Zero',chapters:['101','102','103','104','105'],filler:false},
+    {episode:47,title:'A Sword from Over 300 Years Ago',chapters:['105','106','107'],filler:false},
+    {episode:48,title:'Thank You, Tokito',chapters:['107','108','109','110'],filler:false},
+    {episode:49,title:'Bright Red Blade',chapters:['110','111','112','113'],filler:false},
+    {episode:50,title:"Aren't You Going to Be a Hashira?",chapters:['113','114','115'],filler:false},
+    {episode:51,title:'Awful Villain',chapters:['115','116','117','118'],filler:false},
+    {episode:52,title:'The Mu in Muichiro',chapters:['118','119'],filler:false},
+    {episode:53,title:'Mist Hashira Muichiro Tokito',chapters:['120','121','122'],filler:false},
+    {episode:54,title:'Love Hashira Mitsuri Kanroji',chapters:['122','123','124','125'],filler:false},
+    {episode:55,title:'The Connected Bonds: Daybreak and First Light',chapters:['125','126','127'],filler:false},
+    {episode:56,title:'To Defeat Muzan Kibutsuji',chapters:['128','129','130','131'],filler:false},
+    {episode:57,title:"Water Hashira Giyu Tomioka's Pain",chapters:['130','131'],filler:false},
+    {episode:58,title:'Fully Recovered Tanjiro Joins the Hashira Training!!',chapters:['132'],filler:false},
+    {episode:59,title:"To Bring a Smile to One's Face",chapters:['132'],filler:false},
+    {episode:60,title:'I Even Ate Demons...',chapters:['132','133'],filler:false},
+    {episode:61,title:'The Strongest of the Demon Slayer Corps',chapters:['134','135'],filler:false},
+    {episode:62,title:'Stone Hashira, Gyomei Himejima',chapters:['135','136'],filler:false},
+    {episode:63,title:'The Hashira Unite',chapters:['137','138','139'],filler:false}
+  ],
+  episodeVariants: [
+    {id:'tv',label:'TV Episodes',episodePlaceholder:'1–63',episodes:null},
+    {id:'movies',label:'Movies',episodePlaceholder:'1–2',episodes:[
+      {episode:1,title:'Mugen Train',chapters:Array.from({length:16},(_,i)=>String(i+54)),filler:false},
+      {episode:2,title:'Infinity Castle Part 1',chapters:Array.from({length:18},(_,i)=>String(i+140)),filler:false}
+    ]}
+  ],
+  VOLUMES: [
+    {volume:1,title:'',start:1,end:7,extras:null},{volume:2,title:'',start:8,end:16,extras:null},
+    {volume:3,title:'',start:17,end:25,extras:null},{volume:4,title:'',start:26,end:34,extras:null},
+    {volume:5,title:'',start:35,end:43,extras:null},{volume:6,title:'',start:44,end:52,extras:null},
+    {volume:7,title:'',start:53,end:61,extras:null},{volume:8,title:'',start:62,end:70,extras:null},
+    {volume:9,title:'',start:71,end:79,extras:null},{volume:10,title:'',start:80,end:88,extras:null},
+    {volume:11,title:'',start:89,end:97,extras:null},{volume:12,title:'',start:98,end:106,extras:null},
+    {volume:13,title:'',start:107,end:115,extras:null},{volume:14,title:'',start:116,end:124,extras:null},
+    {volume:15,title:'',start:125,end:133,extras:null},{volume:16,title:'',start:134,end:142,extras:null},
+    {volume:17,title:'',start:143,end:151,extras:null},{volume:18,title:'',start:152,end:160,extras:null},
+    {volume:19,title:'',start:161,end:169,extras:null},{volume:20,title:'',start:170,end:178,extras:null},
+    {volume:21,title:'',start:179,end:187,extras:null},{volume:22,title:'',start:188,end:196,extras:null},
+    {volume:23,title:'',start:197,end:205,extras:null}
+  ],
+  DEFAULT_COVERS: {
+    '1':'https://covers.openlibrary.org/b/isbn/9781974700523-L.jpg','2':'https://covers.openlibrary.org/b/isbn/9781974700530-L.jpg','3':'https://covers.openlibrary.org/b/isbn/9781974700547-L.jpg',
+    '4':'https://covers.openlibrary.org/b/isbn/9781974700554-L.jpg','5':'https://covers.openlibrary.org/b/isbn/9781974700561-L.jpg','6':'https://covers.openlibrary.org/b/isbn/9781974700578-L.jpg',
+    '7':'https://covers.openlibrary.org/b/isbn/9781974700585-L.jpg','8':'https://covers.openlibrary.org/b/isbn/9781974704422-L.jpg','9':'https://covers.openlibrary.org/b/isbn/9781974704439-L.jpg',
+    '10':'https://covers.openlibrary.org/b/isbn/9781974704446-L.jpg','11':'https://covers.openlibrary.org/b/isbn/9781974704453-L.jpg','12':'https://covers.openlibrary.org/b/isbn/9781974704460-L.jpg',
+    '13':'https://covers.openlibrary.org/b/isbn/9781974704477-L.jpg','14':'https://covers.openlibrary.org/b/isbn/9781974711123-L.jpg','15':'https://covers.openlibrary.org/b/isbn/9781974711130-L.jpg',
+    '16':'https://covers.openlibrary.org/b/isbn/9781974711147-L.jpg','17':'https://covers.openlibrary.org/b/isbn/9781974711154-L.jpg','18':'https://covers.openlibrary.org/b/isbn/9781974711161-L.jpg',
+    '19':'https://covers.openlibrary.org/b/isbn/9781974711178-L.jpg','20':'https://covers.openlibrary.org/b/isbn/9781974720972-L.jpg','21':'https://covers.openlibrary.org/b/isbn/9781974720989-L.jpg',
+    '22':'https://covers.openlibrary.org/b/isbn/9781974720996-L.jpg','23':'https://covers.openlibrary.org/b/isbn/9781974721009-L.jpg'
+  },
+  VIZ_LINKS: Object.fromEntries(Array.from({length:23},(_,i)=>[String(i+1),'https://www.viz.com/demon-slayer-kimetsu-no-yaiba'])),
+  AMAZON_LINKS: {},
+  ARC_RANGES: [
+    {arc:'Final Selection',subArc:null,start:1,end:9},
+    {arc:'First Mission',subArc:null,start:10,end:13},
+    {arc:'Asakusa',subArc:null,start:14,end:19},
+    {arc:'Tsuzumi Mansion',subArc:null,start:20,end:27},
+    {arc:'Mount Natagumo',subArc:null,start:28,end:44},
+    {arc:'Rehabilitation Training',subArc:null,start:45,end:53},
+    {arc:'Mugen Train',subArc:null,start:54,end:69},
+    {arc:'Entertainment District',subArc:null,start:70,end:99},
+    {arc:'Swordsmith Village',subArc:null,start:100,end:127},
+    {arc:'Hashira Training',subArc:null,start:128,end:139},
+    {arc:'Infinity Castle',subArc:null,start:140,end:183},
+    {arc:'Sunrise Countdown',subArc:null,start:184,end:205}
+  ]
+};
+
+SERIES.demonslayer.episodeVariants[0].episodes = SERIES.demonslayer.EPISODES;
 
 // Blue Lock cover URLs verified against the series wiki image files.
 SERIES.bluelock.DEFAULT_COVERS = {"1":"/assets/covers/blue-lock/volume-1.webp","2":"/assets/covers/blue-lock/volume-2.webp","3":"/assets/covers/blue-lock/volume-3.webp","4":"/assets/covers/blue-lock/volume-4.webp","5":"/assets/covers/blue-lock/volume-5.webp","6":"/assets/covers/blue-lock/volume-6.webp","7":"/assets/covers/blue-lock/volume-7.webp","8":"/assets/covers/blue-lock/volume-8.webp","9":"/assets/covers/blue-lock/volume-9.webp","10":"/assets/covers/blue-lock/volume-10.webp","11":"/assets/covers/blue-lock/volume-11.webp","12":"/assets/covers/blue-lock/volume-12.webp","13":"/assets/covers/blue-lock/volume-13.webp","14":"/assets/covers/blue-lock/volume-14.webp","15":"/assets/covers/blue-lock/volume-15.webp","16":"/assets/covers/blue-lock/volume-16.webp","17":"/assets/covers/blue-lock/volume-17.webp","18":"/assets/covers/blue-lock/volume-18.webp","19":"/assets/covers/blue-lock/volume-19.webp","20":"/assets/covers/blue-lock/volume-20.webp","21":"/assets/covers/blue-lock/volume-21.webp","22":"/assets/covers/blue-lock/volume-22.webp","23":"/assets/covers/blue-lock/volume-23.webp","24":"/assets/covers/blue-lock/volume-24.webp","25":"/assets/covers/blue-lock/volume-25.webp","26":"/assets/covers/blue-lock/volume-26.webp","27":"/assets/covers/blue-lock/volume-27.webp","28":"/assets/covers/blue-lock/volume-28.webp","29":"/assets/covers/blue-lock/volume-29.webp","30":"/assets/covers/blue-lock/volume-30.webp","31":"/assets/covers/blue-lock/volume-31.webp","32":"/assets/covers/blue-lock/volume-32.webp","33":"/assets/covers/blue-lock/volume-33.webp","34":"/assets/covers/blue-lock/volume-34.webp","35":"/assets/covers/blue-lock/volume-35.webp","36":"/assets/covers/blue-lock/volume-36.webp","37":"/assets/covers/blue-lock/volume-37.webp"};

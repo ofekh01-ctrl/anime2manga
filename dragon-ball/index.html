@@ -1251,16 +1251,16 @@
 <button class="side-link series-nav" data-series="dragonball" onclick="navSeries('dragonball')" type="button"><span>Dragon Ball</span></button>
 <button class="side-link series-nav" data-series="aot" onclick="navSeries('aot')" type="button"><span>Attack on Titan</span></button>
 <button class="side-link series-nav" data-series="jjk" onclick="navSeries('jjk')" type="button"><span>Jujutsu Kaisen</span></button>
+<button class="side-link series-nav" onclick="window.location.href='/demon-slayer/'" type="button"><span>Demon Slayer</span></button>
 <button class="side-link series-nav" data-series="deathnote" onclick="navSeries('deathnote')" type="button"><span>Death Note</span></button>
 <button class="side-link series-nav" data-series="chainsawman" onclick="navSeries('chainsawman')" type="button"><span>Chainsaw Man</span></button>
 <button class="side-link series-nav" data-series="hxh" onclick="navSeries('hxh')" type="button"><span>Hunter × Hunter</span></button>
 <button class="side-link series-nav" data-series="bluelock" onclick="navSeries('bluelock')" type="button"><span>Blue Lock</span></button>
+<button class="side-link series-nav" onclick="window.location.href='/vinland-saga/'" type="button"><span>Vinland Saga</span></button>
 <button class="side-link series-nav" data-series="dandadan" onclick="navSeries('dandadan')" type="button"><span>Dandadan</span></button>
 <div class="side-section">COMING SOON</div>
-<button class="side-link coming-nav" disabled type="button"><span>Demon Slayer</span><span class="side-soon">SOON</span></button>
 <button class="side-link coming-nav" disabled type="button"><span>My Hero Academia</span><span class="side-soon">SOON</span></button>
 <button class="side-link coming-nav" disabled type="button"><span>Black Clover</span><span class="side-soon">SOON</span></button>
-<button class="side-link coming-nav" disabled type="button"><span>Vinland Saga</span><span class="side-soon">SOON</span></button>
 <div class="side-bottom"><button class="side-link" onclick="showAbout()" type="button"><span class="side-icon">?</span><span>About</span></button></div>
 </aside>
 <main class="home-view" id="homeView">
@@ -1276,7 +1276,7 @@
     <input id="seriesSearchInput" class="series-search-input" type="search" placeholder="Search a series..." autocomplete="off" aria-label="Search series"/>
     <button class="series-search-btn" id="seriesSearchBtn" type="button" onclick="runSeriesSearch()">Search</button>
   </div>
-  <div class="series-search-meta" id="seriesSearchMeta">15 series · 11 available · 4 coming soon</div>
+  <div class="series-search-meta" id="seriesSearchMeta">15 series · 13 available · 2 coming soon</div>
 </div>
 <p class="home-section-title">CHOOSE A SERIES</p>
 <div class="series-grid" id="homeSeriesGrid">
@@ -1335,21 +1335,21 @@
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Naruto</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
-<div class="series-card home-poster-card coming-card" data-series-name="Demon Slayer" aria-label="Demon Slayer coming soon">
+<button class="series-card home-poster-card" data-series-name="Demon Slayer" onclick="window.location.href='/demon-slayer/'" type="button">
   <img class="home-poster-img" src="/assets/home-cards/demon-slayer.jpg" alt="Demon Slayer"/>
   <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Demon Slayer</span><span class="coming-badge">COMING SOON</span></span>
-</div>
+  <span class="home-poster-copy"><span class="series-card-name">Demon Slayer</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
 <div class="series-card home-poster-card coming-card" data-series-name="My Hero Academia" aria-label="My Hero Academia coming soon">
   <img class="home-poster-img" src="/assets/home-cards/my-hero-academia.jpg" alt="My Hero Academia"/>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">My Hero Academia</span><span class="coming-badge">COMING SOON</span></span>
 </div>
-<div class="series-card home-poster-card coming-card" data-series-name="Vinland Saga" aria-label="Vinland Saga coming soon">
+<button class="series-card home-poster-card" data-series-name="Vinland Saga" onclick="window.location.href='/vinland-saga/'" type="button">
   <img class="home-poster-img" src="/assets/home-cards/vinland-saga.jpg" alt="Vinland Saga"/>
   <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Vinland Saga</span><span class="coming-badge">COMING SOON</span></span>
-</div>
+  <span class="home-poster-copy"><span class="series-card-name">Vinland Saga</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
 <div class="series-card home-poster-card coming-card" data-series-name="Black Clover" aria-label="Black Clover coming soon">
   <img class="home-poster-img" src="/assets/home-cards/black-clover.jpg" alt="Black Clover"/>
   <span class="home-poster-overlay"></span>
@@ -1387,10 +1387,12 @@
 <button class="series-tab" data-series="dragonball" onclick="navSeries('dragonball')" type="button">Dragon Ball</button>
 <button class="series-tab" data-series="aot" onclick="navSeries('aot')" type="button">Attack on Titan</button>
 <button class="series-tab" data-series="jjk" onclick="navSeries('jjk')" type="button">Jujutsu Kaisen</button>
+<button class="series-tab" onclick="window.location.href='/demon-slayer/'" type="button">Demon Slayer</button>
 <button class="series-tab" data-series="deathnote" onclick="navSeries('deathnote')" type="button">Death Note</button>
 <button class="series-tab" data-series="chainsawman" onclick="navSeries('chainsawman')" type="button">Chainsaw Man</button>
 <button class="series-tab" data-series="hxh" onclick="navSeries('hxh')" type="button">Hunter × Hunter</button>
 <button class="series-tab" data-series="bluelock" onclick="navSeries('bluelock')" type="button">Blue Lock</button>
+<button class="series-tab" onclick="window.location.href='/vinland-saga/'" type="button">Vinland Saga</button>
 <button class="series-tab" data-series="dandadan" onclick="navSeries('dandadan')" type="button">Dandadan</button>
 </div>
 <div class="db-subtabs" id="dbSubtabs" aria-label="Dragon Ball anime series">
