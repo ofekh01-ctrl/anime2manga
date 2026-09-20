@@ -1672,7 +1672,8 @@ const SERIES = {
     footer: [
       "Episode data covers episodes 1–387 (through chapter 586). 163 of 387 episodes are filler (42.1%), and Anime2Manga marks filler episodes so you can spot or skip them.",
       'Negative or decimal chapter numbers (e.g. "0.8") are bonus/prequel chapters.',
-      'Sources: episode–chapter correspondence and volume/arc chapter ranges compiled by ListFist.com and Comic Book Treasury.'
+      'Sources: episode–chapter correspondence and volume/arc chapter ranges compiled by ListFist.com and Comic Book Treasury.',
+      'As an Amazon Associate I earn from qualifying purchases.'
     ],
     beyondDataHint: 'This chapter is likely animated in Thousand-Year Blood War already — the episode list just needs extending.',
     animeVolumeThreshold: 54,
@@ -1803,7 +1804,8 @@ const SERIES = {
     footer: [
       "Dandadan Seasons 1 and 2 contain 24 episodes and adapt manga chapters 1–71. Continue from chapter 72 after episode 24.",
       "All 24 episodes are manga canon. Some chapters overlap between adjacent episodes because an episode may adapt only part of a chapter.",
-      "Episode–chapter mapping was cross-checked against Anime Filler Guide and the r/Dandadan episode discussion records. Manga chapter tracking is current through chapter 245."
+      "Episode–chapter mapping was cross-checked against Anime Filler Guide and the r/Dandadan episode discussion records. Manga chapter tracking is current through chapter 245.",
+      "As an Amazon Associate I earn from qualifying purchases."
     ],
     beyondDataHint: 'The anime currently ends at chapter 71. Continue reading from chapter 72.',
     animeVolumeThreshold: 8,
@@ -1897,7 +1899,11 @@ const SERIES = {
       "25":"https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088851884/500/9784088851884.jpg"
     },
     VIZ_LINKS: Object.fromEntries(Array.from({length:25},(_,i)=>[String(i+1),'https://www.viz.com/dandadan'])),
-    AMAZON_LINKS: {},
+    AMAZON_LINKS: Object.fromEntries(Array.from({length:22},(_,i)=>{
+      const volume = i + 1;
+      const query = encodeURIComponent(`Dandadan Vol. ${volume} Yukinobu Tatsu`);
+      return [String(volume), `https://www.amazon.com/s?k=${query}&tag=mangatoanim01-20`];
+    })),
     ARC_RANGES: []
   },
   aot: {
@@ -2472,12 +2478,12 @@ function renderVolumeCard(vol, chapterNum) {
     : `<span class="tag special">${escapeHtml(currentSeries.notAdaptedTagText)}</span>`;
 
   const vizUrl = VIZ_LINKS[vol.volume];
-  const amazonUrl = null; // affiliate link temporarily disabled for initial launch — AMAZON_LINKS data kept below for re-enabling later
+  const amazonUrl = AMAZON_LINKS[vol.volume] || null;
   const getRow = (vizUrl || amazonUrl)
     ? `<div class="cover-col-links">
         <div class="get-row">
           ${vizUrl ? `<a href="${escapeHtml(vizUrl)}" target="_blank" rel="noopener" class="get-badge viz" title="${escapeHtml(currentSeries.publisherLabel || 'VIZ')}">${escapeHtml(currentSeries.publisherLabel || 'VIZ')}</a>` : ''}
-          ${amazonUrl ? `<a href="${escapeHtml(amazonUrl)}" target="_blank" rel="noopener" class="get-badge amazon" title="Amazon">Amazon</a>` : ''}
+          ${amazonUrl ? `<a href="${escapeHtml(amazonUrl)}" target="_blank" rel="sponsored noopener" class="get-badge amazon" title="Buy on Amazon (affiliate link)">Amazon</a>` : ''}
         </div>
         ${amazonUrl ? `<p class="aff-note">Amazon link is an affiliate link</p>` : ''}
       </div>`
