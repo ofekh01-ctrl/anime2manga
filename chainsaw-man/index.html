@@ -1168,7 +1168,7 @@
 .home-copy,.home-tagline,.home-title{position:relative;z-index:2}
 .series-search-wrap{position:relative;z-index:2;max-width:900px}
 .home-view .series-grid{
-  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  grid-template-columns:repeat(4,minmax(0,1fr)) !important;
   gap:14px !important;
 }
 .home-view .series-card.home-poster-card{
@@ -1246,7 +1246,7 @@
   opacity:1 !important;
   border-style:solid !important;
 }
-@media(max-width:850px){
+@media(max-width:1100px){
   .home-view::before{width:100%;height:430px;opacity:.48}
   .home-view .series-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
 }
@@ -1263,7 +1263,7 @@
 .db-subtab:hover{border-color:var(--gold);color:var(--text)}
 .db-subtab.active{background:var(--gold);border-color:var(--gold);color:#111}
 </style>
-<link href="/community-redesign.css" rel="stylesheet"/>
+<link href="/community-redesign.css?v=8" rel="stylesheet"/>
 </head>
 <body>
 <button aria-label="Open navigation" class="mobile-nav-toggle" onclick="toggleNav()" type="button">☰</button>
@@ -1294,93 +1294,99 @@
 <main class="home-view" id="homeView">
 <div class="home-inner">
 <img alt="Anime2Manga logo" class="home-logo" onclick="showHome()" src="/assets/logo.png" style="cursor:pointer"/>
+<div class="home-head">
+<div class="home-head-copy">
 <p class="home-kicker"><span aria-hidden="true"></span> Community reference guide</p>
 <h1 class="home-title">ANIME<span class="two">2</span>MANGA</h1>
 <p class="home-tagline">Stop searching wikis. Continue the story.</p>
 <p class="home-copy">Enter an episode, chapter, or volume and get the exact match across anime and manga — including filler and adaptation notes.</p>
-<div class="home-rule"></div>
-
+</div>
+<div class="home-head-search">
 <div class="series-search-wrap" id="seriesSearchWrap">
+  <label class="home-search-label" for="seriesSearchInput">Find a series</label>
   <div class="series-search-row">
     <input id="seriesSearchInput" class="series-search-input" type="search" placeholder="Search a series..." autocomplete="off" aria-label="Search series"/>
     <button class="series-search-btn" id="seriesSearchBtn" type="button" onclick="runSeriesSearch()">Search</button>
   </div>
   <div class="series-search-meta" id="seriesSearchMeta">15 series · 13 available · 2 coming soon</div>
 </div>
+</div>
+</div>
+<div class="home-rule"></div>
 <p class="home-section-title">Series library</p>
 <div class="series-grid" id="homeSeriesGrid">
 <button class="series-card home-poster-card" data-series-name="Bleach" onclick="navSeries('bleach')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/bleach.jpg" alt="Bleach"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/bleach.jpg" alt="Bleach"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Bleach</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <button class="series-card home-poster-card" data-series-name="One Piece" onclick="navSeries('onepiece')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/one-piece.jpg" alt="One Piece"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/one-piece.jpg" alt="One Piece"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">One Piece</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <button class="series-card home-poster-card" data-series-name="Naruto" onclick="navSeries('naruto')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/naruto.jpg" alt="Naruto"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/naruto.jpg" alt="Naruto"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Naruto</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <button class="series-card home-poster-card" data-series-name="Dragon Ball" onclick="navSeries('dragonball')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/dragon-ball.jpg" alt="Dragon Ball"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/dragon-ball.jpg" alt="Dragon Ball"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Dragon Ball</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <button class="series-card home-poster-card" data-series-name="Attack on Titan" onclick="navSeries('aot')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/attack-on-titan.jpg" alt="Attack on Titan"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/attack-on-titan.jpg" alt="Attack on Titan"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Attack on Titan</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <button class="series-card home-poster-card" data-series-name="Jujutsu Kaisen" onclick="navSeries('jjk')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/jujutsu-kaisen.jpg" alt="Jujutsu Kaisen"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/jujutsu-kaisen.jpg" alt="Jujutsu Kaisen"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Jujutsu Kaisen</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <button class="series-card home-poster-card" data-series-name="Demon Slayer" onclick="navSeries('demonslayer')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/demon-slayer.jpg" alt="Demon Slayer"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/demon-slayer.jpg" alt="Demon Slayer"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Demon Slayer</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <button class="series-card home-poster-card" data-series-name="Death Note" onclick="navSeries('deathnote')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/death-note.jpg" alt="Death Note"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/death-note.jpg" alt="Death Note"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Death Note</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <div class="series-card home-poster-card coming-card" data-series-name="My Hero Academia" aria-label="My Hero Academia coming soon">
-  <img class="home-poster-img" src="/assets/home-cards/my-hero-academia.jpg" alt="My Hero Academia"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/my-hero-academia.jpg" alt="My Hero Academia"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">My Hero Academia</span><span class="coming-badge">COMING SOON</span></span>
 </div>
 <button class="series-card home-poster-card" data-series-name="Chainsaw Man" onclick="navSeries('chainsawman')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/chainsaw-man.jpg" alt="Chainsaw Man"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/chainsaw-man.jpg" alt="Chainsaw Man"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Chainsaw Man</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <button class="series-card home-poster-card" data-series-name="Hunter × Hunter" onclick="navSeries('hxh')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/hunter-x-hunter.jpg" alt="Hunter × Hunter"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/hunter-x-hunter.jpg" alt="Hunter × Hunter"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Hunter × Hunter</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <button class="series-card home-poster-card" data-series-name="Blue Lock" onclick="navSeries('bluelock')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/blue-lock.jpg" alt="Blue Lock"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/blue-lock.jpg" alt="Blue Lock"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Blue Lock</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <div class="series-card home-poster-card coming-card" data-series-name="Black Clover" aria-label="Black Clover coming soon">
-  <img class="home-poster-img" src="/assets/home-cards/black-clover.jpg" alt="Black Clover"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/black-clover.jpg" alt="Black Clover"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Black Clover</span><span class="coming-badge">COMING SOON</span></span>
 </div>
 <button class="series-card home-poster-card" data-series-name="Vinland Saga" onclick="navSeries('vinland')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/vinland-saga.jpg" alt="Vinland Saga"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/vinland-saga.jpg" alt="Vinland Saga"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Vinland Saga</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
 <button class="series-card home-poster-card" data-series-name="Dandadan" onclick="navSeries('dandadan')" type="button">
-  <img class="home-poster-img" src="/assets/home-cards/dandadan.jpg" alt="Dandadan"/>
+  <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/dandadan.jpg" alt="Dandadan"/></span>
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Dandadan</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
@@ -1574,7 +1580,7 @@ window.addEventListener('popstate', restoreViewFromUrl);
 document.addEventListener('DOMContentLoaded', restoreViewFromUrl);
 
 
-const HOME_SERIES_PER_PAGE = 9;
+const HOME_SERIES_PER_PAGE = 12;
 let homeSeriesPage = 1;
 let homeSeriesSearch = '';
 
@@ -1605,38 +1611,27 @@ function renderHomeSeriesBrowser() {
   const next = document.getElementById('nextSeriesPage');
   const meta = document.getElementById('seriesSearchMeta');
 
-  if (query) {
-    cards.forEach(card => {
-      card.dataset.seriesHidden = filtered.includes(card) ? 'false' : 'true';
-    });
-    pagination.style.display = 'none';
-    meta.textContent = filtered.length
-      ? `${filtered.length} result${filtered.length === 1 ? '' : 's'} for “${homeSeriesSearch.trim()}”`
-      : `No series found for “${homeSeriesSearch.trim()}”`;
-    return;
-  }
-
-  const totalPages = Math.max(1, Math.ceil(cards.length / HOME_SERIES_PER_PAGE));
+  const totalPages = Math.max(1, Math.ceil(filtered.length / HOME_SERIES_PER_PAGE));
   homeSeriesPage = Math.min(Math.max(homeSeriesPage, 1), totalPages);
   const start = (homeSeriesPage - 1) * HOME_SERIES_PER_PAGE;
   const end = start + HOME_SERIES_PER_PAGE;
+  const visible = new Set(filtered.slice(start, end));
 
-  cards.forEach((card, index) => {
-    card.dataset.seriesHidden = index >= start && index < end ? 'false' : 'true';
+  cards.forEach(card => {
+    card.dataset.seriesHidden = visible.has(card) ? 'false' : 'true';
   });
 
-  pagination.style.display = 'flex';
+  pagination.style.display = filtered.length ? 'flex' : 'none';
   pageLabel.textContent = `Page ${homeSeriesPage} of ${totalPages}`;
   prev.disabled = homeSeriesPage <= 1;
   next.disabled = homeSeriesPage >= totalPages;
   const availableCount = cards.filter(card => !card.classList.contains('coming-card')).length;
-  meta.textContent = `${cards.length} series · ${availableCount} available · ${cards.length - availableCount} coming soon`;
+  meta.textContent = query
+    ? (filtered.length ? `${filtered.length} result${filtered.length === 1 ? '' : 's'} for “${homeSeriesSearch.trim()}”` : `No series found for “${homeSeriesSearch.trim()}”`)
+    : `${cards.length} series · ${availableCount} available · ${cards.length - availableCount} coming soon`;
 }
 
 function changeSeriesPage(delta) {
-  homeSeriesSearch = '';
-  const input = document.getElementById('seriesSearchInput');
-  if (input) input.value = '';
   homeSeriesPage += delta;
   renderHomeSeriesBrowser();
   document.querySelector('.home-section-title')?.scrollIntoView({behavior:'smooth', block:'start'});
