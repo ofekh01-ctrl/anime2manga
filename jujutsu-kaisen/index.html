@@ -1263,6 +1263,7 @@
 .db-subtab:hover{border-color:var(--gold);color:var(--text)}
 .db-subtab.active{background:var(--gold);border-color:var(--gold);color:#111}
 </style>
+<link href="/community-redesign.css" rel="stylesheet"/>
 </head>
 <body>
 <button aria-label="Open navigation" class="mobile-nav-toggle" onclick="toggleNav()" type="button">☰</button>
@@ -1293,9 +1294,10 @@
 <main class="home-view" id="homeView">
 <div class="home-inner">
 <img alt="Anime2Manga logo" class="home-logo" onclick="showHome()" src="/assets/logo.png" style="cursor:pointer"/>
+<p class="home-kicker"><span aria-hidden="true"></span> Community reference guide</p>
 <h1 class="home-title">ANIME<span class="two">2</span>MANGA</h1>
-<p class="home-tagline">Pick up exactly where you left off.</p>
-<p class="home-copy">Anime2Manga is a free anime-to-manga and manga-to-anime reference tool. Enter an anime episode to find the manga chapters and volume it adapts, or enter a manga chapter or volume to find the matching anime episode.</p>
+<p class="home-tagline">Stop searching wikis. Continue the story.</p>
+<p class="home-copy">Enter an episode, chapter, or volume and get the exact match across anime and manga — including filler and adaptation notes.</p>
 <div class="home-rule"></div>
 
 <div class="series-search-wrap" id="seriesSearchWrap">
@@ -1305,7 +1307,7 @@
   </div>
   <div class="series-search-meta" id="seriesSearchMeta">15 series · 13 available · 2 coming soon</div>
 </div>
-<p class="home-section-title">CHOOSE A SERIES</p>
+<p class="home-section-title">Series library</p>
 <div class="series-grid" id="homeSeriesGrid">
 <button class="series-card home-poster-card" data-series-name="Bleach" onclick="navSeries('bleach')" type="button">
   <img class="home-poster-img" src="/assets/home-cards/bleach.jpg" alt="Bleach"/>
@@ -1404,8 +1406,9 @@
 <div class="wrap" id="top">
 <header>
 <div class="hero-text">
+<p class="series-eyebrow">Series guide</p>
 <p class="wordmark" id="wordmark">Bleach</p>
-<h1 class="subtitle">Volume ⇄ chapter ⇄ episode sync</h1>
+<h1 class="subtitle">Episode ↔ chapter ↔ volume</h1>
 <p class="lede" id="lede">Enter where you are in any one of the three, and the others update to match — plus whether you're headed into anime filler.</p>
 <div class="series-tabs">
 <button class="series-tab" data-series="bleach" onclick="navSeries('bleach')" type="button">Bleach</button>
