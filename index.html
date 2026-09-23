@@ -1104,7 +1104,31 @@
     background:rgba(195,31,43,.13);color:var(--text);font:700 13px/1 inherit;cursor:pointer
   }
   .series-search-btn:hover{background:rgba(195,31,43,.22)}
+  .series-search-suggestions{
+    margin-top:6px;border:1px solid var(--border);border-radius:10px;
+    background:var(--surface);overflow:hidden
+  }
+  .series-search-suggestions[hidden]{display:none}
+  .series-search-suggestion{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    width:100%;padding:11px 14px;border:0;border-bottom:1px solid var(--border);
+    background:transparent;color:var(--text);font:inherit;text-align:left
+  }
+  .series-search-suggestion:last-child{border-bottom:0}
+  button.series-search-suggestion{cursor:pointer}
+  button.series-search-suggestion:hover,button.series-search-suggestion:focus-visible{background:var(--accent-soft)}
+  .series-search-suggestion.coming{color:var(--text-dim)}
+  .series-search-suggestion small{font-size:11px;text-transform:uppercase;letter-spacing:.05em}
   .series-search-meta{margin-top:8px;color:var(--text-dim);font-size:12px}
+  .series-no-results{
+    margin:16px 0 0;padding:24px;border:1px solid var(--border);border-radius:10px;
+    background:var(--surface);color:var(--text-dim);text-align:center
+  }
+  .series-no-results[hidden]{display:none}
+  .series-no-results p{margin:0 0 8px}
+  .series-no-results p:last-child{margin-bottom:0}
+  .series-no-results strong{color:var(--text)}
+  .series-no-results a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
   .series-pagination{display:flex;align-items:center;justify-content:center;gap:12px;margin:22px 0 4px}
   .page-btn{
     width:38px;height:38px;border:1px solid var(--border);border-radius:9px;background:var(--surface);
@@ -1308,6 +1332,7 @@
     <input id="seriesSearchInput" class="series-search-input" type="search" placeholder="Search a series..." autocomplete="off" aria-label="Search series"/>
     <button class="series-search-btn" id="seriesSearchBtn" type="button" onclick="runSeriesSearch()">Search</button>
   </div>
+  <div class="series-search-suggestions" id="seriesSearchSuggestions" aria-label="Matching series" hidden></div>
   <div class="series-search-meta" id="seriesSearchMeta">15 series · 13 available · 2 coming soon</div>
 </div>
 </div>
@@ -1392,6 +1417,11 @@
 </button>
 </div>
 
+<div class="series-no-results" id="seriesNoResults" role="status" aria-live="polite" hidden>
+  <p>No series found for <strong id="seriesNoResultsQuery"></strong>.</p>
+  <p>Can't find the series you want? <a href="#homeRequestSeriesLink">Request a series using the form below.</a></p>
+</div>
+
 <div class="series-pagination" id="seriesPagination" aria-label="Series pages">
   <button class="page-btn" id="prevSeriesPage" type="button" onclick="changeSeriesPage(-1)" aria-label="Previous series page">‹</button>
   <span class="page-label" id="seriesPageLabel">Page 1 of 2</span>
@@ -1405,7 +1435,7 @@
 <p>As an Amazon Associate, I earn from qualifying purchases. This helps support the website at no extra cost to you.</p>
 <div class="feedback-actions" aria-label="Feedback and requests">
 <a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'error',page_path:window.location.pathname})">Found an error?</a>
-<a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'series_request',page_path:window.location.pathname})">Request a series</a>
+<a class="feedback-link" id="homeRequestSeriesLink" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'series_request',page_path:window.location.pathname})">Request a series</a>
 </div>
 </section>
 </div>
@@ -1603,7 +1633,7 @@ function renderHomeSeriesBrowser() {
   const cards = getHomeSeriesCards();
   const query = homeSeriesSearch.trim().toLowerCase();
   const filtered = query
-    ? cards.filter(card => card.dataset.seriesName.toLowerCase().includes(query))
+    ? cards.filter(card => card.dataset.seriesName.toLowerCase().startsWith(query))
     : cards;
 
   const pagination = document.getElementById('seriesPagination');
@@ -1611,18 +1641,46 @@ function renderHomeSeriesBrowser() {
   const prev = document.getElementById('prevSeriesPage');
   const next = document.getElementById('nextSeriesPage');
   const meta = document.getElementById('seriesSearchMeta');
+  const suggestions = document.getElementById('seriesSearchSuggestions');
+  const noResults = document.getElementById('seriesNoResults');
+  const noResultsQuery = document.getElementById('seriesNoResultsQuery');
+
+  suggestions.replaceChildren();
+  if (query) {
+    filtered.forEach(card => {
+      const coming = card.classList.contains('coming-card');
+      const item = document.createElement(coming ? 'div' : 'button');
+      item.className = `series-search-suggestion${coming ? ' coming' : ''}`;
+      if (!coming) {
+        item.type = 'button';
+        item.addEventListener('click', () => card.click());
+      }
+      const name = document.createElement('span');
+      name.textContent = card.dataset.seriesName;
+      item.appendChild(name);
+      if (coming) {
+        const label = document.createElement('small');
+        label.textContent = 'Coming soon';
+        item.appendChild(label);
+      }
+      suggestions.appendChild(item);
+    });
+  }
+  suggestions.hidden = !query || !filtered.length;
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / HOME_SERIES_PER_PAGE));
   homeSeriesPage = Math.min(Math.max(homeSeriesPage, 1), totalPages);
   const start = (homeSeriesPage - 1) * HOME_SERIES_PER_PAGE;
   const end = start + HOME_SERIES_PER_PAGE;
-  const visible = new Set(filtered.slice(start, end));
+  const visible = new Set(query ? filtered : filtered.slice(start, end));
 
   cards.forEach(card => {
     card.dataset.seriesHidden = visible.has(card) ? 'false' : 'true';
   });
 
-  pagination.style.display = filtered.length ? 'flex' : 'none';
+  pagination.style.display = !query && totalPages > 1 ? 'flex' : 'none';
+  noResults.hidden = !query || filtered.length > 0;
+  noResultsQuery.textContent = `“${homeSeriesSearch.trim()}”`;
   pageLabel.textContent = `Page ${homeSeriesPage} of ${totalPages}`;
   prev.disabled = homeSeriesPage <= 1;
   next.disabled = homeSeriesPage >= totalPages;
@@ -1659,13 +1717,7 @@ document.addEventListener('DOMContentLoaded', () => {
   input?.addEventListener('keydown', e => {
     if (e.key === 'Enter') runSeriesSearch();
   });
-  input?.addEventListener('input', () => {
-    if (!input.value.trim() && homeSeriesSearch) {
-      homeSeriesSearch = '';
-      homeSeriesPage = 1;
-      renderHomeSeriesBrowser();
-    }
-  });
+  input?.addEventListener('input', runSeriesSearch);
   renderHomeSeriesBrowser();
 });
 
