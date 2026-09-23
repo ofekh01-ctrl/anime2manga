@@ -1287,7 +1287,7 @@
 .db-subtab:hover{border-color:var(--gold);color:var(--text)}
 .db-subtab.active{background:var(--gold);border-color:var(--gold);color:#111}
 </style>
-<link href="/community-redesign.css?v=9" rel="stylesheet"/>
+<link href="/community-redesign.css?v=10" rel="stylesheet"/>
 </head>
 <body>
 <button aria-label="Open navigation" class="mobile-nav-toggle" onclick="toggleNav()" type="button">☰</button>
@@ -1489,7 +1489,7 @@
 <input id="chapterInput" inputmode="numeric" placeholder="1–686 (+ bonus)" type="text"/>
 </div>
 <div class="field">
-<label for="episodeInput">Anime episode</label>
+<label for="episodeInput" id="episodeInputLabel">Anime episode</label>
 <input id="episodeInput" max="387" min="1" placeholder="1–387" type="number"/>
 </div>
 </div>
@@ -2788,12 +2788,21 @@ function arcForChapter(num) {
 const volumeInput = document.getElementById('volumeInput');
 const chapterInput = document.getElementById('chapterInput');
 const episodeInput = document.getElementById('episodeInput');
+const episodeInputLabel = document.getElementById('episodeInputLabel');
 const volumeCard = document.getElementById('volumeCard');
 const episodeCard = document.getElementById('episodeCard');
 // Manga-vs-anime difference notes, keyed by episode number.
 // Only populated where a specific, verifiable difference is confirmed —
 // not filled in for every episode. Add more entries here as they're found.
 let programmatic = false;
+
+function isDemonSlayerMovieMode() {
+  return currentSeries?.id === 'demonslayer' && currentEpisodeVariant?.id === 'movies';
+}
+
+function animeEntryName() {
+  return isDemonSlayerMovieMode() ? 'movie' : 'episode';
+}
 
 function rebuildEpisodeIndex() {
   const adaptedChapters = EPISODES.flatMap(ep =>
@@ -2826,6 +2835,7 @@ function setEpisodeVariant(variantId, options = {}) {
   const variant = currentSeries.episodeVariants.find(v => v.id === variantId) || currentSeries.episodeVariants[0];
   currentEpisodeVariant = variant;
   EPISODES = variant.episodes;
+  episodeInputLabel.textContent = isDemonSlayerMovieMode() ? 'Movie' : 'Anime episode';
   episodeInput.placeholder = variant.episodePlaceholder;
   episodeInput.max = EPISODES[EPISODES.length - 1].episode;
   document.querySelectorAll('.edition-tab').forEach(btn => {
@@ -2861,6 +2871,7 @@ function applySeries(id) {
   volumeInput.placeholder = s.volumePlaceholder;
   chapterInput.placeholder = s.chapterPlaceholder;
   episodeInput.step = 'any';
+  episodeInputLabel.textContent = 'Anime episode';
 
   renderEpisodeVariants(s);
   if (s.episodeVariants && s.episodeVariants.length) {
@@ -2990,7 +3001,7 @@ function renderVolumeCard(vol, chapterNum, adaptationStatus = null) {
 
 function renderEpisodeResult(ep) {
   if (!ep) {
-    episodeCard.innerHTML = `<p class="empty">No episode data for that number (valid range: ${EPISODES[0].episode}–${EPISODES[EPISODES.length - 1].episode}).</p>`;
+    episodeCard.innerHTML = `<p class="empty">No ${animeEntryName()} data for that number (valid range: ${EPISODES[0].episode}–${EPISODES[EPISODES.length - 1].episode}).</p>`;
     return;
   }
   let tag, detail;
@@ -3010,27 +3021,29 @@ function renderEpisodeResult(ep) {
 
   episodeCard.innerHTML = `
     ${tag}
-    <p class="card-title">Episode ${ep.episode}${ep.title ? ' — ' + escapeHtml(ep.title) : ''}</p>
+    <p class="card-title">${isDemonSlayerMovieMode() ? 'Movie' : 'Episode'} ${ep.episode}${ep.title ? ' — ' + escapeHtml(ep.title) : ''}</p>
     <p class="card-detail">${detail}</p>
   `;
 }
 
 function renderChapterBeyondData(targetNum) {
+  const entry = animeEntryName();
   episodeCard.innerHTML = `
     <span class="tag special">Beyond current data</span>
-    <p class="card-title">Chapter ${targetNum} isn't in this tool's episode data yet</p>
-    <p class="card-detail">Episode data here only goes up through chapter ${MAX_ADAPTED_CHAPTER} (episode ${EPISODES[EPISODES.length - 1].episode}). ${escapeHtml(currentSeries.beyondDataHint)}</p>
+    <p class="card-title">Chapter ${targetNum} isn't in this tool's ${entry} data yet</p>
+    <p class="card-detail">${entry === 'movie' ? 'Movie' : 'Episode'} data here only goes up through chapter ${MAX_ADAPTED_CHAPTER} (${entry} ${EPISODES[EPISODES.length - 1].episode}). ${escapeHtml(currentSeries.beyondDataHint)}</p>
   `;
 }
 
 function renderChapterResult(targetNum) {
+  const entry = animeEntryName();
   const exact = chapterToEpisodes[targetNum];
   if (exact && exact.length) {
     const epList = exact.map(n => `#${n}`).join(', ');
     episodeCard.innerHTML = `
       <span class="tag canon">Canon</span>
-      <p class="card-title">Chapter ${targetNum} is adapted in episode${exact.length > 1 ? 's' : ''} ${epList}</p>
-      <p class="card-detail">Jump to <strong>episode ${exact[exact.length - 1]}</strong> to see this chapter animated.</p>
+      <p class="card-title">Chapter ${targetNum} is adapted in ${entry}${exact.length > 1 ? 's' : ''} ${epList}</p>
+      <p class="card-detail">Jump to <strong>${entry} ${exact[exact.length - 1]}</strong> to see this chapter animated.</p>
     `;
     return;
   }
@@ -3041,13 +3054,13 @@ function renderChapterResult(targetNum) {
   const closest = findClosestEpisodeForChapter(targetNum);
   if (closest) {
     episodeCard.innerHTML = `
-      <span class="tag special">Between episodes</span>
+      <span class="tag special">Between ${entry}s</span>
       <p class="card-title">Chapter ${targetNum} isn't directly adapted</p>
-      <p class="card-detail">The anime is caught up through <strong>episode ${closest.episode}</strong> (${escapeHtml(closest.title)}).</p>
+      <p class="card-detail">The anime is caught up through <strong>${entry} ${closest.episode}</strong> (${escapeHtml(closest.title)}).</p>
     `;
     return;
   }
-  episodeCard.innerHTML = '<p class="empty">No episode data covers that chapter.</p>';
+  episodeCard.innerHTML = `<p class="empty">No ${entry} data covers that chapter.</p>`;
 }
 
 // Core pivot: given a chapter number, update volume + episode fields and cards.
@@ -3083,7 +3096,7 @@ function clearAll() {
   episodeInput.value = '';
   programmatic = false;
   volumeCard.innerHTML = '<p class="empty">Volume details will appear here.</p>';
-  episodeCard.innerHTML = '<p class="empty">Episode details will appear here.</p>';
+  episodeCard.innerHTML = `<p class="empty">${isDemonSlayerMovieMode() ? 'Movie' : 'Episode'} details will appear here.</p>`;
 }
 
 // A volume is an inclusive chapter interval. Match every episode that adapts
@@ -3130,21 +3143,26 @@ function formatEpisodeRanges(episodes) {
 function renderVolumeEpisodes(vol, adaptation) {
   const { groups, status, lastChapterInVolume } = adaptation;
   if (!groups.length) {
-    episodeCard.innerHTML = `<span class="tag special">${status === 'unadapted' ? 'Not yet adapted' : 'No episode match'}</span>
-      <p class="card-title">No anime episodes match volume ${vol.volume}</p>
+    episodeCard.innerHTML = `<span class="tag special">${status === 'unadapted' ? 'Not yet adapted' : currentSeries.id === 'demonslayer' ? 'No adaptation match' : 'No episode match'}</span>
+      <p class="card-title">No ${currentSeries.id === 'demonslayer' ? 'TV episodes or movies' : 'anime episodes'} match volume ${vol.volume}</p>
       <p class="card-detail">${status === 'unadapted'
         ? 'This volume has not yet been adapted in the available anime data.'
-        : 'No episode in the available data maps to chapters in this volume.'}</p>`;
+        : `No ${currentSeries.id === 'demonslayer' ? 'TV episode or movie' : 'episode'} in the available data maps to chapters in this volume.`}</p>`;
     return;
   }
-  const lines = groups.map(({ variant, episodes }) =>
-    `<p class="card-detail">${variant.label ? `${escapeHtml(variant.label)}: ` : ''}<strong>Episodes ${formatEpisodeRanges(episodes)}</strong></p>`
-  ).join('');
+  const hasMovies = currentSeries.id === 'demonslayer' && groups.some(({ variant }) => variant.id === 'movies');
+  const hasTV = groups.some(({ variant }) => variant.id !== 'movies');
+  const adaptationName = hasMovies ? (hasTV ? 'episodes and movies' : 'movies') : 'episodes';
+  const lines = groups.map(({ variant, episodes }) => {
+    const entry = currentSeries.id === 'demonslayer' && variant.id === 'movies'
+      ? (episodes.length === 1 ? 'Movie' : 'Movies') : 'Episodes';
+    return `<p class="card-detail">${variant.label ? `${escapeHtml(variant.label)}: ` : ''}<strong>${entry} ${formatEpisodeRanges(episodes)}</strong></p>`;
+  }).join('');
   const partialNote = status === 'partial'
     ? `<p class="card-detail">Only adapted through chapter ${lastChapterInVolume}. Chapters ${lastChapterInVolume + 1}–${vol.end} of this volume are not yet covered by the available anime data.</p>`
     : '';
   episodeCard.innerHTML = `<span class="tag ${status === 'partial' ? 'special' : 'canon'}">${status === 'partial' ? 'Partially adapted' : 'Canon'}</span>
-    <p class="card-title">Volume ${vol.volume} appears in these episodes</p>
+    <p class="card-title">Volume ${vol.volume} appears in these ${adaptationName}</p>
     ${lines}${partialNote}`;
 }
 
@@ -3159,7 +3177,7 @@ function handleVolumeChange() {
     episodeInput.value = '';
     programmatic = false;
     volumeCard.innerHTML = `<p class="empty">Enter a volume number (${VOLUMES[0].volume}–${VOLUMES[VOLUMES.length - 1].volume}).</p>`;
-    episodeCard.innerHTML = '<p class="empty">Episode details will appear here.</p>';
+    episodeCard.innerHTML = `<p class="empty">${isDemonSlayerMovieMode() ? 'Movie' : 'Episode'} details will appear here.</p>`;
     return;
   }
   const adaptation = getVolumeAdaptation(vol);
@@ -3205,7 +3223,7 @@ function handleEpisodeChange() {
   trackTrackerUsed('episode');
 
   if (ep.filler) {
-    volumeCard.innerHTML = '<p class="empty">This is a filler episode — no manga chapter or volume applies.</p>';
+    volumeCard.innerHTML = `<p class="empty">This is a filler ${animeEntryName()} — no manga chapter or volume applies.</p>`;
     programmatic = true;
     chapterInput.value = 'Filler';
     volumeInput.value = 'Filler';
@@ -3223,7 +3241,7 @@ function handleEpisodeChange() {
   }
 
   if (ep.sourceLabel && !ep.chapters.length) {
-    volumeCard.innerHTML = `<p class="empty">This episode adapts ${escapeHtml(ep.sourceLabel)}, so no manga chapter or volume applies.</p>`;
+    volumeCard.innerHTML = `<p class="empty">This ${animeEntryName()} adapts ${escapeHtml(ep.sourceLabel)}, so no manga chapter or volume applies.</p>`;
     programmatic = true;
     chapterInput.value = 'Novel';
     volumeInput.value = 'Novel';
