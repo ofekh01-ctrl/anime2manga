@@ -1315,6 +1315,8 @@
 <button class="side-link series-nav" data-series="fullmetal" onclick="navSeries('fullmetal')" type="button"><span>Fullmetal Alchemist</span></button>
 <button class="side-link series-nav" data-series="onepunchman" onclick="navSeries('onepunchman')" type="button"><span>One Punch Man</span></button>
 <button class="side-link series-nav" data-series="gachiakuta" onclick="navSeries('gachiakuta')" type="button"><span>Gachiakuta</span></button>
+<button class="side-link series-nav" data-series="spyxfamily" onclick="navSeries('spyxfamily')" type="button"><span>Spy x Family</span></button>
+<button class="side-link series-nav" data-series="frieren" onclick="navSeries('frieren')" type="button"><span>Frieren: Beyond Journey's End</span></button>
 <div class="side-bottom"><button class="side-link" onclick="showAbout()" type="button"><span class="side-icon">?</span><span>About</span></button></div>
 </aside>
 <main class="home-view" id="homeView">
@@ -1431,16 +1433,16 @@
   <span class="home-poster-overlay"></span>
   <span class="home-poster-copy"><span class="series-card-name">Gachiakuta</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
 </button>
-<div class="series-card coming-card home-poster-card" data-series-name="Spy x Family">
+<button class="series-card home-poster-card" data-series-name="Spy x Family" onclick="navSeries('spyxfamily')" type="button">
   <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/spy-x-family.jpg" alt="Spy x Family inspired illustration of a family watching a city at sunset" loading="lazy"/></span>
   <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Spy x Family</span><span class="coming-badge">Coming soon</span></span>
-</div>
-<div class="series-card coming-card home-poster-card" data-series-name="Frieren: Beyond Journey's End">
+  <span class="home-poster-copy"><span class="series-card-name">Spy x Family</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
+<button class="series-card home-poster-card" data-series-name="Frieren: Beyond Journey's End" onclick="navSeries('frieren')" type="button">
   <span class="home-poster-media"><img class="home-poster-img" src="/assets/home-cards/frieren.jpg" alt="Frieren inspired illustration of an elven mage overlooking a valley at sunset" loading="lazy"/></span>
   <span class="home-poster-overlay"></span>
-  <span class="home-poster-copy"><span class="series-card-name">Frieren: Beyond Journey's End</span><span class="coming-badge">Coming soon</span></span>
-</div>
+  <span class="home-poster-copy"><span class="series-card-name">Frieren: Beyond Journey's End</span><span class="series-card-meta">Volume · Chapter · Episode</span></span>
+</button>
 </div>
 
 <div class="series-no-results" id="seriesNoResults" role="status" aria-live="polite" hidden>
@@ -1492,6 +1494,8 @@
 <button class="series-tab" data-series="fullmetal" onclick="navSeries('fullmetal')" type="button">Fullmetal Alchemist</button>
 <button class="series-tab" data-series="onepunchman" onclick="navSeries('onepunchman')" type="button">One Punch Man</button>
 <button class="series-tab" data-series="gachiakuta" onclick="navSeries('gachiakuta')" type="button">Gachiakuta</button>
+<button class="series-tab" data-series="spyxfamily" onclick="navSeries('spyxfamily')" type="button">Spy x Family</button>
+<button class="series-tab" data-series="frieren" onclick="navSeries('frieren')" type="button">Frieren: Beyond Journey's End</button>
 </div>
 <div class="db-subtabs" id="dbSubtabs" aria-label="Dragon Ball anime series">
   <button class="db-subtab" data-db-series="dragonball" onclick="switchDragonBallSeries('dragonball')" type="button">Dragon Ball</button>
@@ -1557,6 +1561,8 @@ const SERIES_PATHS = {
   fullmetal: '/fullmetal-alchemist/',
   onepunchman: '/one-punch-man/',
   gachiakuta: '/gachiakuta/',
+  spyxfamily: '/spy-x-family/',
+  frieren: '/frieren/',
   demonslayer: '/demon-slayer/',
   deathnote: '/death-note/',
   hxh: '/hunter-x-hunter/',
@@ -2782,6 +2788,62 @@ SERIES.gachiakuta = {
   ARC_RANGES: []
 };
 
+SERIES.spyxfamily = {
+  id: 'spyxfamily',
+  name: 'Spy x Family',
+  pageTitle: 'Spy x Family Anime to Manga Converter | Anime2Manga',
+  lede: 'Match Spy x Family TV episodes 1–50 with manga chapters and VIZ volumes. After episode 50, continue from chapter 88 in volume 13.',
+  seoCopy: 'Convert Spy x Family anime episodes from seasons 1–3 to manga chapters and English VIZ volumes.',
+  footer: ["Covers TV episodes 1–50 (seasons 1–3) through chapter 87; continue at chapter 88 in volume 13. The Code: White film is an original story and is outside this guide.","Episodes 12 and 26 adapt bonus stories without numbered chapters. Some chapters are reordered or skipped in the anime; chapter 68 and chapter 78 have no direct TV episode match.","The first 16 English VIZ volumes cover numbered chapters 1–118. Extra and short missions are not listed as numbered chapter matches."],
+  beyondDataHint: 'TV episodes currently cover through chapter 87. Continue from chapter 88 in volume 13.',
+  notAdaptedTagText: 'Not yet adapted',
+  publisherLabel: 'VIZ',
+  episodePlaceholder: '1–50 (seasons 1–3)',
+  volumePlaceholder: '1–16',
+  chapterPlaceholder: '1–118',
+  VOLUMES: volumesFromStarts([1,6,12,18,24,31,38,45,54,62,67,76,85,93,100,109], 118),
+  EPISODES: [[1],[2],[1,3],[4,5],[6],[7,8],[9,10],[11,12],[13,14],[15],[16,17],[],[18,19],[20,21],[22,23],[24],[25],[26,27],[28],[29],[30],[31,32],[33,34],[35,36],[37,38],[],[40,39],[41],[42,43],[44,45],[46,47,48],[48,49,50],[51,52,53],[54,55],[56,57],[59],[58],[60],[61,"62.1","62.2"],["62.2","62.3"],[63,64],[65,66],[67,69],[70,71,72],[72,73,74],[75,76],[77,79],[80,81],[82,83,84,85],[85,86,87]].map((chapters, index) => ({ episode: index + 1, title: '', chapters: chapters.map(String), filler: false })),
+  DEFAULT_COVERS: {},
+  VIZ_LINKS: {"1":"https://www.viz.com/manga-books/manga/spy-x-family-volume-1-0/product/6302","2":"https://www.viz.com/manga-books/manga/spy-x-family-volume-2-0/product/6396","3":"https://www.viz.com/manga-books/manga/spy-x-family-volume-3-0/product/6498","4":"https://www.viz.com/manga-books/manga/spy-x-family-volume-4-0/product/6605","5":"https://www.viz.com/manga-books/manga/spy-x-family-volume-5-0/product/6706","6":"https://www.viz.com/manga-books/manga/spy-x-family-volume-6-0/product/6824","7":"https://www.viz.com/manga-books/manga/spy-x-family-volume-7-0/product/7026","8":"https://www.viz.com/manga-books/manga/spy-x-family-volume-8-0/product/7193","9":"https://www.viz.com/manga-books/manga/spy-x-family-volume-9-0/product/7382","10":"https://www.viz.com/manga-books/manga/spy-x-family-volume-10-0/product/7612","11":"https://www.viz.com/manga-books/manga/spy-x-family-volume-11-0/product/7782","12":"https://www.viz.com/manga-books/manga/spy-x-family-volume-12-0/product/7938","13":"https://www.viz.com/manga-books/manga/spy-x-family-volume-13-0/product/8161","14":"https://www.viz.com/manga-books/manga/spy-x-family-volume-14-0/product/8447","15":"https://www.viz.com/manga-books/manga/spy-x-family-volume-15-0/product/8618","16":"https://www.viz.com/manga-books/manga/spy-x-family-volume-16-0/product/8976"},
+  AMAZON_LINKS: {},
+  ARC_RANGES: []
+};
+// These TV episodes adapt bonus stories without numbered main-series chapters.
+SERIES.spyxfamily.EPISODES[11].mangaExtra = 'Extra Mission 1 and Short Mission 1';
+SERIES.spyxfamily.EPISODES[25].mangaExtra = 'Extra Mission 2';
+// The anime adapts different parts of numbered chapter 62 in both episodes.
+SERIES.spyxfamily.EPISODES[38].chapters.unshift('62');
+SERIES.spyxfamily.EPISODES[39].chapters.unshift('62');
+SERIES.spyxfamily.DEFAULT_COVERS = Object.fromEntries(
+  ["1974715469","1974717240","1974718166","1974721035","1974722945","1974725138","197472848X","1974734277","1974736288","1974740676","1974743292","1974747050","1974751988","1974756009","1974759172","197476852X"].map((isbn, index) =>
+    [index + 1, `https://dw9to29mmj727.cloudfront.net/products/${isbn}.jpg`])
+);
+
+SERIES.frieren = {
+  id: 'frieren',
+  name: "Frieren: Beyond Journey's End",
+  pageTitle: 'Frieren Anime to Manga Converter | Anime2Manga',
+  lede: "Match Frieren: Beyond Journey's End TV episodes 1–38 with manga chapters and VIZ volumes. After episode 38, continue from chapter 81 in volume 9.",
+  seoCopy: "Convert Frieren: Beyond Journey's End anime episodes across seasons 1–2 to manga chapters and English VIZ volumes.",
+  footer: ["Covers TV episodes 1–38 (seasons 1–2) through chapter 80; continue at chapter 81 in volume 9.","The first 14 released English VIZ volumes cover manga chapters 1–137. The announced fifteenth volume is not yet released in English."],
+  beyondDataHint: 'TV episodes currently cover through chapter 80. Continue from chapter 81 in volume 9.',
+  notAdaptedTagText: 'Not yet adapted',
+  publisherLabel: 'VIZ',
+  episodePlaceholder: '1–38 (seasons 1–2)',
+  volumePlaceholder: '1–14',
+  chapterPlaceholder: '1–137',
+  VOLUMES: volumesFromStarts([1,8,18,28,38,48,58,68,78,88,98,108,118,128], 137),
+  EPISODES: [[1,2],[2,3],[4,5],[6,7,8],[8,9,10],[11,12],[13,14,15],[15,16,17],[18,19,20],[21,22],[23,24],[25,26],[27,28],[29,30],[31,32],[33,34],[35,36],[37,38],[38,39,40,41],[41,42,43],[43,44,45],[46,47],[48,49],[50,51],[52,53],[54,55],[56,57,58],[58,59,60],[61,62],[63,64],[65,66],[66,67,68],[69,70],[71,72],[72,73,74],[74,75,76],[77,78],[79,80]].map((chapters, index) => ({ episode: index + 1, title: '', chapters: chapters.map(String), filler: false })),
+  DEFAULT_COVERS: {},
+  VIZ_LINKS: {"1":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-1-0/product/6872","2":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-2-0/product/6926","3":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-3-0/product/7000","4":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-4-0/product/7063","5":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-5-0/product/7118","6":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-6-0/product/7219","7":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-7-0/product/7311","8":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-8-0/product/7481","9":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-9-0/product/7597","10":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-10-0/product/7745","11":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-11-0/product/7994","12":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-12-0/product/8194","13":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-13-0/product/8316","14":"https://www.viz.com/manga-books/manga/frieren-beyond-journey-s-end-volume-14-0/product/8691"},
+  AMAZON_LINKS: {},
+  ARC_RANGES: []
+};
+SERIES.frieren.DEFAULT_COVERS = Object.fromEntries(
+  ["1974725766","1974727238","1974727246","1974727254","1974730077","1974734005","1974736202","1974738604","1974740609","1974743616","1974748987","1974751813","1974752917","1974761584"].map((isbn, index) =>
+    [index + 1, `https://dw9to29mmj727.cloudfront.net/products/${isbn}.jpg`])
+);
+
 // Publisher-hosted cover URLs, indexed by the printed English volume number.
 SERIES.onepunchman.DEFAULT_COVERS = {
   1: 'https://dw9to29mmj727.cloudfront.net/products/1421585642.jpg',
@@ -3204,6 +3266,9 @@ function renderEpisodeResult(ep) {
   } else if (ep.sourceLabel && !ep.chapters.length) {
     tag = '<span class="tag special">Novel adaptation</span>';
     detail = `Adapted from <strong>${escapeHtml(ep.sourceLabel)}</strong>; no manga chapter or volume applies.`;
+  } else if (ep.mangaExtra && !ep.chapters.length) {
+    tag = '<span class="tag special">Manga bonus story</span>';
+    detail = `Adapts ${escapeHtml(ep.mangaExtra)}; no numbered manga chapter applies.`;
   } else {
     tag = '<span class="tag canon">Canon</span>';
     detail = `Adapts chapter${ep.chapters.length > 1 ? 's' : ''} <strong>${ep.chapters.join(', ')}</strong>`;
@@ -3246,7 +3311,7 @@ function renderChapterResult(targetNum) {
     episodeCard.innerHTML = `
       <span class="tag special">Between ${entry}s</span>
       <p class="card-title">Chapter ${targetNum} isn't directly adapted</p>
-      <p class="card-detail">The anime is caught up through <strong>${entry} ${closest.episode}</strong> (${escapeHtml(closest.title)}).</p>
+      <p class="card-detail">The anime is caught up through <strong>${entry} ${closest.episode}</strong>${closest.title ? ` (${escapeHtml(closest.title)})` : ''}.</p>
     `;
     return;
   }

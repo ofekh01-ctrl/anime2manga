@@ -40,6 +40,8 @@ PAGES = {
         'Match Demon Slayer anime episodes with manga chapters and volumes, identify filler, and find where to continue reading.'),
     'dragon-ball': ('Dragon Ball Manga to Anime Converter | Anime2Manga',
         'Match Dragon Ball and Dragon Ball Z manga chapters and volumes with anime episodes, identify filler, and find exactly where to continue reading.'),
+    'frieren': ('Frieren Anime to Manga Converter | Anime2Manga',
+        'Match Frieren: Beyond Journey’s End episodes 1–38 to manga chapters and VIZ volumes. Continue reading from chapter 81 in volume 9.'),
     'fullmetal-alchemist': ('Fullmetal Alchemist: Brotherhood Manga Converter | Anime2Manga',
         'Match Fullmetal Alchemist: Brotherhood episodes with manga chapters and the original 27 manga volumes.'),
     'gachiakuta': ('Gachiakuta Anime to Manga Converter | Anime2Manga',
@@ -56,6 +58,8 @@ PAGES = {
         'Convert One Piece anime episodes to manga chapters and volumes, check filler, identify story arcs, and find exactly where to continue reading.'),
     'one-punch-man': ('One Punch Man Anime to Manga Converter | Anime2Manga',
         'Match One Punch Man TV episodes across seasons 1–3 with manga chapters and VIZ volumes, and find where to continue reading.'),
+    'spy-x-family': ('Spy x Family Anime to Manga Converter | Anime2Manga',
+        'Match Spy x Family episodes 1–50 to manga chapters and VIZ volumes. Continue reading from chapter 88 in volume 13.'),
     'vinland-saga': ('Vinland Saga Anime to Manga Converter | Anime2Manga',
         'Convert Vinland Saga anime episodes to manga chapters and original volumes, view story arcs, and find where to continue after Season 2.'),
 }
