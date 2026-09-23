@@ -36,7 +36,7 @@
       "url": "https://anime2manga.net/",
       "name": "Anime2Manga",
       "alternateName": "Anime 2 Manga",
-      "description": "A free anime-to-manga and manga-to-anime reference tool for matching anime episodes with manga chapters and volumes."
+      "description": "Match Attack on Titan manga chapters and volumes with anime episodes and find exactly where to continue between the anime and manga."
     },
     {
       "@type": "WebPage",
@@ -1320,9 +1320,8 @@
 <img alt="Anime2Manga logo" class="home-logo" onclick="showHome()" src="/assets/logo.png" style="cursor:pointer"/>
 <div class="home-head">
 <div class="home-head-copy">
-<p class="home-kicker"><span aria-hidden="true"></span> Community reference guide</p>
 <h1 class="home-title">ANIME<span class="two">2</span>MANGA</h1>
-<p class="home-tagline">Stop searching wikis. Continue the story.</p>
+<p class="home-tagline">Episode to Chapter Conversion</p>
 <p class="home-copy">Enter an episode, chapter, or volume and get the exact match across anime and manga — including filler and adaptation notes.</p>
 </div>
 <div class="home-head-search">
@@ -1595,7 +1594,7 @@ function showHome(options = {}) {
   setView('home');
   if (!options.skipHistory) {
     history.pushState({ view: 'home' }, '', '/');
-    document.title = 'Anime to Manga & Manga to Anime Converter | Anime2Manga';
+    document.title = 'Anime Episode to Manga Chapter Converter | Anime2Manga';
   }
   toggleNav(false);
   window.scrollTo({top:0, behavior:'smooth'});
@@ -1615,7 +1614,7 @@ function restoreViewFromUrl() {
     navSeries(id, { skipHistory: true });
   } else {
     showHome({ skipHistory: true });
-    document.title = 'Anime to Manga & Manga to Anime Converter | Anime2Manga';
+    document.title = 'Anime Episode to Manga Chapter Converter | Anime2Manga';
   }
 }
 window.addEventListener('popstate', restoreViewFromUrl);

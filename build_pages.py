@@ -16,9 +16,9 @@ import os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://anime2manga.net'
 
-GENERIC_TITLE = 'Anime to Manga & Manga to Anime Converter | Anime2Manga'
-GENERIC_DESC = ('Convert between anime episodes and manga chapters or volumes. '
-                'Find where to continue reading after the anime, check filler, and track adaptations.')
+GENERIC_TITLE = 'Anime Episode to Manga Chapter Converter | Anime2Manga'
+GENERIC_DESC = ('Easily convert anime episodes to manga chapters and volumes. '
+                'Find exactly where to continue reading your favorite anime series.')
 
 # folder -> (title, description). description None = keep the generic one.
 PAGES = {
@@ -36,7 +36,8 @@ PAGES = {
         'Match Dandadan manga chapters and volumes with anime episodes and find exactly where to continue reading after the anime.'),
     'death-note': ('Death Note Manga to Anime Converter | Anime2Manga',
         'Match Death Note manga chapters and volumes with anime episodes and find exactly where to continue between the anime and manga.'),
-    'demon-slayer': ('Demon Slayer Anime to Manga Converter | Anime2Manga', None),
+    'demon-slayer': ('Demon Slayer Anime to Manga Converter | Anime2Manga',
+        'Match Demon Slayer anime episodes with manga chapters and volumes, identify filler, and find where to continue reading.'),
     'dragon-ball': ('Dragon Ball Manga to Anime Converter | Anime2Manga',
         'Match Dragon Ball and Dragon Ball Z manga chapters and volumes with anime episodes, identify filler, and find exactly where to continue reading.'),
     'fullmetal-alchemist': ('Fullmetal Alchemist: Brotherhood Manga Converter | Anime2Manga',
