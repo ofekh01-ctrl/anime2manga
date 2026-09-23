@@ -150,6 +150,24 @@ input:focus-visible {
   text-align: center;
 }
 
+/* Keep the home glyph crisp and centered without the old circular frame. */
+.side-icon.home-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: #aeb3bc;
+  filter: none;
+}
+.home-icon svg { display: block; width: 18px; height: 18px; }
+.side-link:hover .home-icon,
+.side-link.home-active .home-icon { color: var(--accent); }
+
 .side-bottom {
   margin-top: 15px;
   padding-top: 10px !important;

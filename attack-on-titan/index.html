@@ -1287,14 +1287,14 @@
 .db-subtab:hover{border-color:var(--gold);color:var(--text)}
 .db-subtab.active{background:var(--gold);border-color:var(--gold);color:#111}
 </style>
-<link href="/community-redesign.css?v=10" rel="stylesheet"/>
+<link href="/community-redesign.css?v=11" rel="stylesheet"/>
 </head>
 <body>
 <button aria-label="Open navigation" class="mobile-nav-toggle" onclick="toggleNav()" type="button">☰</button>
 <div class="nav-backdrop" onclick="toggleNav(false)"></div>
 <aside aria-label="Main navigation" class="side-nav">
 <a class="side-brand" href="#top" onclick="showHome(); return false;">ANIME<span style="color:var(--accent)">2</span>MANGA</a>
-<button class="side-link" id="homeNav" onclick="showHome()" type="button"><span class="side-icon">⌂</span><span>Home</span></button>
+<button class="side-link" id="homeNav" onclick="showHome()" type="button"><span class="side-icon home-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V10Z"/></svg></span><span>Home</span></button>
 
 <div class="side-section">SERIES</div>
 <button class="side-link series-nav" data-series="bleach" onclick="navSeries('bleach')" type="button"><span>Bleach</span></button>
