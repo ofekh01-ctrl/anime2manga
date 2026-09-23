@@ -1287,7 +1287,7 @@
 .db-subtab:hover{border-color:var(--gold);color:var(--text)}
 .db-subtab.active{background:var(--gold);border-color:var(--gold);color:#111}
 </style>
-<link href="/community-redesign.css?v=8" rel="stylesheet"/>
+<link href="/community-redesign.css?v=9" rel="stylesheet"/>
 </head>
 <body>
 <button aria-label="Open navigation" class="mobile-nav-toggle" onclick="toggleNav()" type="button">☰</button>
@@ -2533,6 +2533,122 @@ SERIES.fullmetal = {
   VIZ_LINKS: {"1":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-1-0/product/399","2":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-2-0/product/400","3":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-3-0/product/401","4":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-4-0/product/402","5":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-5-0/product/403","6":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-6-0/product/607","7":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-7-0/product/608","8":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-8-0/product/609","9":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-9-0/product/610","10":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-10-0/product/611","11":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-11-0/product/839","12":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-12-0/product/840","13":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-13-0/product/1034","14":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-14-0/product/1035","15":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-15-0/product/1036","16":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-16-0/product/1037","17":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-17-0/product/1491","18":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-18-0/product/1703","19":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-19-0/product/1704","20":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-20-0/product/1932","21":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-21-0/product/2158","22":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-22-0/product/2159","23":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-23-0/product/2377","24":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-24-0/product/2589","25":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-25-0/product/2590","26":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-26-0/product/2591","27":"https://www.viz.com/manga-books/manga/fullmetal-alchemist-volume-27-0/product/2592"},
   AMAZON_LINKS: {},
   ARC_RANGES: []
+};
+
+// Exact publisher cover for each volume: VIZ catalog entries above, except
+// Black Clover 38, which uses the Japanese publisher Shueisha's cover.
+SERIES.mha.DEFAULT_COVERS = {
+  1: 'https://dw9to29mmj727.cloudfront.net/products/1421582694.jpg',
+  2: 'https://dw9to29mmj727.cloudfront.net/products/1421582708.jpg',
+  3: 'https://dw9to29mmj727.cloudfront.net/products/1421585103.jpg',
+  4: 'https://dw9to29mmj727.cloudfront.net/products/1421585111.jpg',
+  5: 'https://dw9to29mmj727.cloudfront.net/products/1421587025.jpg',
+  6: 'https://dw9to29mmj727.cloudfront.net/products/1421588668.jpg',
+  7: 'https://dw9to29mmj727.cloudfront.net/products/1421590409.jpg',
+  8: 'https://dw9to29mmj727.cloudfront.net/products/1421591677.jpg',
+  9: 'https://dw9to29mmj727.cloudfront.net/products/1421593408.jpg',
+  10: 'https://dw9to29mmj727.cloudfront.net/products/1421594374.jpg',
+  11: 'https://dw9to29mmj727.cloudfront.net/products/1421595834.jpg',
+  12: 'https://dw9to29mmj727.cloudfront.net/products/1421597012.jpg',
+  13: 'https://dw9to29mmj727.cloudfront.net/products/1421598035.jpg',
+  14: 'https://dw9to29mmj727.cloudfront.net/products/1421599473.jpg',
+  15: 'https://dw9to29mmj727.cloudfront.net/products/197470100X.jpg',
+  16: 'https://dw9to29mmj727.cloudfront.net/products/1974702553.jpg',
+  17: 'https://dw9to29mmj727.cloudfront.net/products/1974702561.jpg',
+  18: 'https://dw9to29mmj727.cloudfront.net/products/1974704378.jpg',
+  19: 'https://dw9to29mmj727.cloudfront.net/products/1974704602.jpg',
+  20: 'https://dw9to29mmj727.cloudfront.net/products/1974707733.jpg',
+  21: 'https://dw9to29mmj727.cloudfront.net/products/1974709507.jpg',
+  22: 'https://dw9to29mmj727.cloudfront.net/products/1974709655.jpg',
+  23: 'https://dw9to29mmj727.cloudfront.net/products/1974709663.jpg',
+  24: 'https://dw9to29mmj727.cloudfront.net/products/197471120X.jpg',
+  25: 'https://dw9to29mmj727.cloudfront.net/products/1974717623.jpg',
+  26: 'https://dw9to29mmj727.cloudfront.net/products/1974719774.jpg',
+  27: 'https://dw9to29mmj727.cloudfront.net/products/1974721019.jpg',
+  28: 'https://dw9to29mmj727.cloudfront.net/products/1974722880.jpg',
+  29: 'https://dw9to29mmj727.cloudfront.net/products/1974725103.jpg',
+  30: 'https://dw9to29mmj727.cloudfront.net/products/1974727157.jpg',
+  31: 'https://dw9to29mmj727.cloudfront.net/products/1974732126.jpg',
+  32: 'https://dw9to29mmj727.cloudfront.net/products/1974732363.jpg',
+  33: 'https://dw9to29mmj727.cloudfront.net/products/1974734749.jpg',
+  34: 'https://dw9to29mmj727.cloudfront.net/products/1974736636.jpg',
+  35: 'https://dw9to29mmj727.cloudfront.net/products/1974739090.jpg',
+  36: 'https://dw9to29mmj727.cloudfront.net/products/1974741087.jpg',
+  37: 'https://dw9to29mmj727.cloudfront.net/products/1974743241.jpg',
+  38: 'https://dw9to29mmj727.cloudfront.net/products/1974745848.jpg',
+  39: 'https://dw9to29mmj727.cloudfront.net/products/1974749649.jpg',
+  40: 'https://dw9to29mmj727.cloudfront.net/products/1974752739.jpg',
+  41: 'https://dw9to29mmj727.cloudfront.net/products/1974755886.jpg',
+  42: 'https://dw9to29mmj727.cloudfront.net/products/1974759180.jpg'
+};
+SERIES.blackclover.DEFAULT_COVERS = {
+  1: 'https://dw9to29mmj727.cloudfront.net/products/1421587181.jpg',
+  2: 'https://dw9to29mmj727.cloudfront.net/products/142158719X.jpg',
+  3: 'https://dw9to29mmj727.cloudfront.net/products/1421587203.jpg',
+  4: 'https://dw9to29mmj727.cloudfront.net/products/1421590239.jpg',
+  5: 'https://dw9to29mmj727.cloudfront.net/products/1421591251.jpg',
+  6: 'https://dw9to29mmj727.cloudfront.net/products/1421591588.jpg',
+  7: 'https://dw9to29mmj727.cloudfront.net/products/1421594323.jpg',
+  8: 'https://dw9to29mmj727.cloudfront.net/products/1421595176.jpg',
+  9: 'https://dw9to29mmj727.cloudfront.net/products/1421596466.jpg',
+  10: 'https://dw9to29mmj727.cloudfront.net/products/1421597632.jpg',
+  11: 'https://dw9to29mmj727.cloudfront.net/products/1421598183.jpg',
+  12: 'https://dw9to29mmj727.cloudfront.net/products/1974700402.jpg',
+  13: 'https://dw9to29mmj727.cloudfront.net/products/1974701042.jpg',
+  14: 'https://dw9to29mmj727.cloudfront.net/products/1974702219.jpg',
+  15: 'https://dw9to29mmj727.cloudfront.net/products/1974704548.jpg',
+  16: 'https://dw9to29mmj727.cloudfront.net/products/1974705137.jpg',
+  17: 'https://dw9to29mmj727.cloudfront.net/products/1974706168.jpg',
+  18: 'https://dw9to29mmj727.cloudfront.net/products/1974707415.jpg',
+  19: 'https://dw9to29mmj727.cloudfront.net/products/1974708780.jpg',
+  20: 'https://dw9to29mmj727.cloudfront.net/products/1974710173.jpg',
+  21: 'https://dw9to29mmj727.cloudfront.net/products/1974714764.jpg',
+  22: 'https://dw9to29mmj727.cloudfront.net/products/1974715019.jpg',
+  23: 'https://dw9to29mmj727.cloudfront.net/products/1974718107.jpg',
+  24: 'https://dw9to29mmj727.cloudfront.net/products/1974720004.jpg',
+  25: 'https://dw9to29mmj727.cloudfront.net/products/1974721817.jpg',
+  26: 'https://dw9to29mmj727.cloudfront.net/products/1974723372.jpg',
+  27: 'https://dw9to29mmj727.cloudfront.net/products/1974725146.jpg',
+  28: 'https://dw9to29mmj727.cloudfront.net/products/1974727181.jpg',
+  29: 'https://dw9to29mmj727.cloudfront.net/products/1974730026.jpg',
+  30: 'https://dw9to29mmj727.cloudfront.net/products/1974732312.jpg',
+  31: 'https://dw9to29mmj727.cloudfront.net/products/1974734366.jpg',
+  32: 'https://dw9to29mmj727.cloudfront.net/products/1974736253.jpg',
+  33: 'https://dw9to29mmj727.cloudfront.net/products/1974740714.jpg',
+  34: 'https://dw9to29mmj727.cloudfront.net/products/1974743357.jpg',
+  35: 'https://dw9to29mmj727.cloudfront.net/products/1974745945.jpg',
+  36: 'https://dw9to29mmj727.cloudfront.net/products/1974752682.jpg',
+  37: 'https://dw9to29mmj727.cloudfront.net/products/1974716724.jpg',
+  38: 'https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088851365/1200/9784088851365.jpg'
+};
+SERIES.fullmetal.DEFAULT_COVERS = {
+  1: 'https://dw9to29mmj727.cloudfront.net/products/1591169208.jpg',
+  2: 'https://dw9to29mmj727.cloudfront.net/products/1591169232.jpg',
+  3: 'https://dw9to29mmj727.cloudfront.net/products/1591169259.jpg',
+  4: 'https://dw9to29mmj727.cloudfront.net/products/1591169291.jpg',
+  5: 'https://dw9to29mmj727.cloudfront.net/products/1421501759.jpg',
+  6: 'https://dw9to29mmj727.cloudfront.net/products/1421503190.jpg',
+  7: 'https://dw9to29mmj727.cloudfront.net/products/1421504588.jpg',
+  8: 'https://dw9to29mmj727.cloudfront.net/products/1421504596.jpg',
+  9: 'https://dw9to29mmj727.cloudfront.net/products/142150460X.jpg',
+  10: 'https://dw9to29mmj727.cloudfront.net/products/1421504618.jpg',
+  11: 'https://dw9to29mmj727.cloudfront.net/products/1421508389.jpg',
+  12: 'https://dw9to29mmj727.cloudfront.net/products/1421508397.jpg',
+  13: 'https://dw9to29mmj727.cloudfront.net/products/1421511584.jpg',
+  14: 'https://dw9to29mmj727.cloudfront.net/products/142151379X.jpg',
+  15: 'https://dw9to29mmj727.cloudfront.net/products/1421513803.jpg',
+  16: 'https://dw9to29mmj727.cloudfront.net/products/1421513811.jpg',
+  17: 'https://dw9to29mmj727.cloudfront.net/products/142152161X.jpg',
+  18: 'https://dw9to29mmj727.cloudfront.net/products/1421525364.jpg',
+  19: 'https://dw9to29mmj727.cloudfront.net/products/1421525682.jpg',
+  20: 'https://dw9to29mmj727.cloudfront.net/products/1421530341.jpg',
+  21: 'https://dw9to29mmj727.cloudfront.net/products/1421532328.jpg',
+  22: 'https://dw9to29mmj727.cloudfront.net/products/1421534134.jpg',
+  23: 'https://dw9to29mmj727.cloudfront.net/products/1421536307.jpg',
+  24: 'https://dw9to29mmj727.cloudfront.net/products/1421538121.jpg',
+  25: 'https://dw9to29mmj727.cloudfront.net/products/1421539241.jpg',
+  26: 'https://dw9to29mmj727.cloudfront.net/products/1421539624.jpg',
+  27: 'https://dw9to29mmj727.cloudfront.net/products/1421539845.jpg'
 };
 
 let EPISODES, VOLUMES, ARC_RANGES;

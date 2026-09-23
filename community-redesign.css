@@ -608,6 +608,10 @@ input:focus-visible {
   margin: -7px 0 18px !important;
 }
 
+.db-subtabs {
+  margin: 14px 0 0 !important;
+}
+
 .edition-tab,
 .db-subtab {
   min-height: 34px;
