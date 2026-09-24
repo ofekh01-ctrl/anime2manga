@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Generates the per-series pages (bleach/index.html, naruto/index.html, ...)
-from the main index.html.
+from the main index.html. All pages share the same CSS and JavaScript files.
 
 Every series page is a copy of index.html with only the SEO <head> values
 changed (canonical, title, description, og/twitter tags, JSON-LD WebPage).
@@ -11,7 +11,10 @@ Run this after every change to index.html:
 
 To add a series: add its folder to PAGES below, and add the URL to sitemap.xml.
 """
-import os, sys
+import hashlib
+import os
+import re
+import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://anime2manga.net'
@@ -65,6 +68,18 @@ PAGES = {
 }
 
 
+def version_shared_assets(html):
+    """Refresh shared asset URLs when their contents change, avoiding stale browser caches."""
+    for name in ('base.css', 'community-redesign.css', 'navigation.js', 'series-guide.js'):
+        data = open(os.path.join(HERE, name), 'rb').read()
+        version = hashlib.sha256(data).hexdigest()[:8]
+        pattern = rf'/{re.escape(name)}(?:\?v=[^"\s]*)?'
+        html, count = re.subn(pattern, f'/{name}?v={version}', html)
+        if count != 1:
+            sys.exit(f'build_pages: expected 1 reference to {name}, found {count}')
+    return html
+
+
 def replace_once(text, old, new):
     if text.count(old) != 1:
         sys.exit(f'build_pages: expected exactly 1 match for {old[:70]!r}, found {text.count(old)}')
@@ -94,6 +109,11 @@ def build(root_html, folder, title, desc):
 def main():
     src = os.path.join(HERE, 'index.html')
     root_html = open(src, encoding='utf8').read()
+    versioned_html = version_shared_assets(root_html)
+    if versioned_html != root_html:
+        with open(src, 'w', encoding='utf8', newline='') as f:
+            f.write(versioned_html)
+        root_html = versioned_html
     for folder, (title, desc) in PAGES.items():
         out_dir = os.path.join(HERE, folder)
         os.makedirs(out_dir, exist_ok=True)

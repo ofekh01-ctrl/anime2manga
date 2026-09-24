@@ -4,7 +4,28 @@ const path = require('node:path');
 const vm = require('node:vm');
 
 const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
-const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
+const guide = fs.readFileSync(path.join(__dirname, '..', 'series-guide.js'), 'utf8');
+assert.match(html, /<script src="\/navigation\.js\?v=[a-f0-9]{8}"><\/script>/);
+assert.match(html, /<script src="\/series-guide\.js\?v=[a-f0-9]{8}"><\/script>/);
+const root = path.join(__dirname, '..');
+const sharedBody = html.slice(html.indexOf('<body>'));
+const pageFolders = fs.readdirSync(root).filter(folder =>
+  fs.existsSync(path.join(root, folder, 'index.html')));
+assert.equal(pageFolders.length, 20, 'every series has a direct page');
+for (const folder of pageFolders) {
+  const page = fs.readFileSync(path.join(root, folder, 'index.html'), 'utf8');
+  assert.equal(page.slice(page.indexOf('<body>')), sharedBody,
+    `${folder} uses the current shared interface and scripts`);
+  assert.ok(page.includes(`href="https://anime2manga.net/${folder}/" rel="canonical"`),
+    `${folder} has its own canonical URL`);
+}
+const localAssets = ['index.html', 'base.css', 'community-redesign.css',
+  'navigation.js', 'series-guide.js', 'manifest.webmanifest']
+  .flatMap(file => [...fs.readFileSync(path.join(root, file), 'utf8')
+    .matchAll(/\/(assets\/[A-Za-z0-9_.-]+(?:\/[A-Za-z0-9_.-]+)*)/g)].map(match => match[1]));
+for (const asset of new Set(localAssets)) {
+  assert.ok(fs.existsSync(path.join(root, asset)), `${asset} is present`);
+}
 const elements = new Map();
 function element(id) {
   if (!elements.has(id)) elements.set(id, {
@@ -15,13 +36,17 @@ function element(id) {
 }
 const context = vm.createContext({
   document: {
+    body: { classList: { contains() { return false; }, toggle() {} } },
     getElementById: element,
     querySelectorAll() { return []; },
-    createElement() { return { textContent: '', get innerHTML() { return this.textContent; } }; }
+    createElement() { return { textContent: '', get innerHTML() { return this.textContent; } }; },
+    addEventListener() {}
   },
+  window: { location: { pathname: '/', search: '' }, addEventListener() {}, scrollTo() {} },
+  URLSearchParams,
   trackTrackerUsed() {}
 });
-vm.runInContext(scripts.at(-1)[1], context);
+vm.runInContext(guide, context);
 
 const series = vm.runInContext('SERIES', context);
 const demonCovers = Object.values(series.demonslayer.DEFAULT_COVERS);
@@ -375,6 +400,9 @@ for (const [episode, mission] of [[12, 'Extra Mission 1'], [26, 'Extra Mission 2
   context.handleEpisodeChange();
   assert.match(element('episodeCard').innerHTML, /Manga bonus story/);
   assert.ok(element('episodeCard').innerHTML.includes(mission));
+  assert.equal(element('chapterInput').value, 'Extra');
+  assert.equal(element('volumeInput').value, 'Extra');
+  assert.doesNotMatch(element('volumeCard').innerHTML, /Vol\. \d+/);
 }
 element('chapterInput').value = '62';
 context.handleChapterChange();
@@ -385,4 +413,49 @@ context.handleChapterChange();
 assert.match(element('episodeCard').innerHTML, /isn't directly adapted/);
 assert.doesNotMatch(element('episodeCard').innerHTML, /\(\)/);
 
-console.log(`Checked ${checked} volume lookups across ${Object.keys(series).length} series, plus overlap and adaptation boundaries.`);
+context.applySeries('jjk');
+element('chapterInput').value = '0.2';
+context.handleChapterChange();
+assert.match(element('episodeCard').innerHTML, /Chapter 0\.2 is adapted/,
+  'decimal bonus chapters keep their exact number');
+
+let episodeChecks = 0;
+for (const [id, data] of Object.entries(series)) {
+  context.applySeries(id);
+  for (const variant of data.episodeVariants || [{ episodes: data.EPISODES }]) {
+    if (variant.id) context.setEpisodeVariant(variant.id);
+    const seen = new Set();
+    for (const ep of variant.episodes) {
+      assert.ok(!seen.has(ep.episode), `${id} episode ${ep.episode} is unique in its edition`);
+      seen.add(ep.episode);
+      element('episodeInput').value = String(ep.episode);
+      context.handleEpisodeChange();
+      assert.ok(element('episodeCard').innerHTML.includes(String(ep.episode)),
+        `${id} episode ${ep.episode} renders details`);
+      assert.doesNotMatch(element('episodeCard').innerHTML, /No (?:episode|movie) data for that number/,
+        `${id} episode ${ep.episode} is found`);
+      const numbers = ep.chapters.map(Number).filter(Number.isFinite);
+      if (numbers.length) {
+        const chapter = Math.max(...numbers);
+        assert.equal(Number(element('chapterInput').value), chapter,
+          `${id} episode ${ep.episode} selects its final adapted chapter`);
+        const volume = data.VOLUMES.find(vol => chapter >= vol.start && chapter <= vol.end);
+        if (volume) assert.equal(Number(element('volumeInput').value), volume.volume,
+          `${id} episode ${ep.episode} selects the matching volume`);
+      }
+      episodeChecks++;
+    }
+  }
+}
+
+vm.runInContext(fs.readFileSync(path.join(root, 'navigation.js'), 'utf8'), context);
+const paths = vm.runInContext('SERIES_PATHS', context);
+for (const [id, route] of Object.entries(paths)) {
+  if (id === 'dragonballz') continue; // Both Dragon Ball editions intentionally share one page.
+  context.window.location.pathname = route;
+  context.restoreViewFromUrl();
+  assert.equal(element('wordmark').textContent, series[id].name,
+    `${id} opens the correct series from its direct URL`);
+}
+
+console.log(`Checked ${checked} volume and ${episodeChecks} episode lookups across ${Object.keys(series).length} series.`);
