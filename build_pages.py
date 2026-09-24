@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 """
-Generates the per-series pages (bleach/index.html, naruto/index.html, ...)
-from the main index.html. All pages share the same CSS and JavaScript files.
+Bundles the JSON data and generates the per-series pages (bleach/index.html,
+naruto/index.html, ...) from the main index.html. All pages share the same CSS
+and JavaScript files.
 
-Every series page is a copy of index.html with only the SEO <head> values
-changed (canonical, title, description, og/twitter tags, JSON-LD WebPage).
-Run this after every change to index.html:
+Every series page is a copy of index.html with its own SEO <head> values
+(canonical, title, description, og/twitter tags, JSON-LD WebPage). Pages with
+an SEO FAQ also contain their answer text in the HTML without requiring JS.
+Run this after changing index.html, data/*.json, app.js, navigation.js,
+or styles.css:
 
     python3 build_pages.py
 
 To add a series: add its folder to PAGES below, and add the URL to sitemap.xml.
 """
 import hashlib
+from html import escape
+import json
 import os
 import re
 import sys
@@ -27,8 +32,8 @@ GENERIC_DESC = ('Easily convert anime episodes to manga chapters and volumes. '
 PAGES = {
     'attack-on-titan': ('Attack on Titan Manga to Anime Converter | Anime2Manga',
         'Match Attack on Titan manga chapters and volumes with anime episodes and find exactly where to continue between the anime and manga.'),
-    'bleach': ('Bleach Manga to Anime Converter | Anime2Manga',
-        'Match Bleach manga chapters and volumes with anime episodes, identify filler, and find where to continue between the anime and manga.'),
+    'bleach': ('Bleach Anime Episodes to Manga Chapters & Volumes | Anime2Manga',
+        'Find which Bleach manga chapters and volumes match an anime episode. Check filler or canon status and convert manga chapters back to anime episodes.'),
     'black-clover': ('Black Clover Anime to Manga Converter | Anime2Manga',
         'Match Black Clover anime episodes with manga chapters and volumes, see filler, and find where to continue reading after episode 170.'),
     'blue-lock': ('Blue Lock Manga to Anime Converter | Anime2Manga',
@@ -51,8 +56,8 @@ PAGES = {
         'Convert Gachiakuta season 1 episodes to manga chapters and Kodansha English volumes, and find where to continue reading.'),
     'hunter-x-hunter': ('Hunter × Hunter Manga to Anime Converter | Anime2Manga',
         'Match Hunter × Hunter manga chapters and volumes with anime episodes, identify filler, and find where to continue reading.'),
-    'jujutsu-kaisen': ('Jujutsu Kaisen Manga to Anime Converter | Anime2Manga',
-        'Match Jujutsu Kaisen manga chapters and volumes with anime episodes and find exactly where to continue reading.'),
+    'jujutsu-kaisen': ('Jujutsu Kaisen Anime Episodes to Manga Chapters | Anime2Manga',
+        'Find which Jujutsu Kaisen manga chapters and volumes match each anime episode, including the Jujutsu Kaisen 0 movie. Find where to continue reading.'),
     'naruto': ('Naruto Anime to Manga Converter | Naruto & Shippuden | Anime2Manga',
         'Convert Naruto and Naruto: Shippuden episodes to manga chapters and volumes, check filler, and find exactly where to continue reading.'),
     'my-hero-academia': ('My Hero Academia Anime to Manga Converter | Anime2Manga',
@@ -70,7 +75,7 @@ PAGES = {
 
 def version_shared_assets(html):
     """Refresh shared asset URLs when their contents change, avoiding stale browser caches."""
-    for name in ('base.css', 'community-redesign.css', 'navigation.js', 'series-guide.js'):
+    for name in ('styles.css', 'series-data.js', 'navigation.js', 'app.js'):
         data = open(os.path.join(HERE, name), 'rb').read()
         version = hashlib.sha256(data).hexdigest()[:8]
         pattern = rf'/{re.escape(name)}(?:\?v=[^"\s]*)?'
@@ -80,13 +85,57 @@ def version_shared_assets(html):
     return html
 
 
+def build_series_data():
+    """Bundle editable JSON files into one synchronous browser asset."""
+    data_dir = os.path.join(HERE, 'data')
+    with open(os.path.join(data_dir, 'series-order.json'), encoding='utf8') as f:
+        order = json.load(f)
+    if not isinstance(order, list) or len(order) != len(set(order)):
+        sys.exit('build_pages: series-order.json must contain unique series IDs')
+    files = {name[:-5] for name in os.listdir(data_dir) if name.endswith('.json') and name != 'series-order.json'}
+    if files != set(order):
+        sys.exit(f'build_pages: series JSON files differ from series-order.json: {files ^ set(order)}')
+    data = {}
+    shared_episode_variants = []
+    for series_id in order:
+        with open(os.path.join(data_dir, series_id + '.json'), encoding='utf8') as f:
+            series = json.load(f)
+        if series.get('id') != series_id:
+            sys.exit(f'build_pages: mismatched id in {series_id}.json')
+        for index, variant in enumerate(series.get('episodeVariants', [])):
+            if variant.get('episodeSource') == 'main':
+                if 'episodes' in variant or not series.get('EPISODES'):
+                    sys.exit(f'build_pages: invalid shared episodes in {series_id}.json')
+                del variant['episodeSource']
+                shared_episode_variants.append((series_id, index))
+        data[series_id] = series
+    content = 'const SERIES = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n'
+    for series_id, index in shared_episode_variants:
+        content += f'SERIES[{json.dumps(series_id)}].episodeVariants[{index}].episodes = SERIES[{json.dumps(series_id)}].EPISODES;\n'
+    with open(os.path.join(HERE, 'series-data.js'), 'w', encoding='utf8', newline='') as f:
+        f.write(content)
+    return data
+
+
 def replace_once(text, old, new):
     if text.count(old) != 1:
         sys.exit(f'build_pages: expected exactly 1 match for {old[:70]!r}, found {text.count(old)}')
     return text.replace(old, new)
 
 
-def build(root_html, folder, title, desc):
+def render_seo_copy(series):
+    """Use the same data as app.js so crawlers and visitors see the same answers."""
+    parts = [f'<p>{escape(series["seoCopy"])}</p>']
+    if series.get('seoFaq'):
+        parts.append('<div class="seo-faq"><h2>Common questions</h2>')
+        for item in series['seoFaq']:
+            parts.append(f'<div class="seo-faq-item"><h3>{escape(item["question"])}</h3>'
+                         f'<p>{escape(item["answer"])}</p></div>')
+        parts.append('</div>')
+    return '<section class="seo-copy" id="seriesSeoCopy" aria-label="Series guide">' + ''.join(parts) + '</section>'
+
+
+def build(root_html, folder, title, desc, series=None):
     url = f'{SITE}/{folder}/'
     marker = '<link href="/assets/favicon.png"'
     cut = root_html.index(marker)          # everything before this is <head> SEO
@@ -103,10 +152,14 @@ def build(root_html, folder, title, desc):
     head = head.replace(GENERIC_TITLE, title)
     # description appears in meta, og, twitter and the JSON-LD WebPage description
     head = head.replace(GENERIC_DESC, desc)
+    if series is not None:
+        empty_seo = '<section class="seo-copy" id="seriesSeoCopy" aria-label="Series guide"><p></p></section>'
+        rest = replace_once(rest, empty_seo, render_seo_copy(series))
     return head + rest
 
 
 def main():
+    series_data = build_series_data()
     src = os.path.join(HERE, 'index.html')
     root_html = open(src, encoding='utf8').read()
     versioned_html = version_shared_assets(root_html)
@@ -115,10 +168,14 @@ def main():
             f.write(versioned_html)
         root_html = versioned_html
     for folder, (title, desc) in PAGES.items():
+        faq_id = {'bleach': 'bleach', 'jujutsu-kaisen': 'jjk'}.get(folder)
+        seo_series = series_data[faq_id] if faq_id else None
+        if seo_series and title != seo_series['pageTitle']:
+            sys.exit(f'build_pages: title differs from data/{faq_id}.json')
         out_dir = os.path.join(HERE, folder)
         os.makedirs(out_dir, exist_ok=True)
         with open(os.path.join(out_dir, 'index.html'), 'w', encoding='utf8', newline='') as f:
-            f.write(build(root_html, folder, title, desc))
+            f.write(build(root_html, folder, title, desc, seo_series))
         print('built', folder + '/index.html')
 
 

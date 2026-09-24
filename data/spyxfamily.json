@@ -1,0 +1,584 @@
+{
+  "id": "spyxfamily",
+  "name": "Spy x Family",
+  "pageTitle": "Spy x Family Anime to Manga Converter | Anime2Manga",
+  "lede": "Match Spy x Family TV episodes 1–50 with manga chapters and VIZ volumes. After episode 50, continue from chapter 88 in volume 13.",
+  "seoCopy": "Convert Spy x Family anime episodes from seasons 1–3 to manga chapters and English VIZ volumes.",
+  "footer": [
+    "Covers TV episodes 1–50 (seasons 1–3) through chapter 87; continue at chapter 88 in volume 13. The Code: White film is an original story and is outside this guide.",
+    "Episodes 12 and 26 adapt bonus stories without numbered chapters. Some chapters are reordered or skipped in the anime; chapter 68 and chapter 78 have no direct TV episode match.",
+    "The first 16 English VIZ volumes cover numbered chapters 1–118. Extra and short missions are not listed as numbered chapter matches."
+  ],
+  "beyondDataHint": "TV episodes currently cover through chapter 87. Continue from chapter 88 in volume 13.",
+  "notAdaptedTagText": "Not yet adapted",
+  "publisherLabel": "VIZ",
+  "episodePlaceholder": "1–50 (seasons 1–3)",
+  "volumePlaceholder": "1–16",
+  "chapterPlaceholder": "1–118",
+  "VOLUMES": [
+    {
+      "volume": 1,
+      "start": 1,
+      "end": 5
+    },
+    {
+      "volume": 2,
+      "start": 6,
+      "end": 11
+    },
+    {
+      "volume": 3,
+      "start": 12,
+      "end": 17
+    },
+    {
+      "volume": 4,
+      "start": 18,
+      "end": 23
+    },
+    {
+      "volume": 5,
+      "start": 24,
+      "end": 30
+    },
+    {
+      "volume": 6,
+      "start": 31,
+      "end": 37
+    },
+    {
+      "volume": 7,
+      "start": 38,
+      "end": 44
+    },
+    {
+      "volume": 8,
+      "start": 45,
+      "end": 53
+    },
+    {
+      "volume": 9,
+      "start": 54,
+      "end": 61
+    },
+    {
+      "volume": 10,
+      "start": 62,
+      "end": 66
+    },
+    {
+      "volume": 11,
+      "start": 67,
+      "end": 75
+    },
+    {
+      "volume": 12,
+      "start": 76,
+      "end": 84
+    },
+    {
+      "volume": 13,
+      "start": 85,
+      "end": 92
+    },
+    {
+      "volume": 14,
+      "start": 93,
+      "end": 99
+    },
+    {
+      "volume": 15,
+      "start": 100,
+      "end": 108
+    },
+    {
+      "volume": 16,
+      "start": 109,
+      "end": 118
+    }
+  ],
+  "EPISODES": [
+    {
+      "episode": 1,
+      "title": "",
+      "chapters": [
+        "1"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 2,
+      "title": "",
+      "chapters": [
+        "2"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 3,
+      "title": "",
+      "chapters": [
+        "1",
+        "3"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 4,
+      "title": "",
+      "chapters": [
+        "4",
+        "5"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 5,
+      "title": "",
+      "chapters": [
+        "6"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 6,
+      "title": "",
+      "chapters": [
+        "7",
+        "8"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 7,
+      "title": "",
+      "chapters": [
+        "9",
+        "10"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 8,
+      "title": "",
+      "chapters": [
+        "11",
+        "12"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 9,
+      "title": "",
+      "chapters": [
+        "13",
+        "14"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 10,
+      "title": "",
+      "chapters": [
+        "15"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 11,
+      "title": "",
+      "chapters": [
+        "16",
+        "17"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 12,
+      "title": "",
+      "chapters": [],
+      "filler": false,
+      "mangaExtra": "Extra Mission 1 and Short Mission 1"
+    },
+    {
+      "episode": 13,
+      "title": "",
+      "chapters": [
+        "18",
+        "19"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 14,
+      "title": "",
+      "chapters": [
+        "20",
+        "21"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 15,
+      "title": "",
+      "chapters": [
+        "22",
+        "23"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 16,
+      "title": "",
+      "chapters": [
+        "24"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 17,
+      "title": "",
+      "chapters": [
+        "25"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 18,
+      "title": "",
+      "chapters": [
+        "26",
+        "27"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 19,
+      "title": "",
+      "chapters": [
+        "28"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 20,
+      "title": "",
+      "chapters": [
+        "29"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 21,
+      "title": "",
+      "chapters": [
+        "30"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 22,
+      "title": "",
+      "chapters": [
+        "31",
+        "32"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 23,
+      "title": "",
+      "chapters": [
+        "33",
+        "34"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 24,
+      "title": "",
+      "chapters": [
+        "35",
+        "36"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 25,
+      "title": "",
+      "chapters": [
+        "37",
+        "38"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 26,
+      "title": "",
+      "chapters": [],
+      "filler": false,
+      "mangaExtra": "Extra Mission 2"
+    },
+    {
+      "episode": 27,
+      "title": "",
+      "chapters": [
+        "40",
+        "39"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 28,
+      "title": "",
+      "chapters": [
+        "41"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 29,
+      "title": "",
+      "chapters": [
+        "42",
+        "43"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 30,
+      "title": "",
+      "chapters": [
+        "44",
+        "45"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 31,
+      "title": "",
+      "chapters": [
+        "46",
+        "47",
+        "48"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 32,
+      "title": "",
+      "chapters": [
+        "48",
+        "49",
+        "50"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 33,
+      "title": "",
+      "chapters": [
+        "51",
+        "52",
+        "53"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 34,
+      "title": "",
+      "chapters": [
+        "54",
+        "55"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 35,
+      "title": "",
+      "chapters": [
+        "56",
+        "57"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 36,
+      "title": "",
+      "chapters": [
+        "59"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 37,
+      "title": "",
+      "chapters": [
+        "58"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 38,
+      "title": "",
+      "chapters": [
+        "60"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 39,
+      "title": "",
+      "chapters": [
+        "62",
+        "61",
+        "62.1",
+        "62.2"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 40,
+      "title": "",
+      "chapters": [
+        "62",
+        "62.2",
+        "62.3"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 41,
+      "title": "",
+      "chapters": [
+        "63",
+        "64"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 42,
+      "title": "",
+      "chapters": [
+        "65",
+        "66"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 43,
+      "title": "",
+      "chapters": [
+        "67",
+        "69"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 44,
+      "title": "",
+      "chapters": [
+        "70",
+        "71",
+        "72"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 45,
+      "title": "",
+      "chapters": [
+        "72",
+        "73",
+        "74"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 46,
+      "title": "",
+      "chapters": [
+        "75",
+        "76"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 47,
+      "title": "",
+      "chapters": [
+        "77",
+        "79"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 48,
+      "title": "",
+      "chapters": [
+        "80",
+        "81"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 49,
+      "title": "",
+      "chapters": [
+        "82",
+        "83",
+        "84",
+        "85"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 50,
+      "title": "",
+      "chapters": [
+        "85",
+        "86",
+        "87"
+      ],
+      "filler": false
+    }
+  ],
+  "DEFAULT_COVERS": {
+    "1": "https://dw9to29mmj727.cloudfront.net/products/1974715469.jpg",
+    "2": "https://dw9to29mmj727.cloudfront.net/products/1974717240.jpg",
+    "3": "https://dw9to29mmj727.cloudfront.net/products/1974718166.jpg",
+    "4": "https://dw9to29mmj727.cloudfront.net/products/1974721035.jpg",
+    "5": "https://dw9to29mmj727.cloudfront.net/products/1974722945.jpg",
+    "6": "https://dw9to29mmj727.cloudfront.net/products/1974725138.jpg",
+    "7": "https://dw9to29mmj727.cloudfront.net/products/197472848X.jpg",
+    "8": "https://dw9to29mmj727.cloudfront.net/products/1974734277.jpg",
+    "9": "https://dw9to29mmj727.cloudfront.net/products/1974736288.jpg",
+    "10": "https://dw9to29mmj727.cloudfront.net/products/1974740676.jpg",
+    "11": "https://dw9to29mmj727.cloudfront.net/products/1974743292.jpg",
+    "12": "https://dw9to29mmj727.cloudfront.net/products/1974747050.jpg",
+    "13": "https://dw9to29mmj727.cloudfront.net/products/1974751988.jpg",
+    "14": "https://dw9to29mmj727.cloudfront.net/products/1974756009.jpg",
+    "15": "https://dw9to29mmj727.cloudfront.net/products/1974759172.jpg",
+    "16": "https://dw9to29mmj727.cloudfront.net/products/197476852X.jpg"
+  },
+  "VIZ_LINKS": {
+    "1": "https://www.viz.com/manga-books/manga/spy-x-family-volume-1-0/product/6302",
+    "2": "https://www.viz.com/manga-books/manga/spy-x-family-volume-2-0/product/6396",
+    "3": "https://www.viz.com/manga-books/manga/spy-x-family-volume-3-0/product/6498",
+    "4": "https://www.viz.com/manga-books/manga/spy-x-family-volume-4-0/product/6605",
+    "5": "https://www.viz.com/manga-books/manga/spy-x-family-volume-5-0/product/6706",
+    "6": "https://www.viz.com/manga-books/manga/spy-x-family-volume-6-0/product/6824",
+    "7": "https://www.viz.com/manga-books/manga/spy-x-family-volume-7-0/product/7026",
+    "8": "https://www.viz.com/manga-books/manga/spy-x-family-volume-8-0/product/7193",
+    "9": "https://www.viz.com/manga-books/manga/spy-x-family-volume-9-0/product/7382",
+    "10": "https://www.viz.com/manga-books/manga/spy-x-family-volume-10-0/product/7612",
+    "11": "https://www.viz.com/manga-books/manga/spy-x-family-volume-11-0/product/7782",
+    "12": "https://www.viz.com/manga-books/manga/spy-x-family-volume-12-0/product/7938",
+    "13": "https://www.viz.com/manga-books/manga/spy-x-family-volume-13-0/product/8161",
+    "14": "https://www.viz.com/manga-books/manga/spy-x-family-volume-14-0/product/8447",
+    "15": "https://www.viz.com/manga-books/manga/spy-x-family-volume-15-0/product/8618",
+    "16": "https://www.viz.com/manga-books/manga/spy-x-family-volume-16-0/product/8976"
+  },
+  "AMAZON_LINKS": {},
+  "ARC_RANGES": []
+}

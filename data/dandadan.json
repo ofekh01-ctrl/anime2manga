@@ -1,0 +1,525 @@
+{
+  "id": "dandadan",
+  "name": "Dandadan",
+  "pageTitle": "Dandadan Manga to Anime Converter | Anime2Manga",
+  "lede": "Match Dandadan anime episodes with manga chapters and volumes across Seasons 1 and 2.",
+  "seoCopy": "Match all 24 Dandadan anime episodes with manga chapters and volumes. Season 2 ends at chapter 71; continue reading from chapter 72.",
+  "footer": [
+    "Dandadan Seasons 1 and 2 contain 24 episodes and adapt manga chapters 1–71. Continue from chapter 72 after episode 24.",
+    "All 24 episodes are manga canon. Some chapters overlap between adjacent episodes because an episode may adapt only part of a chapter.",
+    "Episode–chapter mapping was cross-checked against Anime Filler Guide and the r/Dandadan episode discussion records. Manga chapter tracking is current through chapter 245."
+  ],
+  "beyondDataHint": "The anime currently ends at chapter 71. Continue reading from chapter 72.",
+  "animeVolumeThreshold": 8,
+  "adaptedTagText": "Adapted in the anime",
+  "notAdaptedTagText": "Not yet animated",
+  "publisherLabel": "VIZ",
+  "episodePlaceholder": "1–24",
+  "volumePlaceholder": "1–25",
+  "chapterPlaceholder": "1–245",
+  "uncollectedStart": 220,
+  "uncollectedEnd": 245,
+  "uncollectedMessage": "This chapter has not yet been assigned to one of the 25 collected Japanese volumes in this dataset.",
+  "EPISODES": [
+    {
+      "episode": 1,
+      "title": "That's How Love Starts, Ya Know!",
+      "chapters": [
+        "1"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 2,
+      "title": "That's a Space Alien, Ain't It?!",
+      "chapters": [
+        "2"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 3,
+      "title": "It's a Granny vs. Granny Clash!",
+      "chapters": [
+        "3",
+        "4"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 4,
+      "title": "Kicking Turbo Granny's Ass",
+      "chapters": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 5,
+      "title": "Like, Where Are Your Balls?!",
+      "chapters": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 6,
+      "title": "A Dangerous Woman Arrives",
+      "chapters": [
+        "12",
+        "13",
+        "14",
+        "15"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 7,
+      "title": "To a Kinder World",
+      "chapters": [
+        "15",
+        "16",
+        "17"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 8,
+      "title": "I've Got This Funny Feeling",
+      "chapters": [
+        "18",
+        "19",
+        "20"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 9,
+      "title": "Merge! Serpo Dover Demon Nessie!",
+      "chapters": [
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 10,
+      "title": "Have You Ever Seen a Cattle Mutilation?",
+      "chapters": [
+        "25",
+        "26",
+        "27"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 11,
+      "title": "First Love",
+      "chapters": [
+        "28",
+        "29",
+        "30"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 12,
+      "title": "Let's Go to the Cursed House",
+      "chapters": [
+        "31",
+        "32",
+        "33",
+        "34"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 13,
+      "title": "Like, This Is the Legend of the Giant Snake",
+      "chapters": [
+        "34",
+        "35",
+        "36",
+        "37"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 14,
+      "title": "The Evil Eye",
+      "chapters": [
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 15,
+      "title": "You Won't Get Away with This!",
+      "chapters": [
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 16,
+      "title": "That's, Like, Way Deadly",
+      "chapters": [
+        "45",
+        "46",
+        "47",
+        "48"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 17,
+      "title": "We Can All Stay There Together!",
+      "chapters": [
+        "49",
+        "50",
+        "51"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 18,
+      "title": "We Became a Family",
+      "chapters": [
+        "52",
+        "53",
+        "54"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 19,
+      "title": "Feeling Kinda Gloomy",
+      "chapters": [
+        "54",
+        "55",
+        "56",
+        "57"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 20,
+      "title": "You Can Do It, Okarun!",
+      "chapters": [
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 21,
+      "title": "I Want to Rebuild the House",
+      "chapters": [
+        "61",
+        "62",
+        "63"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 22,
+      "title": "The Secret Art of Being Attractive",
+      "chapters": [
+        "64",
+        "65",
+        "66"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 23,
+      "title": "Hey, It's a Kaiju",
+      "chapters": [
+        "66",
+        "67",
+        "68"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 24,
+      "title": "Clash! Space Kaiju vs. Giant Robot!",
+      "chapters": [
+        "69",
+        "70",
+        "71"
+      ],
+      "filler": false
+    }
+  ],
+  "VOLUMES": [
+    {
+      "volume": 1,
+      "title": "",
+      "start": 1,
+      "end": 5,
+      "extras": null
+    },
+    {
+      "volume": 2,
+      "title": "",
+      "start": 6,
+      "end": 14,
+      "extras": null
+    },
+    {
+      "volume": 3,
+      "title": "",
+      "start": 15,
+      "end": 23,
+      "extras": null
+    },
+    {
+      "volume": 4,
+      "title": "",
+      "start": 24,
+      "end": 32,
+      "extras": null
+    },
+    {
+      "volume": 5,
+      "title": "",
+      "start": 33,
+      "end": 41,
+      "extras": null
+    },
+    {
+      "volume": 6,
+      "title": "",
+      "start": 42,
+      "end": 50,
+      "extras": null
+    },
+    {
+      "volume": 7,
+      "title": "",
+      "start": 51,
+      "end": 58,
+      "extras": null
+    },
+    {
+      "volume": 8,
+      "title": "",
+      "start": 59,
+      "end": 67,
+      "extras": null
+    },
+    {
+      "volume": 9,
+      "title": "",
+      "start": 68,
+      "end": 76,
+      "extras": null
+    },
+    {
+      "volume": 10,
+      "title": "",
+      "start": 77,
+      "end": 85,
+      "extras": null
+    },
+    {
+      "volume": 11,
+      "title": "",
+      "start": 86,
+      "end": 93,
+      "extras": null
+    },
+    {
+      "volume": 12,
+      "title": "",
+      "start": 94,
+      "end": 102,
+      "extras": null
+    },
+    {
+      "volume": 13,
+      "title": "",
+      "start": 103,
+      "end": 111,
+      "extras": null
+    },
+    {
+      "volume": 14,
+      "title": "",
+      "start": 112,
+      "end": 120,
+      "extras": null
+    },
+    {
+      "volume": 15,
+      "title": "",
+      "start": 121,
+      "end": 129,
+      "extras": null
+    },
+    {
+      "volume": 16,
+      "title": "",
+      "start": 130,
+      "end": 138,
+      "extras": null
+    },
+    {
+      "volume": 17,
+      "title": "",
+      "start": 139,
+      "end": 147,
+      "extras": null
+    },
+    {
+      "volume": 18,
+      "title": "",
+      "start": 148,
+      "end": 156,
+      "extras": null
+    },
+    {
+      "volume": 19,
+      "title": "",
+      "start": 157,
+      "end": 165,
+      "extras": null
+    },
+    {
+      "volume": 20,
+      "title": "",
+      "start": 166,
+      "end": 174,
+      "extras": null
+    },
+    {
+      "volume": 21,
+      "title": "",
+      "start": 175,
+      "end": 183,
+      "extras": null
+    },
+    {
+      "volume": 22,
+      "title": "",
+      "start": 184,
+      "end": 192,
+      "extras": null
+    },
+    {
+      "volume": 23,
+      "title": "",
+      "start": 193,
+      "end": 201,
+      "extras": null
+    },
+    {
+      "volume": 24,
+      "title": "",
+      "start": 202,
+      "end": 210,
+      "extras": null
+    },
+    {
+      "volume": 25,
+      "title": "",
+      "start": 211,
+      "end": 219,
+      "extras": null
+    }
+  ],
+  "DEFAULT_COVERS": {
+    "1": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088825991/500/9784088825991.jpg",
+    "2": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088828046/500/9784088828046.jpg",
+    "3": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088828541/500/9784088828541.jpg",
+    "4": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088830469/500/9784088830469.jpg",
+    "5": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088831039/500/9784088831039.jpg",
+    "6": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088832081/500/9784088832081.jpg",
+    "7": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088832708/500/9784088832708.jpg",
+    "8": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088833705/500/9784088833705.jpg",
+    "9": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088834146/500/9784088834146.jpg",
+    "10": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088835037/500/9784088835037.jpg",
+    "11": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088835990/500/9784088835990.jpg",
+    "12": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088837260/500/9784088837260.jpg",
+    "13": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088838410/500/9784088838410.jpg",
+    "14": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088838977/500/9784088838977.jpg",
+    "15": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088840543/500/9784088840543.jpg",
+    "16": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088842271/500/9784088842271.jpg",
+    "17": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088842592/500/9784088842592.jpg",
+    "18": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088843407/500/9784088843407.jpg",
+    "19": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088844701/500/9784088844701.jpg",
+    "20": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088845920/500/9784088845920.jpg",
+    "21": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088847207/500/9784088847207.jpg",
+    "22": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088848242/500/9784088848242.jpg",
+    "23": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088850122/500/9784088850122.jpg",
+    "24": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088851259/500/9784088851259.jpg",
+    "25": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088851884/500/9784088851884.jpg"
+  },
+  "VIZ_LINKS": {
+    "1": "https://www.viz.com/manga-books/manga/dandadan-volume-1-0/product/7222",
+    "2": "https://www.viz.com/manga-books/manga/dandadan-volume-2-0/product/7307",
+    "3": "https://www.viz.com/manga-books/manga/dandadan-volume-3-0/product/7405",
+    "4": "https://www.viz.com/manga-books/manga/dandadan-volume-4-0/product/7501",
+    "5": "https://www.viz.com/manga-books/manga/dandadan-volume-5-0/product/7616",
+    "6": "https://www.viz.com/manga-books/manga/dandadan-volume-6-0/product/7596",
+    "7": "https://www.viz.com/manga-books/manga/dandadan-volume-7-0/product/7811",
+    "8": "https://www.viz.com/manga-books/manga/dandadan-volume-8-0/product/7909",
+    "9": "https://www.viz.com/manga-books/manga/dandadan-volume-9-0/product/8019",
+    "10": "https://www.viz.com/manga-books/manga/dandadan-volume-10-0/product/8116",
+    "11": "https://www.viz.com/manga-books/manga/dandadan-volume-11-0/product/8179",
+    "12": "https://www.viz.com/manga-books/manga/dandadan-volume-12-0/product/8294",
+    "13": "https://www.viz.com/manga-books/manga/dandadan-volume-13-0/product/8345",
+    "14": "https://www.viz.com/manga-books/manga/dandadan-volume-14-0/product/8445",
+    "15": "https://www.viz.com/manga-books/manga/dandadan-volume-15-0/product/8528",
+    "16": "https://www.viz.com/manga-books/manga/dandadan-volume-16-0/product/8622",
+    "17": "https://www.viz.com/manga-books/manga/dandadan-volume-17-0/product/8695",
+    "18": "https://www.viz.com/manga-books/manga/dandadan-volume-18-0/product/8777",
+    "19": "https://www.viz.com/manga-books/manga/dandadan-volume-19-0/product/8862",
+    "20": "https://www.viz.com/manga-books/manga/dandadan-volume-20-0/product/8937",
+    "21": "https://www.viz.com/manga-books/manga/dandadan-volume-21-0/product/9024",
+    "22": "https://www.viz.com/manga-books/manga/dandadan-volume-22-0/product/9104"
+  },
+  "AMAZON_LINKS": {
+    "1": "https://www.amazon.com/s?k=Dandadan%20Vol.%201%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "2": "https://www.amazon.com/s?k=Dandadan%20Vol.%202%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "3": "https://www.amazon.com/s?k=Dandadan%20Vol.%203%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "4": "https://www.amazon.com/s?k=Dandadan%20Vol.%204%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "5": "https://www.amazon.com/s?k=Dandadan%20Vol.%205%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "6": "https://www.amazon.com/s?k=Dandadan%20Vol.%206%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "7": "https://www.amazon.com/s?k=Dandadan%20Vol.%207%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "8": "https://www.amazon.com/s?k=Dandadan%20Vol.%208%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "9": "https://www.amazon.com/s?k=Dandadan%20Vol.%209%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "10": "https://www.amazon.com/s?k=Dandadan%20Vol.%2010%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "11": "https://www.amazon.com/s?k=Dandadan%20Vol.%2011%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "12": "https://www.amazon.com/s?k=Dandadan%20Vol.%2012%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "13": "https://www.amazon.com/s?k=Dandadan%20Vol.%2013%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "14": "https://www.amazon.com/s?k=Dandadan%20Vol.%2014%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "15": "https://www.amazon.com/s?k=Dandadan%20Vol.%2015%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "16": "https://www.amazon.com/s?k=Dandadan%20Vol.%2016%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "17": "https://www.amazon.com/s?k=Dandadan%20Vol.%2017%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "18": "https://www.amazon.com/s?k=Dandadan%20Vol.%2018%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "19": "https://www.amazon.com/s?k=Dandadan%20Vol.%2019%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "20": "https://www.amazon.com/s?k=Dandadan%20Vol.%2020%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "21": "https://www.amazon.com/s?k=Dandadan%20Vol.%2021%20Yukinobu%20Tatsu&tag=mangatoanim01-20",
+    "22": "https://www.amazon.com/s?k=Dandadan%20Vol.%2022%20Yukinobu%20Tatsu&tag=mangatoanim01-20"
+  },
+  "ARC_RANGES": []
+}

@@ -1,0 +1,1518 @@
+{
+  "id": "dragonball",
+  "name": "Dragon Ball",
+  "pageTitle": "Dragon Ball Manga to Anime Converter | Anime2Manga",
+  "lede": "Match the original Dragon Ball anime with manga chapters and volumes, then switch to Dragon Ball Z with the tabs below.",
+  "seoCopy": "Match Dragon Ball episodes 1–153 with manga chapters 1–194 and volumes 1–16. Filler episodes are marked automatically.",
+  "footer": [
+    "Dragon Ball has 153 TV episodes and adapts the first 194 chapters of Akira Toriyama’s original manga.",
+    "The manga continues directly into the material adapted by Dragon Ball Z; the Z label is an anime/VIZ publishing split rather than a separate original Japanese manga.",
+    "Sources: episode–chapter correspondence compiled from ListFist; manga publication structure cross-checked with VIZ and the Dragon Ball volume listings."
+  ],
+  "beyondDataHint": "Dragon Ball ends at chapter 194. Switch to the Dragon Ball Z tab for chapter 195 onward.",
+  "animeVolumeThreshold": 16,
+  "adaptedTagText": "Adapted in Dragon Ball",
+  "notAdaptedTagText": "Dragon Ball Z portion",
+  "episodePlaceholder": "1–153",
+  "volumePlaceholder": "1–16",
+  "chapterPlaceholder": "1–194",
+  "EPISODES": [
+    {
+      "episode": 1,
+      "title": "Episode 1",
+      "chapters": [
+        "1"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 2,
+      "title": "Episode 2",
+      "chapters": [
+        "2",
+        "3"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 3,
+      "title": "Episode 3",
+      "chapters": [
+        "3",
+        "4"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 4,
+      "title": "Episode 4",
+      "chapters": [
+        "4",
+        "5",
+        "6"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 5,
+      "title": "Episode 5",
+      "chapters": [
+        "6",
+        "7",
+        "8"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 6,
+      "title": "Episode 6",
+      "chapters": [
+        "9",
+        "10"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 7,
+      "title": "Episode 7",
+      "chapters": [
+        "11",
+        "12"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 8,
+      "title": "Episode 8",
+      "chapters": [
+        "13",
+        "14",
+        "15"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 9,
+      "title": "Episode 9",
+      "chapters": [
+        "16",
+        "17"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 10,
+      "title": "Episode 10",
+      "chapters": [
+        "18"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 11,
+      "title": "Episode 11",
+      "chapters": [
+        "19"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 12,
+      "title": "Episode 12",
+      "chapters": [
+        "20",
+        "21"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 13,
+      "title": "Episode 13",
+      "chapters": [
+        "22",
+        "23"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 14,
+      "title": "Episode 14",
+      "chapters": [
+        "24",
+        "25"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 15,
+      "title": "Episode 15",
+      "chapters": [
+        "26",
+        "27"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 16,
+      "title": "Episode 16",
+      "chapters": [
+        "28",
+        "29"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 17,
+      "title": "Episode 17",
+      "chapters": [
+        "30"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 18,
+      "title": "Episode 18",
+      "chapters": [
+        "31"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 19,
+      "title": "Episode 19",
+      "chapters": [
+        "32",
+        "33"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 20,
+      "title": "Episode 20",
+      "chapters": [
+        "33",
+        "34"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 21,
+      "title": "Episode 21",
+      "chapters": [
+        "35",
+        "36"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 22,
+      "title": "Episode 22",
+      "chapters": [
+        "37",
+        "38"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 23,
+      "title": "Episode 23",
+      "chapters": [
+        "39",
+        "40"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 24,
+      "title": "Episode 24",
+      "chapters": [
+        "41",
+        "42",
+        "43"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 25,
+      "title": "Episode 25",
+      "chapters": [
+        "44",
+        "45",
+        "46"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 26,
+      "title": "Episode 26",
+      "chapters": [
+        "46",
+        "47",
+        "48",
+        "49"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 27,
+      "title": "Episode 27",
+      "chapters": [
+        "49",
+        "50",
+        "51"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 28,
+      "title": "Episode 28",
+      "chapters": [
+        "52",
+        "53",
+        "54"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 29,
+      "title": "Episode 29",
+      "chapters": [
+        "54"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 30,
+      "title": "Episode 30",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 31,
+      "title": "Episode 31",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 32,
+      "title": "Episode 32",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 33,
+      "title": "Episode 33",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 34,
+      "title": "Episode 34",
+      "chapters": [
+        "55",
+        "56"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 35,
+      "title": "Episode 35",
+      "chapters": [
+        "57"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 36,
+      "title": "Episode 36",
+      "chapters": [
+        "58",
+        "59"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 37,
+      "title": "Episode 37",
+      "chapters": [
+        "60",
+        "61"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 38,
+      "title": "Episode 38",
+      "chapters": [
+        "61",
+        "62"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 39,
+      "title": "Episode 39",
+      "chapters": [
+        "63"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 40,
+      "title": "Episode 40",
+      "chapters": [
+        "64",
+        "65"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 41,
+      "title": "Episode 41",
+      "chapters": [
+        "66"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 42,
+      "title": "Episode 42",
+      "chapters": [
+        "67"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 43,
+      "title": "Episode 43",
+      "chapters": [
+        "67",
+        "68"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 44,
+      "title": "Episode 44",
+      "chapters": [
+        "69"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 45,
+      "title": "Episode 45",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 46,
+      "title": "Episode 46",
+      "chapters": [
+        "70"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 47,
+      "title": "Episode 47",
+      "chapters": [
+        "71"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 48,
+      "title": "Episode 48",
+      "chapters": [
+        "72"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 49,
+      "title": "Episode 49",
+      "chapters": [
+        "72",
+        "73",
+        "74"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 50,
+      "title": "Episode 50",
+      "chapters": [
+        "74",
+        "75"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 51,
+      "title": "Episode 51",
+      "chapters": [
+        "75",
+        "76"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 52,
+      "title": "Episode 52",
+      "chapters": [
+        "76",
+        "77"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 53,
+      "title": "Episode 53",
+      "chapters": [
+        "77",
+        "78",
+        "79"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 54,
+      "title": "Episode 54",
+      "chapters": [
+        "79",
+        "80"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 55,
+      "title": "Episode 55",
+      "chapters": [
+        "80",
+        "81"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 56,
+      "title": "Episode 56",
+      "chapters": [
+        "81",
+        "82"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 57,
+      "title": "Episode 57",
+      "chapters": [
+        "83"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 58,
+      "title": "Episode 58",
+      "chapters": [
+        "84",
+        "85"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 59,
+      "title": "Episode 59",
+      "chapters": [
+        "85",
+        "86"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 60,
+      "title": "Episode 60",
+      "chapters": [
+        "86",
+        "87"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 61,
+      "title": "Episode 61",
+      "chapters": [
+        "87",
+        "88"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 62,
+      "title": "Episode 62",
+      "chapters": [
+        "89",
+        "90"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 63,
+      "title": "Episode 63",
+      "chapters": [
+        "90",
+        "91",
+        "92"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 64,
+      "title": "Episode 64",
+      "chapters": [
+        "92",
+        "93"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 65,
+      "title": "Episode 65",
+      "chapters": [
+        "93"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 66,
+      "title": "Episode 66",
+      "chapters": [
+        "93",
+        "94"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 67,
+      "title": "Episode 67",
+      "chapters": [
+        "95",
+        "96"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 68,
+      "title": "Episode 68",
+      "chapters": [
+        "96",
+        "97"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 69,
+      "title": "Episode 69",
+      "chapters": [
+        "97",
+        "98"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 70,
+      "title": "Episode 70",
+      "chapters": [
+        "99",
+        "100"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 71,
+      "title": "Episode 71",
+      "chapters": [
+        "100",
+        "101"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 72,
+      "title": "Episode 72",
+      "chapters": [
+        "101",
+        "102"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 73,
+      "title": "Episode 73",
+      "chapters": [
+        "103",
+        "104"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 74,
+      "title": "Episode 74",
+      "chapters": [
+        "104",
+        "105"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 75,
+      "title": "Episode 75",
+      "chapters": [
+        "105",
+        "106",
+        "107"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 76,
+      "title": "Episode 76",
+      "chapters": [
+        "107",
+        "108"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 77,
+      "title": "Episode 77",
+      "chapters": [
+        "109",
+        "110"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 78,
+      "title": "Episode 78",
+      "chapters": [
+        "111",
+        "112"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 79,
+      "title": "Episode 79",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 80,
+      "title": "Episode 80",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 81,
+      "title": "Episode 81",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 82,
+      "title": "Episode 82",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 83,
+      "title": "Episode 83",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 84,
+      "title": "Episode 84",
+      "chapters": [
+        "113"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 85,
+      "title": "Episode 85",
+      "chapters": [
+        "114"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 86,
+      "title": "Episode 86",
+      "chapters": [
+        "115"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 87,
+      "title": "Episode 87",
+      "chapters": [
+        "116",
+        "117"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 88,
+      "title": "Episode 88",
+      "chapters": [
+        "117",
+        "118"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 89,
+      "title": "Episode 89",
+      "chapters": [
+        "118",
+        "119",
+        "120"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 90,
+      "title": "Episode 90",
+      "chapters": [
+        "120"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 91,
+      "title": "Episode 91",
+      "chapters": [
+        "121"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 92,
+      "title": "Episode 92",
+      "chapters": [
+        "122"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 93,
+      "title": "Episode 93",
+      "chapters": [
+        "123"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 94,
+      "title": "Episode 94",
+      "chapters": [
+        "124"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 95,
+      "title": "Episode 95",
+      "chapters": [
+        "125",
+        "126"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 96,
+      "title": "Episode 96",
+      "chapters": [
+        "126",
+        "127"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 97,
+      "title": "Episode 97",
+      "chapters": [
+        "127",
+        "128"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 98,
+      "title": "Episode 98",
+      "chapters": [
+        "129",
+        "130"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 99,
+      "title": "Episode 99",
+      "chapters": [
+        "131",
+        "132"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 100,
+      "title": "Episode 100",
+      "chapters": [
+        "132",
+        "133"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 101,
+      "title": "Episode 101",
+      "chapters": [
+        "133",
+        "134"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 102,
+      "title": "Episode 102",
+      "chapters": [
+        "135"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 103,
+      "title": "Episode 103",
+      "chapters": [
+        "136"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 104,
+      "title": "Episode 104",
+      "chapters": [
+        "137",
+        "138"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 105,
+      "title": "Episode 105",
+      "chapters": [
+        "138",
+        "139"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 106,
+      "title": "Episode 106",
+      "chapters": [
+        "139",
+        "140"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 107,
+      "title": "Episode 107",
+      "chapters": [
+        "140",
+        "141"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 108,
+      "title": "Episode 108",
+      "chapters": [
+        "141",
+        "142"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 109,
+      "title": "Episode 109",
+      "chapters": [
+        "142",
+        "143"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 110,
+      "title": "Episode 110",
+      "chapters": [
+        "144",
+        "145"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 111,
+      "title": "Episode 111",
+      "chapters": [
+        "146",
+        "147"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 112,
+      "title": "Episode 112",
+      "chapters": [
+        "147",
+        "148"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 113,
+      "title": "Episode 113",
+      "chapters": [
+        "149"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 114,
+      "title": "Episode 114",
+      "chapters": [
+        "150"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 115,
+      "title": "Episode 115",
+      "chapters": [
+        "151"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 116,
+      "title": "Episode 116",
+      "chapters": [
+        "151"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 117,
+      "title": "Episode 117",
+      "chapters": [
+        "152"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 118,
+      "title": "Episode 118",
+      "chapters": [
+        "152",
+        "153"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 119,
+      "title": "Episode 119",
+      "chapters": [
+        "154",
+        "155"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 120,
+      "title": "Episode 120",
+      "chapters": [
+        "155",
+        "156",
+        "157"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 121,
+      "title": "Episode 121",
+      "chapters": [
+        "157",
+        "158",
+        "159"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 122,
+      "title": "Episode 122",
+      "chapters": [
+        "159",
+        "160",
+        "161"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 123,
+      "title": "Episode 123",
+      "chapters": [
+        "161",
+        "162"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 124,
+      "title": "Episode 124",
+      "chapters": [
+        "162",
+        "163"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 125,
+      "title": "Episode 125",
+      "chapters": [
+        "164"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 126,
+      "title": "Episode 126",
+      "chapters": [
+        "165"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 127,
+      "title": "Episode 127",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 128,
+      "title": "Episode 128",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 129,
+      "title": "Episode 129",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 130,
+      "title": "Episode 130",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 131,
+      "title": "Episode 131",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 132,
+      "title": "Episode 132",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 133,
+      "title": "Episode 133",
+      "chapters": [
+        "166"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 134,
+      "title": "Episode 134",
+      "chapters": [
+        "167",
+        "168"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 135,
+      "title": "Episode 135",
+      "chapters": [
+        "168",
+        "169"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 136,
+      "title": "Episode 136",
+      "chapters": [
+        "169",
+        "170"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 137,
+      "title": "Episode 137",
+      "chapters": [
+        "171",
+        "172"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 138,
+      "title": "Episode 138",
+      "chapters": [
+        "173",
+        "174"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 139,
+      "title": "Episode 139",
+      "chapters": [
+        "175",
+        "176"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 140,
+      "title": "Episode 140",
+      "chapters": [
+        "177",
+        "178"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 141,
+      "title": "Episode 141",
+      "chapters": [
+        "178",
+        "179"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 142,
+      "title": "Episode 142",
+      "chapters": [
+        "180",
+        "181"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 143,
+      "title": "Episode 143",
+      "chapters": [
+        "182",
+        "183"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 144,
+      "title": "Episode 144",
+      "chapters": [
+        "183",
+        "184",
+        "185"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 145,
+      "title": "Episode 145",
+      "chapters": [
+        "185",
+        "186",
+        "187"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 146,
+      "title": "Episode 146",
+      "chapters": [
+        "187",
+        "188",
+        "189"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 147,
+      "title": "Episode 147",
+      "chapters": [
+        "190",
+        "191",
+        "192"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 148,
+      "title": "Episode 148",
+      "chapters": [
+        "192",
+        "193",
+        "194"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 149,
+      "title": "Episode 149",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 150,
+      "title": "Episode 150",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 151,
+      "title": "Episode 151",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 152,
+      "title": "Episode 152",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 153,
+      "title": "Episode 153",
+      "chapters": [],
+      "filler": true
+    }
+  ],
+  "VOLUMES": [
+    {
+      "volume": 1,
+      "title": "",
+      "start": 1,
+      "end": 11,
+      "extras": null
+    },
+    {
+      "volume": 2,
+      "title": "",
+      "start": 12,
+      "end": 24,
+      "extras": null
+    },
+    {
+      "volume": 3,
+      "title": "",
+      "start": 25,
+      "end": 36,
+      "extras": null
+    },
+    {
+      "volume": 4,
+      "title": "",
+      "start": 37,
+      "end": 48,
+      "extras": null
+    },
+    {
+      "volume": 5,
+      "title": "",
+      "start": 49,
+      "end": 60,
+      "extras": null
+    },
+    {
+      "volume": 6,
+      "title": "",
+      "start": 61,
+      "end": 72,
+      "extras": null
+    },
+    {
+      "volume": 7,
+      "title": "",
+      "start": 73,
+      "end": 84,
+      "extras": null
+    },
+    {
+      "volume": 8,
+      "title": "",
+      "start": 85,
+      "end": 96,
+      "extras": null
+    },
+    {
+      "volume": 9,
+      "title": "",
+      "start": 97,
+      "end": 108,
+      "extras": null
+    },
+    {
+      "volume": 10,
+      "title": "",
+      "start": 109,
+      "end": 120,
+      "extras": null
+    },
+    {
+      "volume": 11,
+      "title": "",
+      "start": 121,
+      "end": 132,
+      "extras": null
+    },
+    {
+      "volume": 12,
+      "title": "",
+      "start": 133,
+      "end": 144,
+      "extras": null
+    },
+    {
+      "volume": 13,
+      "title": "",
+      "start": 145,
+      "end": 156,
+      "extras": null
+    },
+    {
+      "volume": 14,
+      "title": "",
+      "start": 157,
+      "end": 168,
+      "extras": null
+    },
+    {
+      "volume": 15,
+      "title": "",
+      "start": 169,
+      "end": 180,
+      "extras": null
+    },
+    {
+      "volume": 16,
+      "title": "",
+      "start": 181,
+      "end": 194,
+      "extras": null
+    }
+  ],
+  "DEFAULT_COVERS": {
+    "1": "https://dw9to29mmj727.cloudfront.net/products/1569319200.jpg",
+    "2": "https://dw9to29mmj727.cloudfront.net/products/1569319219.jpg",
+    "3": "https://dw9to29mmj727.cloudfront.net/products/1569319227.jpg",
+    "4": "https://dw9to29mmj727.cloudfront.net/products/1569319235.jpg",
+    "5": "https://dw9to29mmj727.cloudfront.net/products/1569319243.jpg",
+    "6": "https://dw9to29mmj727.cloudfront.net/products/1569319251.jpg",
+    "7": "https://dw9to29mmj727.cloudfront.net/products/156931926X.jpg",
+    "8": "https://dw9to29mmj727.cloudfront.net/products/1569319278.jpg",
+    "9": "https://dw9to29mmj727.cloudfront.net/products/1569319286.jpg",
+    "10": "https://dw9to29mmj727.cloudfront.net/products/1569319294.jpg",
+    "11": "https://dw9to29mmj727.cloudfront.net/products/1569319197.jpg",
+    "12": "https://dw9to29mmj727.cloudfront.net/products/159116155X.jpg",
+    "13": "https://dw9to29mmj727.cloudfront.net/products/1591161487.jpg",
+    "14": "https://dw9to29mmj727.cloudfront.net/products/159116169X.jpg",
+    "15": "https://dw9to29mmj727.cloudfront.net/products/1591162971.jpg",
+    "16": "https://dw9to29mmj727.cloudfront.net/products/1591164575.jpg"
+  },
+  "VIZ_LINKS": {
+    "1": "https://www.viz.com/manga-books/manga/dragon-ball-volume-1-0/product/104",
+    "2": "https://www.viz.com/manga-books/manga/dragon-ball-volume-2-0/product/105",
+    "3": "https://www.viz.com/manga-books/manga/dragon-ball-volume-3-0/product/106",
+    "4": "https://www.viz.com/manga-books/manga/dragon-ball-volume-4-0/product/107",
+    "5": "https://www.viz.com/manga-books/manga/dragon-ball-volume-5-0/product/108",
+    "6": "https://www.viz.com/manga-books/manga/dragon-ball-volume-6-0/product/109",
+    "7": "https://www.viz.com/manga-books/manga/dragon-ball-volume-7-0/product/110",
+    "8": "https://www.viz.com/manga-books/manga/dragon-ball-volume-8-0/product/112",
+    "9": "https://www.viz.com/manga-books/manga/dragon-ball-volume-9-0/product/113",
+    "10": "https://www.viz.com/manga-books/manga/dragon-ball-volume-10-0/product/114",
+    "11": "https://www.viz.com/manga-books/manga/dragon-ball-volume-11-0/product/111",
+    "12": "https://www.viz.com/manga-books/manga/dragon-ball-volume-12-0/product/329",
+    "13": "https://www.viz.com/manga-books/manga/dragon-ball-volume-13-0/product/115",
+    "14": "https://www.viz.com/manga-books/manga/dragon-ball-volume-14-0/product/116",
+    "15": "https://www.viz.com/manga-books/manga/dragon-ball-volume-15-0/product/117",
+    "16": "https://www.viz.com/manga-books/manga/dragon-ball-volume-16-0/product/328"
+  },
+  "AMAZON_LINKS": {},
+  "ARC_RANGES": [
+    {
+      "arc": "Emperor Pilaf",
+      "subArc": null,
+      "start": 1,
+      "end": 23
+    },
+    {
+      "arc": "21st World Martial Arts Tournament",
+      "subArc": null,
+      "start": 24,
+      "end": 54
+    },
+    {
+      "arc": "Red Ribbon Army",
+      "subArc": null,
+      "start": 55,
+      "end": 96
+    },
+    {
+      "arc": "Fortuneteller Baba",
+      "subArc": null,
+      "start": 97,
+      "end": 112
+    },
+    {
+      "arc": "Tien Shinhan",
+      "subArc": null,
+      "start": 113,
+      "end": 134
+    },
+    {
+      "arc": "King Piccolo",
+      "subArc": null,
+      "start": 135,
+      "end": 161
+    },
+    {
+      "arc": "Piccolo Jr.",
+      "subArc": null,
+      "start": 162,
+      "end": 194
+    }
+  ]
+}

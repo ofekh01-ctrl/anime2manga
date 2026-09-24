@@ -1,0 +1,2029 @@
+{
+  "id": "mha",
+  "name": "My Hero Academia",
+  "pageTitle": "My Hero Academia Anime to Manga Converter | Anime2Manga",
+  "lede": "Match any My Hero Academia TV episode or manga chapter with the corresponding volume. Episode 171 is the 2026 TV epilogue special.",
+  "seoCopy": "Explore all eight seasons of My Hero Academia and the epilogue special, matching episodes 1–171 to manga chapters 1–431 and volumes 1–42.",
+  "footer": [
+    "TV episodes 1–170 adapt through chapter 430. The 2026 TV special, episode 171 (More), adapts the final extra chapter 431 in volume 42.",
+    "The manga is complete at 42 volumes and 431 chapters. A few bonus chapters and anime-only episodes have no direct one-to-one manga match.",
+    "Sources: Anime Filler Guide episode-to-chapter list, My Hero Academia official anime news, VIZ volume listings, and published volume chapter indexes."
+  ],
+  "beyondDataHint": "The epilogue special adapts chapter 431; there are no later chapters in the original manga.",
+  "episodePlaceholder": "1–171 (171 special)",
+  "volumePlaceholder": "1–42",
+  "chapterPlaceholder": "1–431",
+  "VOLUMES": [
+    {
+      "volume": 1,
+      "start": 1,
+      "end": 7
+    },
+    {
+      "volume": 2,
+      "start": 8,
+      "end": 17
+    },
+    {
+      "volume": 3,
+      "start": 18,
+      "end": 26
+    },
+    {
+      "volume": 4,
+      "start": 27,
+      "end": 35
+    },
+    {
+      "volume": 5,
+      "start": 36,
+      "end": 44
+    },
+    {
+      "volume": 6,
+      "start": 45,
+      "end": 53
+    },
+    {
+      "volume": 7,
+      "start": 54,
+      "end": 62
+    },
+    {
+      "volume": 8,
+      "start": 63,
+      "end": 71
+    },
+    {
+      "volume": 9,
+      "start": 72,
+      "end": 80
+    },
+    {
+      "volume": 10,
+      "start": 81,
+      "end": 89
+    },
+    {
+      "volume": 11,
+      "start": 90,
+      "end": 99
+    },
+    {
+      "volume": 12,
+      "start": 100,
+      "end": 108
+    },
+    {
+      "volume": 13,
+      "start": 109,
+      "end": 118
+    },
+    {
+      "volume": 14,
+      "start": 119,
+      "end": 128
+    },
+    {
+      "volume": 15,
+      "start": 129,
+      "end": 137
+    },
+    {
+      "volume": 16,
+      "start": 138,
+      "end": 147
+    },
+    {
+      "volume": 17,
+      "start": 148,
+      "end": 157
+    },
+    {
+      "volume": 18,
+      "start": 158,
+      "end": 167
+    },
+    {
+      "volume": 19,
+      "start": 168,
+      "end": 177
+    },
+    {
+      "volume": 20,
+      "start": 178,
+      "end": 188
+    },
+    {
+      "volume": 21,
+      "start": 189,
+      "end": 200
+    },
+    {
+      "volume": 22,
+      "start": 201,
+      "end": 212
+    },
+    {
+      "volume": 23,
+      "start": 213,
+      "end": 224
+    },
+    {
+      "volume": 24,
+      "start": 225,
+      "end": 235
+    },
+    {
+      "volume": 25,
+      "start": 236,
+      "end": 246
+    },
+    {
+      "volume": 26,
+      "start": 247,
+      "end": 258
+    },
+    {
+      "volume": 27,
+      "start": 259,
+      "end": 267
+    },
+    {
+      "volume": 28,
+      "start": 268,
+      "end": 276
+    },
+    {
+      "volume": 29,
+      "start": 277,
+      "end": 285
+    },
+    {
+      "volume": 30,
+      "start": 286,
+      "end": 295
+    },
+    {
+      "volume": 31,
+      "start": 296,
+      "end": 306
+    },
+    {
+      "volume": 32,
+      "start": 307,
+      "end": 318
+    },
+    {
+      "volume": 33,
+      "start": 319,
+      "end": 328
+    },
+    {
+      "volume": 34,
+      "start": 329,
+      "end": 339
+    },
+    {
+      "volume": 35,
+      "start": 340,
+      "end": 350
+    },
+    {
+      "volume": 36,
+      "start": 351,
+      "end": 362
+    },
+    {
+      "volume": 37,
+      "start": 363,
+      "end": 374
+    },
+    {
+      "volume": 38,
+      "start": 375,
+      "end": 386
+    },
+    {
+      "volume": 39,
+      "start": 387,
+      "end": 398
+    },
+    {
+      "volume": 40,
+      "start": 399,
+      "end": 410
+    },
+    {
+      "volume": 41,
+      "start": 411,
+      "end": 422
+    },
+    {
+      "volume": 42,
+      "start": 423,
+      "end": 431
+    }
+  ],
+  "EPISODES": [
+    {
+      "episode": 1,
+      "title": "Izuku Midoriya: Origin",
+      "chapters": [
+        "1"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 2,
+      "title": "What It Takes to Be a Hero",
+      "chapters": [
+        "1"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 3,
+      "title": "Roaring Muscles",
+      "chapters": [
+        "2",
+        "3"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 4,
+      "title": "Start Line",
+      "chapters": [
+        "3",
+        "4"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 5,
+      "title": "What I Can Do For Now",
+      "chapters": [
+        "5",
+        "6",
+        "7"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 6,
+      "title": "Rage, You Damned Nerd",
+      "chapters": [
+        "7",
+        "8"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 7,
+      "title": "Deku vs. Kacchan",
+      "chapters": [
+        "9",
+        "10"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 8,
+      "title": "Bakugo’s Start Line",
+      "chapters": [
+        "11"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 9,
+      "title": "Yeah, Just Do Your Best, Iida!",
+      "chapters": [
+        "12",
+        "13"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 10,
+      "title": "Encounter with the Unknown",
+      "chapters": [
+        "13",
+        "14",
+        "15"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 11,
+      "title": "Game Over",
+      "chapters": [
+        "16",
+        "17"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 12,
+      "title": "All Might",
+      "chapters": [
+        "18",
+        "19"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 13,
+      "title": "In Each of our Hearts",
+      "chapters": [
+        "20",
+        "21"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 14,
+      "title": "That’s the Idea, Ochaco",
+      "chapters": [
+        "21",
+        "22"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 15,
+      "title": "Roaring Sports Festival",
+      "chapters": [
+        "23",
+        "23.5",
+        "24"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 16,
+      "title": "In Their Own Quirky Ways",
+      "chapters": [
+        "25",
+        "26"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 17,
+      "title": "Strategy, Strategy, Strategy",
+      "chapters": [
+        "27",
+        "28"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 18,
+      "title": "Cavalry Battle Finale",
+      "chapters": [
+        "29",
+        "30"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 19,
+      "title": "The Boy Born with Everything",
+      "chapters": [
+        "31",
+        "32"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 20,
+      "title": "Victory or Defeat",
+      "chapters": [
+        "33",
+        "34"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 21,
+      "title": "Battle on, Challengers!",
+      "chapters": [
+        "35"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 22,
+      "title": "Bakugo vs. Uraraka",
+      "chapters": [
+        "36",
+        "37",
+        "38"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 23,
+      "title": "Shoto Todoroki: Origin",
+      "chapters": [
+        "38",
+        "39",
+        "40"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 24,
+      "title": "Fight on, Iida",
+      "chapters": [
+        "40",
+        "41",
+        "42"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 25,
+      "title": "Todoroki vs. Bakugo",
+      "chapters": [
+        "42",
+        "43",
+        "44"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 26,
+      "title": "Time to Pick Some Names",
+      "chapters": [
+        "45",
+        "46"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 27,
+      "title": "Bizarre! Gran Torino Appears",
+      "chapters": [
+        "46",
+        "47",
+        "48"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 28,
+      "title": "Midoriya and Shigaraki",
+      "chapters": [
+        "47",
+        "49",
+        "50",
+        "57"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 29,
+      "title": "Hero Killer: Stain vs U.A. Students",
+      "chapters": [
+        "51",
+        "52",
+        "53"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 30,
+      "title": "Climax",
+      "chapters": [
+        "54",
+        "55",
+        "56"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 31,
+      "title": "The Aftermath of Hero Killer: Stain",
+      "chapters": [
+        "56",
+        "57"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 32,
+      "title": "Everyone’s Internships",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 33,
+      "title": "Listen Up!! A Tale from the Past",
+      "chapters": [
+        "58",
+        "59"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 34,
+      "title": "Gear up for Final Exams",
+      "chapters": [
+        "34.5",
+        "60",
+        "61",
+        "67"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 35,
+      "title": "Yaoyorozu: Rising",
+      "chapters": [
+        "61",
+        "63",
+        "64",
+        "66",
+        "67"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 36,
+      "title": "Stripping the Varnish",
+      "chapters": [
+        "64",
+        "66",
+        "67"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 37,
+      "title": "Katsuki Bakugo: Origin",
+      "chapters": [
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 38,
+      "title": "Encounter",
+      "chapters": [
+        "68",
+        "69",
+        "70"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 39,
+      "title": "Game Start",
+      "chapters": [
+        "49.5"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 40,
+      "title": "Wild, Wild Pussycats",
+      "chapters": [
+        "70",
+        "71"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 41,
+      "title": "Kota",
+      "chapters": [
+        "72",
+        "73"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 42,
+      "title": "My Hero",
+      "chapters": [
+        "74",
+        "75",
+        "76"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 43,
+      "title": "Drive It Home, Iron Fist!!!",
+      "chapters": [
+        "77",
+        "78",
+        "79"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 44,
+      "title": "Roaring Upheaval",
+      "chapters": [
+        "79",
+        "80",
+        "81"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 45,
+      "title": "What a Twist!",
+      "chapters": [
+        "82",
+        "83"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 46,
+      "title": "From Iida to Midoriya",
+      "chapters": [
+        "84",
+        "85"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 47,
+      "title": "All For One",
+      "chapters": [
+        "86",
+        "87",
+        "88"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 48,
+      "title": "Symbol of Peace",
+      "chapters": [
+        "89",
+        "90",
+        "91"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 49,
+      "title": "One For All",
+      "chapters": [
+        "92",
+        "93",
+        "94"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 50,
+      "title": "End of the Beginning, Beginning of the End",
+      "chapters": [
+        "94",
+        "95",
+        "96",
+        "97"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 51,
+      "title": "Moving into Dorms",
+      "chapters": [
+        "97",
+        "98",
+        "99"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 52,
+      "title": "Create Those Ultimate Moves",
+      "chapters": [
+        "99",
+        "100",
+        "101"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 53,
+      "title": "The Test",
+      "chapters": [
+        "102",
+        "103"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 54,
+      "title": "Shiketsu High Lurking",
+      "chapters": [
+        "104",
+        "105",
+        "106"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 55,
+      "title": "Class 1-A",
+      "chapters": [
+        "106"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 56,
+      "title": "RUSH!",
+      "chapters": [
+        "107",
+        "108"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 57,
+      "title": "Rescue Exercises",
+      "chapters": [
+        "109",
+        "110"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 58,
+      "title": "Special Episode: Save the World with Love!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 59,
+      "title": "What’s the Big Idea?",
+      "chapters": [
+        "111",
+        "112",
+        "113"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 60,
+      "title": "A Talk about Your Quirk",
+      "chapters": [
+        "113",
+        "114",
+        "115",
+        "116",
+        "117"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 61,
+      "title": "Deku vs. Kacchan, Part 2",
+      "chapters": [
+        "117",
+        "118",
+        "119",
+        "120",
+        "121"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 62,
+      "title": "A Season for Encounters",
+      "chapters": [
+        "115",
+        "121",
+        "122"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 63,
+      "title": "Unrivaled",
+      "chapters": [
+        "123",
+        "124"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 64,
+      "title": "The Scoop on U.A. Class 1-A",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 65,
+      "title": "Overhaul",
+      "chapters": [
+        "125",
+        "126"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 66,
+      "title": "Boy Meets…",
+      "chapters": [
+        "127",
+        "128"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 67,
+      "title": "Fighting Fate",
+      "chapters": [
+        "129",
+        "130",
+        "131"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 68,
+      "title": "Let’s Go, Gutsy Red Riot",
+      "chapters": [
+        "131",
+        "132",
+        "133",
+        "134"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 69,
+      "title": "An Unpleasant Talk",
+      "chapters": [
+        "134",
+        "135",
+        "136"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 70,
+      "title": "GO!!",
+      "chapters": [
+        "137",
+        "138"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 71,
+      "title": "Suneater, de los Tres Grandes",
+      "chapters": [
+        "139",
+        "140",
+        "141"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 72,
+      "title": "Red Riot",
+      "chapters": [
+        "142",
+        "143",
+        "144",
+        "145"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 73,
+      "title": "Escuadrón temporal",
+      "chapters": [
+        "146",
+        "147",
+        "148"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 74,
+      "title": "Lemillion",
+      "chapters": [
+        "149",
+        "150",
+        "151",
+        "152"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 75,
+      "title": "Esperanza invisible",
+      "chapters": [
+        "153",
+        "154",
+        "155"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 76,
+      "title": "Infinito 100%",
+      "chapters": [
+        "156",
+        "157",
+        "158",
+        "159"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 77,
+      "title": "Bright Future",
+      "chapters": [
+        "159",
+        "160",
+        "161"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 78,
+      "title": "Smoldering Flames",
+      "chapters": [
+        "162",
+        "163"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 79,
+      "title": "Win Those Kids’ Hearts",
+      "chapters": [
+        "164",
+        "165",
+        "166"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 80,
+      "title": "Relief for License Trainees",
+      "chapters": [
+        "166",
+        "167",
+        "168"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 81,
+      "title": "School Festival",
+      "chapters": [
+        "169",
+        "170"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 82,
+      "title": "Prepping for the School Festival Is the Funnest Part",
+      "chapters": [
+        "171",
+        "172",
+        "174"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 83,
+      "title": "Gold Tips Imperial",
+      "chapters": [
+        "173",
+        "174"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 84,
+      "title": "Deku vs. Gentle Criminal",
+      "chapters": [
+        "175",
+        "176",
+        "177"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 85,
+      "title": "School Festival Start!!",
+      "chapters": [
+        "178",
+        "179",
+        "180"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 86,
+      "title": "Let It Flow! School Festival!",
+      "chapters": [
+        "181",
+        "182",
+        "183"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 87,
+      "title": "Japanese Hero Billboard Chart",
+      "chapters": [
+        "184",
+        "185",
+        "186"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 88,
+      "title": "His Start",
+      "chapters": [
+        "187",
+        "188",
+        "189",
+        "190",
+        "192",
+        "193"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 89,
+      "title": "All Hands on Deck! Class 1-A",
+      "chapters": [
+        "190",
+        "191"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 90,
+      "title": "Vestiges",
+      "chapters": [
+        "191",
+        "192",
+        "193"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 91,
+      "title": "Clash! Class A vs. Class B!",
+      "chapters": [
+        "194",
+        "195"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 92,
+      "title": "Make It Happen, Shinso!",
+      "chapters": [
+        "196",
+        "197"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 93,
+      "title": "Operation New Improv Moves",
+      "chapters": [
+        "198",
+        "199"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 94,
+      "title": "Foresight",
+      "chapters": [
+        "200",
+        "201"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 95,
+      "title": "Match 3",
+      "chapters": [
+        "202",
+        "203",
+        "204"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 96,
+      "title": "Match 3 Conclusion",
+      "chapters": [
+        "204",
+        "205",
+        "206"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 97,
+      "title": "Early Bird!",
+      "chapters": [
+        "207",
+        "208",
+        "209"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 98,
+      "title": "That Which Is Inherited",
+      "chapters": [
+        "209",
+        "210",
+        "211",
+        "212",
+        "213"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 99,
+      "title": "Our Brawl",
+      "chapters": [
+        "214",
+        "215",
+        "216"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 100,
+      "title": "The New Power and All For One",
+      "chapters": [
+        "216",
+        "217",
+        "218",
+        "219"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 101,
+      "title": "Have a Merry Christmas!",
+      "chapters": [
+        "241",
+        "242"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 102,
+      "title": "Off to Endeavor’s Agency!",
+      "chapters": [
+        "231",
+        "243",
+        "244",
+        "245"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 103,
+      "title": "One Thing at a Time",
+      "chapters": [
+        "245",
+        "246",
+        "247",
+        "248"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 104,
+      "title": "Long Time No See, Selkie",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 105,
+      "title": "The Hellish Todoroki Family",
+      "chapters": [
+        "248",
+        "249"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 106,
+      "title": "The Unforgiven",
+      "chapters": [
+        "250",
+        "251",
+        "252"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 107,
+      "title": "More of a Hero Than Anyone",
+      "chapters": [
+        "253",
+        "254",
+        "255"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 108,
+      "title": "My Villain Academia",
+      "chapters": [
+        "220",
+        "221",
+        "222",
+        "223",
+        "224"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 109,
+      "title": "Revival Party",
+      "chapters": [
+        "218",
+        "224",
+        "225",
+        "226",
+        "227",
+        "228"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 110,
+      "title": "Sad Man’s Parade",
+      "chapters": [
+        "229",
+        "230",
+        "231",
+        "232"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 111,
+      "title": "Tenko Shimura: Origin",
+      "chapters": [
+        "233",
+        "234",
+        "235",
+        "236"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 112,
+      "title": "Tomura Shigaraki: Origin",
+      "chapters": [
+        "237",
+        "238",
+        "239",
+        "240"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 113,
+      "title": "The High, Deep Blue Sky",
+      "chapters": [
+        "240",
+        "246",
+        "256",
+        "257",
+        "258"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 114,
+      "title": "A Quiet Beginning",
+      "chapters": [
+        "258",
+        "259",
+        "260"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 115,
+      "title": "Mirko, the No. 5 Hero",
+      "chapters": [
+        "261",
+        "262",
+        "263"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 116,
+      "title": "One’s Justice",
+      "chapters": [
+        "263",
+        "264",
+        "265",
+        "266"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 117,
+      "title": "Inheritance",
+      "chapters": [
+        "267",
+        "268",
+        "269",
+        "270"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 118,
+      "title": "The Thrill of Destruction",
+      "chapters": [
+        "267",
+        "269",
+        "270",
+        "271",
+        "272",
+        "273"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 119,
+      "title": "Encounter, Part 2",
+      "chapters": [
+        "273",
+        "274",
+        "275",
+        "276"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 120,
+      "title": "Disaster Walker",
+      "chapters": [
+        "276",
+        "277",
+        "278"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 121,
+      "title": "League of Villains vs. U.A. Students",
+      "chapters": [
+        "279",
+        "280",
+        "281",
+        "282"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 122,
+      "title": "Katsuki Bakugo: Rising",
+      "chapters": [
+        "282",
+        "283",
+        "284",
+        "285"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 123,
+      "title": "The Ones Within Us",
+      "chapters": [
+        "286",
+        "287",
+        "288",
+        "289"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 124,
+      "title": "Dabi’s Dance",
+      "chapters": [
+        "288",
+        "289",
+        "290",
+        "291"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 125,
+      "title": "Threads of Hope",
+      "chapters": [
+        "292",
+        "293",
+        "294"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 126,
+      "title": "Final Performance",
+      "chapters": [
+        "220",
+        "294",
+        "295"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 127,
+      "title": "Hellish Hell",
+      "chapters": [
+        "296",
+        "298",
+        "300"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 128,
+      "title": "Tartarus",
+      "chapters": [
+        "297",
+        "298"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 129,
+      "title": "The Hellish Todoroki Family, Part 2",
+      "chapters": [
+        "299",
+        "300"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 130,
+      "title": "The Wrong Way to Put Out a Fire",
+      "chapters": [
+        "301",
+        "302",
+        "303"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 131,
+      "title": "Izuku Midoriya and Tomura Shigaraki",
+      "chapters": [
+        "304",
+        "305",
+        "306"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 132,
+      "title": "Full Power!!",
+      "chapters": [
+        "307",
+        "308",
+        "309"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 133,
+      "title": "Hired Gun",
+      "chapters": [
+        "310",
+        "311",
+        "312"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 134,
+      "title": "The Lovely Lady Nagant",
+      "chapters": [
+        "313",
+        "314",
+        "315",
+        "316"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 135,
+      "title": "Friend",
+      "chapters": [
+        "316",
+        "317",
+        "318",
+        "319"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 136,
+      "title": "Deku vs. Class A",
+      "chapters": [
+        "320",
+        "321",
+        "322"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 137,
+      "title": "A Young Woman’s Declaration",
+      "chapters": [
+        "323",
+        "324",
+        "325",
+        "326"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 138,
+      "title": "No Man Is an Island",
+      "chapters": [
+        "326",
+        "327",
+        "328"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 139,
+      "title": "In the Nick of Time! A Big-Time Maverick from the West!",
+      "chapters": [
+        "329",
+        "330",
+        "331"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 140,
+      "title": "Specter",
+      "chapters": [
+        "332",
+        "333",
+        "334",
+        "335"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 141,
+      "title": "Villain",
+      "chapters": [
+        "335",
+        "336",
+        "337",
+        "338"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 142,
+      "title": "The Story of How We All Became Heroes",
+      "chapters": [
+        "338",
+        "339",
+        "340"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 143,
+      "title": "Let You Down",
+      "chapters": [
+        "341",
+        "342",
+        "343"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 144,
+      "title": "Division",
+      "chapters": [
+        "344",
+        "345",
+        "346"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 145,
+      "title": "Inflation",
+      "chapters": [
+        "347",
+        "348",
+        "349"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 146,
+      "title": "Two Flashfires",
+      "chapters": [
+        "350",
+        "351",
+        "352"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 147,
+      "title": "Extras",
+      "chapters": [
+        "353",
+        "354",
+        "355"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 148,
+      "title": "Wounded Hero, Burning Bright and True!!",
+      "chapters": [
+        "355",
+        "356",
+        "357",
+        "359"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 149,
+      "title": "Light Fades to Rain",
+      "chapters": [
+        "359",
+        "360",
+        "361",
+        "362"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 150,
+      "title": "Those Who Defend, Those Who Violate",
+      "chapters": [
+        "357",
+        "363",
+        "364",
+        "364",
+        "365",
+        "366"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 151,
+      "title": "A Chain of Events, Across the Ages",
+      "chapters": [
+        "367",
+        "368",
+        "369"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 152,
+      "title": "Together with Shoji",
+      "chapters": [
+        "370",
+        "371",
+        "372"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 153,
+      "title": "Butterfly Effect",
+      "chapters": [
+        "372",
+        "373",
+        "374",
+        "375"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 154,
+      "title": "The Chain Thus Far",
+      "chapters": [
+        "375",
+        "376",
+        "377",
+        "378"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 155,
+      "title": "Hopes",
+      "chapters": [
+        "379",
+        "380",
+        "381",
+        "382"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 156,
+      "title": "It’s a Small World",
+      "chapters": [
+        "382",
+        "383",
+        "384",
+        "385"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 157,
+      "title": "I Am Here",
+      "chapters": [
+        "385",
+        "386",
+        "387",
+        "388",
+        "389",
+        "390"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 158,
+      "title": "A Girl’s Ego",
+      "chapters": [
+        "390",
+        "391",
+        "392",
+        "393",
+        "394"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 159,
+      "title": "Battle Without a Quirk",
+      "chapters": [
+        "395",
+        "396",
+        "397",
+        "398"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 160,
+      "title": "Toshinori Yagi: Rising / Origin",
+      "chapters": [
+        "399",
+        "400"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 161,
+      "title": "The End of an Era, and the Beginning",
+      "chapters": [
+        "401",
+        "402",
+        "403"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 162,
+      "title": "The Final Boss!!",
+      "chapters": [
+        "404",
+        "405",
+        "406"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 163,
+      "title": "Quirk: Explosion!!",
+      "chapters": [
+        "407",
+        "408",
+        "409",
+        "410"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 164,
+      "title": "History’s Greatest Villain",
+      "chapters": [
+        "410",
+        "411",
+        "412",
+        "413"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 165,
+      "title": "Wrench It Open, Izuku Midoriya!!",
+      "chapters": [
+        "414",
+        "415",
+        "416",
+        "417"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 166,
+      "title": "From Aizawa",
+      "chapters": [
+        "417",
+        "418",
+        "419",
+        "420"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 167,
+      "title": "Izuku Midoriya: Rising",
+      "chapters": [
+        "421",
+        "422",
+        "423"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 168,
+      "title": "Epilogue / The Hellish Todoroki Family: Final",
+      "chapters": [
+        "424",
+        "425",
+        "426"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 169,
+      "title": "The Girl Who Loves Smiles",
+      "chapters": [
+        "425",
+        "426",
+        "427",
+        "428",
+        "429"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 170,
+      "title": "My Hero Academia",
+      "chapters": [
+        "429",
+        "430"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 171,
+      "title": "More (TV special)",
+      "chapters": [
+        "431"
+      ],
+      "filler": false
+    }
+  ],
+  "DEFAULT_COVERS": {
+    "1": "https://dw9to29mmj727.cloudfront.net/products/1421582694.jpg",
+    "2": "https://dw9to29mmj727.cloudfront.net/products/1421582708.jpg",
+    "3": "https://dw9to29mmj727.cloudfront.net/products/1421585103.jpg",
+    "4": "https://dw9to29mmj727.cloudfront.net/products/1421585111.jpg",
+    "5": "https://dw9to29mmj727.cloudfront.net/products/1421587025.jpg",
+    "6": "https://dw9to29mmj727.cloudfront.net/products/1421588668.jpg",
+    "7": "https://dw9to29mmj727.cloudfront.net/products/1421590409.jpg",
+    "8": "https://dw9to29mmj727.cloudfront.net/products/1421591677.jpg",
+    "9": "https://dw9to29mmj727.cloudfront.net/products/1421593408.jpg",
+    "10": "https://dw9to29mmj727.cloudfront.net/products/1421594374.jpg",
+    "11": "https://dw9to29mmj727.cloudfront.net/products/1421595834.jpg",
+    "12": "https://dw9to29mmj727.cloudfront.net/products/1421597012.jpg",
+    "13": "https://dw9to29mmj727.cloudfront.net/products/1421598035.jpg",
+    "14": "https://dw9to29mmj727.cloudfront.net/products/1421599473.jpg",
+    "15": "https://dw9to29mmj727.cloudfront.net/products/197470100X.jpg",
+    "16": "https://dw9to29mmj727.cloudfront.net/products/1974702553.jpg",
+    "17": "https://dw9to29mmj727.cloudfront.net/products/1974702561.jpg",
+    "18": "https://dw9to29mmj727.cloudfront.net/products/1974704378.jpg",
+    "19": "https://dw9to29mmj727.cloudfront.net/products/1974704602.jpg",
+    "20": "https://dw9to29mmj727.cloudfront.net/products/1974707733.jpg",
+    "21": "https://dw9to29mmj727.cloudfront.net/products/1974709507.jpg",
+    "22": "https://dw9to29mmj727.cloudfront.net/products/1974709655.jpg",
+    "23": "https://dw9to29mmj727.cloudfront.net/products/1974709663.jpg",
+    "24": "https://dw9to29mmj727.cloudfront.net/products/197471120X.jpg",
+    "25": "https://dw9to29mmj727.cloudfront.net/products/1974717623.jpg",
+    "26": "https://dw9to29mmj727.cloudfront.net/products/1974719774.jpg",
+    "27": "https://dw9to29mmj727.cloudfront.net/products/1974721019.jpg",
+    "28": "https://dw9to29mmj727.cloudfront.net/products/1974722880.jpg",
+    "29": "https://dw9to29mmj727.cloudfront.net/products/1974725103.jpg",
+    "30": "https://dw9to29mmj727.cloudfront.net/products/1974727157.jpg",
+    "31": "https://dw9to29mmj727.cloudfront.net/products/1974732126.jpg",
+    "32": "https://dw9to29mmj727.cloudfront.net/products/1974732363.jpg",
+    "33": "https://dw9to29mmj727.cloudfront.net/products/1974734749.jpg",
+    "34": "https://dw9to29mmj727.cloudfront.net/products/1974736636.jpg",
+    "35": "https://dw9to29mmj727.cloudfront.net/products/1974739090.jpg",
+    "36": "https://dw9to29mmj727.cloudfront.net/products/1974741087.jpg",
+    "37": "https://dw9to29mmj727.cloudfront.net/products/1974743241.jpg",
+    "38": "https://dw9to29mmj727.cloudfront.net/products/1974745848.jpg",
+    "39": "https://dw9to29mmj727.cloudfront.net/products/1974749649.jpg",
+    "40": "https://dw9to29mmj727.cloudfront.net/products/1974752739.jpg",
+    "41": "https://dw9to29mmj727.cloudfront.net/products/1974755886.jpg",
+    "42": "https://dw9to29mmj727.cloudfront.net/products/1974759180.jpg"
+  },
+  "VIZ_LINKS": {
+    "1": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-1-0/product/3767",
+    "2": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-2-0/product/3768",
+    "3": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-3-0/product/3769",
+    "4": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-4-0/product/3770",
+    "5": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-5-0/product/4858",
+    "6": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-6-0/product/4938",
+    "7": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-7-0/product/5040",
+    "8": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-8-0/product/5131",
+    "9": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-9-0/product/5229",
+    "10": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-10-0/product/5322",
+    "11": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-11-0/product/5409",
+    "12": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-12-0/product/5464",
+    "13": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-13-0/product/5522",
+    "14": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-14-0/product/5583",
+    "15": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-15-0/product/5669",
+    "16": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-16-0/product/5756",
+    "17": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-17-0/product/5820",
+    "18": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-18-0/product/5879",
+    "19": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-19-0/product/5924",
+    "20": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-20-0/product/6002",
+    "21": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-21-0/product/6057",
+    "22": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-22-0/product/6124",
+    "23": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-23-0/product/6162",
+    "24": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-24-0/product/6288",
+    "25": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-25-0/product/6429",
+    "26": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-26-0/product/6533",
+    "27": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-27-0/product/6635",
+    "28": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-28-0/product/6700",
+    "29": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-29-0/product/6789",
+    "30": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-30-0/product/6992",
+    "31": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-31-0/product/7110",
+    "32": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-32-0/product/7225",
+    "33": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-33-0/product/7337",
+    "34": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-34-0/product/7443",
+    "35": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-35-0/product/7554",
+    "36": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-36-0/product/7663",
+    "37": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-37-0/product/7760",
+    "38": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-38-0/product/7874",
+    "39": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-39-0/product/8014",
+    "40": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-40-0/product/8192",
+    "41": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-41-0/product/8347",
+    "42": "https://www.viz.com/manga-books/manga/my-hero-academia-volume-42-0/product/8544"
+  },
+  "AMAZON_LINKS": {},
+  "ARC_RANGES": []
+}

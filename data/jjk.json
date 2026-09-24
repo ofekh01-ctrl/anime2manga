@@ -1,0 +1,995 @@
+{
+  "id": "jjk",
+  "name": "Jujutsu Kaisen",
+  "pageTitle": "Jujutsu Kaisen Anime Episodes to Manga Chapters | Anime2Manga",
+  "lede": "Enter where you are in any one of the three, and the others update to match. Jujutsu Kaisen's anime has zero filler — every episode adapts the manga directly.",
+  "seoCopy": "Convert Jujutsu Kaisen anime episodes to manga chapters and volumes, including the Jujutsu Kaisen 0 movie. Enter a chapter or volume to find its matching anime episodes.",
+  "seoFaq": [
+    {
+      "question": "What manga chapters are in Jujutsu Kaisen episode 1?",
+      "answer": "Jujutsu Kaisen episode 1 adapts manga chapters 1–2 in volume 1. Enter another episode above to see its chapters and volume."
+    },
+    {
+      "question": "Where do I start the Jujutsu Kaisen manga after watching the anime?",
+      "answer": "Enter the last episode you watched. The result shows the chapters and volume it covers, so you can find the next chapter you have not read."
+    }
+  ],
+  "footer": [
+    "Episode data covers Seasons 1–3 (episodes 1–59, chapters 1–181) plus the JJK 0 movie — numbered as \"episode 0\" here since it's a prequel — chapters 0.1–0.4. That's volumes 1–21 for the volume/chapter lookup (the anime stops partway through volume 21).",
+    "Volume/chapter lookup covers the manga through volume 30 / chapter 271.",
+    "No filler: every listed anime episode adapts manga material.",
+    "Sources: episode–chapter correspondence from AnimeFillerGuide.com; volume/chapter ranges from ListFist.com."
+  ],
+  "beyondDataHint": "This is beyond Season 3 — no further anime adaptation exists yet.",
+  "animeVolumeThreshold": 20,
+  "notAdaptedTagText": "Not yet adapted",
+  "episodePlaceholder": "1–59 (0 movie)",
+  "volumePlaceholder": "1–30",
+  "chapterPlaceholder": "1–271 (+ 0.1–0.4)",
+  "EPISODES": [
+    {
+      "episode": 0,
+      "title": "Jujutsu Kaisen 0: The Movie",
+      "chapters": [
+        "0.1",
+        "0.2",
+        "0.3",
+        "0.4"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 1,
+      "title": "Ryomen Sukuna",
+      "chapters": [
+        "1",
+        "2"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 2,
+      "title": "For Myself",
+      "chapters": [
+        "2",
+        "3"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 3,
+      "title": "Girl of Steel",
+      "chapters": [
+        "4",
+        "5"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 4,
+      "title": "Curse Womb Must Die",
+      "chapters": [
+        "6",
+        "7",
+        "8"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 5,
+      "title": "Curse Womb Must Die -II-",
+      "chapters": [
+        "8",
+        "9",
+        "10"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 6,
+      "title": "After Rain",
+      "chapters": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 7,
+      "title": "Assault",
+      "chapters": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 8,
+      "title": "Boredom",
+      "chapters": [
+        "16",
+        "17",
+        "18"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 9,
+      "title": "Small Fry and Reverse Retribution",
+      "chapters": [
+        "19",
+        "20",
+        "21"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 10,
+      "title": "Idle Transfiguration",
+      "chapters": [
+        "21",
+        "22",
+        "23"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 11,
+      "title": "Narrow-minded",
+      "chapters": [
+        "23",
+        "24",
+        "25"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 12,
+      "title": "To You, Someday",
+      "chapters": [
+        "26",
+        "27",
+        "28",
+        "29"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 13,
+      "title": "Tomorrow",
+      "chapters": [
+        "29",
+        "30",
+        "31"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 14,
+      "title": "Kyoto Sister School Exchange Event - Group Battle 0 -",
+      "chapters": [
+        "32",
+        "33"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 15,
+      "title": "Kyoto Sister School Exchange Event - Group Battle 1 -",
+      "chapters": [
+        "34",
+        "35",
+        "36"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 16,
+      "title": "Kyoto Sister School Exchange Event - Group Battle 2 -",
+      "chapters": [
+        "37",
+        "38",
+        "39"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 17,
+      "title": "Kyoto Sister School Exchange Event - Group Battle 3 -",
+      "chapters": [
+        "40",
+        "41",
+        "42"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 18,
+      "title": "Sage",
+      "chapters": [
+        "43",
+        "44",
+        "45",
+        "46"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 19,
+      "title": "Black Flash",
+      "chapters": [
+        "46",
+        "47",
+        "48",
+        "49"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 20,
+      "title": "Nonstandard",
+      "chapters": [
+        "50",
+        "51",
+        "52"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 21,
+      "title": "Jujutsu Koshien",
+      "chapters": [
+        "53",
+        "54"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 22,
+      "title": "The Origin of Blind Obedience",
+      "chapters": [
+        "55",
+        "56"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 23,
+      "title": "The Origin of Blind Obedience - 2 -",
+      "chapters": [
+        "57",
+        "58",
+        "59"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 24,
+      "title": "Accomplices",
+      "chapters": [
+        "60",
+        "61",
+        "62",
+        "63"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 25,
+      "title": "Hidden Inventory",
+      "chapters": [
+        "76",
+        "65",
+        "66"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 26,
+      "title": "Hidden Inventory 2",
+      "chapters": [
+        "67",
+        "74",
+        "68",
+        "69"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 27,
+      "title": "Hidden Inventory 3",
+      "chapters": [
+        "70",
+        "71",
+        "72"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 28,
+      "title": "Hidden Inventory 4",
+      "chapters": [
+        "73",
+        "74",
+        "75",
+        "76"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 29,
+      "title": "Premature Death",
+      "chapters": [
+        "76",
+        "77",
+        "78",
+        "79"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 30,
+      "title": "It's Like That",
+      "chapters": [
+        "64",
+        "79",
+        "80"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 31,
+      "title": "Evening Festival",
+      "chapters": [
+        "80",
+        "81",
+        "82",
+        "83"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 32,
+      "title": "The Shibuya Incident",
+      "chapters": [
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 33,
+      "title": "Shibuya Incident - Gate, Open",
+      "chapters": [
+        "85",
+        "88",
+        "89",
+        "90",
+        "91"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 34,
+      "title": "Pandemonium",
+      "chapters": [
+        "90",
+        "91",
+        "92",
+        "93"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 35,
+      "title": "Seance",
+      "chapters": [
+        "94",
+        "95",
+        "96",
+        "97"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 36,
+      "title": "Dull Knife",
+      "chapters": [
+        "98",
+        "99",
+        "100",
+        "101"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 37,
+      "title": "Red Scale",
+      "chapters": [
+        "100",
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "106"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 38,
+      "title": "Fluctuations",
+      "chapters": [
+        "102",
+        "106",
+        "107",
+        "111",
+        "108",
+        "109"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 39,
+      "title": "Fluctuations, Part 2",
+      "chapters": [
+        "109",
+        "110",
+        "111",
+        "112"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 40,
+      "title": "Thunderclap",
+      "chapters": [
+        "113",
+        "114",
+        "115",
+        "116"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 41,
+      "title": "Thunderclap, Part 2",
+      "chapters": [
+        "117",
+        "118",
+        "119",
+        "120"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 42,
+      "title": "Right and Wrong",
+      "chapters": [
+        "120",
+        "121",
+        "122"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 43,
+      "title": "Right and Wrong, Part 2",
+      "chapters": [
+        "123",
+        "124",
+        "125"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 44,
+      "title": "Right and Wrong, Part 3",
+      "chapters": [
+        "126",
+        "133",
+        "127",
+        "128"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 45,
+      "title": "Metamorphosis",
+      "chapters": [
+        "129",
+        "130",
+        "131",
+        "132"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 46,
+      "title": "Metamorphosis, Part 2",
+      "chapters": [
+        "133",
+        "134",
+        "135"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 47,
+      "title": "Shibuya Incident - Gate, Close",
+      "chapters": [
+        "136",
+        "137",
+        "138",
+        "139"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 48,
+      "title": "Execution",
+      "chapters": [
+        "138",
+        "139",
+        "140",
+        "141"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 49,
+      "title": "One More Time",
+      "chapters": [
+        "141",
+        "142",
+        "143",
+        "144"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 50,
+      "title": "About the Culling Game",
+      "chapters": [
+        "144",
+        "145",
+        "146"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 51,
+      "title": "Perfect Preparation",
+      "chapters": [
+        "148",
+        "149",
+        "150",
+        "151",
+        "152"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 52,
+      "title": "Fever",
+      "chapters": [
+        "147",
+        "153",
+        "154",
+        "155"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 53,
+      "title": "Cog",
+      "chapters": [
+        "154",
+        "155",
+        "156",
+        "157",
+        "158"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 54,
+      "title": "Tokyo No. 1 Colony, Part 1",
+      "chapters": [
+        "158",
+        "160",
+        "161",
+        "162"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 55,
+      "title": "Tokyo No. 1 Colony, Part 2",
+      "chapters": [
+        "159",
+        "162",
+        "163",
+        "164",
+        "167"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 56,
+      "title": "Tokyo No. 1 Colony, Part 3",
+      "chapters": [
+        "164",
+        "165",
+        "166",
+        "167"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 57,
+      "title": "Tokyo No. 1 Colony, Part 4",
+      "chapters": [
+        "167",
+        "168",
+        "169",
+        "170"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 58,
+      "title": "Tokyo No. 1 Colony, Part 5",
+      "chapters": [
+        "171",
+        "172",
+        "173"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 59,
+      "title": "Sendai Colony",
+      "chapters": [
+        "174",
+        "175",
+        "176",
+        "177",
+        "178",
+        "179",
+        "180",
+        "181"
+      ],
+      "filler": false
+    }
+  ],
+  "VOLUMES": [
+    {
+      "volume": 1,
+      "title": "Ryomen Sukuna",
+      "start": 1,
+      "end": 7,
+      "extras": null
+    },
+    {
+      "volume": 2,
+      "title": "Fearsome Womb",
+      "start": 8,
+      "end": 16,
+      "extras": null
+    },
+    {
+      "volume": 3,
+      "title": "Young Fish and Reverse Punishment",
+      "start": 17,
+      "end": 25,
+      "extras": null
+    },
+    {
+      "volume": 4,
+      "title": "I'm Gonna Kill You!",
+      "start": 26,
+      "end": 34,
+      "extras": null
+    },
+    {
+      "volume": 5,
+      "title": "Kyoto Sister School Goodwill Event",
+      "start": 35,
+      "end": 43,
+      "extras": null
+    },
+    {
+      "volume": 6,
+      "title": "Black Flash",
+      "start": 44,
+      "end": 52,
+      "extras": null
+    },
+    {
+      "volume": 7,
+      "title": "The Origin of Obedience",
+      "start": 53,
+      "end": 61,
+      "extras": null
+    },
+    {
+      "volume": 8,
+      "title": "Hidden Inventory",
+      "start": 62,
+      "end": 70,
+      "extras": null
+    },
+    {
+      "volume": 9,
+      "title": "Premature Death",
+      "start": 71,
+      "end": 79,
+      "extras": null
+    },
+    {
+      "volume": 10,
+      "title": "Evening Festival",
+      "start": 80,
+      "end": 88,
+      "extras": null
+    },
+    {
+      "volume": 11,
+      "title": "The Shibuya Incident -Gate Open-",
+      "start": 89,
+      "end": 97,
+      "extras": null
+    },
+    {
+      "volume": 12,
+      "title": "The Shibuya Incident -Cloudfall-",
+      "start": 98,
+      "end": 106,
+      "extras": null
+    },
+    {
+      "volume": 13,
+      "title": "The Shibuya Incident -Thunderclap-",
+      "start": 107,
+      "end": 115,
+      "extras": null
+    },
+    {
+      "volume": 14,
+      "title": "The Shibuya Incident -Judgment of Right and Wrong-",
+      "start": 116,
+      "end": 124,
+      "extras": null
+    },
+    {
+      "volume": 15,
+      "title": "The Shibuya Incident -Transform-",
+      "start": 125,
+      "end": 133,
+      "extras": null
+    },
+    {
+      "volume": 16,
+      "title": "The Shibuya Incident -Gate Close-",
+      "start": 134,
+      "end": 142,
+      "extras": null
+    },
+    {
+      "volume": 17,
+      "title": "Perfect Preparation",
+      "start": 143,
+      "end": 152,
+      "extras": null
+    },
+    {
+      "volume": 18,
+      "title": "Fever",
+      "start": 153,
+      "end": 161,
+      "extras": null
+    },
+    {
+      "volume": 19,
+      "title": "Tokyo No. 1 Colony -Angry Men-",
+      "start": 162,
+      "end": 171,
+      "extras": null
+    },
+    {
+      "volume": 20,
+      "title": "Sendai Colony -Semi-Feast-",
+      "start": 172,
+      "end": 180,
+      "extras": null
+    },
+    {
+      "volume": 21,
+      "title": "Tokyo No. 2 Colony -Great Luck-",
+      "start": 181,
+      "end": 190,
+      "extras": null
+    },
+    {
+      "volume": 22,
+      "title": "Sakurajima Colony -Resurrection-",
+      "start": 191,
+      "end": 199,
+      "extras": null
+    },
+    {
+      "volume": 23,
+      "title": "Stars and Oil",
+      "start": 200,
+      "end": 208,
+      "extras": null
+    },
+    {
+      "volume": 24,
+      "title": "Fearsome Womb -Recurrence-",
+      "start": 209,
+      "end": 217,
+      "extras": null
+    },
+    {
+      "volume": 25,
+      "title": "Inhuman Makyo Shinjuku Showdown",
+      "start": 218,
+      "end": 227,
+      "extras": null
+    },
+    {
+      "volume": 26,
+      "title": "Heading South",
+      "start": 228,
+      "end": 236,
+      "extras": null
+    },
+    {
+      "volume": 27,
+      "title": "Foolish Survivor!!",
+      "start": 237,
+      "end": 245,
+      "extras": null
+    },
+    {
+      "volume": 28,
+      "title": "Inhuman Makyo Shinjuku Showdown -Nine Principles-",
+      "start": 246,
+      "end": 254,
+      "extras": null
+    },
+    {
+      "volume": 29,
+      "title": "Inhuman Makyo Shinjuku Showdown -Living Dead-",
+      "start": 255,
+      "end": 263,
+      "extras": null
+    },
+    {
+      "volume": 30,
+      "title": "From Now On",
+      "start": 264,
+      "end": 271,
+      "extras": null
+    }
+  ],
+  "DEFAULT_COVERS": {
+    "1": "https://dw9to29mmj727.cloudfront.net/products/1974710025.jpg",
+    "2": "https://dw9to29mmj727.cloudfront.net/products/1974710033.jpg",
+    "3": "https://dw9to29mmj727.cloudfront.net/products/1974710041.jpg",
+    "4": "https://dw9to29mmj727.cloudfront.net/products/1974714802.jpg",
+    "5": "https://dw9to29mmj727.cloudfront.net/products/1974714810.jpg",
+    "6": "https://dw9to29mmj727.cloudfront.net/products/1974714829.jpg",
+    "7": "https://dw9to29mmj727.cloudfront.net/products/1974717119.jpg",
+    "8": "https://dw9to29mmj727.cloudfront.net/products/1974718719.jpg",
+    "9": "https://dw9to29mmj727.cloudfront.net/products/1974718727.jpg",
+    "10": "https://dw9to29mmj727.cloudfront.net/products/1974720756.jpg",
+    "11": "https://dw9to29mmj727.cloudfront.net/products/1974722848.jpg",
+    "12": "https://dw9to29mmj727.cloudfront.net/products/1974722856.jpg",
+    "13": "https://dw9to29mmj727.cloudfront.net/products/1974723429.jpg",
+    "14": "https://dw9to29mmj727.cloudfront.net/products/1974725324.jpg",
+    "15": "https://dw9to29mmj727.cloudfront.net/products/1974727106.jpg",
+    "16": "https://dw9to29mmj727.cloudfront.net/products/1974728986.jpg",
+    "17": "https://dw9to29mmj727.cloudfront.net/products/1974732339.jpg",
+    "18": "https://dw9to29mmj727.cloudfront.net/products/1974734390.jpg",
+    "19": "https://dw9to29mmj727.cloudfront.net/products/197473627X.jpg",
+    "20": "https://dw9to29mmj727.cloudfront.net/products/1974738744.jpg",
+    "21": "https://dw9to29mmj727.cloudfront.net/products/1974741222.jpg",
+    "22": "https://dw9to29mmj727.cloudfront.net/products/1974743411.jpg",
+    "23": "https://dw9to29mmj727.cloudfront.net/products/1974746291.jpg",
+    "24": "https://dw9to29mmj727.cloudfront.net/products/1974749487.jpg",
+    "25": "https://dw9to29mmj727.cloudfront.net/products/1974751880.jpg",
+    "26": "https://dw9to29mmj727.cloudfront.net/products/1974754979.jpg",
+    "27": "https://dw9to29mmj727.cloudfront.net/products/1974755592.jpg",
+    "28": "https://dw9to29mmj727.cloudfront.net/products/1974758907.jpg",
+    "29": "https://dw9to29mmj727.cloudfront.net/products/1974762017.jpg",
+    "30": "https://dw9to29mmj727.cloudfront.net/products/1974763404.jpg"
+  },
+  "VIZ_LINKS": {
+    "1": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-1-0/product/6116",
+    "2": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-2-0/product/6163",
+    "3": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-3-0/product/6227",
+    "4": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-4-0/product/6291",
+    "5": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-5-0/product/6364",
+    "6": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-6-0/product/6422",
+    "7": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-7-0/product/6496",
+    "8": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-8-0/product/6570",
+    "9": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-9-0/product/6630",
+    "10": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-10-0/product/6697",
+    "11": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-11-0/product/6759",
+    "12": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-12-0/product/6815",
+    "13": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-13-0/product/6888",
+    "14": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-14-0/product/6960",
+    "15": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-15-0/product/7021",
+    "16": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-16-0/product/7082",
+    "17": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-17-0/product/7152",
+    "18": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-18-0/product/7288",
+    "19": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-19-0/product/7377",
+    "20": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-20-0/product/7532",
+    "21": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-21-0/product/7643",
+    "22": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-22-0/product/7820",
+    "23": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-23-0/product/7957",
+    "24": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-24-0/product/8107",
+    "25": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-25-0/product/8233",
+    "26": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-26-0/product/8325",
+    "27": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-27-0/product/8466",
+    "28": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-28-0/product/8577",
+    "29": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-29-0/product/8702",
+    "30": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-30-0/product/8827"
+  },
+  "AMAZON_LINKS": {},
+  "ARC_RANGES": [
+    {
+      "arc": "Introduction",
+      "subArc": null,
+      "start": 1,
+      "end": 25
+    },
+    {
+      "arc": "Cursed Womb",
+      "subArc": null,
+      "start": 26,
+      "end": 31
+    },
+    {
+      "arc": "Kyoto Sister School Exchange",
+      "subArc": null,
+      "start": 32,
+      "end": 42
+    },
+    {
+      "arc": "Death Painting Island",
+      "subArc": null,
+      "start": 43,
+      "end": 63
+    },
+    {
+      "arc": "Hidden Inventory / Premature Death",
+      "subArc": null,
+      "start": 64,
+      "end": 79
+    },
+    {
+      "arc": "Shibuya Incident",
+      "subArc": null,
+      "start": 80,
+      "end": 139
+    },
+    {
+      "arc": "Perfect Preparation / Culling Game",
+      "subArc": null,
+      "start": 140,
+      "end": 271
+    }
+  ]
+}

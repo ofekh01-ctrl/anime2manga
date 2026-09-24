@@ -1,0 +1,6508 @@
+{
+  "id": "naruto",
+  "name": "Naruto",
+  "pageTitle": "Naruto Anime to Manga Converter | Naruto & Shippuden | Anime2Manga",
+  "lede": "Choose Naruto or Naruto: Shippuden, then enter a manga volume, chapter, or anime episode to find the matching point in the other format.",
+  "seoCopy": "Match Naruto and Naruto: Shippuden anime episodes with manga chapters and volumes, identify filler, and find exactly where to continue reading.",
+  "footer": [
+    "Naruto covers episodes 1–220; Naruto: Shippuden covers episodes 1–500.",
+    "The manga lookup covers all 72 volumes and chapters 1–700.",
+    "Episodes adapted from official novels are identified separately when no manga chapter applies.",
+    "Sources: episode–chapter correspondence from ListFist; volume data and ISBNs cross-checked with Wikipedia and VIZ Media; volume covers served by VIZ Media."
+  ],
+  "beyondDataHint": "The complete Naruto manga and both TV anime series are included.",
+  "volumePlaceholder": "1–72",
+  "chapterPlaceholder": "1–700",
+  "episodePlaceholder": "1–220",
+  "animeVolumeThreshold": 72,
+  "EPISODES": [
+    {
+      "episode": 1,
+      "title": "Enter: Naruto Uzumaki!",
+      "chapters": [
+        "1"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 2,
+      "title": "My Name is Konohamaru!",
+      "chapters": [
+        "2"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 3,
+      "title": "Sasuke and Sakura: Friends or Foes?",
+      "chapters": [
+        "3"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 4,
+      "title": "Pass or Fail: Survival Test",
+      "chapters": [
+        "4",
+        "5",
+        "6"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 5,
+      "title": "You Failed! Kakashi's Final Decision",
+      "chapters": [
+        "6",
+        "7",
+        "8"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 6,
+      "title": "A Dangerous Mission! Journey to the Land of Waves!",
+      "chapters": [
+        "9",
+        "10",
+        "11"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 7,
+      "title": "The Assassin of the Mist!",
+      "chapters": [
+        "11",
+        "12"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 8,
+      "title": "The Oath of Pain",
+      "chapters": [
+        "13",
+        "14"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 9,
+      "title": "Kakashi: Sharingan Warrior",
+      "chapters": [
+        "15",
+        "16"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 10,
+      "title": "The Forest of Chakra",
+      "chapters": [
+        "17",
+        "18"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 11,
+      "title": "The Land Where a Hero Once Lived",
+      "chapters": [
+        "19",
+        "20"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 12,
+      "title": "Battle on the Bridge! Zabuza Returns!!",
+      "chapters": [
+        "21",
+        "22"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 13,
+      "title": "Haku's Secret Jutsu: Crystal Ice Mirrors",
+      "chapters": [
+        "23",
+        "24"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 14,
+      "title": "The Number One Hyperactive, Knucklehead Ninja Joins the Fight!!",
+      "chapters": [
+        "25"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 15,
+      "title": "Zero Visibility: The Sharingan Shatters",
+      "chapters": [
+        "25",
+        "26"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 16,
+      "title": "The Broken Seal",
+      "chapters": [
+        "26",
+        "27"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 17,
+      "title": "White Past: Hidden Ambition",
+      "chapters": [
+        "28",
+        "29",
+        "30"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 18,
+      "title": "The Weapons Known as Shinobi",
+      "chapters": [
+        "31",
+        "32"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 19,
+      "title": "The Demon in the Snow",
+      "chapters": [
+        "32",
+        "33"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 20,
+      "title": "A New Chapter Begins: The Chunin Exam!",
+      "chapters": [
+        "34"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 21,
+      "title": "Identify Yourself: Powerful New Rivals",
+      "chapters": [
+        "35",
+        "36"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 22,
+      "title": "Chunin Challenge: Rock Lee vs. Sasuke!",
+      "chapters": [
+        "37",
+        "38"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 23,
+      "title": "Genin Takedown! All Nine Rookies Face Off!",
+      "chapters": [
+        "38",
+        "39",
+        "40"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 24,
+      "title": "Start Your Engines: The Chunin Exam Begins!",
+      "chapters": [
+        "40",
+        "41",
+        "42"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 25,
+      "title": "The Tenth Question: All or Nothing!",
+      "chapters": [
+        "43",
+        "44"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 26,
+      "title": "Special Report: Live from the Forest of Death!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 27,
+      "title": "The Chunin Exam Stage 2: The Forest of Death",
+      "chapters": [
+        "45",
+        "46"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 28,
+      "title": "Eat or be Eaten: Panic in the Forest",
+      "chapters": [
+        "46",
+        "47"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 29,
+      "title": "Naruto's Counterattack: Never Give In!",
+      "chapters": [
+        "48",
+        "49"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 30,
+      "title": "The Sharingan Revived: Dragon-Flame Jutsu!",
+      "chapters": [
+        "49",
+        "50"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 31,
+      "title": "Bushy Brow's Pledge: Undying Love and Protection!",
+      "chapters": [
+        "51",
+        "52"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 32,
+      "title": "Sakura Blossoms!",
+      "chapters": [
+        "53",
+        "54"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 33,
+      "title": "Battle Formation: Ino-Shika-Cho!",
+      "chapters": [
+        "55",
+        "56"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 34,
+      "title": "Akamaru Trembles: Gaara's Cruel Strength!",
+      "chapters": [
+        "57",
+        "58",
+        "59"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 35,
+      "title": "The Scroll's Secret: No Peeking Allowed",
+      "chapters": [
+        "60",
+        "61"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 36,
+      "title": "Clone vs. Clone: Mine are Better than Yours!",
+      "chapters": [
+        "62",
+        "63"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 37,
+      "title": "Surviving the Cut! The Rookie Nine Together Again!",
+      "chapters": [
+        "63",
+        "64",
+        "65"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 38,
+      "title": "Narrowing the Field: Sudden Death Elimination!",
+      "chapters": [
+        "65",
+        "66"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 39,
+      "title": "Bushy Brow's Jealousy: Lions Barrage Unleashed!",
+      "chapters": [
+        "67",
+        "68",
+        "69"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 40,
+      "title": "Kakashi and Orochimaru: Face-to-Face!",
+      "chapters": [
+        "69",
+        "70"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 41,
+      "title": "Kunoichi Rumble: The Rivals Get Serious!",
+      "chapters": [
+        "70",
+        "71"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 42,
+      "title": "The Ultimate Battle: Cha!",
+      "chapters": [
+        "72",
+        "73"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 43,
+      "title": "Killer Kunoichi and a Shaky Shikamaru",
+      "chapters": [
+        "73",
+        "74"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 44,
+      "title": "Akamaru Unleashed! Who's Top Dog Now?",
+      "chapters": [
+        "75",
+        "76"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 45,
+      "title": "Surprise Attack! Naruto's Secret Weapon!",
+      "chapters": [
+        "76",
+        "77"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 46,
+      "title": "Byakugan Battle: Hinata Grows Bold!",
+      "chapters": [
+        "78",
+        "79"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 47,
+      "title": "A Failure Stands Tall!",
+      "chapters": [
+        "79",
+        "80",
+        "81"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 48,
+      "title": "Gaara vs. Rock Lee: The Power of Youth Explodes!",
+      "chapters": [
+        "81",
+        "82",
+        "83"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 49,
+      "title": "Lee's Hidden Strength: Forbidden Secret Jutsu!",
+      "chapters": [
+        "83",
+        "84",
+        "85"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 50,
+      "title": "The Fifth Gate: A Splendid Ninja is Born",
+      "chapters": [
+        "85",
+        "86",
+        "87"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 51,
+      "title": "A Shadow in Darkness: Danger Approaches Sasuke",
+      "chapters": [
+        "87",
+        "88",
+        "89"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 52,
+      "title": "Ebisu Returns: Naruto's Toughest Training Yet!",
+      "chapters": [
+        "89",
+        "90"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 53,
+      "title": "Long Time No See: Jiraiya Returns!",
+      "chapters": [
+        "91"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 54,
+      "title": "The Summoning Jutsu: Wisdom of the Toad Sage!",
+      "chapters": [
+        "91",
+        "92"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 55,
+      "title": "A Feeling of Yearning, A Flower Full of Hope",
+      "chapters": [
+        "92",
+        "93"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 56,
+      "title": "Live or Die: Risk it All to Win it All!",
+      "chapters": [
+        "94",
+        "95"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 57,
+      "title": "He Flies! He Jumps! He Lurks! Chief Toad Appears!",
+      "chapters": [
+        "95",
+        "96"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 58,
+      "title": "Hospital Besieged: The Evil Hand Revealed!",
+      "chapters": [
+        "96",
+        "97"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 59,
+      "title": "The Final Rounds: Rush to the Battle Arena!",
+      "chapters": [
+        "98"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 60,
+      "title": "Byakugan vs. Shadow Clone",
+      "chapters": [
+        "99",
+        "100"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 61,
+      "title": "Ultimate Defense: Zero Blind Spot!",
+      "chapters": [
+        "100",
+        "101",
+        "102"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 62,
+      "title": "A Failure's True Power",
+      "chapters": [
+        "103",
+        "104",
+        "105"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 63,
+      "title": "Hit it or Quit it: The Final Rounds Get Complicated!",
+      "chapters": [
+        "105",
+        "106"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 64,
+      "title": "Zero Motivation: The Guy with Cloud Envy!",
+      "chapters": [
+        "106",
+        "107",
+        "108"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 65,
+      "title": "Dancing Leaf, Squirming Sand",
+      "chapters": [
+        "109",
+        "110"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 66,
+      "title": "Bushy Brow's Jutsu: Sasuke Style!",
+      "chapters": [
+        "111",
+        "112"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 67,
+      "title": "Late for the Show, But Ready to Go! The Ultimate Secret Technique is Born!",
+      "chapters": [
+        "112",
+        "113",
+        "114"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 68,
+      "title": "Zero Hour! The Destruction of the Hidden Leaf Village Begins!",
+      "chapters": [
+        "115",
+        "116"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 69,
+      "title": "Village in Distress: A New A-Ranked Mission!",
+      "chapters": [
+        "117",
+        "118"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 70,
+      "title": "A Shirker's Call to Action: A Layabout No More!",
+      "chapters": [
+        "118",
+        "119"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 71,
+      "title": "An Unrivaled Match: Hokage Battle Royale!",
+      "chapters": [
+        "120",
+        "121"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 72,
+      "title": "A Mistake from the Past: A Face Revealed!",
+      "chapters": [
+        "121",
+        "122"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 73,
+      "title": "Forbidden Secret Technique: Reaper Death Seal!",
+      "chapters": [
+        "123",
+        "124"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 74,
+      "title": "Astonishing Truth! Gaara's Identity Emerges!",
+      "chapters": [
+        "125",
+        "126"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 75,
+      "title": "Sasuke's Decision: Pushed to the Edge!",
+      "chapters": [
+        "127",
+        "128"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 76,
+      "title": "Assassin of the Moonlit Night",
+      "chapters": [
+        "129",
+        "130"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 77,
+      "title": "Light vs. Dark: The Two Faces of Gaara",
+      "chapters": [
+        "131",
+        "132"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 78,
+      "title": "Naruto's Ninja Handbook",
+      "chapters": [
+        "133",
+        "134",
+        "135"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 79,
+      "title": "Beyond the Limit of Darkness and Light",
+      "chapters": [
+        "136",
+        "137"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 80,
+      "title": "The Third Hokage, Forever...",
+      "chapters": [
+        "138",
+        "139"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 81,
+      "title": "Return of the Morning Mist",
+      "chapters": [
+        "140",
+        "141"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 82,
+      "title": "Eye to Eye: Sharingan vs. Sharingan!",
+      "chapters": [
+        "142",
+        "143"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 83,
+      "title": "Jiraiya: Naruto's Potential Disaster!",
+      "chapters": [
+        "143",
+        "144"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 84,
+      "title": "Roar, Chidori! Brother vs. Brother!",
+      "chapters": [
+        "145",
+        "146"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 85,
+      "title": "Hate Among the Uchihas: The Last of the Clan!",
+      "chapters": [
+        "147",
+        "148"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 86,
+      "title": "A New Training Begins: I Will Be Strong!",
+      "chapters": [
+        "149",
+        "150"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 87,
+      "title": "Keep on Training: Pop Goes the Water Balloon!",
+      "chapters": [
+        "151"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 88,
+      "title": "Focal Point: The Mark of the Leaf",
+      "chapters": [
+        "152",
+        "153",
+        "154"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 89,
+      "title": "An Impossible Choice: The Pain Within Tsunade's Heart",
+      "chapters": [
+        "155",
+        "156",
+        "157"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 90,
+      "title": "Unforgivable! A Total Lack of Respect!",
+      "chapters": [
+        "157",
+        "158"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 91,
+      "title": "Inheritence! The Necklace of Death!",
+      "chapters": [
+        "159",
+        "160"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 92,
+      "title": "A Dubious Offer! Tsunade's Choice!",
+      "chapters": [
+        "161",
+        "162",
+        "163"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 93,
+      "title": "Breakdown! The Deal is Off!",
+      "chapters": [
+        "163",
+        "164"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 94,
+      "title": "Attack! Fury of the Rasengan!",
+      "chapters": [
+        "165",
+        "166",
+        "167"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 95,
+      "title": "The Fifth Hokage! A Life on the Line!",
+      "chapters": [
+        "168",
+        "169"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 96,
+      "title": "Deadlock! Sannin Showdown!",
+      "chapters": [
+        "170",
+        "171"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 97,
+      "title": "Kidnapped! Naruto's Hot Spring Adventure!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 98,
+      "title": "Tsunade's Warning: Ninja No More!",
+      "chapters": [
+        "172",
+        "173",
+        "174"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 99,
+      "title": "The Will of Fire Still Burns!",
+      "chapters": [
+        "177"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 100,
+      "title": "Sensei and Student: The Bond of the Shinobi",
+      "chapters": [
+        "179",
+        "180"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 101,
+      "title": "Gotta See! Gotta Know! Kakashi-Sensei's True Face!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 102,
+      "title": "Mission: Help an Old Friend in the Land of Tea",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 103,
+      "title": "The Race is on! Trouble on the High Seas!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 104,
+      "title": "Run Idate Run! Nagi Island Awaits!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 105,
+      "title": "A Fierce Battle of Rolling Thunder!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 106,
+      "title": "The Last Leg: A Final Act of Desperation",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 107,
+      "title": "The Battle Begins: Naruto vs. Sasuke",
+      "chapters": [
+        "173",
+        "174",
+        "175",
+        "184"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 108,
+      "title": "Bitter Rivals and Broken Bonds",
+      "chapters": [
+        "176",
+        "177"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 109,
+      "title": "An Invitation from the Sound",
+      "chapters": [
+        "178",
+        "179",
+        "181"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 110,
+      "title": "Formation! The Sasuke Retrieval Squad",
+      "chapters": [
+        "182",
+        "183"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 111,
+      "title": "Sound vs. Leaf",
+      "chapters": [
+        "183",
+        "184",
+        "185",
+        "186"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 112,
+      "title": "Squad Mutiny: Everything Falls Apart!",
+      "chapters": [
+        "186",
+        "187"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 113,
+      "title": "Full Throttle Power! Choji, Ablaze!",
+      "chapters": [
+        "188",
+        "189"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 114,
+      "title": "Good-bye Old Friend...! I'll Always Believe in You!",
+      "chapters": [
+        "189",
+        "190",
+        "191"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 115,
+      "title": "Your Opponent Is Me!",
+      "chapters": [
+        "191",
+        "192",
+        "193"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 116,
+      "title": "360 Degrees of Vision: The Byakugan's Blind Spot",
+      "chapters": [
+        "194",
+        "195"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 117,
+      "title": "Losing is Not an Option!",
+      "chapters": [
+        "196",
+        "197",
+        "198"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 118,
+      "title": "The Vessel Arrives Too Late",
+      "chapters": [
+        "198",
+        "199"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 119,
+      "title": "Miscalculation: A New Enemy Appears!",
+      "chapters": [
+        "200",
+        "201",
+        "202"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 120,
+      "title": "Roar and Howl! The Ultimate Tag Team",
+      "chapters": [
+        "203",
+        "204"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 121,
+      "title": "To Each His Own Battle",
+      "chapters": [
+        "205",
+        "206"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 122,
+      "title": "Fakeout: Shikamaru's Comeback!",
+      "chapters": [
+        "207",
+        "208"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 123,
+      "title": "The Leaf's Handsome Devil!",
+      "chapters": [
+        "209",
+        "210"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 124,
+      "title": "The Beast Within",
+      "chapters": [
+        "211",
+        "212"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 125,
+      "title": "The Sand Shinobi: Allies of the Leaf",
+      "chapters": [
+        "213",
+        "214",
+        "215"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 126,
+      "title": "Showdown: Gaara vs. Kimimaro!",
+      "chapters": [
+        "215",
+        "216"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 127,
+      "title": "Vengeful Strike! The Bracken Dance",
+      "chapters": [
+        "216",
+        "217"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 128,
+      "title": "A Cry on Deaf Ears",
+      "chapters": [
+        "218",
+        "219"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 129,
+      "title": "Brothers: Distance Among the Uchiha",
+      "chapters": [
+        "220",
+        "221",
+        "222"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 130,
+      "title": "Father and Son, the Broken Crest",
+      "chapters": [
+        "223",
+        "224"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 131,
+      "title": "The Secrets of the Mangekyo Sharingan!",
+      "chapters": [
+        "224",
+        "225"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 132,
+      "title": "For a Friend",
+      "chapters": [
+        "226",
+        "227",
+        "228"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 133,
+      "title": "A Plea From a Friend",
+      "chapters": [
+        "229",
+        "230",
+        "231"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 134,
+      "title": "The End of Tears",
+      "chapters": [
+        "231",
+        "232",
+        "233",
+        "234",
+        "235"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 135,
+      "title": "The Promise That Could Not Be Kept",
+      "chapters": [
+        "235",
+        "236",
+        "237",
+        "238"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 136,
+      "title": "Deep Cover!? A Super S-Ranked Mission!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 137,
+      "title": "A Town of Outlaws, the Shadow of the Fuma Clan",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 138,
+      "title": "Pure Betrayal, and a Fleeting Plea!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 139,
+      "title": "Pure Terror! The House of Orochimaru",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 140,
+      "title": "Two Heartbeats: Kabuto's Trap",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 141,
+      "title": "Sakura's Determination",
+      "chapters": [
+        "236"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 142,
+      "title": "The Three Villains from the Maximum Security Prison",
+      "chapters": [
+        "238"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 143,
+      "title": "Tonton! I'm Counting on You!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 144,
+      "title": "A New Squad! Two People and a Dog?!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 145,
+      "title": "A New Formation: Ino-Shika-Cho!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 146,
+      "title": "Orochimaru's Shadow",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 147,
+      "title": "A Clash of Fate: You Can't Bring Me Down",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 148,
+      "title": "Search for the Rare Bikochu Beetle",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 149,
+      "title": "What's the Difference? Don't All Insects Look Alike?",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 150,
+      "title": "A Battle of Bugs: The Deceivers and the Deceived",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 151,
+      "title": "Blaze Away Byakugan: This Is My Ninja Way",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 152,
+      "title": "Funeral March for the Living",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 153,
+      "title": "A Lesson Learned: The Iron Fist of Love",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 154,
+      "title": "The Enemy of the Byakugan",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 155,
+      "title": "The Dark Creeping Clouds",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 156,
+      "title": "Raiga's Counterattack",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 157,
+      "title": "Run! The Curry of Life",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 158,
+      "title": "Follow My Lead! The Great Survival Challenge",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 159,
+      "title": "Bounty Hunter from the Wilderness",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 160,
+      "title": "Hunt or Be Hunted?! Showdown at the O.K. Temple!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 161,
+      "title": "The Appearance of Strange Visitors",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 162,
+      "title": "The Cursed Warrior",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 163,
+      "title": "The Tactician's Intent",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 164,
+      "title": "Too Late for Help",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 165,
+      "title": "The Death of Naruto",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 166,
+      "title": "When Time Stands Still",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 167,
+      "title": "When Egrets Flap Their Wings",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 168,
+      "title": "Mix It, Stretch It, Boil It Up! Burn, Copper Pot, Burn!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 169,
+      "title": "Remembrance: The Lost Page",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 170,
+      "title": "The Closed Door",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 171,
+      "title": "Infiltration: The Set-Up!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 172,
+      "title": "Despair: A Fractured Heart",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 173,
+      "title": "The Battle at Sea: The Power Unleashed!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 174,
+      "title": "Impossible! Celebrity Ninja Art - Money Style Jutsu!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 175,
+      "title": "The Treasure Hunt is On!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 176,
+      "title": "Run, Dodge, Zigzag! Chase or Be Chased!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 177,
+      "title": "Please, Mr. Postman!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 178,
+      "title": "Encounter! The Boy with a Star's Name",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 179,
+      "title": "The Remembered Lullaby",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 180,
+      "title": "Hidden Jutsu: The Price of The Ninja Art: Kujaku",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 181,
+      "title": "Hoshikage, The Buried Truth",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 182,
+      "title": "Reunion, The Remaining time",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 183,
+      "title": "The Star's Radiance",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 184,
+      "title": "Kiba's Long Day!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 185,
+      "title": "A Legend from the Hidden Leaf: The Onbaa!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 186,
+      "title": "Laughing Shino",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 187,
+      "title": "Open for Business! The Leaf Moving Service",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 188,
+      "title": "Mystery of the Targeted Merchants",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 189,
+      "title": "A Limitless Supply of Ninja Tools",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 190,
+      "title": "The Byakugan Sees the Blind Spot",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 191,
+      "title": "Forecast: Death! Cloudy with Chance of Sun",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 192,
+      "title": "Ino Screams! Chubby Paradise!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 193,
+      "title": "Viva Dojo Challenge! Youth Is All About Passion!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 194,
+      "title": "The Mysterious Curse of the Haunted Castle",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 195,
+      "title": "The Third Super-Beast!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 196,
+      "title": "Hot-Blooded Confrontation: Student vs. Sensei",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 197,
+      "title": "Crisis! The Hidden Leaf 11 Gather!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 198,
+      "title": "The ANBU Gives Up? Naruto's Recollection",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 199,
+      "title": "The Missed Target",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 200,
+      "title": "The Powerful Helper",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 201,
+      "title": "Multiple Traps! Countdown to Destruction",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 202,
+      "title": "The Top 5 Ninja Battles",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 203,
+      "title": "Kurenai's Decision, Squad 8 Left Behind",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 204,
+      "title": "Yakumo's Sealed Ability",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 205,
+      "title": "Kurenai's Top-Secret Mission: The Promise With the Third Hokage",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 206,
+      "title": "Genjutsu or Reality?",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 207,
+      "title": "The Supposed Sealed Ability",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 208,
+      "title": "The Weight of the Prized Artifact!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 209,
+      "title": "The Enemy: Ninja Dropouts",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 210,
+      "title": "The Bewildering Forest",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 211,
+      "title": "Memory of Flames",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 212,
+      "title": "To Each His Own Path",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 213,
+      "title": "Vanished Memories",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 214,
+      "title": "Bringing Back Reality",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 215,
+      "title": "A Past to Be Erased",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 216,
+      "title": "The Targeted Shukaku",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 217,
+      "title": "Sand Alliance with the Leaf Shinobi",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 218,
+      "title": "The Counterattack!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 219,
+      "title": "The Ultimate Weapon Reborn",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 220,
+      "title": "Departure",
+      "chapters": [
+        "238"
+      ],
+      "filler": false
+    }
+  ],
+  "episodeVariants": [
+    {
+      "id": "naruto",
+      "label": "Naruto",
+      "episodePlaceholder": "1–220",
+      "episodeSource": "main"
+    },
+    {
+      "id": "shippuden",
+      "label": "Naruto: Shippuden",
+      "episodePlaceholder": "1–500",
+      "episodes": [
+        {
+          "episode": 1,
+          "title": "Homecoming",
+          "chapters": [
+            "245"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 2,
+          "title": "The Akatsuki Makes Its Move",
+          "chapters": [
+            "245",
+            "246",
+            "247"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 3,
+          "title": "The Results of Training",
+          "chapters": [
+            "246",
+            "247",
+            "248"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 4,
+          "title": "The Jinchuriki of the Sand",
+          "chapters": [
+            "248"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 5,
+          "title": "The Kazekage Stands Tall",
+          "chapters": [
+            "249"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 6,
+          "title": "Mission Cleared",
+          "chapters": [
+            "249"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 7,
+          "title": "Run, Kankuro",
+          "chapters": [
+            "250",
+            "251"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 8,
+          "title": "Team Kakashi, Deployed",
+          "chapters": [
+            "250"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 9,
+          "title": "The Jinchuriki's Tears",
+          "chapters": [
+            "251",
+            "252"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 10,
+          "title": "Sealing Jutsu: Nine Phantom Dragons",
+          "chapters": [
+            "253",
+            "254"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 11,
+          "title": "The Medical Ninja's Student",
+          "chapters": [
+            "253",
+            "254"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 12,
+          "title": "The Retired Granny's Determination",
+          "chapters": [
+            "254",
+            "255"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 13,
+          "title": "A Meeting With Destiny",
+          "chapters": [
+            "256",
+            "257"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 14,
+          "title": "Naruto's Growth",
+          "chapters": [
+            "258",
+            "259"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 15,
+          "title": "The Secret Weapon is Called....",
+          "chapters": [
+            "260"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 16,
+          "title": "The Secret of Jinchuriki",
+          "chapters": [
+            "261"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 17,
+          "title": "The Death of Gaara!",
+          "chapters": [
+            "261",
+            "262"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 18,
+          "title": "Charge Tactic! Button Hook Entry!!",
+          "chapters": [
+            "262",
+            "263"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 19,
+          "title": "Traps Activate! Team Guy's Enemies",
+          "chapters": [
+            "263",
+            "264"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 20,
+          "title": "Hiruko vs. Two Kunoichi!",
+          "chapters": [
+            "264",
+            "265"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 21,
+          "title": "Sasori's Real Face",
+          "chapters": [
+            "266",
+            "267"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 22,
+          "title": "Chiyo's Secret Skills",
+          "chapters": [
+            "267",
+            "268"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 23,
+          "title": "Father and Mother",
+          "chapters": [
+            "268",
+            "269"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 24,
+          "title": "The Third Kazekage",
+          "chapters": [
+            "269",
+            "270"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 25,
+          "title": "Three Minutes Between Life and Death",
+          "chapters": [
+            "270",
+            "271"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 26,
+          "title": "Puppet Fight: 10 vs. 100!",
+          "chapters": [
+            "272",
+            "273"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 27,
+          "title": "Impossible Dream",
+          "chapters": [
+            "274",
+            "275"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 28,
+          "title": "Beasts! Alive Again!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 29,
+          "title": "Kakashi Enlightened!",
+          "chapters": [
+            "276",
+            "277"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 30,
+          "title": "Aesthetics of an Instant",
+          "chapters": [
+            "277",
+            "278"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 31,
+          "title": "The Legacy!",
+          "chapters": [
+            "279",
+            "280"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 32,
+          "title": "Return of the Kazekage",
+          "chapters": [
+            "280",
+            "281"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 33,
+          "title": "The New Target",
+          "chapters": [
+            "282",
+            "283"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 34,
+          "title": "Formation! New Team Kakashi!",
+          "chapters": [
+            "283",
+            "284"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 35,
+          "title": "An Unnecessary Addition",
+          "chapters": [
+            "285",
+            "291"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 36,
+          "title": "The Fake Smile",
+          "chapters": [
+            "286"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 37,
+          "title": "Untitled",
+          "chapters": [
+            "287"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 38,
+          "title": "Simulation",
+          "chapters": [
+            "288",
+            "289"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 39,
+          "title": "The Tenchi Bridge",
+          "chapters": [
+            "289",
+            "290",
+            "291"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 40,
+          "title": "Nine-Tails Unleashed",
+          "chapters": [
+            "291"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 41,
+          "title": "The Top-Secret Mission Begins",
+          "chapters": [
+            "292",
+            "293"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 42,
+          "title": "Orochimaru vs. Jinchuriki",
+          "chapters": [
+            "294",
+            "295"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 43,
+          "title": "Sakura's Tears",
+          "chapters": [
+            "296"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 44,
+          "title": "The Secret of the Battle!",
+          "chapters": [
+            "297",
+            "298"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 45,
+          "title": "The Consequences of Betrayal",
+          "chapters": [
+            "298",
+            "299"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 46,
+          "title": "The Unfinished Page",
+          "chapters": [
+            "299",
+            "300"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 47,
+          "title": "Infiltration: The Den of the Snake!",
+          "chapters": [
+            "301",
+            "302"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 48,
+          "title": "Bonds",
+          "chapters": [
+            "302",
+            "303"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 49,
+          "title": "Something Important...",
+          "chapters": [
+            "304"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 50,
+          "title": "The Picture Book's Story",
+          "chapters": [
+            "304",
+            "305"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 51,
+          "title": "Reunion",
+          "chapters": [
+            "305",
+            "306",
+            "307"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 52,
+          "title": "The Power of the Uchiha",
+          "chapters": [
+            "307",
+            "308",
+            "309"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 53,
+          "title": "Title",
+          "chapters": [
+            "309",
+            "310"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 54,
+          "title": "Nightmare",
+          "chapters": [
+            "311",
+            "312"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 55,
+          "title": "Wind",
+          "chapters": [
+            "314",
+            "315",
+            "316"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 56,
+          "title": "Squirming",
+          "chapters": [
+            "317",
+            "318"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 57,
+          "title": "Robbed of Sleep",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 58,
+          "title": "Loneliness",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 59,
+          "title": "A New Enemy",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 60,
+          "title": "Impermanence",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 61,
+          "title": "Contact",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 62,
+          "title": "Teammate",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 63,
+          "title": "The Two Kings",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 64,
+          "title": "The Jet-Black Signal Fire",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 65,
+          "title": "Lockdown of Darkness",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 66,
+          "title": "Revived Souls",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 67,
+          "title": "Everyone's Struggle to the Death",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 68,
+          "title": "Moment of Awakening",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 69,
+          "title": "Despair",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 70,
+          "title": "Resonance",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 71,
+          "title": "My Friend",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 72,
+          "title": "The Quietly Approaching Threat",
+          "chapters": [
+            "312",
+            "313",
+            "314"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 73,
+          "title": "Akatsuki's Invasion",
+          "chapters": [
+            "314",
+            "318"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 74,
+          "title": "Under the Starry Sky",
+          "chapters": [
+            "318",
+            "319"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 75,
+          "title": "The Old Monk's Prayer",
+          "chapters": [
+            "320",
+            "321"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 76,
+          "title": "The Next Step",
+          "chapters": [
+            "320",
+            "321",
+            "322"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 77,
+          "title": "Climbing Silver",
+          "chapters": [
+            "322",
+            "323"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 78,
+          "title": "The Judgment",
+          "chapters": [
+            "323",
+            "324",
+            "325"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 79,
+          "title": "Unfulfilled Scream",
+          "chapters": [
+            "325",
+            "326"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 80,
+          "title": "Last Words",
+          "chapters": [
+            "327",
+            "328"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 81,
+          "title": "Sad News",
+          "chapters": [
+            "329",
+            "330"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 82,
+          "title": "Team Ten",
+          "chapters": [
+            "330",
+            "331"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 83,
+          "title": "Target: Locked On",
+          "chapters": [
+            "331",
+            "332",
+            "333"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 84,
+          "title": "Kakuzu's Abilities",
+          "chapters": [
+            "333",
+            "334"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 85,
+          "title": "Terrifying Secret",
+          "chapters": [
+            "335",
+            "336"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 86,
+          "title": "Shikamaru's Genius",
+          "chapters": [
+            "336",
+            "337"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 87,
+          "title": "When You Curse Someone, You Dig Your Own Grave",
+          "chapters": [
+            "338",
+            "339"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 88,
+          "title": "Wind Style: Rasen Shuriken!",
+          "chapters": [
+            "339",
+            "340",
+            "341",
+            "342"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 89,
+          "title": "The Price of Power",
+          "chapters": [
+            "342",
+            "346"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 90,
+          "title": "A Shinobi's Determination",
+          "chapters": [
+            "343",
+            "346",
+            "347"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 91,
+          "title": "Orochimaru's Hideout Discovered",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 92,
+          "title": "Encounter",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 93,
+          "title": "Connecting Hearts",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 94,
+          "title": "A Night of Rain",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 95,
+          "title": "The Two Charms",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 96,
+          "title": "The Unseeing Enemy",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 97,
+          "title": "The Labyrinth of Distorted Reflection",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 98,
+          "title": "The Target Appears",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 99,
+          "title": "The Rampaging Tailed Beast",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 100,
+          "title": "Inside the Mist",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 101,
+          "title": "Everyone's Feelings",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 102,
+          "title": "Regroup!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 103,
+          "title": "The Four-Corner Sealing Barrier",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 104,
+          "title": "Breaking the Crystal Style",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 105,
+          "title": "The Battle Over the Barrier",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 106,
+          "title": "Red Camellia",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 107,
+          "title": "Strange Bedfellows",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 108,
+          "title": "Guidepost of the Camellia",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 109,
+          "title": "Cursed Seal Counterattack",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 110,
+          "title": "Memory of Guilt",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 111,
+          "title": "Shattered Promise",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 112,
+          "title": "A Place to Return To",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 113,
+          "title": "The Serpent's Pupil",
+          "chapters": [
+            "343",
+            "344"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 114,
+          "title": "Eye of a Hawk",
+          "chapters": [
+            "344",
+            "345",
+            "346"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 115,
+          "title": "Zabuza's Blade",
+          "chapters": [
+            "346",
+            "347"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 116,
+          "title": "Guardian of the Iron Wall",
+          "chapters": [
+            "348"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 117,
+          "title": "Jugo of the Northern Hideout",
+          "chapters": [
+            "349",
+            "350",
+            "351"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 118,
+          "title": "Formation!",
+          "chapters": [
+            "351",
+            "352"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 119,
+          "title": "Kakashi Chronicles: A Boy's Life on the Battlefield, Part 1",
+          "chapters": [
+            "239",
+            "240",
+            "241"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 120,
+          "title": "Kakashi Chronicles: A Boy's Life on the Battlefield, Part 2",
+          "chapters": [
+            "242",
+            "243",
+            "244"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 121,
+          "title": "Assemble",
+          "chapters": [
+            "353",
+            "354"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 122,
+          "title": "The Hunt",
+          "chapters": [
+            "355",
+            "356",
+            "357"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 123,
+          "title": "Clash!",
+          "chapters": [
+            "356",
+            "357",
+            "358",
+            "359"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 124,
+          "title": "Art",
+          "chapters": [
+            "360",
+            "361",
+            "362"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 125,
+          "title": "Disappearance",
+          "chapters": [
+            "363",
+            "364"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 126,
+          "title": "Twilight",
+          "chapters": [
+            "365",
+            "366",
+            "367"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 127,
+          "title": "Tales of a Gutsy Ninja ~Jiraiya Ninja Scroll~ Part 1",
+          "chapters": [
+            "376",
+            "381"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 128,
+          "title": "Tales of a Gutsy Ninja ~Jiraiya Ninja Scroll~ Part 2",
+          "chapters": [
+            "369",
+            "372",
+            "373",
+            "376",
+            "382"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 129,
+          "title": "Infiltrate! The Village Hidden in the Rain",
+          "chapters": [
+            "367",
+            "368",
+            "369"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 130,
+          "title": "The Man Who Became God",
+          "chapters": [
+            "370",
+            "371",
+            "372",
+            "373",
+            "374"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 131,
+          "title": "Honored Sage Mode!",
+          "chapters": [
+            "375",
+            "376"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 132,
+          "title": "In Attendance, the Six Paths of Pain",
+          "chapters": [
+            "377",
+            "378",
+            "379"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 133,
+          "title": "The Tale of Jiraiya the Gallant",
+          "chapters": [
+            "381",
+            "382",
+            "383"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 134,
+          "title": "Banquet Invitation",
+          "chapters": [
+            "366",
+            "367",
+            "371",
+            "380",
+            "383"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 135,
+          "title": "The Longest Moment...",
+          "chapters": [
+            "383",
+            "384",
+            "385"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 136,
+          "title": "The Light & Dark of the Mangekyo Sharingan",
+          "chapters": [
+            "386",
+            "387"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 137,
+          "title": "Amaterasu!",
+          "chapters": [
+            "388",
+            "389",
+            "390"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 138,
+          "title": "The End",
+          "chapters": [
+            "391",
+            "392",
+            "393"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 139,
+          "title": "The Mystery of Tobi",
+          "chapters": [
+            "394",
+            "395",
+            "396",
+            "397"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 140,
+          "title": "Fate",
+          "chapters": [
+            "398",
+            "399",
+            "400"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 141,
+          "title": "Truth",
+          "chapters": [
+            "400",
+            "401",
+            "402"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 142,
+          "title": "Battle of Unraikyo",
+          "chapters": [
+            "403",
+            "404",
+            "408",
+            "410",
+            "411"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 143,
+          "title": "The Eight Tails Vs. Sasuke",
+          "chapters": [
+            "411",
+            "412",
+            "413",
+            "414",
+            "415"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 144,
+          "title": "Wanderer",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 145,
+          "title": "Successor of the Forbidden Jutsu",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 146,
+          "title": "The Successor's Wish",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 147,
+          "title": "Rogue Ninja's Past",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 148,
+          "title": "Heir to Darkness",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 149,
+          "title": "Separation",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 150,
+          "title": "The Forbidden Jutsu Released",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 151,
+          "title": "Master and Student",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 152,
+          "title": "Somber News",
+          "chapters": [
+            "403",
+            "404",
+            "405",
+            "416"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 153,
+          "title": "Following the Master's Shadow",
+          "chapters": [
+            "405",
+            "406"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 154,
+          "title": "Decryption",
+          "chapters": [
+            "407",
+            "408",
+            "409"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 155,
+          "title": "The First Challenge",
+          "chapters": [
+            "407",
+            "409",
+            "410",
+            "412",
+            "414",
+            "415",
+            "416",
+            "417",
+            "418",
+            "419"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 156,
+          "title": "Surpassing the Master",
+          "chapters": [
+            "417",
+            "418",
+            "419",
+            "420"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 157,
+          "title": "Assault On the Leaf Village!",
+          "chapters": [
+            "418",
+            "419",
+            "420",
+            "421"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 158,
+          "title": "Power to Believe",
+          "chapters": [
+            "420",
+            "421",
+            "422"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 159,
+          "title": "Pain Vs. Kakashi",
+          "chapters": [
+            "420",
+            "421",
+            "422",
+            "423",
+            "424",
+            "425",
+            "427"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 160,
+          "title": "Mystery of Pain",
+          "chapters": [
+            "424",
+            "425",
+            "426"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 161,
+          "title": "Surname Is Sarutobi! Given Name, Konohamaru!",
+          "chapters": [
+            "425",
+            "426",
+            "427",
+            "428"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 162,
+          "title": "Pain to the World",
+          "chapters": [
+            "427",
+            "428",
+            "429",
+            "430"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 163,
+          "title": "Explosion! Sage Mode",
+          "chapters": [
+            "430",
+            "431",
+            "432"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 164,
+          "title": "Danger! Sage Mode Limit Reached",
+          "chapters": [
+            "432",
+            "433",
+            "434"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 165,
+          "title": "Nine Tails, Captured!",
+          "chapters": [
+            "434",
+            "435",
+            "436"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 166,
+          "title": "Confessions",
+          "chapters": [
+            "437"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 167,
+          "title": "Planetary Devastation",
+          "chapters": [
+            "437",
+            "438",
+            "439"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 168,
+          "title": "Fourth Hokage",
+          "chapters": [
+            "439",
+            "440",
+            "441",
+            "442"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 169,
+          "title": "The Two Students",
+          "chapters": [
+            "442",
+            "443",
+            "444"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 170,
+          "title": "Big Adventure! The Quest for the Fourth Hokage's Legacy, Part 1",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 171,
+          "title": "Big Adventure! The Quest for the Fourth Hokage's Legacy, Part 2",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 172,
+          "title": "Meeting",
+          "chapters": [
+            "444",
+            "445",
+            "446"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 173,
+          "title": "Origin of Pain",
+          "chapters": [
+            "446",
+            "447"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 174,
+          "title": "Tale of Naruto Uzumaki",
+          "chapters": [
+            "448",
+            "449"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 175,
+          "title": "Hero of the Hidden Leaf",
+          "chapters": [
+            "426",
+            "449",
+            "450"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 176,
+          "title": "Rookie Instructor Iruka",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 177,
+          "title": "Iruka's Ordeal",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 178,
+          "title": "Iruka's Decision",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 179,
+          "title": "Kakashi Hatake, the Jonin in Charge",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 180,
+          "title": "Inari's Courage Put to the Test",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 181,
+          "title": "Naruto's School of Revenge",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 182,
+          "title": "Gaara's Bond",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 183,
+          "title": "Naruto: Outbreak",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 184,
+          "title": "Deploy! Team Tenten",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 185,
+          "title": "Animal District",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 186,
+          "title": "Ah, the Medicine of Youth",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 187,
+          "title": "Gutsy Master and Student: The Training",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 188,
+          "title": "Record of the Gutsy Ninja Master and Student",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 189,
+          "title": "Sasuke's Paw Encyclopedia",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 190,
+          "title": "Naruto and the Old Soldier",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 191,
+          "title": "Kakashi Love Song",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 192,
+          "title": "Neji Chronicles",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 193,
+          "title": "The Man Who Died Twice",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 194,
+          "title": "The Worst Three-Legged Race",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 195,
+          "title": "Team 10's Teamwork",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 196,
+          "title": "Drive Towards Darkness",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 197,
+          "title": "The Sixth Hokage Danzo",
+          "chapters": [
+            "451",
+            "452",
+            "453"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 198,
+          "title": "Five Kage Summit's Eve",
+          "chapters": [
+            "453",
+            "454",
+            "455"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 199,
+          "title": "Enter the Five Kage!",
+          "chapters": [
+            "454",
+            "455",
+            "456",
+            "457"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 200,
+          "title": "Naruto's Plea",
+          "chapters": [
+            "457",
+            "458",
+            "459"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 201,
+          "title": "Painful Decision",
+          "chapters": [
+            "458",
+            "459",
+            "460"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 202,
+          "title": "Racing Lightning",
+          "chapters": [
+            "460",
+            "461",
+            "462"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 203,
+          "title": "Sasuke's Ninja Way",
+          "chapters": [
+            "462",
+            "463",
+            "464"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 204,
+          "title": "Power of the Five Kage",
+          "chapters": [
+            "419",
+            "465",
+            "466",
+            "470"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 205,
+          "title": "Declaration of War",
+          "chapters": [
+            "467",
+            "468"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 206,
+          "title": "Sakura's Feelings",
+          "chapters": [
+            "468",
+            "469",
+            "470"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 207,
+          "title": "The Tailed Beast vs. The Tailless Tailed Beast",
+          "chapters": [
+            "471",
+            "472",
+            "473"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 208,
+          "title": "As One's Friend",
+          "chapters": [
+            "473",
+            "474",
+            "475"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 209,
+          "title": "Danzo's Right Arm",
+          "chapters": [
+            "476",
+            "477"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 210,
+          "title": "The Forbidden Visual Jutsu",
+          "chapters": [
+            "478",
+            "479"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 211,
+          "title": "Danzo Shimura",
+          "chapters": [
+            "480",
+            "481"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 212,
+          "title": "Sakura's Resolve",
+          "chapters": [
+            "481",
+            "482"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 213,
+          "title": "Lost Bonds",
+          "chapters": [
+            "482"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 214,
+          "title": "The Burden",
+          "chapters": [
+            "483",
+            "484"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 215,
+          "title": "Two Fates",
+          "chapters": [
+            "485"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 216,
+          "title": "High-Level Shinobi",
+          "chapters": [
+            "482",
+            "486",
+            "487"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 217,
+          "title": "The Infiltrator",
+          "chapters": [
+            "487",
+            "488"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 218,
+          "title": "The Five Great Nations Mobilize",
+          "chapters": [
+            "488"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 219,
+          "title": "Kakashi Hatake, The Hokage",
+          "chapters": [
+            "488"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 220,
+          "title": "Prophecy of the Great Lord Elder",
+          "chapters": [
+            "488",
+            "489"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 221,
+          "title": "Storage",
+          "chapters": [
+            "487",
+            "489",
+            "490"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 222,
+          "title": "The Five Kage's Decision",
+          "chapters": [
+            "489",
+            "490",
+            "491"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 223,
+          "title": "The Young Man and the Sea",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 224,
+          "title": "The Ninja of Benisu",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 225,
+          "title": "The Cursed Ghost Ship",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 226,
+          "title": "Battleship Island",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 227,
+          "title": "The Forgotten Island",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 228,
+          "title": "Fight! Rock Lee!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 229,
+          "title": "Eat or Die! Mushrooms from Hell",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 230,
+          "title": "Revenge of the Shadow Clones",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 231,
+          "title": "The Closed Route",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 232,
+          "title": "The Girls Get-Together",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 233,
+          "title": "Naruto's Imposter",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 234,
+          "title": "Naruto's Favorite Student",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 235,
+          "title": "The Kunoichi of Nadeshiko Village",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 236,
+          "title": "Friends You Can Count On",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 237,
+          "title": "Ah, My Hero Lady Tsunade!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 238,
+          "title": "Sai's Day Off",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 239,
+          "title": "The Legendary Ino-Shika-Cho Trio",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 240,
+          "title": "Kiba's Determination",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 241,
+          "title": "Kakashi, My Eternal Rival!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 242,
+          "title": "Naruto's Vow",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 243,
+          "title": "Land Ahoy! Is This the Island of Paradise?",
+          "chapters": [
+            "491",
+            "492",
+            "493"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 244,
+          "title": "Killer Bee and Motoi",
+          "chapters": [
+            "493",
+            "494"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 245,
+          "title": "The Next Challenge! Naruto vs. The Nine Tails!!",
+          "chapters": [
+            "495",
+            "496",
+            "497"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 246,
+          "title": "The Orange Spark",
+          "chapters": [
+            "497",
+            "498"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 247,
+          "title": "Target: Nine Tails",
+          "chapters": [
+            "499",
+            "500"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 248,
+          "title": "The Fourth Hokage's Death Match",
+          "chapters": [
+            "500",
+            "501",
+            "502",
+            "503"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 249,
+          "title": "Thank You",
+          "chapters": [
+            "503",
+            "504"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 250,
+          "title": "Battle in Paradise! the Odd Beast vs. the Monster!",
+          "chapters": [
+            "505",
+            "506",
+            "507"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 251,
+          "title": "The Man Named Kisame",
+          "chapters": [
+            "507",
+            "508"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 252,
+          "title": "The Angelic Herald of Death",
+          "chapters": [
+            "508",
+            "509"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 253,
+          "title": "The Bridge to Peace",
+          "chapters": [
+            "510",
+            "511"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 254,
+          "title": "The Super Secret S-Rank Mission",
+          "chapters": [
+            "512",
+            "513"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 255,
+          "title": "The Artist Returns",
+          "chapters": [
+            "513",
+            "514"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 256,
+          "title": "Assemble! Allied Shinobi Forces!",
+          "chapters": [
+            "515"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 257,
+          "title": "Meeting",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 258,
+          "title": "Rivals",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 259,
+          "title": "Rift",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 260,
+          "title": "Parting",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 261,
+          "title": "For My Friend",
+          "chapters": [
+            "515",
+            "516"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 262,
+          "title": "War Begins!",
+          "chapters": [
+            "517",
+            "518"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 263,
+          "title": "Sai and Shin",
+          "chapters": [
+            "518",
+            "519"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 264,
+          "title": "Secrets of the Reanimation Jutsu",
+          "chapters": [
+            "519",
+            "520",
+            "521"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 265,
+          "title": "An Old Nemesis Returns",
+          "chapters": [
+            "520",
+            "521",
+            "522"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 266,
+          "title": "The First and Last Opponent",
+          "chapters": [
+            "521",
+            "522",
+            "523",
+            "524"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 267,
+          "title": "The Brilliant Military Advisor of the Hidden Leaf",
+          "chapters": [
+            "525"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 268,
+          "title": "Battleground!",
+          "chapters": [
+            "525",
+            "526"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 269,
+          "title": "Forbidden Words",
+          "chapters": [
+            "527",
+            "528"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 270,
+          "title": "Golden Bonds",
+          "chapters": [
+            "529",
+            "530"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 271,
+          "title": "Road to Sakura",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 272,
+          "title": "Mifune vs. Hanzo",
+          "chapters": [
+            "530",
+            "531",
+            "532"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 273,
+          "title": "True Kindness",
+          "chapters": [
+            "530",
+            "531",
+            "532",
+            "533"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 274,
+          "title": "The Complete Ino-Shika-Cho Formation!",
+          "chapters": [
+            "533",
+            "534"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 275,
+          "title": "A Message from the Heart",
+          "chapters": [
+            "534",
+            "535",
+            "536"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 276,
+          "title": "Attack of the Gedo Statue",
+          "chapters": [
+            "536",
+            "537"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 277,
+          "title": "Unison Sign",
+          "chapters": [
+            "538",
+            "539"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 278,
+          "title": "Medic Ninja in Danger",
+          "chapters": [
+            "539",
+            "540"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 279,
+          "title": "White Zetsu's Trap",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 280,
+          "title": "Aesthetics of an Artist",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 281,
+          "title": "The Allied Mom Force!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 282,
+          "title": "The Secret Origin of the Ultimate Tag Team!",
+          "chapters": [
+            "540",
+            "541",
+            "542",
+            "543"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 283,
+          "title": "Two Suns",
+          "chapters": [
+            "543",
+            "544"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 284,
+          "title": "Helmet Splitter: Jinin Akebino!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 285,
+          "title": "User of the Scorch Style: Pakura of the Sand!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 286,
+          "title": "Things You Can't Get Back",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 287,
+          "title": "One Worth Betting On",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 288,
+          "title": "Danger: Jinpachi and Kushimaru!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 289,
+          "title": "The Lightning Blade: Ameyuri Ringo!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 290,
+          "title": "Power: Episode 1",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 291,
+          "title": "Power: Episode 2",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 292,
+          "title": "Power: Episode 3",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 293,
+          "title": "Power: Episode 4",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 294,
+          "title": "Power: Episode 5",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 295,
+          "title": "Power: Episode Final",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 296,
+          "title": "Naruto Enters the Battle",
+          "chapters": [
+            "545",
+            "546"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 297,
+          "title": "A Father's Hope, a Mother's Love",
+          "chapters": [
+            "547",
+            "548"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 298,
+          "title": "Contact! Naruto vs. Itachi",
+          "chapters": [
+            "548",
+            "549",
+            "550"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 299,
+          "title": "The Acknowledged One",
+          "chapters": [
+            "551",
+            "552"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 300,
+          "title": "The Mizukage, the Giant Clam, and the Mirage",
+          "chapters": [
+            "548",
+            "552",
+            "553",
+            "555",
+            "556"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 301,
+          "title": "Paradox",
+          "chapters": [
+            "552",
+            "553",
+            "554",
+            "555"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 302,
+          "title": "Terror! the Steam Imp",
+          "chapters": [
+            "556",
+            "557",
+            "558"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 303,
+          "title": "Ghosts from the Past",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 304,
+          "title": "The Underworld Transfer Jutsu",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 305,
+          "title": "The Vengeful",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 306,
+          "title": "The Heart's Eye",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 307,
+          "title": "Fade Into the Moonlight",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 308,
+          "title": "Crescent Moon Night",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 309,
+          "title": "The A-Rank Mission: Food Fight!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 310,
+          "title": "The Fallen Castle",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 311,
+          "title": "Prologue of Road to Ninja",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 312,
+          "title": "The Old Master and the Dragon's Eye",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 313,
+          "title": "Rain Followed by Snow, with Some Lightning",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 314,
+          "title": "The Sad Sun Shower",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 315,
+          "title": "Lingering Snow",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 316,
+          "title": "The Reanimated Allied Forces",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 317,
+          "title": "Shino vs. Torune",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 318,
+          "title": "A Hole in the Heart: the Other Jinchuriki",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 319,
+          "title": "The Soul Living Inside the Puppet",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 320,
+          "title": "Run, Omoi!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 321,
+          "title": "Reinforcements Arrive",
+          "chapters": [
+            "558",
+            "559"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 322,
+          "title": "Madara Uchiha",
+          "chapters": [
+            "560",
+            "561"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 323,
+          "title": "The Five Kage Assemble",
+          "chapters": [
+            "561",
+            "562",
+            "563"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 324,
+          "title": "The Unbreakable Mask and the Shattered Bubble",
+          "chapters": [
+            "564"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 325,
+          "title": "Jinchuriki vs. Jinchuriki!",
+          "chapters": [
+            "565",
+            "566"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 326,
+          "title": "Four Tails, the King of Sage Monkeys",
+          "chapters": [
+            "553",
+            "567",
+            "568"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 327,
+          "title": "Nine Tails",
+          "chapters": [
+            "569"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 328,
+          "title": "Kurama",
+          "chapters": [
+            "569",
+            "570"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 329,
+          "title": "Two-Man Team",
+          "chapters": [
+            "570",
+            "571",
+            "572"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 330,
+          "title": "Promise of Victory",
+          "chapters": [
+            "573"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 331,
+          "title": "Eyes That See in the Dark",
+          "chapters": [
+            "574"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 332,
+          "title": "The Will of Stone",
+          "chapters": [
+            "575",
+            "576"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 333,
+          "title": "The Risks of the Reanimation Jutsu",
+          "chapters": [
+            "577",
+            "578"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 334,
+          "title": "Sibling Tag Team",
+          "chapters": [
+            "579",
+            "580"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 335,
+          "title": "To Each Their Own Leaf",
+          "chapters": [
+            "581",
+            "582"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 336,
+          "title": "Kabuto Yakushi",
+          "chapters": [
+            "583",
+            "584"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 337,
+          "title": "The Izanami Activated",
+          "chapters": [
+            "585",
+            "586"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 338,
+          "title": "Izanagi and Izanami",
+          "chapters": [
+            "587",
+            "588"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 339,
+          "title": "I Will Love You Always",
+          "chapters": [
+            "588",
+            "589",
+            "590"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 340,
+          "title": "Reanimation Jutsu, Release!",
+          "chapters": [
+            "589",
+            "590",
+            "591",
+            "592"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 341,
+          "title": "Orochimaru's Return",
+          "chapters": [
+            "592",
+            "593",
+            "594"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 342,
+          "title": "Secret of the Transportation Technique",
+          "chapters": [
+            "594",
+            "595",
+            "596",
+            "597"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 343,
+          "title": "Who Are You?",
+          "chapters": [
+            "598",
+            "599",
+            "600"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 344,
+          "title": "Obito and Madara",
+          "chapters": [
+            "601",
+            "602"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 345,
+          "title": "I'm in Hell",
+          "chapters": [
+            "603",
+            "604",
+            "605"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 346,
+          "title": "World of Dreams",
+          "chapters": [
+            "606",
+            "607"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 347,
+          "title": "Creeping Shadow",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 348,
+          "title": "The New Akatsuki",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 349,
+          "title": "Kakashi: Shadow of the ANBU Black Ops – A Mask That Hides the Heart",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 350,
+          "title": "Kakashi: Shadow of the ANBU Black Ops – Minato's Death",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 351,
+          "title": "Kakashi: Shadow of the ANBU Black Ops: Hashirama's Cells",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 352,
+          "title": "Kakashi: Shadow of the ANBU Black Ops: The Rogue Ninja Orochimaru",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 353,
+          "title": "Kakashi: Shadow of the ANBU Black Ops – Orochimaru's Test Subjects",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 354,
+          "title": "Kakashi: Shadow of the ANBU Black Ops – Their Own Paths",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 355,
+          "title": "Kakashi: Shadow of the ANBU Black Ops – the Targeted Sharingan",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 356,
+          "title": "Kakashi: Shadow of the ANBU Black Ops – a Shinobi of the Leaf",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 357,
+          "title": "Kakashi: Shadow of the ANBU Black Ops – an Uchiha ANBU",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 358,
+          "title": "Kakashi: Shadow of the ANBU Black Ops – Coup D'État",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 359,
+          "title": "Kakashi: Shadow of the ANBU Black Ops – the Night of the Tragedy",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 360,
+          "title": "Kakashi: Shadow of the ANBU Black Ops – Jonin Leader",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 361,
+          "title": "Kakashi: Shadow of the ANBU Black Ops – Squad Seven",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 362,
+          "title": "Kakashi's Resolve",
+          "chapters": [
+            "607",
+            "608",
+            "609"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 363,
+          "title": "The Allied Shinobi Forces Jutsu",
+          "chapters": [
+            "610",
+            "611",
+            "612"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 364,
+          "title": "The Ties That Bind",
+          "chapters": [
+            "613",
+            "614",
+            "625"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 365,
+          "title": "Those Who Dance in the Shadows",
+          "chapters": [
+            "616",
+            "617",
+            "618"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 366,
+          "title": "The All-Knowing",
+          "chapters": [
+            "619",
+            "620",
+            "621"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 367,
+          "title": "Hashirama and Madara",
+          "chapters": [
+            "621",
+            "622",
+            "623"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 368,
+          "title": "Era of Warring States",
+          "chapters": [
+            "623",
+            "624",
+            "625"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 369,
+          "title": "My True Dream",
+          "chapters": [
+            "625",
+            "626",
+            "627"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 370,
+          "title": "Sasuke's Answer",
+          "chapters": [
+            "626",
+            "627"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 371,
+          "title": "Hole",
+          "chapters": [
+            "628",
+            "629",
+            "630"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 372,
+          "title": "Something to Fill the Hole",
+          "chapters": [
+            "630",
+            "631",
+            "632"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 373,
+          "title": "Team 7, Assemble!",
+          "chapters": [
+            "632",
+            "633"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 374,
+          "title": "The New Three-Way Deadlock",
+          "chapters": [
+            "634",
+            "635"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 375,
+          "title": "Kakashi vs. Obito",
+          "chapters": [
+            "635",
+            "636",
+            "637"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 376,
+          "title": "The Directive to Take the Nine Tails",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 377,
+          "title": "Naruto vs. Mecha Naruto",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 378,
+          "title": "The Ten Tails' Jinchuriki",
+          "chapters": [
+            "638",
+            "639",
+            "640"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 379,
+          "title": "An Opening",
+          "chapters": [
+            "641",
+            "642"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 380,
+          "title": "The Day Naruto Was Born",
+          "chapters": [
+            "643",
+            "644"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 381,
+          "title": "The Divine Tree",
+          "chapters": [
+            "645",
+            "646"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 382,
+          "title": "A Shinobi's Dream",
+          "chapters": [
+            "647",
+            "648"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 383,
+          "title": "Pursuing Hope",
+          "chapters": [
+            "648",
+            "649",
+            "650"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 384,
+          "title": "A Heart Filled With Comrades",
+          "chapters": [
+            "651",
+            "652"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 385,
+          "title": "Obito Uchiha",
+          "chapters": [
+            "653"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 386,
+          "title": "I'm Always Watching",
+          "chapters": [
+            "653"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 387,
+          "title": "The Promise That Was Kept",
+          "chapters": [
+            "654",
+            "655"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 388,
+          "title": "My First Friend",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 389,
+          "title": "The Adored Elder Sister",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 390,
+          "title": "Hanabi's Decision",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 391,
+          "title": "Madara Uchiha Arises",
+          "chapters": [
+            "656",
+            "657"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 392,
+          "title": "The Hidden Heart",
+          "chapters": [
+            "658",
+            "659",
+            "660"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 393,
+          "title": "A True Ending",
+          "chapters": [
+            "660",
+            "661",
+            "662"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 394,
+          "title": "The New Chunin Exams",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 395,
+          "title": "The Chunin Exams Begin!",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 396,
+          "title": "The Three Questions",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 397,
+          "title": "One Worthy As A Leader",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 398,
+          "title": "The Night Before the Second Exam",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 399,
+          "title": "Demon Desert Survival",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 400,
+          "title": "As a Taijutsu User",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 401,
+          "title": "The Ultimate",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 402,
+          "title": "Escape vs. Pursuit",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 403,
+          "title": "Unwavering Gutsiness",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 404,
+          "title": "Tenten's Troubles",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 405,
+          "title": "The Imprisoned Pair",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 406,
+          "title": "The Place Where I Belong",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 407,
+          "title": "The Yamanaka Clan: Secret Ninjutsu",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 408,
+          "title": "The Cursed Puppet",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 409,
+          "title": "Their Backs",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 410,
+          "title": "The Hidden Plot Set Into Motion",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 411,
+          "title": "The Targeted Tailed Beast",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 412,
+          "title": "Neji’s Judgement",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 413,
+          "title": "Hopes Entrusted to the Future",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 414,
+          "title": "On the Brink of Death",
+          "chapters": [
+            "663",
+            "664"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 415,
+          "title": "The Two Mangekyo",
+          "chapters": [
+            "665",
+            "666"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 416,
+          "title": "The Formation of Team Minato",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 417,
+          "title": "You’ll Be My Backup",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 418,
+          "title": "The Blue Beast vs Six Paths Madara",
+          "chapters": [
+            "667",
+            "668"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 419,
+          "title": "Papa's Youth",
+          "chapters": [
+            "668"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 420,
+          "title": "The Eight Inner Gates Formation",
+          "chapters": [
+            "669",
+            "670"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 421,
+          "title": "The Sage of the Six Paths",
+          "chapters": [
+            "671",
+            "672"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 422,
+          "title": "The One Who Will Inherit",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 423,
+          "title": "Naruto's Rival",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 424,
+          "title": "To Rise Up",
+          "chapters": [
+            "673",
+            "674"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 425,
+          "title": "The Infinite Dream",
+          "chapters": [
+            "675",
+            "676"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 426,
+          "title": "The Infinite Tsukuyomi",
+          "chapters": [
+            "677"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 427,
+          "title": "To the Dream World",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 428,
+          "title": "Where Tenten Belongs",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 429,
+          "title": "Killer Bee Rappuden, Part 1",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 430,
+          "title": "Killer Bee Rappuden, Part 2",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 431,
+          "title": "To See That Smile, Just One More Time",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 432,
+          "title": "The Loser Ninja",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 433,
+          "title": "The Search Mission",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 434,
+          "title": "Team Jiraiya",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 435,
+          "title": "Order of Priority",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 436,
+          "title": "The Masked Man",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 437,
+          "title": "The Sealed Power",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 438,
+          "title": "The Rules or a Comrade",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 439,
+          "title": "The Child of Prophecy",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 440,
+          "title": "The Caged Bird",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 441,
+          "title": "Returning Home",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 442,
+          "title": "The Mutual Path",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 443,
+          "title": "The Difference in Power",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 444,
+          "title": "Leaving the Village",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 445,
+          "title": "Pursuers",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 446,
+          "title": "Collision",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 447,
+          "title": "Another Moon",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 448,
+          "title": "Comrade",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 449,
+          "title": "The Shinobi Unite",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 450,
+          "title": "Rival",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 451,
+          "title": "Itachi's Story - Light and Darkness: Birth and Death",
+          "chapters": [
+            "677",
+            "678"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 452,
+          "title": "Itachi's Story - Light and Darkness: the Genius",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Itachi's Story Vol. 1"
+        },
+        {
+          "episode": 453,
+          "title": "Itachi's Story - Light and Darkness: The Pain of Living",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Itachi's Story Vol. 1"
+        },
+        {
+          "episode": 454,
+          "title": "Itachi's Story - Light and Darkness: Shisui's Request",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Itachi's Story Vol. 1"
+        },
+        {
+          "episode": 455,
+          "title": "Itachi's Story - Light and Darkness: Moonlit Night",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Itachi's Story Vol. 1"
+        },
+        {
+          "episode": 456,
+          "title": "Itachi's Story - Light and Darkness: the Darkness of the Akatsuki",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Itachi's Story Vol. 2"
+        },
+        {
+          "episode": 457,
+          "title": "Itachi's Story - Light and Darkness: Partner",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Itachi's Story Vol. 2"
+        },
+        {
+          "episode": 458,
+          "title": "Itachi's Story - Light and Darkness: Truth",
+          "chapters": [
+            "678",
+            "679"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 459,
+          "title": "She of the Beginning",
+          "chapters": [
+            "679",
+            "680",
+            "681"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 460,
+          "title": "Kaguya Otsutsuki",
+          "chapters": [
+            "681"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 461,
+          "title": "Hagoromo and Hamura",
+          "chapters": [
+            "681"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 462,
+          "title": "A Fabricated Past",
+          "chapters": [
+            "681"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 463,
+          "title": "The No. 1 Most Unpredictable Ninja",
+          "chapters": [
+            "681",
+            "682",
+            "683"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 464,
+          "title": "Ninshū: The Ninja Creed",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 465,
+          "title": "Ashura and Indra",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 466,
+          "title": "The Tumultuous Journey",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 467,
+          "title": "Ashura's Decision",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 468,
+          "title": "The Successor",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 469,
+          "title": "A Special Mission",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 470,
+          "title": "Connecting Thoughts",
+          "chapters": [
+            "684",
+            "685"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 471,
+          "title": "The Two of Them...Always",
+          "chapters": [
+            "686"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 472,
+          "title": "You Better...",
+          "chapters": [
+            "687"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 473,
+          "title": "The Sharingan Revived",
+          "chapters": [
+            "688",
+            "689"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 474,
+          "title": "Congratulations",
+          "chapters": [
+            "690",
+            "691"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 475,
+          "title": "The Final Valley",
+          "chapters": [
+            "692",
+            "693"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 476,
+          "title": "The Final Battle",
+          "chapters": [
+            "694",
+            "695",
+            "696"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 477,
+          "title": "Naruto and Sasuke",
+          "chapters": [
+            "696",
+            "697",
+            "698"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 478,
+          "title": "The Unison Sign",
+          "chapters": [
+            "698",
+            "699"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 479,
+          "title": "Naruto Uzumaki!!",
+          "chapters": [
+            "699",
+            "700"
+          ],
+          "filler": false
+        },
+        {
+          "episode": 480,
+          "title": "Naruto and Hinata",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 481,
+          "title": "Sasuke and Sakura",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 482,
+          "title": "Gaara and Shikamaru",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 483,
+          "title": "Jiraiya and Kakashi",
+          "chapters": [],
+          "filler": true
+        },
+        {
+          "episode": 484,
+          "title": "Sasuke’s Story - Sunrise, Part 1: The Exploding Human",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Sasuke's Story - Sunrise"
+        },
+        {
+          "episode": 485,
+          "title": "Sasuke's Story - Sunrise, Part 2: Coliseum",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Sasuke's Story - Sunrise"
+        },
+        {
+          "episode": 486,
+          "title": "Sasuke’s Story - Sunrise, Part 3: Fuushin",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Sasuke's Story - Sunrise"
+        },
+        {
+          "episode": 487,
+          "title": "Sasuke’s Story - Sunrise, Part 4: The Ketsuryugan",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Sasuke's Story - Sunrise"
+        },
+        {
+          "episode": 488,
+          "title": "Sasuke’s Story: Sunrise, Part 5: The Last One",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Sasuke's Story - Sunrise"
+        },
+        {
+          "episode": 489,
+          "title": "Shikamaru’s Story, A Cloud Drifting in the Silent Dark, Part 1: The State of Affairs",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Shikamaru’s Story - A Cloud Drifting in the Silent Dark"
+        },
+        {
+          "episode": 490,
+          "title": "Shikamaru’s Story, a Cloud Drifting in the Silent Dark, Part 2: Dark Clouds",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Shikamaru’s Story - A Cloud Drifting in the Silent Dark"
+        },
+        {
+          "episode": 491,
+          "title": "Shikamaru’s Story, a Cloud Drifting in the Silent Dark, Part 3: Recklessness",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Shikamaru’s Story - A Cloud Drifting in the Silent Dark"
+        },
+        {
+          "episode": 492,
+          "title": "Shikamaru’s Story, a Cloud Drifting in the Silent Dark, Part 4: Cloud of Suspicion",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Shikamaru’s Story - A Cloud Drifting in the Silent Dark"
+        },
+        {
+          "episode": 493,
+          "title": "Shikamaru’s Story, a Cloud Drifting in the Silent Dark, Part 5: Dawn",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Naruto: Shikamaru’s Story - A Cloud Drifting in the Silent Dark"
+        },
+        {
+          "episode": 494,
+          "title": "Hidden Leaf Story, the Perfect Day for a Wedding, Part 1: Naruto’s Wedding",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Konoha Hiden: The Perfect Day for a Wedding"
+        },
+        {
+          "episode": 495,
+          "title": "Hidden Leaf Story, the Perfect Day for a Wedding, Part 2: A Full-Powered Wedding Gift",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Konoha Hiden: The Perfect Day for a Wedding"
+        },
+        {
+          "episode": 496,
+          "title": "Hidden Leaf Story, the Perfect Day for a Wedding, Part 3: Steam and Food Pills",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Konoha Hiden: The Perfect Day for a Wedding"
+        },
+        {
+          "episode": 497,
+          "title": "Hidden Leaf Story, the Perfect Day for a Wedding, Part 4: the Kazekage’s Wedding Gift",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Konoha Hiden: The Perfect Day for a Wedding"
+        },
+        {
+          "episode": 498,
+          "title": "Hidden Leaf Story, the Perfect Day for a Wedding, Part 5: The Last Mission",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Konoha Hiden: The Perfect Day for a Wedding"
+        },
+        {
+          "episode": 499,
+          "title": "Hidden Leaf Story, the Perfect Day for a Wedding, Part 6: The Outcome of the Secret Mission",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Konoha Hiden: The Perfect Day for a Wedding"
+        },
+        {
+          "episode": 500,
+          "title": "Hidden Leaf Story, the Perfect Day for a Wedding, Part 7: The Message",
+          "chapters": [],
+          "filler": false,
+          "sourceLabel": "Konoha Hiden: The Perfect Day for a Wedding"
+        }
+      ]
+    }
+  ],
+  "VOLUMES": [
+    {
+      "volume": 1,
+      "title": "The Tests of the Ninja",
+      "start": 1,
+      "end": 7,
+      "extras": null
+    },
+    {
+      "volume": 2,
+      "title": "The Worst Client",
+      "start": 8,
+      "end": 17,
+      "extras": null
+    },
+    {
+      "volume": 3,
+      "title": "Bridge of Courage",
+      "start": 18,
+      "end": 27,
+      "extras": null
+    },
+    {
+      "volume": 4,
+      "title": "The Next Level",
+      "start": 28,
+      "end": 36,
+      "extras": null
+    },
+    {
+      "volume": 5,
+      "title": "The Challengers",
+      "start": 37,
+      "end": 45,
+      "extras": null
+    },
+    {
+      "volume": 6,
+      "title": "Predator",
+      "start": 46,
+      "end": 54,
+      "extras": null
+    },
+    {
+      "volume": 7,
+      "title": "The Path You Should Tread",
+      "start": 55,
+      "end": 63,
+      "extras": null
+    },
+    {
+      "volume": 8,
+      "title": "Life-and-Death Battles",
+      "start": 64,
+      "end": 72,
+      "extras": null
+    },
+    {
+      "volume": 9,
+      "title": "Neji vs. Hinata",
+      "start": 73,
+      "end": 81,
+      "extras": null
+    },
+    {
+      "volume": 10,
+      "title": "A Splendid Ninja",
+      "start": 82,
+      "end": 90,
+      "extras": null
+    },
+    {
+      "volume": 11,
+      "title": "Impassioned Efforts",
+      "start": 91,
+      "end": 99,
+      "extras": null
+    },
+    {
+      "volume": 12,
+      "title": "The Great Flight!!",
+      "start": 100,
+      "end": 108,
+      "extras": null
+    },
+    {
+      "volume": 13,
+      "title": "The Chûnin Exam, Concluded...!!",
+      "start": 109,
+      "end": 117,
+      "extras": null
+    },
+    {
+      "volume": 14,
+      "title": "Hokage vs. Hokage!!",
+      "start": 118,
+      "end": 126,
+      "extras": null
+    },
+    {
+      "volume": 15,
+      "title": "Naruto's Ninja Handbook!",
+      "start": 127,
+      "end": 135,
+      "extras": null
+    },
+    {
+      "volume": 16,
+      "title": "Eulogy",
+      "start": 136,
+      "end": 144,
+      "extras": null
+    },
+    {
+      "volume": 17,
+      "title": "Itachi's Power",
+      "start": 145,
+      "end": 153,
+      "extras": null
+    },
+    {
+      "volume": 18,
+      "title": "Tsunade's Choice",
+      "start": 154,
+      "end": 162,
+      "extras": null
+    },
+    {
+      "volume": 19,
+      "title": "Successor",
+      "start": 163,
+      "end": 171,
+      "extras": null
+    },
+    {
+      "volume": 20,
+      "title": "Naruto vs. Sasuke",
+      "start": 172,
+      "end": 180,
+      "extras": null
+    },
+    {
+      "volume": 21,
+      "title": "Pursuit",
+      "start": 181,
+      "end": 190,
+      "extras": null
+    },
+    {
+      "volume": 22,
+      "title": "Comrades",
+      "start": 191,
+      "end": 199,
+      "extras": null
+    },
+    {
+      "volume": 23,
+      "title": "Predicament",
+      "start": 200,
+      "end": 208,
+      "extras": null
+    },
+    {
+      "volume": 24,
+      "title": "Unorthodox",
+      "start": 209,
+      "end": 217,
+      "extras": null
+    },
+    {
+      "volume": 25,
+      "title": "Brothers",
+      "start": 218,
+      "end": 226,
+      "extras": null
+    },
+    {
+      "volume": 26,
+      "title": "Awakening",
+      "start": 227,
+      "end": 235,
+      "extras": null
+    },
+    {
+      "volume": 27,
+      "title": "Departure",
+      "start": 236,
+      "end": 244,
+      "extras": null
+    },
+    {
+      "volume": 28,
+      "title": "Homecoming",
+      "start": 245,
+      "end": 253,
+      "extras": null
+    },
+    {
+      "volume": 29,
+      "title": "Kakashi vs. Itachi",
+      "start": 254,
+      "end": 262,
+      "extras": null
+    },
+    {
+      "volume": 30,
+      "title": "Puppet Masters",
+      "start": 263,
+      "end": 271,
+      "extras": null
+    },
+    {
+      "volume": 31,
+      "title": "Final Battle",
+      "start": 272,
+      "end": 280,
+      "extras": null
+    },
+    {
+      "volume": 32,
+      "title": "The Search for Sasuke",
+      "start": 281,
+      "end": 289,
+      "extras": null
+    },
+    {
+      "volume": 33,
+      "title": "The Secret Mission",
+      "start": 290,
+      "end": 299,
+      "extras": null
+    },
+    {
+      "volume": 34,
+      "title": "The Reunion",
+      "start": 300,
+      "end": 309,
+      "extras": null
+    },
+    {
+      "volume": 35,
+      "title": "The New Two",
+      "start": 310,
+      "end": 319,
+      "extras": null
+    },
+    {
+      "volume": 36,
+      "title": "Cell Number 10",
+      "start": 320,
+      "end": 329,
+      "extras": null
+    },
+    {
+      "volume": 37,
+      "title": "Shikamaru's Battle",
+      "start": 330,
+      "end": 339,
+      "extras": null
+    },
+    {
+      "volume": 38,
+      "title": "Practice Makes Perfect",
+      "start": 340,
+      "end": 349,
+      "extras": null
+    },
+    {
+      "volume": 39,
+      "title": "On the Move",
+      "start": 350,
+      "end": 359,
+      "extras": null
+    },
+    {
+      "volume": 40,
+      "title": "The Ultimate Art",
+      "start": 360,
+      "end": 369,
+      "extras": null
+    },
+    {
+      "volume": 41,
+      "title": "Jiraiya's Decision",
+      "start": 370,
+      "end": 379,
+      "extras": null
+    },
+    {
+      "volume": 42,
+      "title": "The Secret of the Mangekyo",
+      "start": 380,
+      "end": 389,
+      "extras": null
+    },
+    {
+      "volume": 43,
+      "title": "The Man with the Truth",
+      "start": 390,
+      "end": 402,
+      "extras": null
+    },
+    {
+      "volume": 44,
+      "title": "Senjutsu Heir",
+      "start": 403,
+      "end": 412,
+      "extras": null
+    },
+    {
+      "volume": 45,
+      "title": "Battlefield, Konoha",
+      "start": 413,
+      "end": 422,
+      "extras": null
+    },
+    {
+      "volume": 46,
+      "title": "Naruto Returns",
+      "start": 423,
+      "end": 432,
+      "extras": null
+    },
+    {
+      "volume": 47,
+      "title": "The Seal Destroyed",
+      "start": 433,
+      "end": 442,
+      "extras": null
+    },
+    {
+      "volume": 48,
+      "title": "The Cheering Village",
+      "start": 443,
+      "end": 453,
+      "extras": null
+    },
+    {
+      "volume": 49,
+      "title": "The Gokage Summit Commences",
+      "start": 454,
+      "end": 463,
+      "extras": null
+    },
+    {
+      "volume": 50,
+      "title": "Water Prison Death Match",
+      "start": 464,
+      "end": 473,
+      "extras": null
+    },
+    {
+      "volume": 51,
+      "title": "Sasuke vs. Danzo!",
+      "start": 474,
+      "end": 483,
+      "extras": null
+    },
+    {
+      "volume": 52,
+      "title": "Cell Seven Reunion",
+      "start": 484,
+      "end": 494,
+      "extras": null
+    },
+    {
+      "volume": 53,
+      "title": "The Birth of Naruto",
+      "start": 495,
+      "end": 504,
+      "extras": null
+    },
+    {
+      "volume": 54,
+      "title": "Peace Viaduct",
+      "start": 505,
+      "end": 514,
+      "extras": null
+    },
+    {
+      "volume": 55,
+      "title": "The Great War Begins",
+      "start": 515,
+      "end": 524,
+      "extras": null
+    },
+    {
+      "volume": 56,
+      "title": "Team Asuma, Reunited",
+      "start": 525,
+      "end": 534,
+      "extras": null
+    },
+    {
+      "volume": 57,
+      "title": "Battle",
+      "start": 535,
+      "end": 544,
+      "extras": null
+    },
+    {
+      "volume": 58,
+      "title": "Naruto vs. Itachi",
+      "start": 545,
+      "end": 555,
+      "extras": null
+    },
+    {
+      "volume": 59,
+      "title": "The Five Kage",
+      "start": 556,
+      "end": 565,
+      "extras": null
+    },
+    {
+      "volume": 60,
+      "title": "Kurama",
+      "start": 566,
+      "end": 575,
+      "extras": null
+    },
+    {
+      "volume": 61,
+      "title": "Uchiha Brothers United Front",
+      "start": 576,
+      "end": 587,
+      "extras": null
+    },
+    {
+      "volume": 62,
+      "title": "The Crack",
+      "start": 588,
+      "end": 597,
+      "extras": null
+    },
+    {
+      "volume": 63,
+      "title": "World of Dreams",
+      "start": 598,
+      "end": 607,
+      "extras": null
+    },
+    {
+      "volume": 64,
+      "title": "Ten Tails",
+      "start": 608,
+      "end": 617,
+      "extras": null
+    },
+    {
+      "volume": 65,
+      "title": "Hashirama and Madara",
+      "start": 618,
+      "end": 627,
+      "extras": null
+    },
+    {
+      "volume": 66,
+      "title": "The New Three",
+      "start": 628,
+      "end": 637,
+      "extras": null
+    },
+    {
+      "volume": 67,
+      "title": "An Opening",
+      "start": 638,
+      "end": 647,
+      "extras": null
+    },
+    {
+      "volume": 68,
+      "title": "Path",
+      "start": 648,
+      "end": 657,
+      "extras": null
+    },
+    {
+      "volume": 69,
+      "title": "The Start of a Crimson Spring",
+      "start": 658,
+      "end": 668,
+      "extras": null
+    },
+    {
+      "volume": 70,
+      "title": "Naruto and the Sage of Six Paths",
+      "start": 669,
+      "end": 679,
+      "extras": null
+    },
+    {
+      "volume": 71,
+      "title": "I Love You Guys",
+      "start": 680,
+      "end": 690,
+      "extras": null
+    },
+    {
+      "volume": 72,
+      "title": "Uzumaki Naruto",
+      "start": 691,
+      "end": 700,
+      "extras": null
+    }
+  ],
+  "DEFAULT_COVERS": {
+    "1": "https://dw9to29mmj727.cloudfront.net/products/1569319006.jpg",
+    "2": "https://dw9to29mmj727.cloudfront.net/products/1591161789.jpg",
+    "3": "https://dw9to29mmj727.cloudfront.net/products/1591161878.jpg",
+    "4": "https://dw9to29mmj727.cloudfront.net/products/1591163587.jpg",
+    "5": "https://dw9to29mmj727.cloudfront.net/products/1591163595.jpg",
+    "6": "https://dw9to29mmj727.cloudfront.net/products/1591167396.jpg",
+    "7": "https://dw9to29mmj727.cloudfront.net/products/1591168759.jpg",
+    "8": "https://dw9to29mmj727.cloudfront.net/products/1421501244.jpg",
+    "9": "https://dw9to29mmj727.cloudfront.net/products/1421502399.jpg",
+    "10": "https://dw9to29mmj727.cloudfront.net/products/1421502402.jpg",
+    "11": "https://dw9to29mmj727.cloudfront.net/products/1421502410.jpg",
+    "12": "https://dw9to29mmj727.cloudfront.net/products/1421502429.jpg",
+    "13": "https://dw9to29mmj727.cloudfront.net/products/1421510871.jpg",
+    "14": "https://dw9to29mmj727.cloudfront.net/products/142151088X.jpg",
+    "15": "https://dw9to29mmj727.cloudfront.net/products/1421510898.jpg",
+    "16": "https://dw9to29mmj727.cloudfront.net/products/1421510901.jpg",
+    "17": "https://dw9to29mmj727.cloudfront.net/products/1421516527.jpg",
+    "18": "https://dw9to29mmj727.cloudfront.net/products/1421516535.jpg",
+    "19": "https://dw9to29mmj727.cloudfront.net/products/1421516543.jpg",
+    "20": "https://dw9to29mmj727.cloudfront.net/products/1421516551.jpg",
+    "21": "https://dw9to29mmj727.cloudfront.net/products/1421518554.jpg",
+    "22": "https://dw9to29mmj727.cloudfront.net/products/1421518589.jpg",
+    "23": "https://dw9to29mmj727.cloudfront.net/products/1421518597.jpg",
+    "24": "https://dw9to29mmj727.cloudfront.net/products/1421518600.jpg",
+    "25": "https://dw9to29mmj727.cloudfront.net/products/1421518619.jpg",
+    "26": "https://dw9to29mmj727.cloudfront.net/products/1421518627.jpg",
+    "27": "https://dw9to29mmj727.cloudfront.net/products/1421518635.jpg",
+    "28": "https://dw9to29mmj727.cloudfront.net/products/1421518643.jpg",
+    "29": "https://dw9to29mmj727.cloudfront.net/products/1421518651.jpg",
+    "30": "https://dw9to29mmj727.cloudfront.net/products/1421519429.jpg",
+    "31": "https://dw9to29mmj727.cloudfront.net/products/1421519437.jpg",
+    "32": "https://dw9to29mmj727.cloudfront.net/products/1421519445.jpg",
+    "33": "https://dw9to29mmj727.cloudfront.net/products/142152001X.jpg",
+    "34": "https://dw9to29mmj727.cloudfront.net/products/1421520028.jpg",
+    "35": "https://dw9to29mmj727.cloudfront.net/products/1421520036.jpg",
+    "36": "https://dw9to29mmj727.cloudfront.net/products/1421521725.jpg",
+    "37": "https://dw9to29mmj727.cloudfront.net/products/1421521733.jpg",
+    "38": "https://dw9to29mmj727.cloudfront.net/products/1421521741.jpg",
+    "39": "https://dw9to29mmj727.cloudfront.net/products/142152175X.jpg",
+    "40": "https://dw9to29mmj727.cloudfront.net/products/142152841X.jpg",
+    "41": "https://dw9to29mmj727.cloudfront.net/products/1421528428.jpg",
+    "42": "https://dw9to29mmj727.cloudfront.net/products/1421528436.jpg",
+    "43": "https://dw9to29mmj727.cloudfront.net/products/1421529297.jpg",
+    "44": "https://dw9to29mmj727.cloudfront.net/products/1421531348.jpg",
+    "45": "https://dw9to29mmj727.cloudfront.net/products/1421531356.jpg",
+    "46": "https://dw9to29mmj727.cloudfront.net/products/1421533049.jpg",
+    "47": "https://dw9to29mmj727.cloudfront.net/products/1421533057.jpg",
+    "48": "https://dw9to29mmj727.cloudfront.net/products/1421534746.jpg",
+    "49": "https://dw9to29mmj727.cloudfront.net/products/1421534754.jpg",
+    "50": "https://dw9to29mmj727.cloudfront.net/products/1421534975.jpg",
+    "51": "https://dw9to29mmj727.cloudfront.net/products/1421534983.jpg",
+    "52": "https://dw9to29mmj727.cloudfront.net/products/1421539578.jpg",
+    "53": "https://dw9to29mmj727.cloudfront.net/products/1421540495.jpg",
+    "54": "https://dw9to29mmj727.cloudfront.net/products/1421541025.jpg",
+    "55": "https://dw9to29mmj727.cloudfront.net/products/1421541521.jpg",
+    "56": "https://dw9to29mmj727.cloudfront.net/products/1421542072.jpg",
+    "57": "https://dw9to29mmj727.cloudfront.net/products/1421543060.jpg",
+    "58": "https://dw9to29mmj727.cloudfront.net/products/1421543281.jpg",
+    "59": "https://dw9to29mmj727.cloudfront.net/products/1421549425.jpg",
+    "60": "https://dw9to29mmj727.cloudfront.net/products/1421549433.jpg",
+    "61": "https://dw9to29mmj727.cloudfront.net/products/1421552485.jpg",
+    "62": "https://dw9to29mmj727.cloudfront.net/products/1421556197.jpg",
+    "63": "https://dw9to29mmj727.cloudfront.net/products/1421558858.jpg",
+    "64": "https://dw9to29mmj727.cloudfront.net/products/1421561395.jpg",
+    "65": "https://dw9to29mmj727.cloudfront.net/products/1421564556.jpg",
+    "66": "https://dw9to29mmj727.cloudfront.net/products/1421569485.jpg",
+    "67": "https://dw9to29mmj727.cloudfront.net/products/1421573849.jpg",
+    "68": "https://dw9to29mmj727.cloudfront.net/products/1421576821.jpg",
+    "69": "https://dw9to29mmj727.cloudfront.net/products/1421578565.jpg",
+    "70": "https://dw9to29mmj727.cloudfront.net/products/1421579758.jpg",
+    "71": "https://dw9to29mmj727.cloudfront.net/products/1421581760.jpg",
+    "72": "https://dw9to29mmj727.cloudfront.net/products/1421582848.jpg"
+  },
+  "VIZ_LINKS": {
+    "1": "https://www.viz.com/manga-books/manga/naruto-volume-1-0/product/91",
+    "2": "https://www.viz.com/manga-books/manga/naruto-volume-2-0/product/92",
+    "3": "https://www.viz.com/manga-books/manga/naruto-volume-3-0/product/93",
+    "4": "https://www.viz.com/manga-books/manga/naruto-volume-4-0/product/311",
+    "5": "https://www.viz.com/manga-books/manga/naruto-volume-5-0/product/312",
+    "6": "https://www.viz.com/manga-books/manga/naruto-volume-6-0/product/313",
+    "7": "https://www.viz.com/manga-books/manga/naruto-volume-7-0/product/495",
+    "8": "https://www.viz.com/manga-books/manga/naruto-volume-8-0/product/496",
+    "9": "https://www.viz.com/manga-books/manga/naruto-volume-9-0/product/497",
+    "10": "https://www.viz.com/manga-books/manga/naruto-volume-10-0/product/498",
+    "11": "https://www.viz.com/manga-books/manga/naruto-volume-11-0/product/742",
+    "12": "https://www.viz.com/manga-books/manga/naruto-volume-12-0/product/743",
+    "13": "https://www.viz.com/manga-books/manga/naruto-volume-13-0/product/1069",
+    "14": "https://www.viz.com/manga-books/manga/naruto-volume-14-0/product/1070",
+    "15": "https://www.viz.com/manga-books/manga/naruto-volume-15-0/product/1071",
+    "16": "https://www.viz.com/manga-books/manga/naruto-volume-16-0/product/1072",
+    "17": "https://www.viz.com/manga-books/manga/naruto-volume-17-0/product/1308",
+    "18": "https://www.viz.com/manga-books/manga/naruto-volume-18-0/product/1309",
+    "19": "https://www.viz.com/manga-books/manga/naruto-volume-19-0/product/1310",
+    "20": "https://www.viz.com/manga-books/manga/naruto-volume-20-0/product/1311",
+    "21": "https://www.viz.com/manga-books/manga/naruto-volume-21-0/product/1312",
+    "22": "https://www.viz.com/manga-books/manga/naruto-volume-22-0/product/1313",
+    "23": "https://www.viz.com/manga-books/manga/naruto-volume-23-0/product/1314",
+    "24": "https://www.viz.com/manga-books/manga/naruto-volume-24-0/product/1315",
+    "25": "https://www.viz.com/manga-books/manga/naruto-volume-25-0/product/1316",
+    "26": "https://www.viz.com/manga-books/manga/naruto-volume-26-0/product/1317",
+    "27": "https://www.viz.com/manga-books/manga/naruto-volume-27-0/product/1318",
+    "28": "https://www.viz.com/manga-books/manga/naruto-volume-28-0/product/1319",
+    "29": "https://www.viz.com/manga-books/manga/naruto-volume-29-0/product/1320",
+    "30": "https://www.viz.com/manga-books/manga/naruto-volume-30-0/product/1526",
+    "31": "https://www.viz.com/manga-books/manga/naruto-volume-31-0/product/1527",
+    "32": "https://www.viz.com/manga-books/manga/naruto-volume-32-0/product/1528",
+    "33": "https://www.viz.com/manga-books/manga/naruto-volume-33-0/product/1529",
+    "34": "https://www.viz.com/manga-books/manga/naruto-volume-34-0/product/1530",
+    "35": "https://www.viz.com/manga-books/manga/naruto-volume-35-0/product/1531",
+    "36": "https://www.viz.com/manga-books/manga/naruto-volume-36-0/product/1532",
+    "37": "https://www.viz.com/manga-books/manga/naruto-volume-37-0/product/1533",
+    "38": "https://www.viz.com/manga-books/manga/naruto-volume-38-0/product/1534",
+    "39": "https://www.viz.com/manga-books/manga/naruto-volume-39-0/product/1535",
+    "40": "https://www.viz.com/manga-books/manga/naruto-volume-40-0/product/1968",
+    "41": "https://www.viz.com/manga-books/manga/naruto-volume-41-0/product/1969",
+    "42": "https://www.viz.com/manga-books/manga/naruto-volume-42-0/product/1970",
+    "43": "https://www.viz.com/manga-books/manga/naruto-volume-43-0/product/1971",
+    "44": "https://www.viz.com/manga-books/manga/naruto-volume-44-0/product/2185",
+    "45": "https://www.viz.com/manga-books/manga/naruto-volume-45-0/product/2186",
+    "46": "https://www.viz.com/manga-books/manga/naruto-volume-46-0/product/2187",
+    "47": "https://www.viz.com/manga-books/manga/naruto-volume-47-0/product/2188",
+    "48": "https://www.viz.com/manga-books/manga/naruto-volume-48-0/product/2414",
+    "49": "https://www.viz.com/manga-books/manga/naruto-volume-49-0/product/2415",
+    "50": "https://www.viz.com/manga-books/manga/naruto-volume-50-0/product/2416",
+    "51": "https://www.viz.com/manga-books/manga/naruto-volume-51-0/product/2417",
+    "52": "https://www.viz.com/manga-books/manga/naruto-volume-52-0/product/2612",
+    "53": "https://www.viz.com/manga-books/manga/naruto-volume-53-0/product/2614",
+    "54": "https://www.viz.com/manga-books/manga/naruto-volume-54-0/product/2820",
+    "55": "https://www.viz.com/manga-books/manga/naruto-volume-55-0/product/2821",
+    "56": "https://www.viz.com/manga-books/manga/naruto-volume-56-0/product/2822",
+    "57": "https://www.viz.com/manga-books/manga/naruto-volume-57-0/product/2823",
+    "58": "https://www.viz.com/manga-books/manga/naruto-volume-58-0/product/2824",
+    "59": "https://www.viz.com/manga-books/manga/naruto-volume-59-0/product/2825",
+    "60": "https://www.viz.com/manga-books/manga/naruto-volume-60-0/product/2826",
+    "61": "https://www.viz.com/manga-books/manga/naruto-volume-61-0/product/3050",
+    "62": "https://www.viz.com/manga-books/manga/naruto-volume-62-0/product/2613",
+    "63": "https://www.viz.com/manga-books/manga/naruto-volume-63-0/product/3051",
+    "64": "https://www.viz.com/manga-books/manga/naruto-volume-64-0/product/3280",
+    "65": "https://www.viz.com/manga-books/manga/naruto-volume-65-0/product/3281",
+    "66": "https://www.viz.com/manga-books/manga/naruto-volume-66-0/product/3282",
+    "67": "https://www.viz.com/manga-books/manga/naruto-volume-67-0/product/3495",
+    "68": "https://www.viz.com/manga-books/manga/naruto-volume-68-0/product/3496",
+    "69": "https://www.viz.com/manga-books/manga/naruto-volume-69-0/product/3498",
+    "70": "https://www.viz.com/manga-books/manga/naruto-volume-70-0/product/3499",
+    "71": "https://www.viz.com/manga-books/manga/naruto-volume-71-0/product/3497",
+    "72": "https://www.viz.com/manga-books/manga/naruto-volume-72-0/product/3500"
+  },
+  "AMAZON_LINKS": {},
+  "ARC_RANGES": [
+    {
+      "arc": "Prologue — Land of Waves",
+      "subArc": null,
+      "start": 1,
+      "end": 33
+    },
+    {
+      "arc": "Chūnin Exams",
+      "subArc": null,
+      "start": 34,
+      "end": 115
+    },
+    {
+      "arc": "Konoha Crush",
+      "subArc": null,
+      "start": 116,
+      "end": 138
+    },
+    {
+      "arc": "Search for Tsunade",
+      "subArc": null,
+      "start": 139,
+      "end": 171
+    },
+    {
+      "arc": "Sasuke Recovery Mission",
+      "subArc": null,
+      "start": 172,
+      "end": 238
+    },
+    {
+      "arc": "Kakashi Gaiden",
+      "subArc": null,
+      "start": 239,
+      "end": 244
+    },
+    {
+      "arc": "Kazekage Rescue Mission",
+      "subArc": null,
+      "start": 245,
+      "end": 281
+    },
+    {
+      "arc": "Tenchi Bridge Reconnaissance Mission",
+      "subArc": null,
+      "start": 282,
+      "end": 310
+    },
+    {
+      "arc": "Akatsuki Suppression Mission",
+      "subArc": null,
+      "start": 311,
+      "end": 342
+    },
+    {
+      "arc": "Itachi Pursuit Mission",
+      "subArc": null,
+      "start": 343,
+      "end": 367
+    },
+    {
+      "arc": "Tale of Jiraiya the Gallant",
+      "subArc": null,
+      "start": 368,
+      "end": 383
+    },
+    {
+      "arc": "Fated Battle Between Brothers",
+      "subArc": null,
+      "start": 384,
+      "end": 412
+    },
+    {
+      "arc": "Pain's Assault",
+      "subArc": null,
+      "start": 413,
+      "end": 453
+    },
+    {
+      "arc": "Five Kage Summit",
+      "subArc": null,
+      "start": 454,
+      "end": 483
+    },
+    {
+      "arc": "Fourth Shinobi World War: Countdown",
+      "subArc": null,
+      "start": 484,
+      "end": 515
+    },
+    {
+      "arc": "Fourth Shinobi World War: Confrontation",
+      "subArc": null,
+      "start": 516,
+      "end": 559
+    },
+    {
+      "arc": "Fourth Shinobi World War: Climax",
+      "subArc": null,
+      "start": 560,
+      "end": 639
+    },
+    {
+      "arc": "Birth of the Ten-Tails' Jinchūriki",
+      "subArc": null,
+      "start": 640,
+      "end": 677
+    },
+    {
+      "arc": "Kaguya Ōtsutsuki Strikes",
+      "subArc": null,
+      "start": 678,
+      "end": 699
+    },
+    {
+      "arc": "Epilogue",
+      "subArc": null,
+      "start": 700,
+      "end": 700
+    }
+  ]
+}

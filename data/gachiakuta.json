@@ -1,0 +1,382 @@
+{
+  "id": "gachiakuta",
+  "name": "Gachiakuta",
+  "pageTitle": "Gachiakuta Anime to Manga Converter | Anime2Manga",
+  "lede": "Match Gachiakuta TV episodes 1–24 with manga chapters and Kodansha volumes. After episode 24, continue from chapter 88 in volume 11.",
+  "seoCopy": "Convert Gachiakuta season 1 episodes to manga chapters and Kodansha English volumes, and find where to continue reading.",
+  "footer": [
+    "This guide covers Gachiakuta season 1, TV episodes 1–24, through manga chapter 87. Continue reading at chapter 88 in volume 11.",
+    "The first 12 Kodansha English volumes cover chapters 1–103. Later volumes and anime episodes will be added as they become available."
+  ],
+  "beyondDataHint": "Season 1 adapts through chapter 87. Continue from chapter 88 in volume 11.",
+  "notAdaptedTagText": "Not yet adapted",
+  "publisherLabel": "Kodansha",
+  "episodePlaceholder": "1–24",
+  "volumePlaceholder": "1–12",
+  "chapterPlaceholder": "1–103",
+  "VOLUMES": [
+    {
+      "volume": 1,
+      "start": 1,
+      "end": 4
+    },
+    {
+      "volume": 2,
+      "start": 5,
+      "end": 13
+    },
+    {
+      "volume": 3,
+      "start": 14,
+      "end": 22
+    },
+    {
+      "volume": 4,
+      "start": 23,
+      "end": 31
+    },
+    {
+      "volume": 5,
+      "start": 32,
+      "end": 40
+    },
+    {
+      "volume": 6,
+      "start": 41,
+      "end": 49
+    },
+    {
+      "volume": 7,
+      "start": 50,
+      "end": 58
+    },
+    {
+      "volume": 8,
+      "start": 59,
+      "end": 67
+    },
+    {
+      "volume": 9,
+      "start": 68,
+      "end": 76
+    },
+    {
+      "volume": 10,
+      "start": 77,
+      "end": 85
+    },
+    {
+      "volume": 11,
+      "start": 86,
+      "end": 94
+    },
+    {
+      "volume": 12,
+      "start": 95,
+      "end": 103
+    }
+  ],
+  "EPISODES": [
+    {
+      "episode": 1,
+      "title": "",
+      "chapters": [
+        "1"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 2,
+      "title": "",
+      "chapters": [
+        "2",
+        "3"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 3,
+      "title": "",
+      "chapters": [
+        "4",
+        "5",
+        "6"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 4,
+      "title": "",
+      "chapters": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 5,
+      "title": "",
+      "chapters": [
+        "11",
+        "12",
+        "13"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 6,
+      "title": "",
+      "chapters": [
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 7,
+      "title": "",
+      "chapters": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 8,
+      "title": "",
+      "chapters": [
+        "22",
+        "23",
+        "24"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 9,
+      "title": "",
+      "chapters": [
+        "25",
+        "26",
+        "27"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 10,
+      "title": "",
+      "chapters": [
+        "28",
+        "29",
+        "30",
+        "31"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 11,
+      "title": "",
+      "chapters": [
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 12,
+      "title": "",
+      "chapters": [
+        "36",
+        "37",
+        "38",
+        "39"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 13,
+      "title": "",
+      "chapters": [
+        "40",
+        "41",
+        "42",
+        "43"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 14,
+      "title": "",
+      "chapters": [
+        "44",
+        "45",
+        "46",
+        "47"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 15,
+      "title": "",
+      "chapters": [
+        "48",
+        "49",
+        "50",
+        "51"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 16,
+      "title": "",
+      "chapters": [
+        "52",
+        "53",
+        "54",
+        "55",
+        "56"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 17,
+      "title": "",
+      "chapters": [
+        "57",
+        "58",
+        "59",
+        "60"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 18,
+      "title": "",
+      "chapters": [
+        "61",
+        "62",
+        "63",
+        "64",
+        "65"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 19,
+      "title": "",
+      "chapters": [
+        "66",
+        "67",
+        "68"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 20,
+      "title": "",
+      "chapters": [
+        "69",
+        "70",
+        "71"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 21,
+      "title": "",
+      "chapters": [
+        "72",
+        "73",
+        "74",
+        "75",
+        "76"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 22,
+      "title": "",
+      "chapters": [
+        "77",
+        "78",
+        "79",
+        "80",
+        "81"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 23,
+      "title": "",
+      "chapters": [
+        "81",
+        "82",
+        "83",
+        "84"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 24,
+      "title": "",
+      "chapters": [
+        "84",
+        "85",
+        "86",
+        "87"
+      ],
+      "filler": false
+    }
+  ],
+  "DEFAULT_COVERS": {
+    "1": "https://production.image.azuki.co/0983d433-3213-404b-9229-517eed50b57c/800_5-7.webp",
+    "2": "https://production.image.azuki.co/8ecb1eba-2e1e-49fe-b774-8c87e4f3b6da/800_5-7.webp",
+    "3": "https://production.image.azuki.co/6642aabb-fd38-4d80-a4e2-431b56b71814/800_5-7.webp",
+    "4": "https://production.image.azuki.co/f2dc8233-dd99-44fa-ae3b-aedd8ae56496/800_5-7.webp",
+    "5": "https://production.image.azuki.co/27ab2cc3-455c-4967-a7b5-1a6f9c304a04/800_5-7.webp",
+    "6": "https://production.image.azuki.co/d3e68907-ed0a-4189-8523-a72bd7f2fa79/800_5-7.webp",
+    "7": "https://production.image.azuki.co/93912384-4858-4f1e-aacb-7595b7ca567c/800_5-7.webp",
+    "8": "https://production.image.azuki.co/cf2d98ee-a183-4fef-8d0a-037f881f3e8c/800_5-7.webp",
+    "9": "https://production.image.azuki.co/8de4f83c-caa2-4ab7-bbb2-0c137c73fa5c/800_5-7.webp",
+    "10": "https://production.image.azuki.co/1f377610-a1fa-49c4-aa2b-3f7dda097a8e/800_5-7.webp",
+    "11": "https://production.image.azuki.co/3c31aa82-6138-4dc1-957c-3ae704c11515/800_5-7.webp",
+    "12": "https://production.image.azuki.co/0a5ab28d-a285-4989-a7c8-0dc8d0c1ec1c/800_5-7.webp"
+  },
+  "VIZ_LINKS": {
+    "1": "https://kodansha.us/series/gachiakuta/volume-1/",
+    "2": "https://kodansha.us/series/gachiakuta/volume-2/",
+    "3": "https://kodansha.us/series/gachiakuta/volume-3/",
+    "4": "https://kodansha.us/series/gachiakuta/volume-4/",
+    "5": "https://kodansha.us/series/gachiakuta/volume-5/",
+    "6": "https://kodansha.us/series/gachiakuta/volume-6/",
+    "7": "https://kodansha.us/series/gachiakuta/volume-7/",
+    "8": "https://kodansha.us/series/gachiakuta/volume-8/",
+    "9": "https://kodansha.us/series/gachiakuta/volume-9/",
+    "10": "https://kodansha.us/series/gachiakuta/volume-10/",
+    "11": "https://kodansha.us/series/gachiakuta/volume-11/",
+    "12": "https://kodansha.us/series/gachiakuta/volume-12/"
+  },
+  "AMAZON_LINKS": {},
+  "ARC_RANGES": [],
+  "FALLBACK_COVERS": {
+    "1": "https://images.penguinrandomhouse.com/cover/9798888770207",
+    "2": "https://images.penguinrandomhouse.com/cover/9798888770948",
+    "3": "https://images.penguinrandomhouse.com/cover/9798888770955",
+    "4": "https://images.penguinrandomhouse.com/cover/9798888770962",
+    "5": "https://images.penguinrandomhouse.com/cover/9798888770979",
+    "6": "https://images.penguinrandomhouse.com/cover/9798888771525",
+    "7": "https://images.penguinrandomhouse.com/cover/9798888771570",
+    "8": "https://images.penguinrandomhouse.com/cover/9798888772836",
+    "9": "https://images.penguinrandomhouse.com/cover/9798888772843",
+    "10": "https://images.penguinrandomhouse.com/cover/9798888774472",
+    "11": "https://images.penguinrandomhouse.com/cover/9798888774489",
+    "12": "https://images.penguinrandomhouse.com/cover/9798888775363"
+  }
+}

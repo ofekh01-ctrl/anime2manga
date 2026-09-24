@@ -1,0 +1,1793 @@
+{
+  "id": "blackclover",
+  "name": "Black Clover",
+  "pageTitle": "Black Clover Anime to Manga Converter | Anime2Manga",
+  "lede": "Find the Black Clover manga chapter and volume for anime episodes 1–170, including filler and anime-original material.",
+  "seoCopy": "Match Black Clover episodes 1–170 to manga chapters and volumes; find the continuation after the anime and distinguish filler from anime-original canon.",
+  "footer": [
+    "Anime episode data covers episodes 1–170 through chapter 270 (episode 170 briefly previews later material). To continue reading, start at chapter 270, page 14, in volume 27.",
+    "The completed manga has 38 collected Japanese volumes (chapters 1–392). The VIZ links cover the 37 English volumes available as of this update; volume 38 does not yet have a VIZ product page.",
+    "Some episodes adapt the Black Clover light novel or tell anime-original stories and have no matching manga chapter. The new TV season is scheduled to begin October 3, 2026.",
+    "Sources: Anime Filler Guide episode-to-chapter list, official Black Clover anime announcement, published chapter indexes and VIZ volume catalog."
+  ],
+  "beyondDataHint": "The available anime ends during chapter 270 (volume 27). Continue at chapter 270, page 14.",
+  "episodePlaceholder": "1–170",
+  "volumePlaceholder": "1–38",
+  "chapterPlaceholder": "1–392",
+  "VOLUMES": [
+    {
+      "volume": 1,
+      "start": 1,
+      "end": 7
+    },
+    {
+      "volume": 2,
+      "start": 8,
+      "end": 16
+    },
+    {
+      "volume": 3,
+      "start": 17,
+      "end": 25
+    },
+    {
+      "volume": 4,
+      "start": 26,
+      "end": 34
+    },
+    {
+      "volume": 5,
+      "start": 35,
+      "end": 44
+    },
+    {
+      "volume": 6,
+      "start": 45,
+      "end": 53
+    },
+    {
+      "volume": 7,
+      "start": 54,
+      "end": 62
+    },
+    {
+      "volume": 8,
+      "start": 63,
+      "end": 71
+    },
+    {
+      "volume": 9,
+      "start": 72,
+      "end": 80
+    },
+    {
+      "volume": 10,
+      "start": 81,
+      "end": 90
+    },
+    {
+      "volume": 11,
+      "start": 91,
+      "end": 100
+    },
+    {
+      "volume": 12,
+      "start": 101,
+      "end": 110
+    },
+    {
+      "volume": 13,
+      "start": 111,
+      "end": 120
+    },
+    {
+      "volume": 14,
+      "start": 121,
+      "end": 130
+    },
+    {
+      "volume": 15,
+      "start": 131,
+      "end": 140
+    },
+    {
+      "volume": 16,
+      "start": 141,
+      "end": 150
+    },
+    {
+      "volume": 17,
+      "start": 151,
+      "end": 160
+    },
+    {
+      "volume": 18,
+      "start": 161,
+      "end": 172
+    },
+    {
+      "volume": 19,
+      "start": 173,
+      "end": 183
+    },
+    {
+      "volume": 20,
+      "start": 184,
+      "end": 194
+    },
+    {
+      "volume": 21,
+      "start": 195,
+      "end": 205
+    },
+    {
+      "volume": 22,
+      "start": 206,
+      "end": 217
+    },
+    {
+      "volume": 23,
+      "start": 218,
+      "end": 228
+    },
+    {
+      "volume": 24,
+      "start": 229,
+      "end": 239
+    },
+    {
+      "volume": 25,
+      "start": 240,
+      "end": 250
+    },
+    {
+      "volume": 26,
+      "start": 251,
+      "end": 261
+    },
+    {
+      "volume": 27,
+      "start": 262,
+      "end": 272
+    },
+    {
+      "volume": 28,
+      "start": 273,
+      "end": 282
+    },
+    {
+      "volume": 29,
+      "start": 283,
+      "end": 292
+    },
+    {
+      "volume": 30,
+      "start": 293,
+      "end": 303
+    },
+    {
+      "volume": 31,
+      "start": 304,
+      "end": 314
+    },
+    {
+      "volume": 32,
+      "start": 315,
+      "end": 325
+    },
+    {
+      "volume": 33,
+      "start": 326,
+      "end": 336
+    },
+    {
+      "volume": 34,
+      "start": 337,
+      "end": 347
+    },
+    {
+      "volume": 35,
+      "start": 348,
+      "end": 358
+    },
+    {
+      "volume": 36,
+      "start": 359,
+      "end": 369
+    },
+    {
+      "volume": 37,
+      "start": 370,
+      "end": 380
+    },
+    {
+      "volume": 38,
+      "start": 381,
+      "end": 392
+    }
+  ],
+  "EPISODES": [
+    {
+      "episode": 1,
+      "title": "Asta and Yuno",
+      "chapters": [
+        "1"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 2,
+      "title": "The Boys’ Promise",
+      "chapters": [
+        "1"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 3,
+      "title": "To the Royal Capital of the Clover Kingdom!",
+      "chapters": [
+        "1",
+        "2"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 4,
+      "title": "The Magic Knights Entrance Exam",
+      "chapters": [
+        "2"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 5,
+      "title": "The Road to the Wizard King",
+      "chapters": [
+        "3"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 6,
+      "title": "The Black Bulls",
+      "chapters": [
+        "3",
+        "4"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 7,
+      "title": "The Other New Member",
+      "chapters": [
+        "5"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 8,
+      "title": "Go! Go! First Mission",
+      "chapters": [
+        "6"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 9,
+      "title": "Brutes",
+      "chapters": [
+        "6",
+        "7"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 10,
+      "title": "To Protect Someone",
+      "chapters": [
+        "7",
+        "8",
+        "9"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 11,
+      "title": "What Happened One Day in the Castle Town",
+      "chapters": [
+        "10"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 12,
+      "title": "The Wizard King Saw",
+      "chapters": [
+        "10"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 13,
+      "title": "The Wizard King Saw, Continued",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 14,
+      "title": "Dungeon",
+      "chapters": [
+        "11"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 15,
+      "title": "The Diamond Mage",
+      "chapters": [
+        "12",
+        "13"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 16,
+      "title": "Friends",
+      "chapters": [
+        "14",
+        "15"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 17,
+      "title": "Destroyer",
+      "chapters": [
+        "16",
+        "17"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 18,
+      "title": "Memories of You",
+      "chapters": [
+        "18",
+        "19",
+        "20"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 19,
+      "title": "Destruction and Salvation",
+      "chapters": [
+        "19",
+        "20",
+        "21"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 20,
+      "title": "Assembly at the Royal Capital",
+      "chapters": [
+        "22",
+        "23"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 21,
+      "title": "Royal Capital Riot",
+      "chapters": [
+        "23",
+        "24",
+        "25"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 22,
+      "title": "Magic Wild Dance",
+      "chapters": [
+        "26",
+        "27"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 23,
+      "title": "The Crimson Lion King",
+      "chapters": [
+        "28",
+        "29",
+        "30",
+        "31"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 24,
+      "title": "Blackout",
+      "chapters": [
+        "28",
+        "29",
+        "32"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 25,
+      "title": "Adversity",
+      "chapters": [
+        "30",
+        "32",
+        "33"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 26,
+      "title": "Wounded Beasts",
+      "chapters": [
+        "34",
+        "35",
+        "36"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 27,
+      "title": "Light",
+      "chapters": [
+        "36",
+        "37"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 28,
+      "title": "The One I’ve Set My Heart On",
+      "chapters": [
+        "38"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 29,
+      "title": "Path",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 30,
+      "title": "The Mirror Mage",
+      "chapters": [
+        "39"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 31,
+      "title": "Pursuit Over the Snow",
+      "chapters": [
+        "40",
+        "41"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 32,
+      "title": "Three-Leaf Sprouts",
+      "chapters": [
+        "42",
+        "43"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 33,
+      "title": "To Help Somebody Someday",
+      "chapters": [
+        "44",
+        "45",
+        "46"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 34,
+      "title": "Light Magic vs. Dark Magic",
+      "chapters": [
+        "46",
+        "47",
+        "48"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 35,
+      "title": "The Light of Judgment",
+      "chapters": [
+        "49",
+        "50"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 36,
+      "title": "Three Eyes",
+      "chapters": [
+        "51",
+        "52"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 37,
+      "title": "The One with No Magic",
+      "chapters": [
+        "52",
+        "53"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 38,
+      "title": "The Magic Knights Captain Conference",
+      "chapters": [
+        "54",
+        "56"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 39,
+      "title": "Three-Leaf Salute",
+      "chapters": [
+        "55",
+        "56"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 40,
+      "title": "A Black Beach Story",
+      "chapters": [
+        "57"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 41,
+      "title": "The Water Girl Grows Up",
+      "chapters": [
+        "58"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 42,
+      "title": "The Seabed Temple",
+      "chapters": [
+        "59",
+        "60"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 43,
+      "title": "Temple Battle Royale",
+      "chapters": [
+        "60",
+        "61",
+        "62"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 44,
+      "title": "The Pointlessly Direct Fireball and the Wild Lightning",
+      "chapters": [
+        "63",
+        "64"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 45,
+      "title": "The Guy Who Doesn’t Know When to Quit",
+      "chapters": [
+        "64",
+        "65",
+        "66"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 46,
+      "title": "Awakening",
+      "chapters": [
+        "67",
+        "68"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 47,
+      "title": "My Only Weapon",
+      "chapters": [
+        "69"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 48,
+      "title": "Despair vs. Hope",
+      "chapters": [
+        "70"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 49,
+      "title": "Beyond Limits",
+      "chapters": [
+        "71",
+        "72"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 50,
+      "title": "End of the Battle, End of Despair",
+      "chapters": [
+        "73",
+        "74"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 51,
+      "title": "Proof of Rightness",
+      "chapters": [
+        "74",
+        "75"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 52,
+      "title": "Whoever’s Strongest Wins",
+      "chapters": [
+        "76",
+        "77",
+        "78"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 53,
+      "title": "Behind the Mask",
+      "chapters": [
+        "78",
+        "79"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 54,
+      "title": "Never Again",
+      "chapters": [
+        "80",
+        "81",
+        "82"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 55,
+      "title": "The Man Named Fanzell",
+      "chapters": [],
+      "filler": false,
+      "sourceLabel": "The Book of the Black Bulls novel"
+    },
+    {
+      "episode": 56,
+      "title": "The Man Named Fanzell Continued",
+      "chapters": [],
+      "filler": false,
+      "sourceLabel": "The Book of the Black Bulls novel"
+    },
+    {
+      "episode": 57,
+      "title": "Infiltration",
+      "chapters": [
+        "82",
+        "83"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 58,
+      "title": "Battlefield Decision",
+      "chapters": [
+        "83",
+        "84",
+        "85"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 59,
+      "title": "Flames of Hatred",
+      "chapters": [
+        "86",
+        "87",
+        "88"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 60,
+      "title": "Defectors’ Atonement",
+      "chapters": [
+        "88",
+        "89",
+        "90",
+        "91"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 61,
+      "title": "The Promised World",
+      "chapters": [
+        "91",
+        "92",
+        "93"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 62,
+      "title": "Those Who Boost Each Other Up",
+      "chapters": [
+        "94",
+        "95",
+        "96"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 63,
+      "title": "It’s Nothing",
+      "chapters": [
+        "97",
+        "98"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 64,
+      "title": "The Red Thread of Fate",
+      "chapters": [
+        "99",
+        "100"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 65,
+      "title": "I’m Home",
+      "chapters": [
+        "101",
+        "102"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 66,
+      "title": "The Eye of the Midnight Sun’s Secret",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 67,
+      "title": "A Fun Festival Double Date",
+      "chapters": [
+        "102",
+        "103"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 68,
+      "title": "Battle to the Death?! Yami VS Jack",
+      "chapters": [
+        "103"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 69,
+      "title": "The Briar Maiden’s Melancholy",
+      "chapters": [
+        "103",
+        "104"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 70,
+      "title": "Two New Stars",
+      "chapters": [
+        "105",
+        "106",
+        "107"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 71,
+      "title": "The Uncrowned, Undefeated Lioness",
+      "chapters": [
+        "108",
+        "109"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 72,
+      "title": "Saint Elmo’s Fire",
+      "chapters": [
+        "110",
+        "111"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 73,
+      "title": "Royal Knights Selection Exam",
+      "chapters": [
+        "112",
+        "113"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 74,
+      "title": "Flower of Resolution",
+      "chapters": [
+        "113",
+        "114",
+        "115"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 75,
+      "title": "Fierce Battle",
+      "chapters": [
+        "116",
+        "117"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 76,
+      "title": "Mage X",
+      "chapters": [
+        "118",
+        "119"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 77,
+      "title": "Bad Blood",
+      "chapters": [
+        "119",
+        "120",
+        "121"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 78,
+      "title": "Peasant Trap",
+      "chapters": [
+        "122",
+        "123"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 79,
+      "title": "Yankee-Senpai Vs. Muscle Brains",
+      "chapters": [
+        "124",
+        "125"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 80,
+      "title": "Special Little Brother vs. Failed Big Brother",
+      "chapters": [
+        "126",
+        "127"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 81,
+      "title": "The Life of a Certain Man",
+      "chapters": [
+        "127",
+        "128",
+        "129"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 82,
+      "title": "Petit Clover! The Nightmarish Charmy SP!",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 83,
+      "title": "Burn It into You",
+      "chapters": [
+        "129",
+        "130",
+        "131"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 84,
+      "title": "The Victors",
+      "chapters": [
+        "132",
+        "133"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 85,
+      "title": "Together in the Bath",
+      "chapters": [
+        "133"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 86,
+      "title": "Yami and Vangeance",
+      "chapters": [
+        "133"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 87,
+      "title": "Formation of the Royal Knights",
+      "chapters": [
+        "133",
+        "134"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 88,
+      "title": "Storming the Eye of the Midnight Sun’s Hideout!!!",
+      "chapters": [
+        "135"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 89,
+      "title": "The Black Bulls’ Hideout",
+      "chapters": [
+        "138",
+        "139"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 90,
+      "title": "Crazy Magic Battle",
+      "chapters": [
+        "140",
+        "141",
+        "142"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 91,
+      "title": "Mereoleona vs. Rhya the Treachery",
+      "chapters": [
+        "136",
+        "137",
+        "138"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 92,
+      "title": "The Wizard King vs. the Eye of the Midnight Sun’s Leader",
+      "chapters": [
+        "142",
+        "143"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 93,
+      "title": "Julius Novachrono",
+      "chapters": [
+        "144",
+        "145",
+        "146"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 94,
+      "title": "New Future",
+      "chapters": [
+        "146",
+        "147"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 95,
+      "title": "Reincarnation",
+      "chapters": [
+        "148",
+        "149"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 96,
+      "title": "The Black Bulls Captain vs. the Crimson Wild Rose",
+      "chapters": [
+        "149",
+        "150",
+        "168",
+        "169"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 97,
+      "title": "Overwhelming Disadvantage",
+      "chapters": [
+        "150",
+        "151",
+        "169",
+        "170"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 98,
+      "title": "The Sleeping Lion",
+      "chapters": [
+        "170",
+        "171",
+        "172"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 99,
+      "title": "The Desperate Path Toward Survival",
+      "chapters": [
+        "152",
+        "153",
+        "154"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 100,
+      "title": "We Won’t Lose to You",
+      "chapters": [
+        "154",
+        "155",
+        "156",
+        "157"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 101,
+      "title": "The Lives of the Village in the Sticks",
+      "chapters": [
+        "157",
+        "158"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 102,
+      "title": "Two Miracles",
+      "chapters": [
+        "159"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 103,
+      "title": "Release from Misfortune",
+      "chapters": [
+        "159",
+        "160"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 104,
+      "title": "Lightning of Rage vs. Friends",
+      "chapters": [
+        "160",
+        "161",
+        "162",
+        "163"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 105,
+      "title": "Smiles, Tears",
+      "chapters": [
+        "163",
+        "164"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 106,
+      "title": "Path of Revenge, Path of Atonement",
+      "chapters": [
+        "165",
+        "166",
+        "167"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 107,
+      "title": "The Battle for Clover Castle",
+      "chapters": [
+        "173",
+        "174",
+        "175"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 108,
+      "title": "Battlefield Dancer",
+      "chapters": [
+        "176",
+        "177",
+        "178"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 109,
+      "title": "Spatial Mage Brothers",
+      "chapters": [
+        "179",
+        "180",
+        "181"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 110,
+      "title": "The Raging Bull Joins the Showdown!!",
+      "chapters": [
+        "182",
+        "183",
+        "186"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 111,
+      "title": "The Eyes in the Mirror",
+      "chapters": [
+        "183",
+        "184",
+        "186",
+        "187",
+        "188"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 112,
+      "title": "Humans Who Can Be Trusted",
+      "chapters": [
+        "185",
+        "188",
+        "189"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 113,
+      "title": "Storming the Shadow Palace",
+      "chapters": [
+        "190",
+        "191",
+        "192"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 114,
+      "title": "The Final Invaders",
+      "chapters": [
+        "193",
+        "194",
+        "195"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 115,
+      "title": "Mastermind",
+      "chapters": [
+        "196",
+        "197",
+        "198"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 116,
+      "title": "The Ultimate Natural Enemy",
+      "chapters": [
+        "198",
+        "199",
+        "200",
+        "201"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 117,
+      "title": "Breaking the Seal",
+      "chapters": [
+        "202",
+        "203",
+        "204"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 118,
+      "title": "A Reunion Across Time and Space",
+      "chapters": [
+        "205",
+        "206",
+        "207"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 119,
+      "title": "The Final Attack",
+      "chapters": [
+        "208",
+        "209",
+        "210",
+        "211"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 120,
+      "title": "Dawn",
+      "chapters": [
+        "212",
+        "213",
+        "214"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 121,
+      "title": "Three Problems",
+      "chapters": [
+        "215",
+        "216",
+        "217"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 122,
+      "title": "As Pitch Black as It Gets",
+      "chapters": [
+        "218",
+        "219",
+        "220"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 123,
+      "title": "Nero Reminisces… Part One *Compilation Episode",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 124,
+      "title": "Nero Reminisces… Part Two *Compilation Episode",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 125,
+      "title": "Return",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 126,
+      "title": "The Blue Rose’s Confession",
+      "chapters": [
+        "220",
+        "221"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 127,
+      "title": "Clues",
+      "chapters": [
+        "221",
+        "222",
+        "223"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 128,
+      "title": "To the Heart Kingdom!",
+      "chapters": [
+        "224",
+        "225",
+        "226"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 129,
+      "title": "The Devil Megicula",
+      "chapters": [
+        "227",
+        "228"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 130,
+      "title": "The New Magic Knights Captain Conference",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 131,
+      "title": "A New Resolve",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 132,
+      "title": "The Lion Awakens",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 133,
+      "title": "The Lion Awakens, Continued",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 134,
+      "title": "Those Who Have Been Gathered",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 135,
+      "title": "The One Who Has My Heart, My Mind, and Soul",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 136,
+      "title": "A Black Deep-Sea Story",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 137,
+      "title": "Charmy’s Century of Hunger, Gordon’s Millennium of Loneliness",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 138,
+      "title": "In Zara’s Footsteps",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 139,
+      "title": "A Witch’s Homecoming",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 140,
+      "title": "A Favor for Julius",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 141,
+      "title": "The Golden Family",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 142,
+      "title": "Those Remaining",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 143,
+      "title": "The Tilted Scale",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 144,
+      "title": "Those Who Wish for the Devil’s Demise",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 145,
+      "title": "Rescue",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 146,
+      "title": "Those Who Worship the Devil",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 147,
+      "title": "Prepared to Die",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 148,
+      "title": "Becoming the Light That Shines Through the Darkness",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 149,
+      "title": "Two Things We Need to Find",
+      "chapters": [],
+      "filler": true
+    },
+    {
+      "episode": 150,
+      "title": "The Maidens’ Challenge",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 151,
+      "title": "Clash! The Battle of the Magic Knights Squad Captains!",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 152,
+      "title": "To Tomorrow!",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 153,
+      "title": "The Chosen Ones",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 154,
+      "title": "Vice-Captain Langris Vaude",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 155,
+      "title": "The Five Spirit Guardians",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 156,
+      "title": "Awakening Powers",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 157,
+      "title": "Five-Leaf Clover",
+      "chapters": [],
+      "filler": false,
+      "animeOriginal": "Anime-original story; no direct manga chapter match."
+    },
+    {
+      "episode": 158,
+      "title": "The Beginning of Hope and Despair",
+      "chapters": [
+        "229",
+        "230",
+        "231"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 159,
+      "title": "Quiet Lakes and Forest Shadows",
+      "chapters": [
+        "232",
+        "233"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 160,
+      "title": "The Messenger from the Spade Kingdom",
+      "chapters": [
+        "234",
+        "235"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 161,
+      "title": "Zenon’s Power",
+      "chapters": [
+        "236",
+        "237",
+        "238",
+        "239"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 162,
+      "title": "The Great War Breaks Out",
+      "chapters": [
+        "239",
+        "240",
+        "241",
+        "242",
+        "243"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 163,
+      "title": "Dante vs. the Captain of the Black Bulls",
+      "chapters": [
+        "244",
+        "245",
+        "247",
+        "248"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 164,
+      "title": "Battlefield: Heart Kingdom",
+      "chapters": [
+        "246",
+        "249",
+        "250",
+        "251"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 165,
+      "title": "Water Crusade",
+      "chapters": [
+        "246",
+        "251",
+        "252",
+        "253"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 166,
+      "title": "Captain Yami Sukehiro",
+      "chapters": [
+        "254",
+        "255",
+        "256",
+        "257",
+        "258"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 167,
+      "title": "Black Oath",
+      "chapters": [
+        "255",
+        "258",
+        "259",
+        "260"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 168,
+      "title": "Stirrings of the Strongest",
+      "chapters": [
+        "261",
+        "262",
+        "263",
+        "264"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 169,
+      "title": "The Devil-Binding Ritual",
+      "chapters": [
+        "265",
+        "266",
+        "267"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 170,
+      "title": "The Faraway Future",
+      "chapters": [
+        "268",
+        "269",
+        "270"
+      ],
+      "filler": false
+    }
+  ],
+  "DEFAULT_COVERS": {
+    "1": "https://dw9to29mmj727.cloudfront.net/products/1421587181.jpg",
+    "2": "https://dw9to29mmj727.cloudfront.net/products/142158719X.jpg",
+    "3": "https://dw9to29mmj727.cloudfront.net/products/1421587203.jpg",
+    "4": "https://dw9to29mmj727.cloudfront.net/products/1421590239.jpg",
+    "5": "https://dw9to29mmj727.cloudfront.net/products/1421591251.jpg",
+    "6": "https://dw9to29mmj727.cloudfront.net/products/1421591588.jpg",
+    "7": "https://dw9to29mmj727.cloudfront.net/products/1421594323.jpg",
+    "8": "https://dw9to29mmj727.cloudfront.net/products/1421595176.jpg",
+    "9": "https://dw9to29mmj727.cloudfront.net/products/1421596466.jpg",
+    "10": "https://dw9to29mmj727.cloudfront.net/products/1421597632.jpg",
+    "11": "https://dw9to29mmj727.cloudfront.net/products/1421598183.jpg",
+    "12": "https://dw9to29mmj727.cloudfront.net/products/1974700402.jpg",
+    "13": "https://dw9to29mmj727.cloudfront.net/products/1974701042.jpg",
+    "14": "https://dw9to29mmj727.cloudfront.net/products/1974702219.jpg",
+    "15": "https://dw9to29mmj727.cloudfront.net/products/1974704548.jpg",
+    "16": "https://dw9to29mmj727.cloudfront.net/products/1974705137.jpg",
+    "17": "https://dw9to29mmj727.cloudfront.net/products/1974706168.jpg",
+    "18": "https://dw9to29mmj727.cloudfront.net/products/1974707415.jpg",
+    "19": "https://dw9to29mmj727.cloudfront.net/products/1974708780.jpg",
+    "20": "https://dw9to29mmj727.cloudfront.net/products/1974710173.jpg",
+    "21": "https://dw9to29mmj727.cloudfront.net/products/1974714764.jpg",
+    "22": "https://dw9to29mmj727.cloudfront.net/products/1974715019.jpg",
+    "23": "https://dw9to29mmj727.cloudfront.net/products/1974718107.jpg",
+    "24": "https://dw9to29mmj727.cloudfront.net/products/1974720004.jpg",
+    "25": "https://dw9to29mmj727.cloudfront.net/products/1974721817.jpg",
+    "26": "https://dw9to29mmj727.cloudfront.net/products/1974723372.jpg",
+    "27": "https://dw9to29mmj727.cloudfront.net/products/1974725146.jpg",
+    "28": "https://dw9to29mmj727.cloudfront.net/products/1974727181.jpg",
+    "29": "https://dw9to29mmj727.cloudfront.net/products/1974730026.jpg",
+    "30": "https://dw9to29mmj727.cloudfront.net/products/1974732312.jpg",
+    "31": "https://dw9to29mmj727.cloudfront.net/products/1974734366.jpg",
+    "32": "https://dw9to29mmj727.cloudfront.net/products/1974736253.jpg",
+    "33": "https://dw9to29mmj727.cloudfront.net/products/1974740714.jpg",
+    "34": "https://dw9to29mmj727.cloudfront.net/products/1974743357.jpg",
+    "35": "https://dw9to29mmj727.cloudfront.net/products/1974745945.jpg",
+    "36": "https://dw9to29mmj727.cloudfront.net/products/1974752682.jpg",
+    "37": "https://dw9to29mmj727.cloudfront.net/products/1974716724.jpg",
+    "38": "https://dosbg3xlm0x1t.cloudfront.net/images/items/9784088851365/1200/9784088851365.jpg"
+  },
+  "VIZ_LINKS": {
+    "1": "https://www.viz.com/manga-books/manga/black-clover-volume-1-0/product/4795",
+    "2": "https://www.viz.com/manga-books/manga/black-clover-volume-2-0/product/4860",
+    "3": "https://www.viz.com/manga-books/manga/black-clover-volume-3-0/product/4910",
+    "4": "https://www.viz.com/manga-books/manga/black-clover-volume-4-0/product/4976",
+    "5": "https://www.viz.com/manga-books/manga/black-clover-volume-5-0/product/5033",
+    "6": "https://www.viz.com/manga-books/manga/black-clover-volume-6-0/product/5099",
+    "7": "https://www.viz.com/manga-books/manga/black-clover-volume-7-0/product/5163",
+    "8": "https://www.viz.com/manga-books/manga/black-clover-volume-8-0/product/5223",
+    "9": "https://www.viz.com/manga-books/manga/black-clover-volume-9-0/product/5314",
+    "10": "https://www.viz.com/manga-books/manga/black-clover-volume-10-0/product/5403",
+    "11": "https://www.viz.com/manga-books/manga/black-clover-volume-11-0/product/5491",
+    "12": "https://www.viz.com/manga-books/manga/black-clover-volume-12-0/product/5587",
+    "13": "https://www.viz.com/manga-books/manga/black-clover-volume-13-0/product/5719",
+    "14": "https://www.viz.com/manga-books/manga/black-clover-volume-14-0/product/5803",
+    "15": "https://www.viz.com/manga-books/manga/black-clover-volume-15-0/product/5897",
+    "16": "https://www.viz.com/manga-books/manga/black-clover-volume-16-0/product/5951",
+    "17": "https://www.viz.com/manga-books/manga/black-clover-volume-17-0/product/6018",
+    "18": "https://www.viz.com/manga-books/manga/black-clover-volume-18-0/product/6079",
+    "19": "https://www.viz.com/manga-books/manga/black-clover-volume-19-0/product/6137",
+    "20": "https://www.viz.com/manga-books/manga/black-clover-volume-20-0/product/6194",
+    "21": "https://www.viz.com/manga-books/manga/black-clover-volume-21-0/product/6287",
+    "22": "https://www.viz.com/manga-books/manga/black-clover-volume-22-0/product/6357",
+    "23": "https://www.viz.com/manga-books/manga/black-clover-volume-23-0/product/6478",
+    "24": "https://www.viz.com/manga-books/manga/black-clover-volume-24-0/product/6535",
+    "25": "https://www.viz.com/manga-books/manga/black-clover-volume-25-0/product/6662",
+    "26": "https://www.viz.com/manga-books/manga/black-clover-volume-26-0/product/6757",
+    "27": "https://www.viz.com/manga-books/manga/black-clover-volume-27-0/product/6854",
+    "28": "https://www.viz.com/manga-books/manga/black-clover-volume-28-0/product/6966",
+    "29": "https://www.viz.com/manga-books/manga/black-clover-volume-29-0/product/7083",
+    "30": "https://www.viz.com/manga-books/manga/black-clover-volume-30-0/product/7173",
+    "31": "https://www.viz.com/manga-books/manga/black-clover-volume-31-0/product/7278",
+    "32": "https://www.viz.com/manga-books/manga/black-clover-volume-32-0/product/7363",
+    "33": "https://www.viz.com/manga-books/manga/black-clover-volume-33-0/product/7627",
+    "34": "https://www.viz.com/manga-books/manga/black-clover-volume-34-0/product/7764",
+    "35": "https://www.viz.com/manga-books/manga/black-clover-volume-35-0/product/7830",
+    "36": "https://www.viz.com/manga-books/manga/black-clover-volume-36-0/product/8148",
+    "37": "https://www.viz.com/manga-books/manga/black-clover-volume-37-0/product/8938"
+  },
+  "AMAZON_LINKS": {},
+  "ARC_RANGES": []
+}

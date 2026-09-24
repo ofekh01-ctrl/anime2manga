@@ -4,23 +4,33 @@ const path = require('node:path');
 const vm = require('node:vm');
 
 const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf8');
-const guide = fs.readFileSync(path.join(__dirname, '..', 'series-guide.js'), 'utf8');
+const dataSource = fs.readFileSync(path.join(__dirname, '..', 'series-data.js'), 'utf8');
+const guide = fs.readFileSync(path.join(__dirname, '..', 'app.js'), 'utf8');
 assert.match(html, /<script src="\/navigation\.js\?v=[a-f0-9]{8}"><\/script>/);
-assert.match(html, /<script src="\/series-guide\.js\?v=[a-f0-9]{8}"><\/script>/);
+assert.match(html, /<script src="\/series-data\.js\?v=[a-f0-9]{8}"><\/script>/);
+assert.match(html, /<script src="\/app\.js\?v=[a-f0-9]{8}"><\/script>/);
 const root = path.join(__dirname, '..');
 const sharedBody = html.slice(html.indexOf('<body>'));
+const seoSection = /<section class="seo-copy" id="seriesSeoCopy" aria-label="Series guide">[\s\S]*?<\/section>/;
 const pageFolders = fs.readdirSync(root).filter(folder =>
   fs.existsSync(path.join(root, folder, 'index.html')));
 assert.equal(pageFolders.length, 20, 'every series has a direct page');
 for (const folder of pageFolders) {
   const page = fs.readFileSync(path.join(root, folder, 'index.html'), 'utf8');
-  assert.equal(page.slice(page.indexOf('<body>')), sharedBody,
+  assert.equal(page.slice(page.indexOf('<body>')).replace(seoSection, '<section class="seo-copy" id="seriesSeoCopy" aria-label="Series guide"><p></p></section>'), sharedBody,
     `${folder} uses the current shared interface and scripts`);
   assert.ok(page.includes(`href="https://anime2manga.net/${folder}/" rel="canonical"`),
     `${folder} has its own canonical URL`);
 }
-const localAssets = ['index.html', 'base.css', 'community-redesign.css',
-  'navigation.js', 'series-guide.js', 'manifest.webmanifest']
+for (const [folder, question, answer] of [
+  ['bleach', 'What manga chapter is Bleach episode 1?', 'chapter 1 in volume 1'],
+  ['jujutsu-kaisen', 'What manga chapters are in Jujutsu Kaisen episode 1?', 'chapters 1–2 in volume 1']
+]) {
+  const page = fs.readFileSync(path.join(root, folder, 'index.html'), 'utf8');
+  assert.ok(page.includes(question) && page.includes(answer), `${folder} includes verifiable answers in static HTML`);
+}
+const localAssets = ['index.html', 'styles.css', 'series-data.js',
+  'navigation.js', 'app.js', 'manifest.webmanifest']
   .flatMap(file => [...fs.readFileSync(path.join(root, file), 'utf8')
     .matchAll(/\/(assets\/[A-Za-z0-9_.-]+(?:\/[A-Za-z0-9_.-]+)*)/g)].map(match => match[1]));
 for (const asset of new Set(localAssets)) {
@@ -46,6 +56,7 @@ const context = vm.createContext({
   URLSearchParams,
   trackTrackerUsed() {}
 });
+vm.runInContext(dataSource, context);
 vm.runInContext(guide, context);
 
 const series = vm.runInContext('SERIES', context);
@@ -84,6 +95,12 @@ assert.ok(html.includes(disclosure), 'home description contains the affiliate di
 let checked = 0;
 for (const [id, data] of Object.entries(series)) {
   context.applySeries(id);
+  if (data.seoFaq) {
+    for (const item of data.seoFaq) {
+      assert.ok(element('seriesSeoCopy').innerHTML.includes(item.question), `${id} shows its question after navigation`);
+      assert.ok(element('seriesSeoCopy').innerHTML.includes(item.answer), `${id} shows its answer after navigation`);
+    }
+  }
   const isKodansha = ['aot', 'bluelock', 'vinland', 'gachiakuta'].includes(id);
   assert.equal(data.publisherLabel || 'VIZ', isKodansha ? 'Kodansha' : 'VIZ', `${id} publisher label`);
   if (Object.keys(data.AMAZON_LINKS).length) {

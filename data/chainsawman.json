@@ -1,0 +1,439 @@
+{
+  "id": "chainsawman",
+  "name": "Chainsaw Man",
+  "pageTitle": "Chainsaw Man Manga to Anime Converter | Anime2Manga",
+  "lede": "Enter where you are in any one of the three, and the others update to match. Chainsaw Man's anime is 100% faithful to the manga — no filler — so this just tracks how far Season 1 and the Reze Arc movie get you.",
+  "seoCopy": "Match Chainsaw Man manga chapters and volumes with anime episodes and find exactly where to continue reading. The covered anime data has no filler episodes.",
+  "footer": [
+    "Episode data covers Season 1 (episodes 1–12, chapters 1–38) and the Reze Arc movie — numbered as \"episode 12.5\" here since it sits between seasons, not as a numbered entry in the show itself — through chapter 52 (volumes 1–6). Volume/chapter lookup covers the full manga through volume 24 (chapter 232, the end of Part 2) — volumes 7+ just aren't animated yet, so only the episode side comes up empty there.",
+    "Volume/chapter lookup covers the manga through volume 24 / chapter 232.",
+    "No filler: every listed anime episode adapts manga material.",
+    "Sources: episode–chapter correspondence compiled from Wikipedia's \"List of Chainsaw Man episodes/chapters\" and AnimeStoryGuide.com."
+  ],
+  "beyondDataHint": "This is beyond Season 1 and the Reze Arc movie — no further anime adaptation exists yet.",
+  "animeVolumeThreshold": 6,
+  "notAdaptedTagText": "Not yet adapted",
+  "episodePlaceholder": "1–12 (12.5 movie)",
+  "volumePlaceholder": "1–24",
+  "chapterPlaceholder": "1–232",
+  "EPISODES": [
+    {
+      "episode": 1,
+      "title": "Dog & Chainsaw",
+      "chapters": [
+        "1"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 2,
+      "title": "Arrival in Tokyo",
+      "chapters": [
+        "2",
+        "3",
+        "4"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 3,
+      "title": "Meowy's Whereabouts",
+      "chapters": [
+        "5",
+        "6",
+        "7"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 4,
+      "title": "Rescue",
+      "chapters": [
+        "8",
+        "9"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 5,
+      "title": "Gun Devil",
+      "chapters": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 6,
+      "title": "Kill Denji",
+      "chapters": [
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 7,
+      "title": "The Taste of a Kiss",
+      "chapters": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 8,
+      "title": "Gunfire",
+      "chapters": [
+        "22",
+        "23"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 9,
+      "title": "From Kyoto",
+      "chapters": [
+        "24",
+        "25",
+        "26",
+        "27"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 10,
+      "title": "Bruised & Battered",
+      "chapters": [
+        "28",
+        "29",
+        "30"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 11,
+      "title": "Mission Start",
+      "chapters": [
+        "31",
+        "32",
+        "33"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 12,
+      "title": "Katana vs. Chainsaw",
+      "chapters": [
+        "34",
+        "35",
+        "36",
+        "37",
+        "38"
+      ],
+      "filler": false
+    },
+    {
+      "episode": 12.5,
+      "title": "Chainsaw Man – The Movie: Reze Arc",
+      "chapters": [
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52"
+      ],
+      "filler": false
+    }
+  ],
+  "VOLUMES": [
+    {
+      "volume": 1,
+      "title": "Dog & Chainsaw",
+      "start": 1,
+      "end": 7,
+      "extras": null
+    },
+    {
+      "volume": 2,
+      "title": "Chainsaw vs. Bat",
+      "start": 8,
+      "end": 16,
+      "extras": null
+    },
+    {
+      "volume": 3,
+      "title": "Kill Denji",
+      "start": 17,
+      "end": 25,
+      "extras": null
+    },
+    {
+      "volume": 4,
+      "title": "The Gun is Mightier",
+      "start": 26,
+      "end": 34,
+      "extras": null
+    },
+    {
+      "volume": 5,
+      "title": "Minor",
+      "start": 35,
+      "end": 43,
+      "extras": null
+    },
+    {
+      "volume": 6,
+      "title": "Boom Boom Boom",
+      "start": 44,
+      "end": 52,
+      "extras": null
+    },
+    {
+      "volume": 7,
+      "title": "In a Dream",
+      "start": 53,
+      "end": 61,
+      "extras": null
+    },
+    {
+      "volume": 8,
+      "title": "Super Mess",
+      "start": 62,
+      "end": 70,
+      "extras": null
+    },
+    {
+      "volume": 9,
+      "title": "Bath",
+      "start": 71,
+      "end": 79,
+      "extras": null
+    },
+    {
+      "volume": 10,
+      "title": "A Dog's Feeling",
+      "start": 80,
+      "end": 88,
+      "extras": null
+    },
+    {
+      "volume": 11,
+      "title": "Go Get 'Em, Chainsaw Man",
+      "start": 89,
+      "end": 97,
+      "extras": null
+    },
+    {
+      "volume": 12,
+      "title": "Bird and War",
+      "start": 98,
+      "end": 103,
+      "extras": null
+    },
+    {
+      "volume": 13,
+      "title": "Spoiler",
+      "start": 104,
+      "end": 112,
+      "extras": null
+    },
+    {
+      "volume": 14,
+      "title": "I Wanna See Penguins!",
+      "start": 113,
+      "end": 122,
+      "extras": null
+    },
+    {
+      "volume": 15,
+      "title": "Hors D'oeuvre",
+      "start": 123,
+      "end": 133,
+      "extras": null
+    },
+    {
+      "volume": 16,
+      "title": "Ordinary Happiness",
+      "start": 134,
+      "end": 143,
+      "extras": null
+    },
+    {
+      "volume": 17,
+      "title": "Guns, Nails, Katana",
+      "start": 144,
+      "end": 153,
+      "extras": null
+    },
+    {
+      "volume": 18,
+      "title": "All Pets",
+      "start": 154,
+      "end": 164,
+      "extras": null
+    },
+    {
+      "volume": 19,
+      "title": "Everyday Scenery",
+      "start": 165,
+      "end": 175,
+      "extras": null
+    },
+    {
+      "volume": 20,
+      "title": "Two Children",
+      "start": 176,
+      "end": 186,
+      "extras": null
+    },
+    {
+      "volume": 21,
+      "title": "Barf! Gerore!",
+      "start": 187,
+      "end": 198,
+      "extras": null
+    },
+    {
+      "volume": 22,
+      "title": "Enjoy Your Food",
+      "start": 199,
+      "end": 210,
+      "extras": null
+    },
+    {
+      "volume": 23,
+      "title": "War, Panties, Chainsaw",
+      "start": 211,
+      "end": 222,
+      "extras": null
+    },
+    {
+      "volume": 24,
+      "title": "Ultimate Armor",
+      "start": 223,
+      "end": 232,
+      "extras": null
+    }
+  ],
+  "DEFAULT_COVERS": {
+    "1": "https://dw9to29mmj727.cloudfront.net/products/1974709930.jpg",
+    "2": "https://dw9to29mmj727.cloudfront.net/products/1974709949.jpg",
+    "3": "https://dw9to29mmj727.cloudfront.net/products/1974709957.jpg",
+    "4": "https://dw9to29mmj727.cloudfront.net/products/1974717275.jpg",
+    "5": "https://dw9to29mmj727.cloudfront.net/products/1974719227.jpg",
+    "6": "https://dw9to29mmj727.cloudfront.net/products/1974720713.jpg",
+    "7": "https://dw9to29mmj727.cloudfront.net/products/1974720969.jpg",
+    "8": "https://dw9to29mmj727.cloudfront.net/products/1974722783.jpg",
+    "9": "https://dw9to29mmj727.cloudfront.net/products/1974724042.jpg",
+    "10": "https://dw9to29mmj727.cloudfront.net/products/1974725359.jpg",
+    "11": "https://dw9to29mmj727.cloudfront.net/products/1974727114.jpg",
+    "12": "https://dw9to29mmj727.cloudfront.net/products/1974740587.jpg",
+    "13": "https://dw9to29mmj727.cloudfront.net/products/1974741028.jpg",
+    "14": "https://dw9to29mmj727.cloudfront.net/products/1974743586.jpg",
+    "15": "https://dw9to29mmj727.cloudfront.net/products/1974746402.jpg",
+    "16": "https://dw9to29mmj727.cloudfront.net/products/197474874X.jpg",
+    "17": "https://dw9to29mmj727.cloudfront.net/products/1974752690.jpg",
+    "18": "https://dw9to29mmj727.cloudfront.net/products/1974754936.jpg",
+    "19": "https://dw9to29mmj727.cloudfront.net/products/1974758540.jpg",
+    "20": "https://dw9to29mmj727.cloudfront.net/products/1974762238.jpg",
+    "21": "https://dw9to29mmj727.cloudfront.net/products/1974716465.jpg",
+    "22": "https://dw9to29mmj727.cloudfront.net/products/1974766519.jpg"
+  },
+  "VIZ_LINKS": {
+    "1": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-1-0/product/6419",
+    "2": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-2-0/product/6495",
+    "3": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-3-0/product/6567",
+    "4": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-4-0/product/6627",
+    "5": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-5-0/product/6692",
+    "6": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-6-0/product/6758",
+    "7": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-7-0/product/6814",
+    "8": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-8-0/product/6887",
+    "9": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-9-0/product/6958",
+    "10": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-10-0/product/7019",
+    "11": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-11-0/product/7081",
+    "12": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-12-0/product/7594",
+    "13": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-13-0/product/7685",
+    "14": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-14-0/product/7732",
+    "15": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-15-0/product/7838",
+    "16": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-16-0/product/7984",
+    "17": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-17-0/product/8147",
+    "18": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-18-0/product/8310",
+    "19": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-19-0/product/8525",
+    "20": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-20-0/product/8744",
+    "21": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-21-0/product/8857",
+    "22": "https://www.viz.com/manga-books/manga/chainsaw-man-volume-22-0/product/9031"
+  },
+  "AMAZON_LINKS": {
+    "1": "https://link.amazon/B010SF7Ey",
+    "2": "https://link.amazon/B0fLUTlq1",
+    "3": "https://link.amazon/B07Ox2bqK",
+    "4": "https://link.amazon/B02GTvTnA",
+    "5": "https://link.amazon/B04oZ44KV",
+    "6": "https://link.amazon/B0ipZ0ped",
+    "7": "https://link.amazon/B02MZZe9L",
+    "8": "https://link.amazon/B04cijNTq",
+    "9": "https://link.amazon/B0g8whOFV",
+    "10": "https://link.amazon/B01gbTOFc",
+    "11": "https://link.amazon/B0ej62XHr",
+    "12": "https://link.amazon/B06uEvyKR",
+    "13": "https://link.amazon/B027snQwo",
+    "14": "https://link.amazon/B0hbBnrcV",
+    "15": "https://link.amazon/B04JF8LmK",
+    "16": "https://link.amazon/B06NMLdKn",
+    "17": "https://link.amazon/B0gQdC0k8",
+    "18": "https://link.amazon/B05oBEnD7",
+    "19": "https://link.amazon/B04HDn3l5",
+    "20": "https://link.amazon/B0etJ9DrK",
+    "21": "https://link.amazon/B0hsH0XMR",
+    "22": "https://link.amazon/B022nmIqp",
+    "23": "https://link.amazon/B0g9bJXTz"
+  },
+  "ARC_RANGES": [
+    {
+      "arc": "Introduction",
+      "subArc": null,
+      "start": 1,
+      "end": 4
+    },
+    {
+      "arc": "Bat Devil",
+      "subArc": null,
+      "start": 5,
+      "end": 16
+    },
+    {
+      "arc": "Eternity Devil",
+      "subArc": null,
+      "start": 17,
+      "end": 21
+    },
+    {
+      "arc": "Katana Man",
+      "subArc": null,
+      "start": 22,
+      "end": 38
+    },
+    {
+      "arc": "Bomb Girl (Reze Arc)",
+      "subArc": "The Movie",
+      "start": 39,
+      "end": 52
+    }
+  ]
+}
