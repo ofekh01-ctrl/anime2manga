@@ -4,16 +4,6 @@
   "pageTitle": "Bleach Anime Episodes to Manga Chapters & Volumes | Anime2Manga",
   "lede": "Enter where you are in any one of the three, and the others update to match — plus whether you're headed into anime filler.",
   "seoCopy": "Convert Bleach anime episodes to manga chapters and volumes, or enter a manga chapter to find its anime episodes. Check whether an episode is filler or canon before continuing the story.",
-  "seoFaq": [
-    {
-      "question": "What manga chapter is Bleach episode 1?",
-      "answer": "Bleach episode 1 adapts manga chapter 1 in volume 1. Enter any other episode above to find its chapters and volume."
-    },
-    {
-      "question": "How can I tell if a Bleach episode is filler or canon?",
-      "answer": "Enter its episode number above. The episode result marks its filler or canon status and shows matching manga chapters for adapted episodes."
-    }
-  ],
   "footer": [
     "Episode data covers episodes 1–387 (through chapter 586). 163 of 387 episodes are filler (42.1%), and Anime2Manga marks filler episodes so you can spot or skip them.",
     "Negative or decimal chapter numbers (e.g. \"0.8\") are bonus/prequel chapters.",

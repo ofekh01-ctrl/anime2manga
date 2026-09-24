@@ -22,12 +22,13 @@ for (const folder of pageFolders) {
   assert.ok(page.includes(`href="https://anime2manga.net/${folder}/" rel="canonical"`),
     `${folder} has its own canonical URL`);
 }
-for (const [folder, question, answer] of [
-  ['bleach', 'What manga chapter is Bleach episode 1?', 'chapter 1 in volume 1'],
-  ['jujutsu-kaisen', 'What manga chapters are in Jujutsu Kaisen episode 1?', 'chapters 1–2 in volume 1']
+for (const [folder, description] of [
+  ['bleach', 'Convert Bleach anime episodes to manga chapters and volumes'],
+  ['jujutsu-kaisen', 'Convert Jujutsu Kaisen anime episodes to manga chapters and volumes']
 ]) {
   const page = fs.readFileSync(path.join(root, folder, 'index.html'), 'utf8');
-  assert.ok(page.includes(question) && page.includes(answer), `${folder} includes verifiable answers in static HTML`);
+  assert.ok(page.includes(description), `${folder} includes its series description in static HTML`);
+  assert.ok(!page.includes('Common questions'), `${folder} does not duplicate the converter as a FAQ`);
 }
 const localAssets = ['index.html', 'styles.css', 'series-data.js',
   'navigation.js', 'app.js', 'manifest.webmanifest']
@@ -71,7 +72,7 @@ assert.equal(onePieceCovers.length, 113, 'One Piece has a cover for every origin
 assert.equal(new Set(onePieceCovers).size, 113, 'One Piece never repeats a volume cover');
 assert.ok(onePieceCovers.every(url => url.startsWith('https://dw9to29mmj727.cloudfront.net/products/')),
   'One Piece uses VIZ cover images rather than ISBN-based Open Library images');
-for (const [id, count] of [['naruto', 72], ['jjk', 30], ['dragonball', 16], ['dragonballz', 26], ['chainsawman', 22]]) {
+for (const [id, count] of [['naruto', 72], ['jjk', 31], ['dragonball', 16], ['dragonballz', 26], ['chainsawman', 22]]) {
   const covers = Object.values(series[id].DEFAULT_COVERS);
   assert.equal(covers.length, count, `${id} has a cover for every VIZ English volume`);
   assert.equal(new Set(covers).size, count, `${id} uses distinct volume covers`);
@@ -95,12 +96,6 @@ assert.ok(html.includes(disclosure), 'home description contains the affiliate di
 let checked = 0;
 for (const [id, data] of Object.entries(series)) {
   context.applySeries(id);
-  if (data.seoFaq) {
-    for (const item of data.seoFaq) {
-      assert.ok(element('seriesSeoCopy').innerHTML.includes(item.question), `${id} shows its question after navigation`);
-      assert.ok(element('seriesSeoCopy').innerHTML.includes(item.answer), `${id} shows its answer after navigation`);
-    }
-  }
   const isKodansha = ['aot', 'bluelock', 'vinland', 'gachiakuta'].includes(id);
   assert.equal(data.publisherLabel || 'VIZ', isKodansha ? 'Kodansha' : 'VIZ', `${id} publisher label`);
   if (Object.keys(data.AMAZON_LINKS).length) {
@@ -182,7 +177,9 @@ for (const [id, data] of Object.entries(series)) {
     const first = matches.find(group => group.length)?.[0];
     assert.equal(String(element('episodeInput').value), first ? String(first.episode) : '',
       `${id} volume ${vol.volume} first episode`);
-    if (first) {
+    if (id === 'jjk' && vol.volume === 0) {
+      assert.match(resultHtml, /Manga volume 0 is adapted in Jujutsu Kaisen 0: The Movie/);
+    } else if (first) {
       const hasMovies = id === 'demonslayer' && matches[1]?.length;
       const adaptationName = hasMovies ? (matches[0]?.length ? 'episodes and movies' : 'movies') : 'episodes';
       assert.ok(resultHtml.includes(`Volume ${vol.volume} appears in these ${adaptationName}`),
@@ -235,6 +232,26 @@ assert.match(element('volumeCard').innerHTML, /Vol\. 2/);
 assert.ok(series.bleach.VIZ_LINKS[1].endsWith('/bleach-volume-1-0/product/167'), 'Bleach 1 links to its official edition');
 
 context.applySeries('jjk');
+assert.equal(element('episodeInput').min, '0');
+assert.equal(element('chapterInput').inputMode, 'decimal');
+element('volumeInput').value = '0';
+context.handleVolumeChange();
+assert.match(element('volumeCard').innerHTML, /Vol\. 0 — Jujutsu Kaisen 0/);
+assert.match(element('volumeCard').innerHTML, /href="https:\/\/www\.viz\.com\/manga-books\/manga\/jujutsu-kaisen-volume-0-0\/product\/6537"/);
+assert.equal(element('chapterInput').value, 0.1);
+assert.equal(element('episodeInput').value, 0);
+assert.match(element('episodeCard').innerHTML, /Jujutsu Kaisen 0: The Movie/);
+element('episodeInput').value = '0';
+context.handleEpisodeChange();
+assert.equal(element('chapterInput').value, 0.4);
+assert.equal(element('volumeInput').value, 0);
+assert.match(element('episodeCard').innerHTML, /Adapts manga chapters 0\.1–0\.4 in volume 0/);
+element('chapterInput').value = '0';
+context.handleChapterChange();
+assert.equal(element('volumeInput').value, 0);
+assert.equal(element('episodeInput').value, 0);
+assert.match(element('episodeCard').innerHTML, /there is no single chapter 0/);
+assert.equal(series.jjk.DEFAULT_COVERS[0], 'https://dw9to29mmj727.cloudfront.net/products/1974720144.jpg');
 element('volumeInput').value = '21';
 context.handleVolumeChange();
 assert.match(element('episodeCard').innerHTML, /Partially adapted/);
@@ -435,6 +452,8 @@ element('chapterInput').value = '0.2';
 context.handleChapterChange();
 assert.match(element('episodeCard').innerHTML, /Chapter 0\.2 is adapted/,
   'decimal bonus chapters keep their exact number');
+assert.equal(element('volumeInput').value, 0);
+assert.equal(element('episodeInput').value, 0);
 
 let episodeChecks = 0;
 for (const [id, data] of Object.entries(series)) {

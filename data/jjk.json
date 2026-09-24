@@ -3,29 +3,19 @@
   "name": "Jujutsu Kaisen",
   "pageTitle": "Jujutsu Kaisen Anime Episodes to Manga Chapters | Anime2Manga",
   "lede": "Enter where you are in any one of the three, and the others update to match. Jujutsu Kaisen's anime has zero filler — every episode adapts the manga directly.",
-  "seoCopy": "Convert Jujutsu Kaisen anime episodes to manga chapters and volumes, including the Jujutsu Kaisen 0 movie. Enter a chapter or volume to find its matching anime episodes.",
-  "seoFaq": [
-    {
-      "question": "What manga chapters are in Jujutsu Kaisen episode 1?",
-      "answer": "Jujutsu Kaisen episode 1 adapts manga chapters 1–2 in volume 1. Enter another episode above to see its chapters and volume."
-    },
-    {
-      "question": "Where do I start the Jujutsu Kaisen manga after watching the anime?",
-      "answer": "Enter the last episode you watched. The result shows the chapters and volume it covers, so you can find the next chapter you have not read."
-    }
-  ],
+  "seoCopy": "Convert Jujutsu Kaisen anime episodes to manga chapters and volumes. Enter volume 0 for the Jujutsu Kaisen 0 movie and its four prequel chapters, or enter a chapter or TV episode to find its match.",
   "footer": [
-    "Episode data covers Seasons 1–3 (episodes 1–59, chapters 1–181) plus the JJK 0 movie — numbered as \"episode 0\" here since it's a prequel — chapters 0.1–0.4. That's volumes 1–21 for the volume/chapter lookup (the anime stops partway through volume 21).",
-    "Volume/chapter lookup covers the manga through volume 30 / chapter 271.",
+    "Episode data covers Seasons 1–3 (episodes 1–59, chapters 1–181) plus the Jujutsu Kaisen 0 movie. Enter 0 in the anime field for the movie or 0 in the volume field for its prequel manga, officially numbered chapters 0.1–0.4. The TV anime stops partway through volume 21.",
+    "Volume/chapter lookup covers volume 0 and the main manga through volume 30 / chapter 271.",
     "No filler: every listed anime episode adapts manga material.",
     "Sources: episode–chapter correspondence from AnimeFillerGuide.com; volume/chapter ranges from ListFist.com."
   ],
   "beyondDataHint": "This is beyond Season 3 — no further anime adaptation exists yet.",
   "animeVolumeThreshold": 20,
   "notAdaptedTagText": "Not yet adapted",
-  "episodePlaceholder": "1–59 (0 movie)",
-  "volumePlaceholder": "1–30",
-  "chapterPlaceholder": "1–271 (+ 0.1–0.4)",
+  "episodePlaceholder": "1–59 (0 = movie)",
+  "volumePlaceholder": "0–30 (0 = prequel)",
+  "chapterPlaceholder": "1–271 (0.1–0.4 = prequel)",
   "EPISODES": [
     {
       "episode": 0,
@@ -673,6 +663,13 @@
   ],
   "VOLUMES": [
     {
+      "volume": 0,
+      "title": "Jujutsu Kaisen 0",
+      "start": 0.1,
+      "end": 0.4,
+      "extras": null
+    },
+    {
       "volume": 1,
       "title": "Ryomen Sukuna",
       "start": 1,
@@ -884,6 +881,7 @@
     }
   ],
   "DEFAULT_COVERS": {
+    "0": "https://dw9to29mmj727.cloudfront.net/products/1974720144.jpg",
     "1": "https://dw9to29mmj727.cloudfront.net/products/1974710025.jpg",
     "2": "https://dw9to29mmj727.cloudfront.net/products/1974710033.jpg",
     "3": "https://dw9to29mmj727.cloudfront.net/products/1974710041.jpg",
@@ -916,6 +914,7 @@
     "30": "https://dw9to29mmj727.cloudfront.net/products/1974763404.jpg"
   },
   "VIZ_LINKS": {
+    "0": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-0-0/product/6537",
     "1": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-1-0/product/6116",
     "2": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-2-0/product/6163",
     "3": "https://www.viz.com/manga-books/manga/jujutsu-kaisen-volume-3-0/product/6227",

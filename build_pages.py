@@ -5,8 +5,8 @@ naruto/index.html, ...) from the main index.html. All pages share the same CSS
 and JavaScript files.
 
 Every series page is a copy of index.html with its own SEO <head> values
-(canonical, title, description, og/twitter tags, JSON-LD WebPage). Pages with
-an SEO FAQ also contain their answer text in the HTML without requiring JS.
+(canonical, title, description, og/twitter tags, JSON-LD WebPage). Series
+descriptions can also appear in the HTML without requiring JavaScript.
 Run this after changing index.html, data/*.json, app.js, navigation.js,
 or styles.css:
 
@@ -124,15 +124,9 @@ def replace_once(text, old, new):
 
 
 def render_seo_copy(series):
-    """Use the same data as app.js so crawlers and visitors see the same answers."""
-    parts = [f'<p>{escape(series["seoCopy"])}</p>']
-    if series.get('seoFaq'):
-        parts.append('<div class="seo-faq"><h2>Common questions</h2>')
-        for item in series['seoFaq']:
-            parts.append(f'<div class="seo-faq-item"><h3>{escape(item["question"])}</h3>'
-                         f'<p>{escape(item["answer"])}</p></div>')
-        parts.append('</div>')
-    return '<section class="seo-copy" id="seriesSeoCopy" aria-label="Series guide">' + ''.join(parts) + '</section>'
+    """Use the same series description for the static HTML and dynamic view."""
+    return (f'<section class="seo-copy" id="seriesSeoCopy" aria-label="Series guide">'
+            f'<p>{escape(series["seoCopy"])}</p></section>')
 
 
 def build(root_html, folder, title, desc, series=None):
@@ -168,10 +162,10 @@ def main():
             f.write(versioned_html)
         root_html = versioned_html
     for folder, (title, desc) in PAGES.items():
-        faq_id = {'bleach': 'bleach', 'jujutsu-kaisen': 'jjk'}.get(folder)
-        seo_series = series_data[faq_id] if faq_id else None
+        seo_id = {'bleach': 'bleach', 'jujutsu-kaisen': 'jjk'}.get(folder)
+        seo_series = series_data[seo_id] if seo_id else None
         if seo_series and title != seo_series['pageTitle']:
-            sys.exit(f'build_pages: title differs from data/{faq_id}.json')
+            sys.exit(f'build_pages: title differs from data/{seo_id}.json')
         out_dir = os.path.join(HERE, folder)
         os.makedirs(out_dir, exist_ok=True)
         with open(os.path.join(out_dir, 'index.html'), 'w', encoding='utf8', newline='') as f:

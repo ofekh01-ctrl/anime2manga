@@ -2069,19 +2069,6 @@ input:focus-visible {
   line-height: 1.7 !important;
 }
 
-.seo-faq { margin-top: 18px; }
-.seo-faq h2 {
-  margin: 0 0 12px;
-  font-size: 15px;
-  color: var(--text);
-}
-.seo-faq-item + .seo-faq-item { margin-top: 14px; }
-.seo-faq-item h3 {
-  margin: 0 0 4px;
-  font-size: 13px;
-  color: var(--text);
-}
-
 #seriesFooter {
   margin-top: 14px !important;
   padding: 0 2px !important;

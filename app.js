@@ -85,21 +85,17 @@ function applySeries(id) {
   document.getElementById('wordmark').textContent = s.name;
   document.getElementById('lede').textContent = s.lede;
   const seoCopyEl = document.getElementById('seriesSeoCopy');
-  if (seoCopyEl) {
-    const questions = (s.seoFaq || []).map(item =>
-      `<div class="seo-faq-item"><h3>${escapeHtml(item.question)}</h3><p>${escapeHtml(item.answer)}</p></div>`
-    ).join('');
-    seoCopyEl.innerHTML = `<p>${escapeHtml(s.seoCopy || '')}</p>`
-      + (questions ? `<div class="seo-faq"><h2>Common questions</h2>${questions}</div>` : '');
-  }
+  if (seoCopyEl) seoCopyEl.innerHTML = `<p>${escapeHtml(s.seoCopy || '')}</p>`;
   const footerEl = document.getElementById('seriesFooter');
   const affiliateDisclosure = 'As an Amazon Associate, I earn from qualifying purchases. This helps support the website at no extra cost to you.';
   footerEl.innerHTML = s.footer.map(p => `<p>${p}</p>`).join('\n')
     + (Object.keys(s.AMAZON_LINKS).length ? `<p class="affiliate-disclosure">${affiliateDisclosure}</p>` : '');
   volumeInput.placeholder = s.volumePlaceholder;
   chapterInput.placeholder = s.chapterPlaceholder;
+  chapterInput.inputMode = id === 'jjk' ? 'decimal' : 'numeric';
   episodeInput.step = 'any';
-  episodeInputLabel.textContent = 'Anime episode';
+  episodeInput.min = id === 'jjk' ? '0' : '1';
+  episodeInputLabel.textContent = id === 'jjk' ? 'Anime episode or movie' : 'Anime episode';
 
   renderEpisodeVariants(s);
   if (s.episodeVariants && s.episodeVariants.length) {
@@ -232,6 +228,12 @@ function renderEpisodeResult(ep) {
     episodeCard.innerHTML = `<p class="empty">No ${animeEntryName()} data for that number (valid range: ${EPISODES[0].episode}–${EPISODES[EPISODES.length - 1].episode}).</p>`;
     return;
   }
+  if (currentSeries.id === 'jjk' && ep.episode === 0) {
+    episodeCard.innerHTML = `<span class="tag canon">Movie</span>
+      <p class="card-title">Jujutsu Kaisen 0: The Movie</p>
+      <p class="card-detail">Adapts manga chapters 0.1–0.4 in volume 0.</p>`;
+    return;
+  }
   let tag, detail;
   if (ep.filler) {
     tag = '<span class="tag filler">Filler</span>';
@@ -267,6 +269,12 @@ function renderChapterBeyondData(targetNum) {
 }
 
 function renderChapterResult(targetNum) {
+  if (currentSeries.id === 'jjk' && targetNum >= 0.1 && targetNum <= 0.4 && chapterToEpisodes[targetNum]?.includes(0)) {
+    episodeCard.innerHTML = `<span class="tag canon">Movie</span>
+      <p class="card-title">Chapter ${targetNum} is adapted in Jujutsu Kaisen 0: The Movie</p>
+      <p class="card-detail">The movie covers all four chapters of manga volume 0.</p>`;
+    return;
+  }
   const entry = animeEntryName();
   const exact = chapterToEpisodes[targetNum];
   if (exact && exact.length) {
@@ -373,6 +381,12 @@ function formatEpisodeRanges(episodes) {
 
 function renderVolumeEpisodes(vol, adaptation) {
   const { groups, status, lastChapterInVolume } = adaptation;
+  if (currentSeries.id === 'jjk' && vol.volume === 0) {
+    episodeCard.innerHTML = `<span class="tag canon">Movie</span>
+      <p class="card-title">Manga volume 0 is adapted in Jujutsu Kaisen 0: The Movie</p>
+      <p class="card-detail">The prequel contains chapters 0.1–0.4.</p>`;
+    return;
+  }
   if (!groups.length) {
     episodeCard.innerHTML = `<span class="tag special">${status === 'unadapted' ? 'Not yet adapted' : currentSeries.id === 'demonslayer' ? 'No adaptation match' : 'No episode match'}</span>
       <p class="card-title">No ${currentSeries.id === 'demonslayer' ? 'TV episodes or movies' : 'anime episodes'} match volume ${vol.volume}</p>
@@ -430,6 +444,14 @@ function handleChapterChange() {
   const input = chapterInput.value.trim();
   if (input === '') { clearAll(); return; }
   if (!/^-?\d+(?:\.\d+)?$/.test(input)) { clearAll(); return; }
+  if (currentSeries.id === 'jjk' && input === '0') {
+    syncFromChapter(0.1);
+    episodeCard.innerHTML = `<span class="tag canon">Movie</span>
+      <p class="card-title">Jujutsu Kaisen 0 is adapted in the movie</p>
+      <p class="card-detail">The prequel manga is volume 0, with chapters 0.1–0.4; there is no single chapter 0.</p>`;
+    trackTrackerUsed('chapter');
+    return;
+  }
   const val = Number(input);
   syncFromChapter(val);
   trackTrackerUsed('chapter');
