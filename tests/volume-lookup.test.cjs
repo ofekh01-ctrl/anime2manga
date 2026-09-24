@@ -30,6 +30,30 @@ assert.equal(new Set(demonCovers).size, 23, 'Demon Slayer covers do not repeat')
 assert.equal(series.demonslayer.DEFAULT_COVERS[15],
   'https://dw9to29mmj727.cloudfront.net/products/1974714780.jpg',
   'Demon Slayer volume 15 uses the VIZ volume 15 cover');
+const onePieceCovers = Object.values(series.onepiece.DEFAULT_COVERS);
+assert.equal(onePieceCovers.length, 113, 'One Piece has a cover for every original volume');
+assert.equal(new Set(onePieceCovers).size, 113, 'One Piece never repeats a volume cover');
+assert.ok(onePieceCovers.every(url => url.startsWith('https://dw9to29mmj727.cloudfront.net/products/')),
+  'One Piece uses VIZ cover images rather than ISBN-based Open Library images');
+for (const [id, count] of [['naruto', 72], ['jjk', 30], ['dragonball', 16], ['dragonballz', 26], ['chainsawman', 22]]) {
+  const covers = Object.values(series[id].DEFAULT_COVERS);
+  assert.equal(covers.length, count, `${id} has a cover for every VIZ English volume`);
+  assert.equal(new Set(covers).size, count, `${id} uses distinct volume covers`);
+  assert.ok(covers.every(url => /^https:\/\/dw9to29mmj727\.cloudfront\.net\/products\/[\dX]+\.jpg$/.test(url)),
+    `${id} uses VIZ image links`);
+}
+assert.equal(series.chainsawman.DEFAULT_COVERS[23], undefined,
+  'Chainsaw Man volume 23 has no VIZ English cover yet');
+for (const [id, count, host] of [['bluelock', 37, /^https:\/\/images\d?\.penguinrandomhouse\.com\/cover\//],
+  ['vinland', 29, /^https:\/\/dvs-cover\.kodansha\.co\.jp\//]]) {
+  const covers = Object.values(series[id].DEFAULT_COVERS);
+  assert.equal(covers.length, count, `${id} covers every original volume`);
+  assert.equal(new Set(covers).size, count, `${id} never repeats a volume cover`);
+  assert.ok(covers.every(url => host.test(url)), `${id} uses catalog images for each volume`);
+}
+assert.notEqual(series.vinland.DEFAULT_COVERS[1], series.vinland.DEFAULT_COVERS[2],
+  'adjacent Japanese Vinland Saga volumes show their own covers');
+assert.equal(series.bluelock.DEFAULT_COVERS[1], 'https://images4.penguinrandomhouse.com/cover/9781646516544');
 const disclosure = 'As an Amazon Associate, I earn from qualifying purchases. This helps support the website at no extra cost to you.';
 assert.ok(html.includes(disclosure), 'home description contains the affiliate disclosure');
 let checked = 0;
@@ -69,6 +93,16 @@ for (const [id, data] of Object.entries(series)) {
     assert.equal(element('chapterInput').value, vol.start, `${id} volume ${vol.volume} starts inclusively`);
     const cover = data.DEFAULT_COVERS[vol.volume];
     if (cover) assert.ok(volumeHtml.includes(`src="${cover}"`), `${id} volume ${vol.volume} cover`);
+    if (id === 'onepiece') {
+      const isbn = data.AMAZON_LINKS[vol.volume]?.match(/\/dp\/([\dX]{10})(?:\?|$)/)?.[1];
+      if (isbn) assert.ok(cover.endsWith(`/${isbn}.jpg`),
+        `One Piece volume ${vol.volume} cover matches its English paperback ISBN`);
+    }
+    if (id === 'bleach') {
+      const isbn = new URL(data.AMAZON_LINKS[vol.volume]).pathname.split('/').at(-1);
+      assert.equal(cover, `https://dw9to29mmj727.cloudfront.net/products/${isbn}.jpg`,
+        `Bleach volume ${vol.volume} uses its matching VIZ edition cover`);
+    }
     if (id === 'deathnote') {
       const amazonUrl = data.AMAZON_LINKS[vol.volume];
       const product = new URL(amazonUrl);
