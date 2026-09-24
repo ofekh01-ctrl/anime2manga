@@ -1287,7 +1287,7 @@
 .db-subtab:hover{border-color:var(--gold);color:var(--text)}
 .db-subtab.active{background:var(--gold);border-color:var(--gold);color:#111}
 </style>
-<link href="/community-redesign.css?v=11" rel="stylesheet"/>
+<link href="/community-redesign.css?v=12" rel="stylesheet"/>
 </head>
 <body>
 <button aria-label="Open navigation" class="mobile-nav-toggle" onclick="toggleNav()" type="button">☰</button>
@@ -3118,8 +3118,8 @@ function applySeries(id) {
   if (seoCopyEl) seoCopyEl.innerHTML = `<p>${escapeHtml(s.seoCopy || '')}</p>`;
   const footerEl = document.getElementById('seriesFooter');
   const affiliateDisclosure = 'As an Amazon Associate, I earn from qualifying purchases. This helps support the website at no extra cost to you.';
-  footerEl.innerHTML = [...s.footer, ...(Object.keys(s.AMAZON_LINKS).length ? [affiliateDisclosure] : [])]
-    .map(p => `<p>${p}</p>`).join('\n');
+  footerEl.innerHTML = s.footer.map(p => `<p>${p}</p>`).join('\n')
+    + (Object.keys(s.AMAZON_LINKS).length ? `<p class="affiliate-disclosure">${affiliateDisclosure}</p>` : '');
   volumeInput.placeholder = s.volumePlaceholder;
   chapterInput.placeholder = s.chapterPlaceholder;
   episodeInput.step = 'any';
@@ -3229,7 +3229,6 @@ function renderVolumeCard(vol, chapterNum, adaptationStatus = null) {
           ${vizUrl ? `<a href="${escapeHtml(vizUrl)}" target="_blank" rel="noopener" class="get-badge viz" title="${escapeHtml(currentSeries.publisherLabel || 'VIZ')}">${escapeHtml(currentSeries.publisherLabel || 'VIZ')}</a>` : ''}
           ${amazonUrl ? `<a href="${escapeHtml(amazonUrl)}" target="_blank" rel="sponsored noopener" class="get-badge amazon" title="Amazon">Amazon</a>` : ''}
         </div>
-        ${amazonUrl ? `<p class="aff-note">Amazon link is an affiliate link</p>` : ''}
       </div>`
     : '';
 
@@ -3248,6 +3247,7 @@ function renderVolumeCard(vol, chapterNum, adaptationStatus = null) {
         ${extrasLine}
       </div>
     </div>
+    ${amazonUrl ? '<p class="aff-note">Amazon link is an affiliate link</p>' : ''}
   `;
 }
 

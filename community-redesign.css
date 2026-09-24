@@ -802,11 +802,14 @@ input:focus-visible {
 }
 
 .aff-note {
-  margin: 5px 0 0 !important;
-  color: #666d78 !important;
-  font-size: 7.5px !important;
-  line-height: 1.35 !important;
-  text-align: center;
+  margin: 12px 0 0 !important;
+  padding-left: 9px;
+  border-left: 2px solid rgba(243, 182, 76, .65);
+  color: #c9b8a8 !important;
+  font-size: 10.5px !important;
+  font-weight: 600;
+  line-height: 1.45 !important;
+  text-align: left;
 }
 
 .volume-info { min-width: 0; }
@@ -875,6 +878,11 @@ input:focus-visible {
   color: #6e7580 !important;
   font-size: 10.5px !important;
   line-height: 1.55 !important;
+}
+
+#seriesFooter .affiliate-disclosure {
+  color: #abb3bd !important;
+  font-size: 11px !important;
 }
 
 .series-feedback {
