@@ -183,9 +183,9 @@ function renderHomeSeriesBrowser() {
   pageLabel.textContent = `Page ${homeSeriesPage} of ${totalPages}`;
   prev.disabled = homeSeriesPage <= 1;
   next.disabled = homeSeriesPage >= totalPages;
-  meta.hidden = !query;
-  meta.textContent = query
-    ? (filtered.length ? `${filtered.length} result${filtered.length === 1 ? '' : 's'} for “${homeSeriesSearch.trim()}”` : `No series found for “${homeSeriesSearch.trim()}”`)
+  meta.hidden = !query || !filtered.length;
+  meta.textContent = query && filtered.length
+    ? `${filtered.length} result${filtered.length === 1 ? '' : 's'} for “${homeSeriesSearch.trim()}”`
     : '';
 }
 

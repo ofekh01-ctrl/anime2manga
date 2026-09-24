@@ -1021,6 +1021,18 @@ body.view-series .wrap { display: grid !important; }
   margin: 0 0 2px !important;
 }
 
+.home-head .series-search-popover {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 20;
+  max-height: min(50vh, 340px);
+  overflow-y: auto;
+}
+
+.home-head .series-search-suggestions { margin-top: 0; }
+
 .home-search-label {
   display: block;
   margin-bottom: 9px;
@@ -1031,7 +1043,11 @@ body.view-series .wrap { display: grid !important; }
 
 .home-head .series-search-row { max-width: none; }
 .home-head .series-search-input { width: 100%; }
-.home-head .series-search-meta { margin-top: 8px !important; }
+.home-head .series-search-meta {
+  margin-top: 0 !important;
+  padding: 7px 10px;
+  background: var(--surface);
+}
 .home-view .home-rule { margin: 18px 0 16px !important; }
 .home-view .home-section-title { margin-bottom: 14px !important; }
 

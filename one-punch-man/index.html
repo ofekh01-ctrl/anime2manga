@@ -81,7 +81,7 @@
 <meta name="theme-color" content="#0c0c0e"/>
 <link rel="apple-touch-icon" href="/assets/icon-192.png"/>
 <link href="/base.css?v=9e3dc1fe" rel="stylesheet"/>
-<link href="/community-redesign.css?v=641cfb32" rel="stylesheet"/>
+<link href="/community-redesign.css?v=b78083cb" rel="stylesheet"/>
 </head>
 <body>
 <button aria-label="Open navigation" class="mobile-nav-toggle" onclick="toggleNav()" type="button">☰</button>
@@ -129,8 +129,10 @@
     <input id="seriesSearchInput" class="series-search-input" type="search" placeholder="Search a series..." autocomplete="off" aria-label="Search series"/>
     <button class="series-search-btn" id="seriesSearchBtn" type="button" onclick="runSeriesSearch()">Search</button>
   </div>
-  <div class="series-search-suggestions" id="seriesSearchSuggestions" aria-label="Matching series" hidden></div>
-  <div class="series-search-meta" id="seriesSearchMeta" aria-live="polite" hidden></div>
+  <div class="series-search-popover">
+    <div class="series-search-suggestions" id="seriesSearchSuggestions" aria-label="Matching series" hidden></div>
+    <div class="series-search-meta" id="seriesSearchMeta" aria-live="polite" hidden></div>
+  </div>
 </div>
 </div>
 </div>
@@ -334,7 +336,7 @@
 </div>
 </div>
 </div>
-<script src="/navigation.js?v=aaecd60d"></script>
+<script src="/navigation.js?v=0325570a"></script>
 <script src="/series-guide.js?v=7b0514bb"></script>
 </body>
 </html>
