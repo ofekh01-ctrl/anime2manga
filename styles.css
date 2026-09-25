@@ -1834,19 +1834,19 @@ input:focus-visible {
 
 .logo-link {
   display: grid;
-  flex: 0 0 58px !important;
-  width: 58px;
-  height: 58px;
+  flex: 0 0 68px !important;
+  width: 68px;
+  height: 68px;
   place-items: center;
-  overflow: hidden;
-  border: 1px solid var(--border) !important;
-  border-radius: 10px;
-  background: var(--surface) !important;
+  border: 0 !important;
+  border-radius: 0;
+  background: transparent !important;
 }
 
 .logo-link img {
-  width: 48px !important;
-  height: 48px !important;
+  display: block;
+  width: 66px !important;
+  height: 66px !important;
   object-fit: contain;
 }
 
@@ -2204,8 +2204,8 @@ body.view-series .wrap { display: grid !important; }
   .wrap { padding: 74px 14px 42px !important; }
   .wrap > header { gap: 13px !important; }
   .wordmark { font-size: 35px !important; }
-  .logo-link { width: 50px; height: 50px; flex-basis: 50px !important; }
-  .logo-link img { width: 42px !important; height: 42px !important; }
+  .logo-link { width: 54px; height: 54px; flex-basis: 54px !important; }
+  .logo-link img { width: 52px !important; height: 52px !important; }
 
   .sync-row { padding: 13px !important; }
   .card { padding: 16px !important; }
@@ -2576,14 +2576,14 @@ body.view-series .wrap { display: grid !important; }
   .home-head .series-search-btn { width: 100%; }
 }
 
-/* Fit the complete logo inside its header tile at narrow widths. */
+/* Fit the complete transparent logo at narrow widths. */
 @media (max-width: 760px) {
   .wrap > header .hero-text { min-width: 0; }
   .wrap > header a.logo-link {
-    flex: 0 0 58px !important;
-    width: 58px;
-    height: 58px;
-    padding: 4px;
+    flex: 0 0 62px !important;
+    width: 62px;
+    height: 62px;
+    padding: 0;
   }
   .wrap > header a.logo-link img {
     display: block;
@@ -2597,9 +2597,8 @@ body.view-series .wrap { display: grid !important; }
 
 @media (max-width: 520px) {
   .wrap > header a.logo-link {
-    flex-basis: 50px !important;
-    width: 50px;
-    height: 50px;
-    padding: 3px;
+    flex-basis: 54px !important;
+    width: 54px;
+    height: 54px;
   }
 }
