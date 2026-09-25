@@ -88,10 +88,9 @@ function applySeries(id) {
   const seoCopyEl = document.getElementById('seriesSeoCopy');
   if (seoCopyEl) seoCopyEl.innerHTML = `<p>${escapeHtml(s.seoCopy || '')}</p>`;
   const footerEl = document.getElementById('seriesFooter');
-  const affiliateDisclosure = 'As an Amazon Associate, I earn from qualifying purchases. This helps support the website at no extra cost to you.';
+  const affiliateDisclosure = 'As an Amazon Associate, I earn from qualifying purchases. This helps support site hosting and maintenance at no extra cost to you.';
   footerEl.innerHTML = s.footer.map(p => `<p>${p}</p>`).join('\n')
-    + (Object.keys(s.AMAZON_LINKS).length ? `<p class="affiliate-disclosure">${affiliateDisclosure}</p>` : '')
-    + '<p class="made-with-love">Made with love for anime and manga fans ♡</p>';
+    + (Object.keys(s.AMAZON_LINKS).length ? `<p class="affiliate-disclosure">${affiliateDisclosure}</p>` : '');
   volumeInput.placeholder = s.volumePlaceholder;
   chapterInput.placeholder = s.chapterPlaceholder;
   chapterInput.inputMode = id === 'jjk' ? 'decimal' : 'numeric';

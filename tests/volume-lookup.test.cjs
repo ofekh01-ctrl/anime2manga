@@ -91,7 +91,7 @@ for (const [id, count, host] of [['bluelock', 37, /^https:\/\/images\d?\.penguin
 assert.notEqual(series.vinland.DEFAULT_COVERS[1], series.vinland.DEFAULT_COVERS[2],
   'adjacent Japanese Vinland Saga volumes show their own covers');
 assert.equal(series.bluelock.DEFAULT_COVERS[1], 'https://images4.penguinrandomhouse.com/cover/9781646516544');
-const disclosure = 'As an Amazon Associate, I earn from qualifying purchases. This helps support the website at no extra cost to you.';
+const disclosure = 'As an Amazon Associate, I earn from qualifying purchases. This helps support site hosting and maintenance at no extra cost to you.';
 assert.ok(html.includes(disclosure), 'home description contains the affiliate disclosure');
 let checked = 0;
 for (const [id, data] of Object.entries(series)) {

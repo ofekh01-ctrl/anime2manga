@@ -80,7 +80,7 @@
 <link rel="manifest" href="/manifest.webmanifest?v=1"/>
 <meta name="theme-color" content="#0c0c0e"/>
 <link rel="apple-touch-icon" href="/assets/icon-192.png"/>
-<link href="/styles.css?v=f3ed19e8" rel="stylesheet"/>
+<link href="/styles.css?v=e0efa4ad" rel="stylesheet"/>
 </head>
 <body>
 <button aria-label="Open navigation" class="mobile-nav-toggle" onclick="toggleNav()" type="button">☰</button>
@@ -254,8 +254,15 @@
 <section class="home-about" id="about">
 <p class="home-section-title">ABOUT</p>
 <h2>Switch between anime and manga without losing your place.</h2>
-<p>I built Anime2Manga because finding the right chapter meant digging through episode lists and wikis. Enter an episode, chapter, or volume to find your place in the other format, with filler notes where available. No account needed.</p>
-<p>As an Amazon Associate, I earn from qualifying purchases. This helps support the website at no extra cost to you.</p>
+<p class="about-copy">I built <strong>Anime2Manga</strong> because every time I wanted to move from watching an anime to reading its manga, I had to sift through episode lists, wikis, and forum threads just to find where the story continued.</p>
+<h3 class="about-subheading">How it helps</h3>
+<ul class="about-features">
+<li><strong>Search both ways.</strong> Enter an anime episode to find the manga chapters and volumes it adapts, or start with a manga chapter or volume to find the matching anime episodes.</li>
+<li><strong>Filler and special cases.</strong> See filler, anime-original episodes, movies, and content without a direct manga match where that information is available.</li>
+<li><strong>Overlaps and gaps.</strong> See which chapters belong to each volume when an episode spans more than one, and where a volume’s anime adaptation stops.</li>
+</ul>
+<p class="about-free">Anime2Manga is free to use with no account required.</p>
+<p class="home-affiliate-disclosure">As an Amazon Associate, I earn from qualifying purchases. This helps support site hosting and maintenance at no extra cost to you.</p>
 <div class="feedback-actions" aria-label="Feedback and requests">
 <a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'error',page_path:window.location.pathname})">Found an error?</a>
 <a class="feedback-link" id="homeRequestSeriesLink" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'series_request',page_path:window.location.pathname})">Request a series</a>
@@ -339,6 +346,6 @@
 </div>
 <script src="/series-data.js?v=b971ecf2"></script>
 <script src="/navigation.js?v=0325570a"></script>
-<script src="/app.js?v=71cb15d2"></script>
+<script src="/app.js?v=4c7681c7"></script>
 </body>
 </html>
