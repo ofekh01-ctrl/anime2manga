@@ -2196,6 +2196,40 @@ body.view-series .wrap { display: grid !important; }
   .series-card.home-poster-card { aspect-ratio: 12 / 5 !important; }
 }
 
+/* The answer comes first; the existing cards keep the cover and context. */
+.match-summary {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin: 0 0 12px;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  background: var(--surface);
+  line-height: 1.45;
+}
+.match-summary[hidden] { display: none; }
+.match-summary-label {
+  width: 100%;
+  color: var(--text-dim);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+.match-summary-heading { color: #fff; font-size: 19px; font-weight: 800; }
+.match-summary-arrow { color: var(--accent); font-size: 18px; }
+.match-summary-values { color: #e6e8eb; font-size: 15px; font-weight: 650; }
+.match-summary-separator { color: var(--text-dim); }
+.made-with-love { margin-top: 18px !important; color: var(--text-dim) !important; font-size: 12px !important; }
+
+@media (max-width: 520px) {
+  .match-summary { padding: 13px 14px; gap: 4px 8px; }
+  .match-summary-heading { font-size: 17px; }
+  .match-summary-values { font-size: 13px; }
+}
+
 /* Full-width home composition: compact header and uncropped artwork. */
 .home-view {
   width: auto !important;

@@ -13,6 +13,7 @@ const episodeInput = document.getElementById('episodeInput');
 const episodeInputLabel = document.getElementById('episodeInputLabel');
 const volumeCard = document.getElementById('volumeCard');
 const episodeCard = document.getElementById('episodeCard');
+const matchSummary = document.getElementById('matchSummary');
 // Manga-vs-anime difference notes, keyed by episode number.
 // Only populated where a specific, verifiable difference is confirmed —
 // not filled in for every episode. Add more entries here as they're found.
@@ -89,7 +90,8 @@ function applySeries(id) {
   const footerEl = document.getElementById('seriesFooter');
   const affiliateDisclosure = 'As an Amazon Associate, I earn from qualifying purchases. This helps support the website at no extra cost to you.';
   footerEl.innerHTML = s.footer.map(p => `<p>${p}</p>`).join('\n')
-    + (Object.keys(s.AMAZON_LINKS).length ? `<p class="affiliate-disclosure">${affiliateDisclosure}</p>` : '');
+    + (Object.keys(s.AMAZON_LINKS).length ? `<p class="affiliate-disclosure">${affiliateDisclosure}</p>` : '')
+    + '<p class="made-with-love">Made with love for anime and manga fans ♡</p>';
   volumeInput.placeholder = s.volumePlaceholder;
   chapterInput.placeholder = s.chapterPlaceholder;
   chapterInput.inputMode = id === 'jjk' ? 'decimal' : 'numeric';
@@ -336,6 +338,68 @@ function clearAll() {
   programmatic = false;
   volumeCard.innerHTML = '<p class="empty">Volume details will appear here.</p>';
   episodeCard.innerHTML = `<p class="empty">${isDemonSlayerMovieMode() ? 'Movie' : 'Episode'} details will appear here.</p>`;
+  matchSummary.hidden = true;
+}
+
+// Keep the answer visible above the detailed cards, using the same mappings
+// that power the chapter, volume and episode lookups.
+function updateMatchSummary(source) {
+  let heading, manga, anime;
+  if (source === 'volume') {
+    const vol = VOLUMES.find(v => String(v.volume) === volumeInput.value.trim());
+    if (!vol) { matchSummary.hidden = true; return; }
+    const { groups, status } = getVolumeAdaptation(vol);
+    heading = `Volume ${vol.volume}`;
+    manga = `Chapters ${vol.start}–${vol.end}`;
+    anime = currentSeries.id === 'jjk' && vol.volume === 0
+      ? 'Jujutsu Kaisen 0: The Movie'
+      : groups.length
+        ? groups.map(({ variant, episodes }) => {
+            const movie = currentSeries.id === 'demonslayer' && variant.id === 'movies';
+            const label = movie ? (episodes.length === 1 ? 'Movie' : 'Movies') : 'Episodes';
+            return `${variant.label ? variant.label + ': ' : ''}${label} ${formatEpisodeRanges(episodes)}`;
+          }).join(' · ') + (status === 'partial' ? ' · Partially adapted' : '')
+        : status === 'unadapted' ? 'Not yet adapted' : 'No episode match in current data';
+  } else if (source === 'chapter') {
+    const raw = chapterInput.value.trim();
+    if (!/^-?\d+(?:\.\d+)?$/.test(raw)) { matchSummary.hidden = true; return; }
+    if (currentSeries.id === 'jjk' && raw === '0') {
+      heading = 'Volume 0';
+      manga = 'Chapters 0.1–0.4';
+      anime = 'Jujutsu Kaisen 0: The Movie';
+    } else {
+      const number = Number(raw);
+      const vol = findVolumeForChapter(number);
+      heading = `Chapter ${raw}`;
+      manga = vol ? `Volume ${vol.volume}` : 'No collected volume in current data';
+      const exact = chapterToEpisodes[number] || [];
+      anime = exact.length
+        ? `${isDemonSlayerMovieMode() ? 'Movie' : 'Episode'}${exact.length > 1 ? 's' : ''} ${formatEpisodeRanges(exact)}`
+        : number > MAX_ADAPTED_CHAPTER ? 'Beyond current anime data' : 'No direct episode match';
+    }
+  } else {
+    const number = Number(episodeInput.value.trim());
+    const ep = episodeInput.value.trim() ? EPISODES.find(e => e.episode === number) : null;
+    if (!ep) { matchSummary.hidden = true; return; }
+    heading = `${isDemonSlayerMovieMode() ? 'Movie' : 'Episode'} ${ep.episode}`;
+    if (currentSeries.id === 'jjk' && ep.episode === 0) {
+      manga = 'Chapters 0.1–0.4';
+      anime = 'Volume 0';
+    } else if (ep.chapters.length) {
+      manga = `Chapter${ep.chapters.length > 1 ? 's' : ''} ${ep.chapters.join(', ')}`;
+      const volumes = [...new Set(ep.chapters.map(Number).filter(Number.isFinite)
+        .map(chapter => findVolumeForChapter(chapter)?.volume).filter(v => v !== undefined))];
+      anime = volumes.length ? `Volume${volumes.length > 1 ? 's' : ''} ${volumes.join(', ')}` : 'No collected volume in current data';
+    } else {
+      manga = ep.filler ? 'Filler · No manga match' : 'No numbered manga chapter';
+      anime = '';
+    }
+  }
+  matchSummary.innerHTML = `<span class="match-summary-label">MATCH</span>
+    <strong class="match-summary-heading">${escapeHtml(heading)}</strong>
+    <span class="match-summary-arrow" aria-hidden="true">→</span>
+    <span class="match-summary-values">${escapeHtml(manga)}${anime ? `<span class="match-summary-separator"> · </span>${escapeHtml(anime)}` : ''}</span>`;
+  matchSummary.hidden = false;
 }
 
 // A volume is an inclusive chapter interval. Match every episode that adapts
@@ -528,9 +592,9 @@ function handleEpisodeChange() {
   }
 }
 
-volumeInput.addEventListener('input', handleVolumeChange);
-chapterInput.addEventListener('input', handleChapterChange);
-episodeInput.addEventListener('input', handleEpisodeChange);
+volumeInput.addEventListener('input', () => { handleVolumeChange(); updateMatchSummary('volume'); });
+chapterInput.addEventListener('input', () => { handleChapterChange(); updateMatchSummary('chapter'); });
+episodeInput.addEventListener('input', () => { handleEpisodeChange(); updateMatchSummary('episode'); });
 
 function switchDragonBallSeries(id) {
   applySeries(id);
