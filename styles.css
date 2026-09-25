@@ -1834,9 +1834,9 @@ input:focus-visible {
 
 .logo-link {
   display: grid;
-  flex: 0 0 68px !important;
-  width: 68px;
-  height: 68px;
+  flex: 0 0 90px !important;
+  width: 90px;
+  height: 90px;
   place-items: center;
   border: 0 !important;
   border-radius: 0;
@@ -1845,8 +1845,8 @@ input:focus-visible {
 
 .logo-link img {
   display: block;
-  width: 66px !important;
-  height: 66px !important;
+  width: 90px !important;
+  height: 90px !important;
   object-fit: contain;
 }
 
