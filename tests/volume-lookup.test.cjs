@@ -196,7 +196,7 @@ context.applySeries('demonslayer');
 assert.equal(element('episodeInputLabel').textContent, 'Anime episode');
 context.setEpisodeVariant('movies');
 assert.equal(element('episodeInputLabel').textContent, 'Movie');
-assert.match(element('episodeCard').innerHTML, /Movie details will appear here/);
+assert.match(element('episodeCard').innerHTML, /find the matching movie/);
 element('episodeInput').value = '1';
 context.handleEpisodeChange();
 assert.match(element('episodeCard').innerHTML, /Movie 1 — Mugen Train/);
@@ -443,6 +443,7 @@ for (const [episode, mission] of [[12, 'Extra Mission 1'], [26, 'Extra Mission 2
 element('chapterInput').value = '62';
 context.handleChapterChange();
 assert.match(element('episodeCard').innerHTML, /#39, #40/);
+assert.match(element('episodeCard').innerHTML, /Start with <strong>episode 39<\/strong>/);
 assert.equal(String(element('volumeInput').value), '10');
 element('chapterInput').value = '68';
 context.handleChapterChange();

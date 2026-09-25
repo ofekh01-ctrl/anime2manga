@@ -80,7 +80,7 @@
 <link rel="manifest" href="/manifest.webmanifest?v=1"/>
 <meta name="theme-color" content="#0c0c0e"/>
 <link rel="apple-touch-icon" href="/assets/icon-192.png"/>
-<link href="/styles.css?v=e05d2b0f" rel="stylesheet"/>
+<link href="/styles.css?v=f3ed19e8" rel="stylesheet"/>
 </head>
 <body>
 <button aria-label="Open navigation" class="mobile-nav-toggle" onclick="toggleNav()" type="button">☰</button>
@@ -241,8 +241,8 @@
 </div>
 
 <div class="series-no-results" id="seriesNoResults" role="status" aria-live="polite" hidden>
-  <p>No series found for <strong id="seriesNoResultsQuery"></strong>.</p>
-  <p>Can't find the series you want? <a href="#homeRequestSeriesLink">Request a series using the form below.</a></p>
+  <p>No series matched <strong id="seriesNoResultsQuery"></strong>.</p>
+  <p>Have a series in mind? <a href="#homeRequestSeriesLink">Request it below.</a></p>
 </div>
 
 <div class="series-pagination" id="seriesPagination" aria-label="Series pages">
@@ -254,7 +254,7 @@
 <section class="home-about" id="about">
 <p class="home-section-title">ABOUT</p>
 <h2>Switch between anime and manga without losing your place.</h2>
-<p>Use Anime2Manga to find where to continue reading after an anime episode, match manga chapters and volumes to their anime adaptation, and check filler or adaptation information where available. No account required.</p>
+<p>I built Anime2Manga because finding the right chapter meant digging through episode lists and wikis. Enter an episode, chapter, or volume to find your place in the other format, with filler notes where available. No account needed.</p>
 <p>As an Amazon Associate, I earn from qualifying purchases. This helps support the website at no extra cost to you.</p>
 <div class="feedback-actions" aria-label="Feedback and requests">
 <a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'error',page_path:window.location.pathname})">Found an error?</a>
@@ -319,10 +319,10 @@
 </div>
 <section class="match-summary" id="matchSummary" aria-label="Search result" role="status" aria-live="polite" hidden></section>
 <div class="card" id="volumeCard">
-<p class="empty">Volume details will appear here.</p>
+<p class="empty">Enter an episode or chapter above to find its manga volume and cover.</p>
 </div>
 <div class="card" id="episodeCard">
-<p class="empty">Episode details will appear here.</p>
+<p class="empty">Enter a manga chapter or volume above to find the matching anime episode.</p>
 </div>
 <section class="seo-copy" id="seriesSeoCopy" aria-label="Series guide"><p>Convert Bleach anime episodes to manga chapters and volumes, or enter a manga chapter to find its anime episodes. Check whether an episode is filler or canon before continuing the story.</p></section>
 <footer id="seriesFooter"><span id="about"></span>
@@ -339,6 +339,6 @@
 </div>
 <script src="/series-data.js?v=b971ecf2"></script>
 <script src="/navigation.js?v=0325570a"></script>
-<script src="/app.js?v=12aa348f"></script>
+<script src="/app.js?v=71cb15d2"></script>
 </body>
 </html>

@@ -157,7 +157,7 @@ function renderVolumeCard(vol, chapterNum, adaptationStatus = null) {
       volumeCard.innerHTML = `<span class="tag special">Not collected yet</span><p class="card-title">Chapter ${chapterNum}</p><p class="card-detail">${escapeHtml(currentSeries.uncollectedMessage)}</p>`;
       return;
     }
-    volumeCard.innerHTML = `<p class="empty">No volume covers that chapter (valid range: chapters ${v0.start}–${vN.end}, volume ${v0.volume}–${vN.volume}).</p>`;
+    volumeCard.innerHTML = `<p class="empty">No collected volume found for chapter ${chapterNum}. This guide covers chapters ${v0.start}–${vN.end}.</p>`;
     return;
   }
   const cover = vol.cover;
@@ -227,7 +227,7 @@ function renderVolumeCard(vol, chapterNum, adaptationStatus = null) {
 
 function renderEpisodeResult(ep) {
   if (!ep) {
-    episodeCard.innerHTML = `<p class="empty">No ${animeEntryName()} data for that number (valid range: ${EPISODES[0].episode}–${EPISODES[EPISODES.length - 1].episode}).</p>`;
+    episodeCard.innerHTML = `<p class="empty">That ${animeEntryName()} isn't in this guide. Try a number from ${EPISODES[0].episode} to ${EPISODES[EPISODES.length - 1].episode}.</p>`;
     return;
   }
   if (currentSeries.id === 'jjk' && ep.episode === 0) {
@@ -281,10 +281,13 @@ function renderChapterResult(targetNum) {
   const exact = chapterToEpisodes[targetNum];
   if (exact && exact.length) {
     const epList = exact.map(n => `#${n}`).join(', ');
+    const guidance = exact.length > 1
+      ? `This chapter appears across multiple ${entry}s. Start with <strong>${entry} ${exact[0]}</strong> to see it from the beginning.`
+      : `Watch <strong>${entry} ${exact[0]}</strong> to see this chapter animated.`;
     episodeCard.innerHTML = `
       <span class="tag canon">Canon</span>
       <p class="card-title">Chapter ${targetNum} is adapted in ${entry}${exact.length > 1 ? 's' : ''} ${epList}</p>
-      <p class="card-detail">Jump to <strong>${entry} ${exact[exact.length - 1]}</strong> to see this chapter animated.</p>
+      <p class="card-detail">${guidance}</p>
     `;
     return;
   }
@@ -301,7 +304,7 @@ function renderChapterResult(targetNum) {
     `;
     return;
   }
-  episodeCard.innerHTML = `<p class="empty">No ${entry} data covers that chapter.</p>`;
+  episodeCard.innerHTML = `<p class="empty">No ${entry} match found for chapter ${targetNum} in this guide.</p>`;
 }
 
 // Core pivot: given a chapter number, update volume + episode fields and cards.
@@ -336,8 +339,8 @@ function clearAll() {
   chapterInput.value = '';
   episodeInput.value = '';
   programmatic = false;
-  volumeCard.innerHTML = '<p class="empty">Volume details will appear here.</p>';
-  episodeCard.innerHTML = `<p class="empty">${isDemonSlayerMovieMode() ? 'Movie' : 'Episode'} details will appear here.</p>`;
+  volumeCard.innerHTML = '<p class="empty">Enter an episode or chapter above to find its manga volume and cover.</p>';
+  episodeCard.innerHTML = `<p class="empty">Enter a manga chapter or volume above to find the matching ${isDemonSlayerMovieMode() ? 'movie' : 'anime episode'}.</p>`;
   matchSummary.hidden = true;
 }
 
@@ -524,8 +527,8 @@ function handleVolumeChange() {
     chapterInput.value = '';
     episodeInput.value = '';
     programmatic = false;
-    volumeCard.innerHTML = `<p class="empty">Enter a volume number (${VOLUMES[0].volume}–${VOLUMES[VOLUMES.length - 1].volume}).</p>`;
-    episodeCard.innerHTML = `<p class="empty">${isDemonSlayerMovieMode() ? 'Movie' : 'Episode'} details will appear here.</p>`;
+    volumeCard.innerHTML = `<p class="empty">That volume isn't in this guide. Try a number from ${VOLUMES[0].volume} to ${VOLUMES[VOLUMES.length - 1].volume}.</p>`;
+    episodeCard.innerHTML = `<p class="empty">Enter a manga chapter or volume above to find the matching ${isDemonSlayerMovieMode() ? 'movie' : 'anime episode'}.</p>`;
     return;
   }
   const adaptation = getVolumeAdaptation(vol);
@@ -573,7 +576,7 @@ function handleEpisodeChange() {
     chapterInput.value = '';
     volumeInput.value = '';
     programmatic = false;
-    volumeCard.innerHTML = '<p class="empty">Volume details will appear here.</p>';
+    volumeCard.innerHTML = '<p class="empty">Try another episode number to find its manga match.</p>';
     return;
   }
 
