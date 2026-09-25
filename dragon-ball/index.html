@@ -80,7 +80,8 @@
 <link rel="manifest" href="/manifest.webmanifest?v=1"/>
 <meta name="theme-color" content="#0c0c0e"/>
 <link rel="apple-touch-icon" href="/assets/icon-192.png"/>
-<link href="/styles.css?v=78fa8c12" rel="stylesheet"/>
+<link href="/styles.css?v=e71aa125" rel="stylesheet"/>
+<script src="/install.js?v=bb9885f6" defer></script>
 </head>
 <body>
 <button aria-label="Open navigation" class="mobile-nav-toggle" onclick="toggleNav()" type="button">☰</button>
@@ -110,7 +111,7 @@
 <button class="side-link series-nav" data-series="gachiakuta" onclick="navSeries('gachiakuta')" type="button"><span>Gachiakuta</span></button>
 <button class="side-link series-nav" data-series="spyxfamily" onclick="navSeries('spyxfamily')" type="button"><span>Spy x Family</span></button>
 <button class="side-link series-nav" data-series="frieren" onclick="navSeries('frieren')" type="button"><span>Frieren: Beyond Journey's End</span></button>
-<div class="side-bottom"><button class="side-link" onclick="showAbout()" type="button"><span class="side-icon">?</span><span>About</span></button></div>
+<div class="side-bottom"><button class="side-link" onclick="showAbout()" type="button"><span class="side-icon about-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.5 9a2.5 2.5 0 1 1 4.25 1.79C12.6 11.85 12 12.45 12 14"/><circle cx="12" cy="17.3" r=".75" fill="currentColor" stroke="none"/></svg></span><span>About</span></button></div>
 </aside>
 <main class="home-view" id="homeView">
 <div class="home-inner">
@@ -267,8 +268,8 @@
 <a class="feedback-link" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'error',page_path:window.location.pathname})">Found an error?</a>
 <a class="feedback-link" id="homeRequestSeriesLink" href="https://form.jotform.com/262584386471063" target="_blank" rel="noopener" onclick="trackAnalyticsEvent('feedback_opened',{feedback_type:'series_request',page_path:window.location.pathname})">Request a series</a>
 </div>
+<p class="support-email">anime2manga.support@gmail.com</p>
 <p class="made-with-love">Made with love for anime and manga fans ♡</p>
-<p class="support-email"><a href="mailto:anime2manga.support@gmail.com">anime2manga.support@gmail.com</a></p>
 </section>
 </div>
 </main>
