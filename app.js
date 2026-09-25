@@ -209,7 +209,7 @@ function renderVolumeCard(vol, chapterNum, adaptationStatus = null) {
   volumeCard.innerHTML = `
     <div class="volume-body">
       <div class="cover-col">
-        <div class="cover-box" id="coverBox">${coverHtml}</div>
+        <div class="cover-box">${coverHtml}</div>
         ${getRow}
       </div>
       <div class="volume-info">
@@ -344,7 +344,7 @@ function clearAll() {
 // Keep the answer visible above the detailed cards, using the same mappings
 // that power the chapter, volume and episode lookups.
 function updateMatchSummary(source) {
-  let heading, manga, anime;
+  let heading, manga, anime, note = '';
   if (source === 'volume') {
     const vol = VOLUMES.find(v => String(v.volume) === volumeInput.value.trim());
     if (!vol) { matchSummary.hidden = true; return; }
@@ -387,9 +387,9 @@ function updateMatchSummary(source) {
       anime = 'Volume 0';
     } else if (ep.chapters.length) {
       manga = `Chapter${ep.chapters.length > 1 ? 's' : ''} ${ep.chapters.join(', ')}`;
-      const volumes = [...new Set(ep.chapters.map(Number).filter(Number.isFinite)
-        .map(chapter => findVolumeForChapter(chapter)?.volume).filter(v => v !== undefined))];
+      const volumes = volumesForChapters(ep.chapters.map(Number).filter(Number.isFinite)).map(({ vol }) => vol.volume);
       anime = volumes.length ? `Volume${volumes.length > 1 ? 's' : ''} ${volumes.join(', ')}` : 'No collected volume in current data';
+      if (volumes.length > 1) note = 'This episode includes chapters from each volume shown below.';
     } else {
       manga = ep.filler ? 'Filler · No manga match' : 'No numbered manga chapter';
       anime = '';
@@ -398,7 +398,8 @@ function updateMatchSummary(source) {
   matchSummary.innerHTML = `<span class="match-summary-label">MATCH</span>
     <strong class="match-summary-heading">${escapeHtml(heading)}</strong>
     <span class="match-summary-arrow" aria-hidden="true">→</span>
-    <span class="match-summary-values">${escapeHtml(manga)}${anime ? `<span class="match-summary-separator"> · </span>${escapeHtml(anime)}` : ''}</span>`;
+    <span class="match-summary-values">${escapeHtml(manga)}${anime ? `<span class="match-summary-separator"> · </span>${escapeHtml(anime)}` : ''}</span>
+    ${note ? `<span class="match-summary-note">${escapeHtml(note)}</span>` : ''}`;
   matchSummary.hidden = false;
 }
 
@@ -443,6 +444,34 @@ function formatEpisodeRanges(episodes) {
   return ranges.map(({ start, end }) => start === end ? `${start}` : `${start}–${end}`).join(', ');
 }
 
+function volumesForChapters(chapters) {
+  return VOLUMES.map(vol => ({
+    vol,
+    chapters: chapters.filter(chapter => chapter >= vol.start && chapter <= vol.end)
+  })).filter(match => match.chapters.length);
+}
+
+function renderEpisodeVolumes(chapters) {
+  const matches = volumesForChapters(chapters);
+  if (matches.length <= 1) {
+    renderVolumeCard(matches[0]?.vol || null, Math.max(...chapters));
+    volumeInput.value = matches[0]?.vol.volume ?? '';
+    return;
+  }
+
+  const cards = matches.map(({ vol, chapters: included }) => {
+    renderVolumeCard(vol, included[0]);
+    const chapterList = included.join(', ');
+    return `<section class="volume-match" aria-label="Volume ${vol.volume}">
+      <p class="volume-match-chapters">From this volume: chapter${included.length > 1 ? 's' : ''} ${escapeHtml(chapterList)}</p>
+      ${volumeCard.innerHTML}
+    </section>`;
+  }).join('');
+  volumeCard.innerHTML = `<p class="multi-volume-intro">This ${animeEntryName()} adapts chapters from ${matches.length} volumes. Each matching volume is shown below.</p>
+    <div class="multi-volume-list">${cards}</div>`;
+  volumeInput.value = matches.map(({ vol }) => vol.volume).join(', ');
+}
+
 function renderVolumeEpisodes(vol, adaptation) {
   const { groups, status, lastChapterInVolume } = adaptation;
   if (currentSeries.id === 'jjk' && vol.volume === 0) {
@@ -468,11 +497,21 @@ function renderVolumeEpisodes(vol, adaptation) {
     return `<p class="card-detail">${variant.label ? `${escapeHtml(variant.label)}: ` : ''}<strong>${entry} ${formatEpisodeRanges(episodes)}</strong></p>`;
   }).join('');
   const partialNote = status === 'partial'
-    ? `<p class="card-detail">Only adapted through chapter ${lastChapterInVolume}. Chapters ${lastChapterInVolume + 1}–${vol.end} of this volume are not yet covered by the available anime data.</p>`
+    ? `<p class="card-detail partial-note">Only adapted through chapter ${lastChapterInVolume}. Chapters ${lastChapterInVolume + 1}–${vol.end} in this volume have no episode match yet.</p>`
+    : '';
+  const overlaps = groups.map(({ variant, episodes }) => {
+    const shared = episodes.filter(number => {
+      const ep = variant.episodes.find(item => item.episode === number);
+      return ep && volumesForChapters(ep.chapters.map(Number).filter(Number.isFinite)).length > 1;
+    });
+    return shared.length ? { text: `${variant.label ? escapeHtml(variant.label) + ': ' : ''}${currentSeries.id === 'demonslayer' && variant.id === 'movies' ? 'Movie' : 'Episode'}${shared.length > 1 ? 's' : ''} ${formatEpisodeRanges(shared)}`, count: shared.length } : null;
+  }).filter(Boolean);
+  const overlapNote = overlaps.length
+    ? `<p class="card-detail overlap-note">${overlaps.map(item => item.text).join(' · ')} also ${overlaps.reduce((sum, item) => sum + item.count, 0) === 1 ? 'adapts' : 'adapt'} chapters from another volume.</p>`
     : '';
   episodeCard.innerHTML = `<span class="tag ${status === 'partial' ? 'special' : 'canon'}">${status === 'partial' ? 'Partially adapted' : 'Canon'}</span>
     <p class="card-title">Volume ${vol.volume} appears in these ${adaptationName}</p>
-    ${lines}${partialNote}`;
+    ${lines}${partialNote}${overlapNote}`;
 }
 
 function handleVolumeChange() {
@@ -582,11 +621,7 @@ function handleEpisodeChange() {
       const maxChapter = Math.max(...nums);
       programmatic = true;
       chapterInput.value = maxChapter;
-      programmatic = false;
-      const vol = findVolumeForChapter(maxChapter);
-      renderVolumeCard(vol, maxChapter);
-      programmatic = true;
-      if (vol) volumeInput.value = vol.volume;
+      renderEpisodeVolumes(nums);
       programmatic = false;
     }
   }

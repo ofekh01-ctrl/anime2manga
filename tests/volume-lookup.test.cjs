@@ -385,8 +385,10 @@ context.applySeries('onepunchman');
 element('episodeInput').value = '36';
 context.handleEpisodeChange();
 assert.equal(String(element('chapterInput').value), '116');
-assert.equal(String(element('volumeInput').value), '24');
+assert.equal(String(element('volumeInput').value), '23, 24');
 assert.match(element('episodeCard').innerHTML, /111, 112, 113, 114, 115, 116/);
+assert.match(element('volumeCard').innerHTML, /Vol\. 23/);
+assert.match(element('volumeCard').innerHTML, /Vol\. 24/);
 element('chapterInput').value = '117';
 context.handleChapterChange();
 assert.equal(String(element('volumeInput').value), '24');
@@ -400,7 +402,7 @@ context.applySeries('gachiakuta');
 element('episodeInput').value = '24';
 context.handleEpisodeChange();
 assert.equal(String(element('chapterInput').value), '87');
-assert.equal(String(element('volumeInput').value), '11');
+assert.equal(String(element('volumeInput').value), '10, 11');
 assert.match(element('episodeCard').innerHTML, /84, 85, 86, 87/);
 element('chapterInput').value = '88';
 context.handleChapterChange();
@@ -455,6 +457,25 @@ assert.match(element('episodeCard').innerHTML, /Chapter 0\.2 is adapted/,
 assert.equal(element('volumeInput').value, 0);
 assert.equal(element('episodeInput').value, 0);
 
+context.applySeries('bleach');
+element('episodeInput').value = '4';
+context.handleEpisodeChange();
+assert.equal(element('volumeInput').value, '1, 2');
+context.updateMatchSummary('episode');
+assert.match(element('matchSummary').innerHTML, /Volumes 1, 2/);
+assert.match(element('volumeCard').innerHTML, /From this volume: chapter 7/);
+assert.match(element('volumeCard').innerHTML, /From this volume: chapters 8, 9/);
+element('volumeInput').value = '1';
+context.handleVolumeChange();
+assert.match(element('episodeCard').innerHTML, /Episode 4 also adapts chapters from another volume/);
+
+context.applySeries('aot');
+element('episodeInput').value = '4';
+context.handleEpisodeChange();
+assert.equal(element('volumeInput').value, '1, 4', 'nonadjacent matching volumes are both shown');
+assert.match(element('volumeCard').innerHTML, /Vol\. 1/);
+assert.match(element('volumeCard').innerHTML, /Vol\. 4/);
+
 let episodeChecks = 0;
 for (const [id, data] of Object.entries(series)) {
   context.applySeries(id);
@@ -475,9 +496,13 @@ for (const [id, data] of Object.entries(series)) {
         const chapter = Math.max(...numbers);
         assert.equal(Number(element('chapterInput').value), chapter,
           `${id} episode ${ep.episode} selects its final adapted chapter`);
-        const volume = data.VOLUMES.find(vol => chapter >= vol.start && chapter <= vol.end);
-        if (volume) assert.equal(Number(element('volumeInput').value), volume.volume,
-          `${id} episode ${ep.episode} selects the matching volume`);
+        const volumes = data.VOLUMES.filter(vol => numbers.some(number => number >= vol.start && number <= vol.end));
+        if (volumes.length) {
+          assert.equal(String(element('volumeInput').value), volumes.map(vol => vol.volume).join(', '),
+            `${id} episode ${ep.episode} lists every matching volume`);
+          for (const vol of volumes) assert.match(element('volumeCard').innerHTML, new RegExp(`Vol\\. ${vol.volume}(?!\\d)`),
+            `${id} episode ${ep.episode} displays volume ${vol.volume}`);
+        }
       }
       episodeChecks++;
     }
