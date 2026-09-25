@@ -1387,6 +1387,19 @@ input:focus-visible {
 }
 .about-icon svg { display: block; width: 20px; height: 20px; }
 
+/* Let the lookup start sooner on wide screens without changing mobile layout. */
+@media (min-width: 1101px) {
+  .wrap { padding-top: 32px !important; }
+  .wrap > header {
+    margin-bottom: 16px !important;
+    padding-bottom: 16px !important;
+  }
+  .wrap > header .series-eyebrow { display: none; }
+  .wrap > header .wordmark { font-size: clamp(35px, 4vw, 48px) !important; }
+  .wrap > header .subtitle { margin-top: 7px !important; }
+  .wrap > header .lede { margin-top: 4px !important; }
+}
+
 .side-bottom {
   margin-top: 15px;
   padding-top: 10px !important;
