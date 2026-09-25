@@ -2602,3 +2602,43 @@ body.view-series .wrap { display: grid !important; }
     height: 54px;
   }
 }
+
+/* Publisher colors and links that fit beneath a volume cover. */
+.cover-col-links,
+.get-row {
+  width: 100%;
+  min-width: 0;
+}
+
+.get-badge {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding-inline: 2px !important;
+  white-space: nowrap;
+}
+
+.get-row:has(> .get-badge[title="Kodansha"]) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.get-badge.viz {
+  background: #e60012 !important;
+  border-color: #e60012 !important;
+  color: #fff !important;
+}
+
+.get-badge.viz[title="Kodansha"] {
+  background: #0c0d10 !important;
+  border-color: #626773 !important;
+  color: #fff !important;
+}
+
+.get-badge.amazon {
+  background: #ff9900 !important;
+  border-color: #ff9900 !important;
+  color: #171717 !important;
+}
+
+.get-badge:hover { filter: brightness(1.12); }
+.get-badge.amazon:hover { color: #171717 !important; }
