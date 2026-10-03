@@ -900,7 +900,31 @@
     "22": "https://www.viz.com/manga-books/manga/demon-slayer-kimetsu-no-yaiba-volume-22-0/product/6694",
     "23": "https://www.viz.com/manga-books/manga/demon-slayer-kimetsu-no-yaiba-volume-23-0/product/6761"
   },
-  "AMAZON_LINKS": {},
+  "AMAZON_LINKS": {
+      "1": "https://www.amazon.com/dp/1974700526?tag=mangatoanim01-20",
+      "2": "https://www.amazon.com/dp/1974700534?tag=mangatoanim01-20",
+      "3": "https://www.amazon.com/dp/1974700542?tag=mangatoanim01-20",
+      "4": "https://www.amazon.com/dp/1974700550?tag=mangatoanim01-20",
+      "5": "https://www.amazon.com/dp/1974700569?tag=mangatoanim01-20",
+      "6": "https://www.amazon.com/dp/1974700577?tag=mangatoanim01-20",
+      "7": "https://www.amazon.com/dp/1974704416?tag=mangatoanim01-20",
+      "8": "https://www.amazon.com/dp/1974704424?tag=mangatoanim01-20",
+      "9": "https://www.amazon.com/dp/1974704432?tag=mangatoanim01-20",
+      "10": "https://www.amazon.com/dp/1974704556?tag=mangatoanim01-20",
+      "11": "https://www.amazon.com/dp/1974706486?tag=mangatoanim01-20",
+      "12": "https://www.amazon.com/dp/1974711129?tag=mangatoanim01-20",
+      "13": "https://www.amazon.com/dp/1974711137?tag=mangatoanim01-20",
+      "14": "https://www.amazon.com/dp/1974711145?tag=mangatoanim01-20",
+      "15": "https://www.amazon.com/dp/1974714780?tag=mangatoanim01-20",
+      "16": "https://www.amazon.com/dp/1974714772?tag=mangatoanim01-20",
+      "17": "https://www.amazon.com/dp/1974710610?tag=mangatoanim01-20",
+      "18": "https://www.amazon.com/dp/1974717607?tag=mangatoanim01-20",
+      "19": "https://www.amazon.com/dp/1974718115?tag=mangatoanim01-20",
+      "20": "https://www.amazon.com/dp/1974720977?tag=mangatoanim01-20",
+      "21": "https://www.amazon.com/dp/1974721205?tag=mangatoanim01-20",
+      "22": "https://www.amazon.com/dp/1974723410?tag=mangatoanim01-20",
+      "23": "https://www.amazon.com/dp/1974723631?tag=mangatoanim01-20"
+  },
   "ARC_RANGES": [
     {
       "arc": "Final Selection",
