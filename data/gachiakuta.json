@@ -363,7 +363,20 @@
     "11": "https://kodansha.us/series/gachiakuta/volume-11/",
     "12": "https://kodansha.us/series/gachiakuta/volume-12/"
   },
-  "AMAZON_LINKS": {},
+  "AMAZON_LINKS": {
+    "1": "https://www.amazon.com/dp/B0C4XW16QN?tag=mangatoanim01-20",
+    "2": "https://www.amazon.com/dp/B0CD5GYVVZ?tag=mangatoanim01-20",
+    "3": "https://www.amazon.com/dp/B0CLL9YM68?tag=mangatoanim01-20",
+    "4": "https://www.amazon.com/dp/B0CSYFS5NP?tag=mangatoanim01-20",
+    "5": "https://www.amazon.com/dp/B0D2CW67PT?tag=mangatoanim01-20",
+    "6": "https://www.amazon.com/dp/B0D9VJQ1C9?tag=mangatoanim01-20",
+    "7": "https://www.amazon.com/dp/B0DKND4K22?tag=mangatoanim01-20",
+    "8": "https://www.amazon.com/dp/B0DTPDN4VC?tag=mangatoanim01-20",
+    "9": "https://www.amazon.com/dp/B0F5PHLN3M?tag=mangatoanim01-20",
+    "10": "https://www.amazon.com/dp/B0FJDPWRR5?tag=mangatoanim01-20",
+    "11": "https://www.amazon.com/dp/B0FX82VXJD?tag=mangatoanim01-20",
+    "12": "https://www.amazon.com/dp/B0GC4CP88Y?tag=mangatoanim01-20"
+  },
   "ARC_RANGES": [],
   "FALLBACK_COVERS": {
     "1": "https://images.penguinrandomhouse.com/cover/9798888770207",
